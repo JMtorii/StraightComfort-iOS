@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B6E8C82418C50DC400550D49"
-               BuildableName = "kinApp-iOS.app"
-               BlueprintName = "kinApp-iOS"
-               ReferencedContainer = "container:kinApp-iOS.xcodeproj">
+               BuildableName = "StraightComfort-iOS.app"
+               BlueprintName = "StraightComfort-iOS"
+               ReferencedContainer = "container:StraightComfort-iOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B6E8C83F18C50DC400550D49"
-               BuildableName = "kinApp-iOSTests.xctest"
-               BlueprintName = "kinApp-iOSTests"
-               ReferencedContainer = "container:kinApp-iOS.xcodeproj">
+               BuildableName = "StraightComfort-iOSTests.xctest"
+               BlueprintName = "StraightComfort-iOSTests"
+               ReferencedContainer = "container:StraightComfort-iOS.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B6E8C82418C50DC400550D49"
-            BuildableName = "kinApp-iOS.app"
-            BlueprintName = "kinApp-iOS"
-            ReferencedContainer = "container:kinApp-iOS.xcodeproj">
+            BuildableName = "StraightComfort-iOS.app"
+            BlueprintName = "StraightComfort-iOS"
+            ReferencedContainer = "container:StraightComfort-iOS.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B6E8C82418C50DC400550D49"
-            BuildableName = "kinApp-iOS.app"
-            BlueprintName = "kinApp-iOS"
-            ReferencedContainer = "container:kinApp-iOS.xcodeproj">
+            BuildableName = "StraightComfort-iOS.app"
+            BlueprintName = "StraightComfort-iOS"
+            ReferencedContainer = "container:StraightComfort-iOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B6E8C82418C50DC400550D49"
-            BuildableName = "kinApp-iOS.app"
-            BlueprintName = "kinApp-iOS"
-            ReferencedContainer = "container:kinApp-iOS.xcodeproj">
+            BuildableName = "StraightComfort-iOS.app"
+            BlueprintName = "StraightComfort-iOS"
+            ReferencedContainer = "container:StraightComfort-iOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
