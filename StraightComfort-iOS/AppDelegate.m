@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  kinApp-iOS
+//  StraightComfort-iOS
 //
 //  Created by Jun Torii on 3/3/2014.
 //  Copyright (c) 2014 Jun Torii. All rights reserved.
@@ -12,10 +12,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    // Override point for customization after application launch.
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    MainViewController *viewController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
+//    self.window.rootViewController = viewController;
+//    
+//    [self.window makeKeyAndVisible];
     return YES;
 }
 

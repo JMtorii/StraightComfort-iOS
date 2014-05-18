@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6DAB62A192738CE00649B99 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DAB628192738CE00649B99 /* MainViewController.m */; };
+		B6DAB62D192745B100649B99 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DAB62C192745B100649B99 /* MainViewController.storyboard */; };
 		B6E8C82918C50DC400550D49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E8C82818C50DC400550D49 /* Foundation.framework */; };
 		B6E8C82B18C50DC400550D49 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E8C82A18C50DC400550D49 /* CoreGraphics.framework */; };
 		B6E8C82D18C50DC400550D49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E8C82C18C50DC400550D49 /* UIKit.framework */; };
@@ -32,8 +34,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B6C0D7B2190B1AB8008D281D /* StraightComfort-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StraightComfort-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6C0D7B3190B1B28008D281D /* StraightComfort-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StraightComfort-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6DAB62019207D5E00649B99 /* StraightComfort-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StraightComfort-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6DAB62119207D5E00649B99 /* StraightComfort-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StraightComfort-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6DAB627192738CE00649B99 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		B6DAB628192738CE00649B99 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		B6DAB62C192745B100649B99 /* MainViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
 		B6E8C82818C50DC400550D49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B6E8C82A18C50DC400550D49 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B6E8C82C18C50DC400550D49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -74,14 +79,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6DAB624192088EB00649B99 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B6DAB627192738CE00649B99 /* MainViewController.h */,
+				B6DAB628192738CE00649B99 /* MainViewController.m */,
+				B6DAB62C192745B100649B99 /* MainViewController.storyboard */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
 		B6E8C81C18C50DC400550D49 = {
 			isa = PBXGroup;
 			children = (
 				B6E8C82E18C50DC400550D49 /* StraightComfort-iOS */,
 				B6E8C84718C50DC400550D49 /* StraightComfort-iOSTests */,
 				B6E8C82718C50DC400550D49 /* Frameworks */,
-				B6C0D7B2190B1AB8008D281D /* StraightComfort-iOSTests.xctest */,
-				B6C0D7B3190B1B28008D281D /* StraightComfort-iOS.app */,
+				B6DAB62019207D5E00649B99 /* StraightComfort-iOS.app */,
+				B6DAB62119207D5E00649B99 /* StraightComfort-iOSTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +116,7 @@
 			children = (
 				B6E8C83718C50DC400550D49 /* AppDelegate.h */,
 				B6E8C83818C50DC400550D49 /* AppDelegate.m */,
+				B6DAB624192088EB00649B99 /* MainViewController */,
 				B6E8C83A18C50DC400550D49 /* Images.xcassets */,
 				B6E8C82F18C50DC400550D49 /* Supporting Files */,
 			);
@@ -153,7 +169,7 @@
 			);
 			name = "StraightComfort-iOS";
 			productName = "kinApp-iOS";
-			productReference = B6C0D7B3190B1B28008D281D /* StraightComfort-iOS.app */;
+			productReference = B6DAB62019207D5E00649B99 /* StraightComfort-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B6E8C83F18C50DC400550D49 /* StraightComfort-iOSTests */ = {
@@ -171,7 +187,7 @@
 			);
 			name = "StraightComfort-iOSTests";
 			productName = "kinApp-iOSTests";
-			productReference = B6C0D7B2190B1AB8008D281D /* StraightComfort-iOSTests.xctest */;
+			productReference = B6DAB62119207D5E00649B99 /* StraightComfort-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -211,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6DAB62D192745B100649B99 /* MainViewController.storyboard in Resources */,
 				B6E8C83318C50DC400550D49 /* InfoPlist.strings in Resources */,
 				B6E8C83B18C50DC400550D49 /* Images.xcassets in Resources */,
 			);
@@ -232,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6E8C83918C50DC400550D49 /* AppDelegate.m in Sources */,
+				B6DAB62A192738CE00649B99 /* MainViewController.m in Sources */,
 				B6E8C83518C50DC400550D49 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
