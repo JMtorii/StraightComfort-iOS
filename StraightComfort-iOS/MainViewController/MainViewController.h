@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+//#import "MainTableViewCell.h"
 
 @interface MainViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
+//@property (nonatomic, weak) IBOutlet UILabel *line1;
+//@property (nonatomic, weak) IBOutlet UILabel *line2;
 
 @end

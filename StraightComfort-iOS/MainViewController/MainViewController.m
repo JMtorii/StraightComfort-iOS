@@ -13,15 +13,20 @@
 @end
 
 @implementation MainViewController {
-    NSArray *recipes;
+    NSArray *mHomeTitlesLine1;
+    NSArray *mHomeTitlesLine2;
 }
+
+//@synthesize line1;
+//@synthesize line2;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     // Initialize table data
-    recipes = [NSArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
+    mHomeTitlesLine1 = [NSArray arrayWithObjects:@"FULL", @"WORKSTATION", @"DISCOMFORT", nil];
+    mHomeTitlesLine2 = [NSArray arrayWithObjects:@"WORKSTATION SETUP", @"SHORTCUT", @"", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -30,22 +35,35 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [recipes count];
+    // TURN THIS INTO A CONST
+    return [mHomeTitlesLine1 count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *simpleTableIdentifier = @"SimpleTableCell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    static NSString *cellIdentifier = @"MainTableViewCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-    cell.textLabel.text = [recipes objectAtIndex:indexPath.row];
+    UILabel *line1 = (UILabel *)[cell viewWithTag:100];
+    line1.text = [mHomeTitlesLine1 objectAtIndex:indexPath.row];
+    
+    UILabel *line2 = (UILabel *)[cell viewWithTag:101];
+    line2.text = [mHomeTitlesLine2 objectAtIndex:indexPath.row];
+    
+//    cell.textLabel.text = [mHomeTitles objectAtIndex:indexPath.row];
 //    cell.imageView.image = [UIImage imageNamed:@"creme_brelee.jpg"];
     
     return cell;
