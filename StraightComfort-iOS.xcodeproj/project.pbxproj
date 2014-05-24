@@ -8,6 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		B60D9D82192F29AE00CBE191 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60D9D81192F29AE00CBE191 /* MainTableViewCell.m */; };
+		B60D9D951930823A00CBE191 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D9D891930823A00CBE191 /* Icon.png */; };
+		B60D9D961930823A00CBE191 /* Icon40.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D9D8A1930823A00CBE191 /* Icon40.png */; };
+		B60D9D971930823A00CBE191 /* Icon60.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D9D8B1930823A00CBE191 /* Icon60.png */; };
+		B60D9D981930823A00CBE191 /* Icon76.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D9D8C1930823A00CBE191 /* Icon76.png */; };
+		B60D9D991930823A00CBE191 /* Icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D9D8D1930823A00CBE191 /* Icon80.png */; };
+		B60D9D9A1930823A00CBE191 /* Icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D9D8E1930823A00CBE191 /* Icon120.png */; };
+		B60D9D9B1930823A00CBE191 /* Icon152.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D9D8F1930823A00CBE191 /* Icon152.png */; };
+		B60D9D9C1930823A00CBE191 /* Launch5geniphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D9D901930823A00CBE191 /* Launch5geniphone.png */; };
+		B60D9D9D1930823A00CBE191 /* Launchipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D9D911930823A00CBE191 /* Launchipad.png */; };
+		B60D9D9E1930823A00CBE191 /* Launchipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D9D921930823A00CBE191 /* Launchipad@2x.png */; };
+		B60D9D9F1930823A00CBE191 /* Launchiphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D9D931930823A00CBE191 /* Launchiphone.png */; };
+		B60D9DA01930823A00CBE191 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D9D941930823A00CBE191 /* logo.png */; };
+		B60D9DA61930829E00CBE191 /* Champagne & Limousines Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B60D9DA21930829E00CBE191 /* Champagne & Limousines Bold Italic.ttf */; };
+		B60D9DA71930829E00CBE191 /* Champagne & Limousines Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B60D9DA31930829E00CBE191 /* Champagne & Limousines Bold.ttf */; };
+		B60D9DA81930829E00CBE191 /* Champagne & Limousines Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B60D9DA41930829E00CBE191 /* Champagne & Limousines Italic.ttf */; };
+		B60D9DA91930829E00CBE191 /* Champagne & Limousines.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B60D9DA51930829E00CBE191 /* Champagne & Limousines.ttf */; };
 		B643E7F7192F21C50062159A /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B643E7F6192F21C50062159A /* MainTableViewCell.xib */; };
 		B6DAB62A192738CE00649B99 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DAB628192738CE00649B99 /* MainViewController.m */; };
 		B6DAB62D192745B100649B99 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DAB62C192745B100649B99 /* MainViewController.storyboard */; };
@@ -38,6 +54,23 @@
 /* Begin PBXFileReference section */
 		B60D9D80192F29AE00CBE191 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
 		B60D9D81192F29AE00CBE191 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
+		B60D9D8419307D6500CBE191 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		B60D9D891930823A00CBE191 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		B60D9D8A1930823A00CBE191 /* Icon40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon40.png; sourceTree = "<group>"; };
+		B60D9D8B1930823A00CBE191 /* Icon60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon60.png; sourceTree = "<group>"; };
+		B60D9D8C1930823A00CBE191 /* Icon76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon76.png; sourceTree = "<group>"; };
+		B60D9D8D1930823A00CBE191 /* Icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon80.png; sourceTree = "<group>"; };
+		B60D9D8E1930823A00CBE191 /* Icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon120.png; sourceTree = "<group>"; };
+		B60D9D8F1930823A00CBE191 /* Icon152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon152.png; sourceTree = "<group>"; };
+		B60D9D901930823A00CBE191 /* Launch5geniphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Launch5geniphone.png; sourceTree = "<group>"; };
+		B60D9D911930823A00CBE191 /* Launchipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Launchipad.png; sourceTree = "<group>"; };
+		B60D9D921930823A00CBE191 /* Launchipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Launchipad@2x.png"; sourceTree = "<group>"; };
+		B60D9D931930823A00CBE191 /* Launchiphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Launchiphone.png; sourceTree = "<group>"; };
+		B60D9D941930823A00CBE191 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		B60D9DA21930829E00CBE191 /* Champagne & Limousines Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Champagne & Limousines Bold Italic.ttf"; sourceTree = "<group>"; };
+		B60D9DA31930829E00CBE191 /* Champagne & Limousines Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Champagne & Limousines Bold.ttf"; sourceTree = "<group>"; };
+		B60D9DA41930829E00CBE191 /* Champagne & Limousines Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Champagne & Limousines Italic.ttf"; sourceTree = "<group>"; };
+		B60D9DA51930829E00CBE191 /* Champagne & Limousines.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Champagne & Limousines.ttf"; sourceTree = "<group>"; };
 		B643E7F6192F21C50062159A /* MainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		B6DAB62019207D5E00649B99 /* StraightComfort-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StraightComfort-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DAB62119207D5E00649B99 /* StraightComfort-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StraightComfort-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +117,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B60D9D8319307CEF00CBE191 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B60D9D8419307D6500CBE191 /* Constants.h */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B60D9D871930816B00CBE191 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B60D9DA11930824900CBE191 /* Fonts */,
+				B60D9D881930818100CBE191 /* Original Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B60D9D881930818100CBE191 /* Original Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B60D9D891930823A00CBE191 /* Icon.png */,
+				B60D9D8A1930823A00CBE191 /* Icon40.png */,
+				B60D9D8B1930823A00CBE191 /* Icon60.png */,
+				B60D9D8C1930823A00CBE191 /* Icon76.png */,
+				B60D9D8D1930823A00CBE191 /* Icon80.png */,
+				B60D9D8E1930823A00CBE191 /* Icon120.png */,
+				B60D9D8F1930823A00CBE191 /* Icon152.png */,
+				B60D9D901930823A00CBE191 /* Launch5geniphone.png */,
+				B60D9D911930823A00CBE191 /* Launchipad.png */,
+				B60D9D921930823A00CBE191 /* Launchipad@2x.png */,
+				B60D9D931930823A00CBE191 /* Launchiphone.png */,
+				B60D9D941930823A00CBE191 /* logo.png */,
+			);
+			path = "Original Assets";
+			sourceTree = "<group>";
+		};
+		B60D9DA11930824900CBE191 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B60D9DA21930829E00CBE191 /* Champagne & Limousines Bold Italic.ttf */,
+				B60D9DA31930829E00CBE191 /* Champagne & Limousines Bold.ttf */,
+				B60D9DA41930829E00CBE191 /* Champagne & Limousines Italic.ttf */,
+				B60D9DA51930829E00CBE191 /* Champagne & Limousines.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		B6DAB624192088EB00649B99 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +205,8 @@
 				B6E8C83718C50DC400550D49 /* AppDelegate.h */,
 				B6E8C83818C50DC400550D49 /* AppDelegate.m */,
 				B6DAB624192088EB00649B99 /* MainViewController */,
+				B60D9D8319307CEF00CBE191 /* Utilities */,
+				B60D9D871930816B00CBE191 /* Resources */,
 				B6E8C83A18C50DC400550D49 /* Images.xcassets */,
 				B6E8C82F18C50DC400550D49 /* Supporting Files */,
 			);
@@ -235,10 +317,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B60D9D9F1930823A00CBE191 /* Launchiphone.png in Resources */,
+				B60D9D971930823A00CBE191 /* Icon60.png in Resources */,
+				B60D9D9B1930823A00CBE191 /* Icon152.png in Resources */,
+				B60D9DA81930829E00CBE191 /* Champagne & Limousines Italic.ttf in Resources */,
 				B6DAB62D192745B100649B99 /* MainViewController.storyboard in Resources */,
+				B60D9D9A1930823A00CBE191 /* Icon120.png in Resources */,
+				B60D9D9C1930823A00CBE191 /* Launch5geniphone.png in Resources */,
 				B6E8C83318C50DC400550D49 /* InfoPlist.strings in Resources */,
+				B60D9D991930823A00CBE191 /* Icon80.png in Resources */,
+				B60D9D981930823A00CBE191 /* Icon76.png in Resources */,
+				B60D9D961930823A00CBE191 /* Icon40.png in Resources */,
+				B60D9D951930823A00CBE191 /* Icon.png in Resources */,
 				B6E8C83B18C50DC400550D49 /* Images.xcassets in Resources */,
+				B60D9DA01930823A00CBE191 /* logo.png in Resources */,
+				B60D9D9E1930823A00CBE191 /* Launchipad@2x.png in Resources */,
 				B643E7F7192F21C50062159A /* MainTableViewCell.xib in Resources */,
+				B60D9DA91930829E00CBE191 /* Champagne & Limousines.ttf in Resources */,
+				B60D9D9D1930823A00CBE191 /* Launchipad.png in Resources */,
+				B60D9DA71930829E00CBE191 /* Champagne & Limousines Bold.ttf in Resources */,
+				B60D9DA61930829E00CBE191 /* Champagne & Limousines Bold Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

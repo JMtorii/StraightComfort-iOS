@@ -17,9 +17,6 @@
     NSArray *mHomeTitlesLine2;
 }
 
-//@synthesize line1;
-//@synthesize line2;
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -27,6 +24,10 @@
     // Initialize table data
     mHomeTitlesLine1 = [NSArray arrayWithObjects:@"FULL", @"WORKSTATION", @"DISCOMFORT", nil];
     mHomeTitlesLine2 = [NSArray arrayWithObjects:@"WORKSTATION SETUP", @"SHORTCUT", @"", nil];
+
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,7 +45,6 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // TURN THIS INTO A CONST
     return [mHomeTitlesLine1 count];
 }
 
@@ -59,12 +59,11 @@
     
     UILabel *line1 = (UILabel *)[cell viewWithTag:100];
     line1.text = [mHomeTitlesLine1 objectAtIndex:indexPath.row];
+    line1.font = [UIFont fontWithName:kChampagneLimousinesBold size:30];
     
     UILabel *line2 = (UILabel *)[cell viewWithTag:101];
     line2.text = [mHomeTitlesLine2 objectAtIndex:indexPath.row];
-    
-//    cell.textLabel.text = [mHomeTitles objectAtIndex:indexPath.row];
-//    cell.imageView.image = [UIImage imageNamed:@"creme_brelee.jpg"];
+    line2.font = [UIFont fontWithName:kChampagneLimousinesBold size:30];
     
     return cell;
 }
