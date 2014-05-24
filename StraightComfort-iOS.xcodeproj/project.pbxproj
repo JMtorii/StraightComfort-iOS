@@ -25,6 +25,7 @@
 		B60D9DA81930829E00CBE191 /* Champagne & Limousines Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B60D9DA41930829E00CBE191 /* Champagne & Limousines Italic.ttf */; };
 		B60D9DA91930829E00CBE191 /* Champagne & Limousines.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B60D9DA51930829E00CBE191 /* Champagne & Limousines.ttf */; };
 		B643E7F7192F21C50062159A /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B643E7F6192F21C50062159A /* MainTableViewCell.xib */; };
+		B6550D56193168FD00FAF97F /* MainViewNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6550D55193168FD00FAF97F /* MainViewNavigationController.m */; };
 		B6DAB62A192738CE00649B99 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DAB628192738CE00649B99 /* MainViewController.m */; };
 		B6DAB62D192745B100649B99 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DAB62C192745B100649B99 /* MainViewController.storyboard */; };
 		B6E8C82918C50DC400550D49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E8C82818C50DC400550D49 /* Foundation.framework */; };
@@ -72,6 +73,8 @@
 		B60D9DA41930829E00CBE191 /* Champagne & Limousines Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Champagne & Limousines Italic.ttf"; sourceTree = "<group>"; };
 		B60D9DA51930829E00CBE191 /* Champagne & Limousines.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Champagne & Limousines.ttf"; sourceTree = "<group>"; };
 		B643E7F6192F21C50062159A /* MainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		B6550D54193168FD00FAF97F /* MainViewNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewNavigationController.h; sourceTree = "<group>"; };
+		B6550D55193168FD00FAF97F /* MainViewNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewNavigationController.m; sourceTree = "<group>"; };
 		B6DAB62019207D5E00649B99 /* StraightComfort-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StraightComfort-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DAB62119207D5E00649B99 /* StraightComfort-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StraightComfort-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DAB627192738CE00649B99 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -164,6 +167,20 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		B6550D521931682A00FAF97F /* ShortcutViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ShortcutViewController;
+			sourceTree = "<group>";
+		};
+		B6550D531931685000FAF97F /* DiscomfortViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DiscomfortViewController;
+			sourceTree = "<group>";
+		};
 		B6DAB624192088EB00649B99 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +190,8 @@
 				B643E7F6192F21C50062159A /* MainTableViewCell.xib */,
 				B60D9D80192F29AE00CBE191 /* MainTableViewCell.h */,
 				B60D9D81192F29AE00CBE191 /* MainTableViewCell.m */,
+				B6550D54193168FD00FAF97F /* MainViewNavigationController.h */,
+				B6550D55193168FD00FAF97F /* MainViewNavigationController.m */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -205,6 +224,8 @@
 				B6E8C83718C50DC400550D49 /* AppDelegate.h */,
 				B6E8C83818C50DC400550D49 /* AppDelegate.m */,
 				B6DAB624192088EB00649B99 /* MainViewController */,
+				B6550D521931682A00FAF97F /* ShortcutViewController */,
+				B6550D531931685000FAF97F /* DiscomfortViewController */,
 				B60D9D8319307CEF00CBE191 /* Utilities */,
 				B60D9D871930816B00CBE191 /* Resources */,
 				B6E8C83A18C50DC400550D49 /* Images.xcassets */,
@@ -356,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6E8C83918C50DC400550D49 /* AppDelegate.m in Sources */,
+				B6550D56193168FD00FAF97F /* MainViewNavigationController.m in Sources */,
 				B6DAB62A192738CE00649B99 /* MainViewController.m in Sources */,
 				B60D9D82192F29AE00CBE191 /* MainTableViewCell.m in Sources */,
 				B6E8C83518C50DC400550D49 /* main.m in Sources */,
