@@ -15,6 +15,8 @@
 @implementation MainViewController {
     NSArray *mHomeTitlesLine1;
     NSArray *mHomeTitlesLine2;
+    UIStoryboard *mMainStoryboard;
+    UINavigationController *mNavController;
 }
 
 - (void)viewDidLoad
@@ -24,9 +26,9 @@
     // Initialize table data
     mHomeTitlesLine1 = [NSArray arrayWithObjects:@"FULL", @"WORKSTATION", @"DISCOMFORT", nil];
     mHomeTitlesLine2 = [NSArray arrayWithObjects:@"WORKSTATION SETUP", @"SHORTCUT", @"", nil];
-
-    NSShadow *shadow = [[NSShadow alloc] init];
-    shadow.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8];
+    
+    mMainStoryboard = [UIStoryboard storyboardWithName:@"MainViewController" bundle: nil];
+    mNavController = (UINavigationController*)[mMainStoryboard instantiateViewControllerWithIdentifier: @"MainViewNavigationController"];
     
 }
 
@@ -66,6 +68,14 @@
     line2.font = [UIFont fontWithName:kChampagneLimousinesBold size:30];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 0) {
+        
+    }
+    
 }
 
 

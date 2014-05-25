@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="458" y="-1003"/>
         </scene>
-        <!--Main View Navigation Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="kkt-LZ-Th0">
             <objects>
-                <navigationController definesPresentationContext="YES" id="2SR-VM-x9s" customClass="MainViewNavigationController" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MainViewNavigationController" definesPresentationContext="YES" id="2SR-VM-x9s" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0w4-8F-ogs">
                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -72,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="-76" y="-1004"/>
         </scene>
-        <!--View Controller-->
+        <!--Shortcut View Controller-->
         <scene sceneID="wlk-vd-Um7">
             <objects>
-                <viewController id="oIb-bB-Lwi" sceneMemberID="viewController">
+                <viewController id="oIb-bB-Lwi" customClass="ShortcutViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mma-J8-pbx"/>
                         <viewControllerLayoutGuide type="bottom" id="RXg-yP-sAe"/>
@@ -105,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mSE-oo-XZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-63" y="-328"/>
+            <point key="canvasLocation" x="-76" y="-324"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
