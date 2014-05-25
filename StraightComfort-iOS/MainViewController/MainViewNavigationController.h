@@ -6,6 +6,10 @@
 //  Copyright (c) 2014 Jun Torii. All rights reserved.
 //
 
+/**
+ * Not used
+ */
+
 #import <UIKit/UIKit.h>
 
 @interface MainViewNavigationController : UINavigationController

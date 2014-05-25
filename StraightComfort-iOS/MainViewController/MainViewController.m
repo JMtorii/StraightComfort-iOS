@@ -15,8 +15,7 @@
 @implementation MainViewController {
     NSArray *mHomeTitlesLine1;
     NSArray *mHomeTitlesLine2;
-    UIStoryboard *mMainStoryboard;
-    UINavigationController *mNavController;
+
 }
 
 - (void)viewDidLoad
@@ -26,10 +25,6 @@
     // Initialize table data
     mHomeTitlesLine1 = [NSArray arrayWithObjects:@"FULL", @"WORKSTATION", @"DISCOMFORT", nil];
     mHomeTitlesLine2 = [NSArray arrayWithObjects:@"WORKSTATION SETUP", @"SHORTCUT", @"", nil];
-    
-    mMainStoryboard = [UIStoryboard storyboardWithName:@"MainViewController" bundle: nil];
-    mNavController = (UINavigationController*)[mMainStoryboard instantiateViewControllerWithIdentifier: @"MainViewNavigationController"];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -73,7 +68,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0) {
+        ShortcutTableViewController *shortcutViewController = [[ShortcutTableViewController alloc]initWithNibName:@"ShortcutTableViewController" bundle:nil];
         
+        [[self navigationController] pushViewController:shortcutViewController animated:YES];
     }
     
 }

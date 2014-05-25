@@ -1,5 +1,5 @@
 //
-//  ShortcutViewController.h
+//  ShortcutTableViewController.h
 //  StraightComfort-iOS
 //
 //  Created by Jun Torii on 2014-05-24.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ShortcutViewController : UIViewController
+@interface ShortcutTableViewController : UITableViewController
 
 @end

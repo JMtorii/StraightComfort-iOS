@@ -75,7 +75,7 @@
         <!--Shortcut View Controller-->
         <scene sceneID="wlk-vd-Um7">
             <objects>
-                <viewController id="oIb-bB-Lwi" customClass="ShortcutViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShortcutViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oIb-bB-Lwi" customClass="ShortcutViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mma-J8-pbx"/>
                         <viewControllerLayoutGuide type="bottom" id="RXg-yP-sAe"/>

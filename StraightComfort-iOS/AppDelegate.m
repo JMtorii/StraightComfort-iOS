@@ -15,7 +15,10 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
                                                            [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0], NSForegroundColorAttributeName, [UIFont fontWithName:kChampagneLimousinesBold size:26.0], NSFontAttributeName, nil]];
-
+    
+    mainStoryboard = [UIStoryboard storyboardWithName:@"MainViewController" bundle: nil];
+    navController = (UINavigationController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"MainViewNavigationController"];
+    
     return YES;
 }
 
