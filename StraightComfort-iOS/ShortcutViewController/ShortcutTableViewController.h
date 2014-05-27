@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ShortcutTableViewCell.h"
 
 @interface ShortcutTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     NSArray *workstationShortcutArray;

@@ -10,4 +10,7 @@
 
 @interface ShortcutTableViewCell : UITableViewCell
 
+@property (nonatomic, weak) IBOutlet UILabel *shorcutTitleLabel;
+@property (nonatomic, weak) IBOutlet UIImageView *thumbnailImageView;
+
 @end

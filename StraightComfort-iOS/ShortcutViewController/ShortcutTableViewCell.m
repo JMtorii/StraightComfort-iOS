@@ -10,6 +10,9 @@
 
 @implementation ShortcutTableViewCell
 
+@synthesize shorcutTitleLabel = _shortcutTitleLabel;
+@synthesize thumbnailImageView = _thumbnailImageView;
+
 - (void)awakeFromNib
 {
     // Initialization code

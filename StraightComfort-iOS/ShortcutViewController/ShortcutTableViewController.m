@@ -46,19 +46,24 @@
     return [workstationShortcutArray count];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 100;
+}
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *tableIdentifier = @"ShortcutTableViewCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tableIdentifier];
+    ShortcutTableViewCell *cell = (ShortcutTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableIdentifier];
     
     // Configure the cell...
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:tableIdentifier];
-    }
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:tableIdentifier owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    } 
     
-    cell.textLabel.text = [workstationShortcutArray objectAtIndex:indexPath.row];
+    cell.shorcutTitleLabel.text = [workstationShortcutArray objectAtIndex:indexPath.row];
     
     return cell;
 }
