@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ShortcutTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource> {
+@interface ShortcutTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     NSArray *workstationShortcutArray;
 }
 
