@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Constants.h"
 #import "ShortcutTableViewController.h"
+#import "DiscomfortTableViewController.h"
 #import "AppDelegate.h"
 
 /**
@@ -17,7 +18,10 @@
  * view controller. The MainTableViewCell and MainViewNavigationController class are not used.
  */
 
-@interface MainViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+@interface MainViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource> {
+    NSArray *mHomeTitlesLine1;
+    NSArray *mHomeTitlesLine2;
+}
 
 
 @end

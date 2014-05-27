@@ -1,18 +1,18 @@
 //
-//  ShortcutTableViewController.m
+//  DiscomfortTableViewController.m
 //  StraightComfort-iOS
 //
-//  Created by Jun Torii on 2014-05-24.
+//  Created by Mark Torii on 5/26/14.
 //  Copyright (c) 2014 Jun Torii. All rights reserved.
 //
 
-#import "ShortcutTableViewController.h"
+#import "DiscomfortTableViewController.h"
 
-@interface ShortcutTableViewController ()
+@interface DiscomfortTableViewController ()
 
 @end
 
-@implementation ShortcutTableViewController
+@implementation DiscomfortTableViewController
 
 - (void)viewDidLoad
 {
@@ -35,12 +35,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return 0;
 }

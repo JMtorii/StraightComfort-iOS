@@ -12,11 +12,7 @@
 
 @end
 
-@implementation MainViewController {
-    NSArray *mHomeTitlesLine1;
-    NSArray *mHomeTitlesLine2;
-
-}
+@implementation MainViewController
 
 - (void)viewDidLoad
 {
@@ -67,12 +63,19 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    UITableViewController *viewController;
+    
     if (indexPath.row == 0) {
-        ShortcutTableViewController *shortcutViewController = [[ShortcutTableViewController alloc]initWithNibName:@"ShortcutTableViewController" bundle:nil];
         
-        [[self navigationController] pushViewController:shortcutViewController animated:YES];
+        
+    } else if (indexPath.row == 1) {
+        viewController = [[ShortcutTableViewController alloc]initWithNibName:@"ShortcutTableViewController" bundle:nil];
+        
+    } else {
+        viewController = [[DiscomfortTableViewController alloc]initWithNibName:@"DiscomfortTableViewController" bundle:nil];
     }
     
+    [[self navigationController] pushViewController:viewController animated:YES];
 }
 
 

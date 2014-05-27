@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2E420340-2B73-445F-8470-399DC2EB06AB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>StraightComfort-iOS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>205B1412-3782-449A-9F5D-E6DDCA21AA96</key>
+		<string>https://github.com/JMtorii/StraightComfort-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>StraightComfort-iOS.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>205B1412-3782-449A-9F5D-E6DDCA21AA96</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/JMtorii/StraightComfort-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>205B1412-3782-449A-9F5D-E6DDCA21AA96</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>205B1412-3782-449A-9F5D-E6DDCA21AA96</string>
+			<key>IDESourceControlWCCName</key>
+			<string>StraightComfort-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

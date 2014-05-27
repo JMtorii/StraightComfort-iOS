@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E339C05193403D700B9BDE3 /* DiscomfortTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E339C03193403D700B9BDE3 /* DiscomfortTableViewController.m */; };
+		4E339C06193403D700B9BDE3 /* DiscomfortTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E339C04193403D700B9BDE3 /* DiscomfortTableViewController.xib */; };
 		B60D9D82192F29AE00CBE191 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60D9D81192F29AE00CBE191 /* MainTableViewCell.m */; };
 		B60D9D951930823A00CBE191 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D9D891930823A00CBE191 /* Icon.png */; };
 		B60D9D961930823A00CBE191 /* Icon40.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D9D8A1930823A00CBE191 /* Icon40.png */; };
@@ -55,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E339C02193403D700B9BDE3 /* DiscomfortTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiscomfortTableViewController.h; path = "StraightComfort-iOS/DiscomfortTableViewController/DiscomfortTableViewController.h"; sourceTree = SOURCE_ROOT; };
+		4E339C03193403D700B9BDE3 /* DiscomfortTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiscomfortTableViewController.m; path = "StraightComfort-iOS/DiscomfortTableViewController/DiscomfortTableViewController.m"; sourceTree = SOURCE_ROOT; };
+		4E339C04193403D700B9BDE3 /* DiscomfortTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DiscomfortTableViewController.xib; path = "StraightComfort-iOS/DiscomfortTableViewController/DiscomfortTableViewController.xib"; sourceTree = SOURCE_ROOT; };
 		B60D9D80192F29AE00CBE191 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
 		B60D9D81192F29AE00CBE191 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
 		B60D9D8419307D6500CBE191 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -172,21 +177,25 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		B6550D521931682A00FAF97F /* ShortcutViewController */ = {
+		B6550D521931682A00FAF97F /* ShortcutTableViewController */ = {
 			isa = PBXGroup;
 			children = (
 				B6550D5E19317EA400FAF97F /* ShortcutTableViewController.h */,
 				B6550D5F19317EA400FAF97F /* ShortcutTableViewController.m */,
 				B6550D6019317EA400FAF97F /* ShortcutTableViewController.xib */,
 			);
+			name = ShortcutTableViewController;
 			path = ShortcutViewController;
 			sourceTree = "<group>";
 		};
-		B6550D531931685000FAF97F /* DiscomfortViewController */ = {
+		B6550D531931685000FAF97F /* DiscomfortTableViewController */ = {
 			isa = PBXGroup;
 			children = (
+				4E339C02193403D700B9BDE3 /* DiscomfortTableViewController.h */,
+				4E339C03193403D700B9BDE3 /* DiscomfortTableViewController.m */,
+				4E339C04193403D700B9BDE3 /* DiscomfortTableViewController.xib */,
 			);
-			path = DiscomfortViewController;
+			path = DiscomfortTableViewController;
 			sourceTree = "<group>";
 		};
 		B6DAB624192088EB00649B99 /* MainViewController */ = {
@@ -232,8 +241,8 @@
 				B6E8C83718C50DC400550D49 /* AppDelegate.h */,
 				B6E8C83818C50DC400550D49 /* AppDelegate.m */,
 				B6DAB624192088EB00649B99 /* MainViewController */,
-				B6550D521931682A00FAF97F /* ShortcutViewController */,
-				B6550D531931685000FAF97F /* DiscomfortViewController */,
+				B6550D521931682A00FAF97F /* ShortcutTableViewController */,
+				B6550D531931685000FAF97F /* DiscomfortTableViewController */,
 				B60D9D8319307CEF00CBE191 /* Utilities */,
 				B60D9D871930816B00CBE191 /* Resources */,
 				B6E8C83A18C50DC400550D49 /* Images.xcassets */,
@@ -363,6 +372,7 @@
 				B60D9DA01930823A00CBE191 /* logo.png in Resources */,
 				B60D9D9E1930823A00CBE191 /* Launchipad@2x.png in Resources */,
 				B643E7F7192F21C50062159A /* MainTableViewCell.xib in Resources */,
+				4E339C06193403D700B9BDE3 /* DiscomfortTableViewController.xib in Resources */,
 				B60D9DA91930829E00CBE191 /* Champagne & Limousines.ttf in Resources */,
 				B60D9D9D1930823A00CBE191 /* Launchipad.png in Resources */,
 				B60D9DA71930829E00CBE191 /* Champagne & Limousines Bold.ttf in Resources */,
@@ -385,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E339C05193403D700B9BDE3 /* DiscomfortTableViewController.m in Sources */,
 				B6E8C83918C50DC400550D49 /* AppDelegate.m in Sources */,
 				B6550D6119317EA400FAF97F /* ShortcutTableViewController.m in Sources */,
 				B6550D56193168FD00FAF97F /* MainViewNavigationController.m in Sources */,
