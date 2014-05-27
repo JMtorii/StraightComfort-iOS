@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4E339C05193403D700B9BDE3 /* DiscomfortTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E339C03193403D700B9BDE3 /* DiscomfortTableViewController.m */; };
 		4E339C06193403D700B9BDE3 /* DiscomfortTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E339C04193403D700B9BDE3 /* DiscomfortTableViewController.xib */; };
-		4E339C10193426E900B9BDE3 /* ShortcutTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E339C0F193426E900B9BDE3 /* ShortcutTableViewController.storyboard */; };
+		4E339C14193431D200B9BDE3 /* ShortcutTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E339C13193431D200B9BDE3 /* ShortcutTableViewController.storyboard */; };
 		B60D9D82192F29AE00CBE191 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60D9D81192F29AE00CBE191 /* MainTableViewCell.m */; };
 		B60D9D951930823A00CBE191 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D9D891930823A00CBE191 /* Icon.png */; };
 		B60D9D961930823A00CBE191 /* Icon40.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D9D8A1930823A00CBE191 /* Icon40.png */; };
@@ -60,7 +60,7 @@
 		4E339C02193403D700B9BDE3 /* DiscomfortTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiscomfortTableViewController.h; path = "StraightComfort-iOS/DiscomfortTableViewController/DiscomfortTableViewController.h"; sourceTree = SOURCE_ROOT; };
 		4E339C03193403D700B9BDE3 /* DiscomfortTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiscomfortTableViewController.m; path = "StraightComfort-iOS/DiscomfortTableViewController/DiscomfortTableViewController.m"; sourceTree = SOURCE_ROOT; };
 		4E339C04193403D700B9BDE3 /* DiscomfortTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DiscomfortTableViewController.xib; path = "StraightComfort-iOS/DiscomfortTableViewController/DiscomfortTableViewController.xib"; sourceTree = SOURCE_ROOT; };
-		4E339C0F193426E900B9BDE3 /* ShortcutTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShortcutTableViewController.storyboard; sourceTree = "<group>"; };
+		4E339C13193431D200B9BDE3 /* ShortcutTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShortcutTableViewController.storyboard; sourceTree = "<group>"; };
 		B60D9D80192F29AE00CBE191 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
 		B60D9D81192F29AE00CBE191 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
 		B60D9D8419307D6500CBE191 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 			children = (
 				B6550D5E19317EA400FAF97F /* ShortcutTableViewController.h */,
 				B6550D5F19317EA400FAF97F /* ShortcutTableViewController.m */,
-				4E339C0F193426E900B9BDE3 /* ShortcutTableViewController.storyboard */,
+				4E339C13193431D200B9BDE3 /* ShortcutTableViewController.storyboard */,
 			);
 			name = ShortcutTableViewController;
 			path = ShortcutViewController;
@@ -367,9 +367,9 @@
 				B60D9D981930823A00CBE191 /* Icon76.png in Resources */,
 				B60D9D961930823A00CBE191 /* Icon40.png in Resources */,
 				B60D9D951930823A00CBE191 /* Icon.png in Resources */,
+				4E339C14193431D200B9BDE3 /* ShortcutTableViewController.storyboard in Resources */,
 				B6E8C83B18C50DC400550D49 /* Images.xcassets in Resources */,
 				B60D9DA01930823A00CBE191 /* logo.png in Resources */,
-				4E339C10193426E900B9BDE3 /* ShortcutTableViewController.storyboard in Resources */,
 				B60D9D9E1930823A00CBE191 /* Launchipad@2x.png in Resources */,
 				B643E7F7192F21C50062159A /* MainTableViewCell.xib in Resources */,
 				4E339C06193403D700B9BDE3 /* DiscomfortTableViewController.xib in Resources */,
