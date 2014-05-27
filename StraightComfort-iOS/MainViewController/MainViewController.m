@@ -19,14 +19,13 @@
     [super viewDidLoad];
     
     // Initialize table data
-    mHomeTitlesLine1 = [NSArray arrayWithObjects:@"FULL", @"WORKSTATION", @"DISCOMFORT", nil];
-    mHomeTitlesLine2 = [NSArray arrayWithObjects:@"WORKSTATION SETUP", @"SHORTCUT", @"", nil];
+    homeTitlesLine1 = [NSArray arrayWithObjects:@"FULL", @"WORKSTATION", @"DISCOMFORT", nil];
+    homeTitlesLine2 = [NSArray arrayWithObjects:@"WORKSTATION SETUP", @"SHORTCUT", @"", nil];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
@@ -38,7 +37,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [mHomeTitlesLine1 count];
+    return [homeTitlesLine1 count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -51,15 +50,18 @@
     }
     
     UILabel *line1 = (UILabel *)[cell viewWithTag:100];
-    line1.text = [mHomeTitlesLine1 objectAtIndex:indexPath.row];
+    line1.text = [homeTitlesLine1 objectAtIndex:indexPath.row];
     line1.font = [UIFont fontWithName:kChampagneLimousinesBold size:30];
     
     UILabel *line2 = (UILabel *)[cell viewWithTag:101];
-    line2.text = [mHomeTitlesLine2 objectAtIndex:indexPath.row];
+    line2.text = [homeTitlesLine2 objectAtIndex:indexPath.row];
     line2.font = [UIFont fontWithName:kChampagneLimousinesBold size:30];
     
     return cell;
 }
+
+
+#pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {

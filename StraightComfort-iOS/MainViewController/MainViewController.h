@@ -19,8 +19,8 @@
  */
 
 @interface MainViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource> {
-    NSArray *mHomeTitlesLine1;
-    NSArray *mHomeTitlesLine2;
+    NSArray *homeTitlesLine1;
+    NSArray *homeTitlesLine2;
 }
 
 
