@@ -17,6 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.title = @"Workstation Shortcut";
     workstationShortcutArray = [NSArray arrayWithObjects:@"CHAIR", @"KEYBOARD AND MOUSE", @"MONITOR", nil];
     
     // Uncomment the following line to preserve selection between presentations.
@@ -48,7 +49,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 100;
+    return 90;
 }
 
 
@@ -64,6 +65,8 @@
     } 
     
     cell.shorcutTitleLabel.text = [workstationShortcutArray objectAtIndex:indexPath.row];
+    cell.shorcutTitleLabel.textColor = [UIColor colorWithRed:15.0/255.0 green:153.0/255.0 blue:255.0/255.0 alpha:1.0];
+    cell.shorcutTitleLabel.font = [UIFont fontWithName:kChampagneLimousinesBold size:24];
     
     return cell;
 }
