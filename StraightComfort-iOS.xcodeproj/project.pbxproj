@@ -46,6 +46,9 @@
 		B6FF5541193448D400B9324D /* ShortcutTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6FF5540193448D400B9324D /* ShortcutTableViewController.xib */; };
 		B6FF55451934503A00B9324D /* ShortcutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF55431934503A00B9324D /* ShortcutTableViewCell.m */; };
 		B6FF55461934503A00B9324D /* ShortcutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6FF55441934503A00B9324D /* ShortcutTableViewCell.xib */; };
+		B6FF55481938533900B9324D /* chair.png in Resources */ = {isa = PBXBuildFile; fileRef = B6FF55471938533900B9324D /* chair.png */; };
+		B6FF554A1938570300B9324D /* fancyChair.png in Resources */ = {isa = PBXBuildFile; fileRef = B6FF55491938570300B9324D /* fancyChair.png */; };
+		B6FF554D1938573900B9324D /* fancyChair.ai in Resources */ = {isa = PBXBuildFile; fileRef = B6FF554C1938573900B9324D /* fancyChair.ai */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +112,9 @@
 		B6FF55421934503A00B9324D /* ShortcutTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortcutTableViewCell.h; sourceTree = "<group>"; };
 		B6FF55431934503A00B9324D /* ShortcutTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShortcutTableViewCell.m; sourceTree = "<group>"; };
 		B6FF55441934503A00B9324D /* ShortcutTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShortcutTableViewCell.xib; sourceTree = "<group>"; };
+		B6FF55471938533900B9324D /* chair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chair.png; sourceTree = "<group>"; };
+		B6FF55491938570300B9324D /* fancyChair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fancyChair.png; sourceTree = "<group>"; };
+		B6FF554C1938573900B9324D /* fancyChair.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fancyChair.ai; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,9 @@
 		B60D9D881930818100CBE191 /* Original Assets */ = {
 			isa = PBXGroup;
 			children = (
+				B6FF554B1938570B00B9324D /* Vector Assets */,
+				B6FF55491938570300B9324D /* fancyChair.png */,
+				B6FF55471938533900B9324D /* chair.png */,
 				B60D9D891930823A00CBE191 /* Icon.png */,
 				B60D9D8A1930823A00CBE191 /* Icon40.png */,
 				B60D9D8B1930823A00CBE191 /* Icon60.png */,
@@ -288,6 +297,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B6FF554B1938570B00B9324D /* Vector Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B6FF554C1938573900B9324D /* fancyChair.ai */,
+			);
+			path = "Vector Assets";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -366,6 +383,7 @@
 				B60D9D9F1930823A00CBE191 /* Launchiphone.png in Resources */,
 				B60D9D971930823A00CBE191 /* Icon60.png in Resources */,
 				B60D9D9B1930823A00CBE191 /* Icon152.png in Resources */,
+				B6FF55481938533900B9324D /* chair.png in Resources */,
 				B60D9DA81930829E00CBE191 /* Champagne & Limousines Italic.ttf in Resources */,
 				B6DAB62D192745B100649B99 /* MainViewController.storyboard in Resources */,
 				B60D9D9A1930823A00CBE191 /* Icon120.png in Resources */,
@@ -377,6 +395,8 @@
 				B60D9D981930823A00CBE191 /* Icon76.png in Resources */,
 				B60D9D961930823A00CBE191 /* Icon40.png in Resources */,
 				B60D9D951930823A00CBE191 /* Icon.png in Resources */,
+				B6FF554D1938573900B9324D /* fancyChair.ai in Resources */,
+				B6FF554A1938570300B9324D /* fancyChair.png in Resources */,
 				B6E8C83B18C50DC400550D49 /* Images.xcassets in Resources */,
 				B60D9DA01930823A00CBE191 /* logo.png in Resources */,
 				B60D9D9E1930823A00CBE191 /* Launchipad@2x.png in Resources */,
