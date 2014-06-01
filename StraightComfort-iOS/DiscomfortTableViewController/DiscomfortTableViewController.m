@@ -53,7 +53,7 @@
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return @"TITLE";
+    return @"UPPER BODY";
 }
 
 
