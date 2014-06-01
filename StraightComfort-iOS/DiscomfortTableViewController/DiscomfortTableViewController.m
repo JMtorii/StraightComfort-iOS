@@ -11,12 +11,15 @@
 @implementation DiscomfortTableViewController
 
 @synthesize analyzeButton = _analyzeButton;
+@synthesize tableView = _tableView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.navigationItem.title = @"Discomfort";
     
+    //
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -46,13 +49,13 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 90;
+    return 50;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *tableIdentifier = @"ShortcutTableViewCell";
+    static NSString *tableIdentifier = @"DiscomfortTableViewCell";
     DiscomfortTableViewCell *cell = (DiscomfortTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableIdentifier];
     
     // Configure the cell...

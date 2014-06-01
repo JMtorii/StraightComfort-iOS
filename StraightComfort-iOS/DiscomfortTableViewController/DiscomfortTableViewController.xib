@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiscomfortTableViewController">
             <connections>
                 <outlet property="analyzeButton" destination="pCC-gZ-ReP" id="UkH-Pa-RSp"/>
+                <outlet property="tableView" destination="4kk-4w-Pu0" id="clI-Zs-3Cp"/>
                 <outlet property="view" destination="E21-D8-MCx" id="pG9-fv-hp0"/>
             </connections>
         </placeholder>
@@ -26,7 +27,7 @@
                     </state>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4kk-4w-Pu0">
-                    <rect key="frame" x="0.0" y="68" width="320" height="435"/>
+                    <rect key="frame" x="0.0" y="65" width="320" height="438"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
