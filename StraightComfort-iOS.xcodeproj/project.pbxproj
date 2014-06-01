@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E065E7D193A7D1C00A70377 /* chair.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4E065E7C193A7D1C00A70377 /* chair.ai */; };
+		4E065E85193A865400A70377 /* chair.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E065E84193A865400A70377 /* chair.png */; };
 		4E339C05193403D700B9BDE3 /* DiscomfortTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E339C03193403D700B9BDE3 /* DiscomfortTableViewController.m */; };
 		4E339C06193403D700B9BDE3 /* DiscomfortTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E339C04193403D700B9BDE3 /* DiscomfortTableViewController.xib */; };
 		B60D9D82192F29AE00CBE191 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60D9D81192F29AE00CBE191 /* MainTableViewCell.m */; };
@@ -46,8 +48,6 @@
 		B6FF5541193448D400B9324D /* ShortcutTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6FF5540193448D400B9324D /* ShortcutTableViewController.xib */; };
 		B6FF55451934503A00B9324D /* ShortcutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FF55431934503A00B9324D /* ShortcutTableViewCell.m */; };
 		B6FF55461934503A00B9324D /* ShortcutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6FF55441934503A00B9324D /* ShortcutTableViewCell.xib */; };
-		B6FF55481938533900B9324D /* chair.png in Resources */ = {isa = PBXBuildFile; fileRef = B6FF55471938533900B9324D /* chair.png */; };
-		B6FF554A1938570300B9324D /* fancyChair.png in Resources */ = {isa = PBXBuildFile; fileRef = B6FF55491938570300B9324D /* fancyChair.png */; };
 		B6FF554D1938573900B9324D /* fancyChair.ai in Resources */ = {isa = PBXBuildFile; fileRef = B6FF554C1938573900B9324D /* fancyChair.ai */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E065E7C193A7D1C00A70377 /* chair.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chair.ai; sourceTree = "<group>"; };
+		4E065E84193A865400A70377 /* chair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chair.png; sourceTree = "<group>"; };
 		4E339C02193403D700B9BDE3 /* DiscomfortTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiscomfortTableViewController.h; path = "StraightComfort-iOS/DiscomfortTableViewController/DiscomfortTableViewController.h"; sourceTree = SOURCE_ROOT; };
 		4E339C03193403D700B9BDE3 /* DiscomfortTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiscomfortTableViewController.m; path = "StraightComfort-iOS/DiscomfortTableViewController/DiscomfortTableViewController.m"; sourceTree = SOURCE_ROOT; };
 		4E339C04193403D700B9BDE3 /* DiscomfortTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DiscomfortTableViewController.xib; path = "StraightComfort-iOS/DiscomfortTableViewController/DiscomfortTableViewController.xib"; sourceTree = SOURCE_ROOT; };
@@ -112,8 +114,6 @@
 		B6FF55421934503A00B9324D /* ShortcutTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortcutTableViewCell.h; sourceTree = "<group>"; };
 		B6FF55431934503A00B9324D /* ShortcutTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShortcutTableViewCell.m; sourceTree = "<group>"; };
 		B6FF55441934503A00B9324D /* ShortcutTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShortcutTableViewCell.xib; sourceTree = "<group>"; };
-		B6FF55471938533900B9324D /* chair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chair.png; sourceTree = "<group>"; };
-		B6FF55491938570300B9324D /* fancyChair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fancyChair.png; sourceTree = "<group>"; };
 		B6FF554C1938573900B9324D /* fancyChair.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fancyChair.ai; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,8 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				B6FF554B1938570B00B9324D /* Vector Assets */,
-				B6FF55491938570300B9324D /* fancyChair.png */,
-				B6FF55471938533900B9324D /* chair.png */,
 				B60D9D891930823A00CBE191 /* Icon.png */,
 				B60D9D8A1930823A00CBE191 /* Icon40.png */,
 				B60D9D8B1930823A00CBE191 /* Icon60.png */,
@@ -171,6 +169,7 @@
 				B60D9D8D1930823A00CBE191 /* Icon80.png */,
 				B60D9D8E1930823A00CBE191 /* Icon120.png */,
 				B60D9D8F1930823A00CBE191 /* Icon152.png */,
+				4E065E84193A865400A70377 /* chair.png */,
 				B60D9D901930823A00CBE191 /* Launch5geniphone.png */,
 				B60D9D911930823A00CBE191 /* Launchipad.png */,
 				B60D9D921930823A00CBE191 /* Launchipad@2x.png */,
@@ -300,6 +299,7 @@
 		B6FF554B1938570B00B9324D /* Vector Assets */ = {
 			isa = PBXGroup;
 			children = (
+				4E065E7C193A7D1C00A70377 /* chair.ai */,
 				B6FF554C1938573900B9324D /* fancyChair.ai */,
 			);
 			path = "Vector Assets";
@@ -383,7 +383,6 @@
 				B60D9D9F1930823A00CBE191 /* Launchiphone.png in Resources */,
 				B60D9D971930823A00CBE191 /* Icon60.png in Resources */,
 				B60D9D9B1930823A00CBE191 /* Icon152.png in Resources */,
-				B6FF55481938533900B9324D /* chair.png in Resources */,
 				B60D9DA81930829E00CBE191 /* Champagne & Limousines Italic.ttf in Resources */,
 				B6DAB62D192745B100649B99 /* MainViewController.storyboard in Resources */,
 				B60D9D9A1930823A00CBE191 /* Icon120.png in Resources */,
@@ -396,8 +395,9 @@
 				B60D9D961930823A00CBE191 /* Icon40.png in Resources */,
 				B60D9D951930823A00CBE191 /* Icon.png in Resources */,
 				B6FF554D1938573900B9324D /* fancyChair.ai in Resources */,
-				B6FF554A1938570300B9324D /* fancyChair.png in Resources */,
+				4E065E7D193A7D1C00A70377 /* chair.ai in Resources */,
 				B6E8C83B18C50DC400550D49 /* Images.xcassets in Resources */,
+				4E065E85193A865400A70377 /* chair.png in Resources */,
 				B60D9DA01930823A00CBE191 /* logo.png in Resources */,
 				B60D9D9E1930823A00CBE191 /* Launchipad@2x.png in Resources */,
 				B643E7F7192F21C50062159A /* MainTableViewCell.xib in Resources */,

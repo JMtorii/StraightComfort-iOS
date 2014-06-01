@@ -68,7 +68,7 @@
     cell.shorcutTitleLabel.textColor = [UIColor colorWithRed:15.0/255.0 green:153.0/255.0 blue:255.0/255.0 alpha:1.0];
     cell.shorcutTitleLabel.font = [UIFont fontWithName:kChampagneLimousinesBold size:24];
     
-    UIImage *image = [UIImage imageNamed: @"fancyChair.png"];
+    UIImage *image = [UIImage imageNamed: @"chair.png"];
     cell.thumbnailImageView.image = image;
     
     return cell;
