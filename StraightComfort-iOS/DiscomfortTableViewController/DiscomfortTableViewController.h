@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Constants.h"
+#import "DiscomfortTableViewCell.h"
 
-@interface DiscomfortTableViewController : UITableViewController
+@interface DiscomfortTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+}
+
+@property (nonatomic, weak) IBOutlet UIButton *analyzeButton;
 
 @end

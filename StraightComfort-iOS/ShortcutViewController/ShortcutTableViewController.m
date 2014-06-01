@@ -8,10 +8,6 @@
 
 #import "ShortcutTableViewController.h"
 
-@interface ShortcutTableViewController ()
-
-@end
-
 @implementation ShortcutTableViewController
 
 - (void)viewDidLoad
