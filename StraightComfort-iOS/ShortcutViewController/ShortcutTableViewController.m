@@ -14,7 +14,7 @@
 {
     [super viewDidLoad];
     self.navigationItem.title = @"Workstation Shortcut";
-    workstationShortcutArray = [NSArray arrayWithObjects:@"CHAIR", @"KEYBOARD AND MOUSE", @"MONITOR", nil];
+    workstationShortcutArray = [NSArray arrayWithObjects:@"CHAIR", @"KEYBOARD TRAY", @"MOUSE", @"MONITOR", @"DOCUMENTS", @"WORK AREA & STORAGE", nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

@@ -11,5 +11,3 @@
 #define kChampagneLimousinesBold @"Champagne&Limousines-Bold"
 #define kChampagneLimousinesItalic @"Champagne&Limousines-Italic"
 #define kChampagneLimousinesBoldItalic @"Champagne&Limousines-BoldItalic"
-
-

@@ -11,6 +11,7 @@
 #import "DiscomfortTableViewCell.h"
 
 @interface DiscomfortTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+    NSArray *discomfortArray;
 }
 
 @property (nonatomic, weak) IBOutlet UIButton *analyzeButton;
