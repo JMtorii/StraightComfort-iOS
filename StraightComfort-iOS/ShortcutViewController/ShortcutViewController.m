@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Jun Torii. All rights reserved.
 //
 
-#import "ShortcutTableViewController.h"
+#import "ShortcutViewController.h"
 
-@implementation ShortcutTableViewController
+@implementation ShortcutViewController
 
 - (void)viewDidLoad
 {

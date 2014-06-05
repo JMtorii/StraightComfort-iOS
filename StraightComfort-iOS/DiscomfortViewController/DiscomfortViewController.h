@@ -10,7 +10,7 @@
 #import "Constants.h"
 #import "DiscomfortTableViewCell.h"
 
-@interface DiscomfortTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+@interface DiscomfortViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     NSArray *discomfortArray;
 }
 

@@ -67,10 +67,10 @@
         
         
     } else if (indexPath.row == 1) {
-        viewController = [[ShortcutTableViewController alloc]initWithNibName:@"ShortcutTableViewController" bundle:nil];
+        viewController = [[ShortcutViewController alloc]initWithNibName:@"ShortcutViewController" bundle:nil];
         
     } else {
-        viewController = [[DiscomfortTableViewController alloc]initWithNibName:@"DiscomfortTableViewController" bundle:nil];
+        viewController = [[DiscomfortViewController alloc]initWithNibName:@"DiscomfortTableViewController" bundle:nil];
     }
     
     [[self navigationController] pushViewController:viewController animated:YES];

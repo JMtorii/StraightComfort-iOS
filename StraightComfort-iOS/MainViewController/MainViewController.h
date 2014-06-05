@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "Constants.h"
-#import "ShortcutTableViewController.h"
-#import "DiscomfortTableViewController.h"
+#import "ShortcutViewController.h"
+#import "DiscomfortViewController.h"
 #import "AppDelegate.h"
 
 /**

@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Jun Torii. All rights reserved.
 //
 
-#import "DiscomfortTableViewController.h"
+#import "DiscomfortViewController.h"
 
-@implementation DiscomfortTableViewController
+@implementation DiscomfortViewController
 
 @synthesize analyzeButton = _analyzeButton;
 @synthesize tableView = _tableView;

@@ -10,7 +10,7 @@
 #import "ShortcutTableViewCell.h"
 #import "Constants.h"
 
-@interface ShortcutTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+@interface ShortcutViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     NSArray *workstationShortcutArray;
 }
 
