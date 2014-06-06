@@ -17,4 +17,6 @@
 @property (nonatomic, weak) IBOutlet UIButton *analyzeButton;
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 
+- (IBAction)myButtonPressed:(id)sender;
+
 @end
