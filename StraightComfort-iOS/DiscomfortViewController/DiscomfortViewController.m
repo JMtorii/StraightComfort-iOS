@@ -20,6 +20,12 @@
     discomfortArray = [NSArray arrayWithObjects:@"NECK", @"UPPER BACK", @"LOWER BACK", @"WRISTS", @"LEGS", nil];
 
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    self.tableView.scrollEnabled = false;
+    
+    [self.analyzeButton addTarget:self action:@selector(analyzeButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -66,11 +72,13 @@
     cell.discomfortTitle.text = [discomfortArray objectAtIndex:indexPath.row];
     cell.discomfortTitle.textColor = [UIColor colorWithRed:15.0/255.0 green:153.0/255.0 blue:255.0/255.0 alpha:1.0];
     cell.discomfortTitle.font = [UIFont fontWithName:kChampagneLimousinesBold size:24];
-    
     return cell;
 }
 
-- (IBAction)myButtonPressed:(id)sender {
+- (IBAction)analyzeButtonPressed:(id)sender {
+    NSLog(@"myButtonPressed");
+    UIViewController *possibleSolutionViewController = [[PossibleSolutionViewController alloc]initWithNibName:@"PossibleSolutionViewController" bundle:nil];;
+    [[self navigationController] pushViewController:possibleSolutionViewController animated:YES];
 }
 
 

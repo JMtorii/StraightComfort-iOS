@@ -61,7 +61,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewController *viewController;
+    UIViewController *viewController;
     
     if (indexPath.row == 0) {
         

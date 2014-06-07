@@ -38,6 +38,8 @@
 		B6AE72AF19404F4400FBFB5E /* ShortcutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72AA19404F4400FBFB5E /* ShortcutTableViewCell.xib */; };
 		B6AE72B019404F4400FBFB5E /* ShortcutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72AB19404F4400FBFB5E /* ShortcutViewController.xib */; };
 		B6AE72B119404F4400FBFB5E /* ShortcutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE72AD19404F4400FBFB5E /* ShortcutViewController.m */; };
+		B6AE72B51942F1BE00FBFB5E /* PossibleSolutionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE72B31942F1BE00FBFB5E /* PossibleSolutionTableViewCell.m */; };
+		B6AE72B61942F1BE00FBFB5E /* PossibleSolutionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72B41942F1BE00FBFB5E /* PossibleSolutionTableViewCell.xib */; };
 		B6DAB62A192738CE00649B99 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DAB628192738CE00649B99 /* MainViewController.m */; };
 		B6DAB62D192745B100649B99 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DAB62C192745B100649B99 /* MainViewController.storyboard */; };
 		B6E8C82918C50DC400550D49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E8C82818C50DC400550D49 /* Foundation.framework */; };
@@ -105,6 +107,9 @@
 		B6AE72AB19404F4400FBFB5E /* ShortcutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShortcutViewController.xib; sourceTree = "<group>"; };
 		B6AE72AC19404F4400FBFB5E /* ShortcutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortcutViewController.h; sourceTree = "<group>"; };
 		B6AE72AD19404F4400FBFB5E /* ShortcutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShortcutViewController.m; sourceTree = "<group>"; };
+		B6AE72B21942F1BE00FBFB5E /* PossibleSolutionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PossibleSolutionTableViewCell.h; sourceTree = "<group>"; };
+		B6AE72B31942F1BE00FBFB5E /* PossibleSolutionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PossibleSolutionTableViewCell.m; sourceTree = "<group>"; };
+		B6AE72B41942F1BE00FBFB5E /* PossibleSolutionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PossibleSolutionTableViewCell.xib; sourceTree = "<group>"; };
 		B6DAB62019207D5E00649B99 /* StraightComfort-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StraightComfort-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DAB62119207D5E00649B99 /* StraightComfort-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StraightComfort-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DAB627192738CE00649B99 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -232,6 +237,9 @@
 				B6AE72A219404DAF00FBFB5E /* PossibleSolutionViewController.h */,
 				B6AE72A319404DAF00FBFB5E /* PossibleSolutionViewController.m */,
 				B6AE72A419404DAF00FBFB5E /* PossibleSolutionViewController.xib */,
+				B6AE72B21942F1BE00FBFB5E /* PossibleSolutionTableViewCell.h */,
+				B6AE72B31942F1BE00FBFB5E /* PossibleSolutionTableViewCell.m */,
+				B6AE72B41942F1BE00FBFB5E /* PossibleSolutionTableViewCell.xib */,
 			);
 			path = PossibleSolutionViewController;
 			sourceTree = "<group>";
@@ -407,6 +415,7 @@
 				B60D9D971930823A00CBE191 /* Icon60.png in Resources */,
 				B60D9D9B1930823A00CBE191 /* Icon152.png in Resources */,
 				B60D9DA81930829E00CBE191 /* Champagne & Limousines Italic.ttf in Resources */,
+				B6AE72B61942F1BE00FBFB5E /* PossibleSolutionTableViewCell.xib in Resources */,
 				B6DAB62D192745B100649B99 /* MainViewController.storyboard in Resources */,
 				B60D9D9A1930823A00CBE191 /* Icon120.png in Resources */,
 				B60D9D9C1930823A00CBE191 /* Launch5geniphone.png in Resources */,
@@ -456,6 +465,7 @@
 				B6550D56193168FD00FAF97F /* MainViewNavigationController.m in Sources */,
 				4E065E89193AD33B00A70377 /* DiscomfortTableViewCell.m in Sources */,
 				B6AE72A519404DAF00FBFB5E /* PossibleSolutionViewController.m in Sources */,
+				B6AE72B51942F1BE00FBFB5E /* PossibleSolutionTableViewCell.m in Sources */,
 				B6DAB62A192738CE00649B99 /* MainViewController.m in Sources */,
 				B60D9D82192F29AE00CBE191 /* MainTableViewCell.m in Sources */,
 				B6E8C83518C50DC400550D49 /* main.m in Sources */,

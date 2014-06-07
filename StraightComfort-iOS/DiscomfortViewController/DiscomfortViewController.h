@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Constants.h"
 #import "DiscomfortTableViewCell.h"
+#import "PossibleSolutionViewController.h"
 
 @interface DiscomfortViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     NSArray *discomfortArray;
@@ -17,6 +18,6 @@
 @property (nonatomic, weak) IBOutlet UIButton *analyzeButton;
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 
-- (IBAction)myButtonPressed:(id)sender;
+- (IBAction)analyzeButtonPressed:(id)sender;
 
 @end
