@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PossibleSolutionTableViewCell.h"
+#import "Constants.h"
 
 @interface PossibleSolutionViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+    NSArray *sectionNames;
+    NSDictionary *possibleSolutionDictionary;
 }
+
+
 
 
 @end

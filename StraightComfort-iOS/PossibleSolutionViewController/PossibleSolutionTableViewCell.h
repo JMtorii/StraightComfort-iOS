@@ -10,4 +10,6 @@
 
 @interface PossibleSolutionTableViewCell : UITableViewCell
 
+@property (nonatomic, weak) IBOutlet UILabel *possibleSolutionLabel;
+
 @end

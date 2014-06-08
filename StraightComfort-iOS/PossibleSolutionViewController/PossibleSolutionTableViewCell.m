@@ -10,6 +10,8 @@
 
 @implementation PossibleSolutionTableViewCell
 
+@synthesize possibleSolutionLabel = _possibleSolutionLabel;
+
 - (void)awakeFromNib
 {
     // Initialization code
