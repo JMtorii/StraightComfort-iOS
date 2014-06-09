@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DiscomfortTableViewCell : UITableViewCell
+@interface DiscomfortTableViewCell : UITableViewCell {
+    BOOL isOn;
+}
 
 @property (nonatomic, weak) IBOutlet UILabel *discomfortTitle;
 @property (nonatomic, weak) IBOutlet UISwitch *discomfortSwitch;
+@property(nonatomic) BOOL isOn;
+
+- (IBAction) switchChanged:(id)sender;
 
 @end

@@ -17,6 +17,9 @@
                         <rect key="frame" x="251" y="24" width="51" height="31"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="onTintColor" red="0.26925676479999999" green="0.72058559089999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <action selector="switchChanged:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GOK-kY-L6h"/>
+                        </connections>
                     </switch>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9l-HF-cyc">
                         <rect key="frame" x="20" y="29" width="205" height="21"/>
@@ -28,6 +31,7 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
+                <outlet property="accessoryView" destination="wxR-cU-0Xc" id="pp0-bC-pqk"/>
                 <outlet property="discomfortSwitch" destination="wxR-cU-0Xc" id="SXL-uV-BVR"/>
                 <outlet property="discomfortTitle" destination="l9l-HF-cyc" id="F2f-8f-HUA"/>
             </connections>

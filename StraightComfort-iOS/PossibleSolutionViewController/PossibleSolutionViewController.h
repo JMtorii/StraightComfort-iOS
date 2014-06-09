@@ -12,10 +12,10 @@
 
 @interface PossibleSolutionViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     NSArray *sectionNames;
-    NSDictionary *possibleSolutionDictionary;
+    NSDictionary *completePossibleSolutionDictionary;
 }
 
-
+@property(nonatomic) NSMutableArray *possibleSolutionSwitches;
 
 
 @end

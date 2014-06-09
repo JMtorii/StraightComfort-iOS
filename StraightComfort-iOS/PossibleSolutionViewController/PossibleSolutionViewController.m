@@ -16,7 +16,11 @@
     self.navigationItem.title = @"Possible Solutions";
     
     sectionNames = [NSArray arrayWithObjects:@"Neck", @"Upper Back", @"Lower Back", @"Wrists", @"Legs", nil];
-    possibleSolutionDictionary = @{@"Neck": @[@"Monitor", @"Documents"]};
+    completePossibleSolutionDictionary = @{@"Neck": @[@"Monitor", @"Documents"], 
+                                   @"Upper Back": @[@"Keyboard Tray", @"Chair"],
+                                   @"Lower Back": @[@"Chair"],
+                                   @"Wrists": @[@"Armrest", @"Mouse"],
+                                   @"Legs": @[@"Chair"]};
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -72,5 +76,7 @@
     
     return cell;
 }
+
+
 
 @end

@@ -72,16 +72,17 @@
     cell.discomfortTitle.text = [discomfortArray objectAtIndex:indexPath.row];
     cell.discomfortTitle.textColor = [UIColor colorWithRed:15.0/255.0 green:153.0/255.0 blue:255.0/255.0 alpha:1.0];
     cell.discomfortTitle.font = [UIFont fontWithName:kChampagneLimousinesBold size:24];
+        
+    NSLog([cell.discomfortSwitch isOn] ? @"Yes" : @"No");
+    
     return cell;
 }
 
 - (IBAction)analyzeButtonPressed:(id)sender {
     NSLog(@"myButtonPressed");
-    UIViewController *possibleSolutionViewController = [[PossibleSolutionViewController alloc]initWithNibName:@"PossibleSolutionViewController" bundle:nil];;
+    PossibleSolutionViewController *possibleSolutionViewController = [[PossibleSolutionViewController alloc]initWithNibName:@"PossibleSolutionViewController" bundle:nil];;
     [[self navigationController] pushViewController:possibleSolutionViewController animated:YES];
 }
-
-
 
 
 /*
