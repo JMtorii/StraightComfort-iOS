@@ -64,8 +64,32 @@
     cell.shorcutTitleLabel.textColor = [UIColor colorWithRed:15.0/255.0 green:153.0/255.0 blue:255.0/255.0 alpha:1.0];
     cell.shorcutTitleLabel.font = [UIFont fontWithName:kChampagneLimousinesBold size:24];
     
-    UIImage *image = [UIImage imageNamed: @"chair.png"];
-    cell.thumbnailImageView.image = image;
+    UIImage *thumbnailImage;
+    
+    switch (indexPath.row) {
+        case 0:
+            thumbnailImage = [UIImage imageNamed:@"chair.png"];
+            break;
+        case 1:
+            thumbnailImage = [UIImage imageNamed:@"keyboard.png"];
+            break;
+        case 2:
+            thumbnailImage = [UIImage imageNamed:@"mouse.png"];
+            break;
+        case 3:
+            thumbnailImage = [UIImage imageNamed:@"monitor.png"];
+            break;
+        case 4:
+            thumbnailImage = [UIImage imageNamed:@"documents.png"];
+            break;
+        case 5:
+            thumbnailImage = [UIImage imageNamed:@"workarea.png"];
+            break;
+        default:
+            break;
+    }
+    
+    cell.thumbnailImageView.image = thumbnailImage;
     
     return cell;
 }

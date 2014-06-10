@@ -41,6 +41,15 @@
 		B6AE72B51942F1BE00FBFB5E /* PossibleSolutionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE72B31942F1BE00FBFB5E /* PossibleSolutionTableViewCell.m */; };
 		B6AE72B61942F1BE00FBFB5E /* PossibleSolutionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72B41942F1BE00FBFB5E /* PossibleSolutionTableViewCell.xib */; };
 		B6AE72B81945923C00FBFB5E /* keyboard.ai in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72B71945923C00FBFB5E /* keyboard.ai */; };
+		B6AE72BE1946CC7800FBFB5E /* keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72BD1946CC7800FBFB5E /* keyboard.png */; };
+		B6AE72C01946CFF200FBFB5E /* mouse.ai in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72BF1946CFF200FBFB5E /* mouse.ai */; };
+		B6AE72C21946D02B00FBFB5E /* mouse.png in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72C11946D02B00FBFB5E /* mouse.png */; };
+		B6AE72C41946D18700FBFB5E /* monitor.png in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72C31946D18700FBFB5E /* monitor.png */; };
+		B6AE72C61946D19000FBFB5E /* monitor.ai in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72C51946D19000FBFB5E /* monitor.ai */; };
+		B6AE72C81946D45800FBFB5E /* documents.ai in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72C71946D45800FBFB5E /* documents.ai */; };
+		B6AE72CA1946D46800FBFB5E /* documents.png in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72C91946D46800FBFB5E /* documents.png */; };
+		B6AE72CC1946D6CD00FBFB5E /* workarea.png in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72CB1946D6CD00FBFB5E /* workarea.png */; };
+		B6AE72CE1946D6D600FBFB5E /* workarea.ai in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72CD1946D6D600FBFB5E /* workarea.ai */; };
 		B6DAB62A192738CE00649B99 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DAB628192738CE00649B99 /* MainViewController.m */; };
 		B6DAB62D192745B100649B99 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DAB62C192745B100649B99 /* MainViewController.storyboard */; };
 		B6E8C82918C50DC400550D49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E8C82818C50DC400550D49 /* Foundation.framework */; };
@@ -112,6 +121,15 @@
 		B6AE72B31942F1BE00FBFB5E /* PossibleSolutionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PossibleSolutionTableViewCell.m; sourceTree = "<group>"; };
 		B6AE72B41942F1BE00FBFB5E /* PossibleSolutionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PossibleSolutionTableViewCell.xib; sourceTree = "<group>"; };
 		B6AE72B71945923C00FBFB5E /* keyboard.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = keyboard.ai; sourceTree = "<group>"; };
+		B6AE72BD1946CC7800FBFB5E /* keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard.png; sourceTree = "<group>"; };
+		B6AE72BF1946CFF200FBFB5E /* mouse.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mouse.ai; sourceTree = "<group>"; };
+		B6AE72C11946D02B00FBFB5E /* mouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mouse.png; sourceTree = "<group>"; };
+		B6AE72C31946D18700FBFB5E /* monitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monitor.png; sourceTree = "<group>"; };
+		B6AE72C51946D19000FBFB5E /* monitor.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = monitor.ai; sourceTree = "<group>"; };
+		B6AE72C71946D45800FBFB5E /* documents.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = documents.ai; sourceTree = "<group>"; };
+		B6AE72C91946D46800FBFB5E /* documents.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = documents.png; sourceTree = "<group>"; };
+		B6AE72CB1946D6CD00FBFB5E /* workarea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = workarea.png; sourceTree = "<group>"; };
+		B6AE72CD1946D6D600FBFB5E /* workarea.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = workarea.ai; sourceTree = "<group>"; };
 		B6DAB62019207D5E00649B99 /* StraightComfort-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StraightComfort-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DAB62119207D5E00649B99 /* StraightComfort-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StraightComfort-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DAB627192738CE00649B99 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -179,6 +197,12 @@
 			isa = PBXGroup;
 			children = (
 				B6FF554B1938570B00B9324D /* Vector Assets */,
+				4E065E84193A865400A70377 /* chair.png */,
+				B6AE72BD1946CC7800FBFB5E /* keyboard.png */,
+				B6AE72C11946D02B00FBFB5E /* mouse.png */,
+				B6AE72C31946D18700FBFB5E /* monitor.png */,
+				B6AE72C91946D46800FBFB5E /* documents.png */,
+				B6AE72CB1946D6CD00FBFB5E /* workarea.png */,
 				B60D9D891930823A00CBE191 /* Icon.png */,
 				B60D9D8A1930823A00CBE191 /* Icon40.png */,
 				B60D9D8B1930823A00CBE191 /* Icon60.png */,
@@ -186,7 +210,6 @@
 				B60D9D8D1930823A00CBE191 /* Icon80.png */,
 				B60D9D8E1930823A00CBE191 /* Icon120.png */,
 				B60D9D8F1930823A00CBE191 /* Icon152.png */,
-				4E065E84193A865400A70377 /* chair.png */,
 				B60D9D901930823A00CBE191 /* Launch5geniphone.png */,
 				B60D9D911930823A00CBE191 /* Launchipad.png */,
 				B60D9D921930823A00CBE191 /* Launchipad@2x.png */,
@@ -210,12 +233,12 @@
 		B6550D521931682A00FAF97F /* ShortcutViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B6AE72AC19404F4400FBFB5E /* ShortcutViewController.h */,
+				B6AE72AD19404F4400FBFB5E /* ShortcutViewController.m */,
+				B6AE72AB19404F4400FBFB5E /* ShortcutViewController.xib */,
 				B6AE72A819404F4400FBFB5E /* ShortcutTableViewCell.h */,
 				B6AE72A919404F4400FBFB5E /* ShortcutTableViewCell.m */,
 				B6AE72AA19404F4400FBFB5E /* ShortcutTableViewCell.xib */,
-				B6AE72AB19404F4400FBFB5E /* ShortcutViewController.xib */,
-				B6AE72AC19404F4400FBFB5E /* ShortcutViewController.h */,
-				B6AE72AD19404F4400FBFB5E /* ShortcutViewController.m */,
 			);
 			path = ShortcutViewController;
 			sourceTree = "<group>";
@@ -332,8 +355,12 @@
 		B6FF554B1938570B00B9324D /* Vector Assets */ = {
 			isa = PBXGroup;
 			children = (
-				B6AE72B71945923C00FBFB5E /* keyboard.ai */,
 				4E065E7C193A7D1C00A70377 /* chair.ai */,
+				B6AE72B71945923C00FBFB5E /* keyboard.ai */,
+				B6AE72BF1946CFF200FBFB5E /* mouse.ai */,
+				B6AE72C51946D19000FBFB5E /* monitor.ai */,
+				B6AE72C71946D45800FBFB5E /* documents.ai */,
+				B6AE72CD1946D6D600FBFB5E /* workarea.ai */,
 				B6FF554C1938573900B9324D /* fancyChair.ai */,
 			);
 			path = "Vector Assets";
@@ -416,29 +443,38 @@
 			files = (
 				B60D9D9F1930823A00CBE191 /* Launchiphone.png in Resources */,
 				B60D9D971930823A00CBE191 /* Icon60.png in Resources */,
+				B6AE72C61946D19000FBFB5E /* monitor.ai in Resources */,
+				B6AE72BE1946CC7800FBFB5E /* keyboard.png in Resources */,
 				B60D9D9B1930823A00CBE191 /* Icon152.png in Resources */,
 				B60D9DA81930829E00CBE191 /* Champagne & Limousines Italic.ttf in Resources */,
 				B6AE72B61942F1BE00FBFB5E /* PossibleSolutionTableViewCell.xib in Resources */,
 				B6DAB62D192745B100649B99 /* MainViewController.storyboard in Resources */,
 				B60D9D9A1930823A00CBE191 /* Icon120.png in Resources */,
 				B60D9D9C1930823A00CBE191 /* Launch5geniphone.png in Resources */,
+				B6AE72C01946CFF200FBFB5E /* mouse.ai in Resources */,
 				B6E8C83318C50DC400550D49 /* InfoPlist.strings in Resources */,
 				4E065E8A193AD33B00A70377 /* DiscomfortTableViewCell.xib in Resources */,
 				B60D9D991930823A00CBE191 /* Icon80.png in Resources */,
 				B60D9D981930823A00CBE191 /* Icon76.png in Resources */,
+				B6AE72CE1946D6D600FBFB5E /* workarea.ai in Resources */,
+				B6AE72CC1946D6CD00FBFB5E /* workarea.png in Resources */,
 				B60D9D961930823A00CBE191 /* Icon40.png in Resources */,
 				B60D9D951930823A00CBE191 /* Icon.png in Resources */,
 				B6AE72B81945923C00FBFB5E /* keyboard.ai in Resources */,
 				B6FF554D1938573900B9324D /* fancyChair.ai in Resources */,
 				B6AE72A619404DAF00FBFB5E /* PossibleSolutionViewController.xib in Resources */,
 				4E065E7D193A7D1C00A70377 /* chair.ai in Resources */,
+				B6AE72C21946D02B00FBFB5E /* mouse.png in Resources */,
 				B6E8C83B18C50DC400550D49 /* Images.xcassets in Resources */,
 				4E065E85193A865400A70377 /* chair.png in Resources */,
 				B60D9DA01930823A00CBE191 /* logo.png in Resources */,
+				B6AE72C41946D18700FBFB5E /* monitor.png in Resources */,
 				B60D9D9E1930823A00CBE191 /* Launchipad@2x.png in Resources */,
 				B643E7F7192F21C50062159A /* MainTableViewCell.xib in Resources */,
+				B6AE72CA1946D46800FBFB5E /* documents.png in Resources */,
 				4E339C06193403D700B9BDE3 /* DiscomfortViewController.xib in Resources */,
 				B60D9DA91930829E00CBE191 /* Champagne & Limousines.ttf in Resources */,
+				B6AE72C81946D45800FBFB5E /* documents.ai in Resources */,
 				B60D9D9D1930823A00CBE191 /* Launchipad.png in Resources */,
 				B6AE72AF19404F4400FBFB5E /* ShortcutTableViewCell.xib in Resources */,
 				B60D9DA71930829E00CBE191 /* Champagne & Limousines Bold.ttf in Resources */,
