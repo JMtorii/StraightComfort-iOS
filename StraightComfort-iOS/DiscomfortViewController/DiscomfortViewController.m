@@ -86,12 +86,18 @@
     for (int row = 0; row < [self.tableView numberOfRowsInSection:0]; row++) {
         NSIndexPath* cellPath = [NSIndexPath indexPathForRow:row inSection:0];
         DiscomfortTableViewCell* cell = (DiscomfortTableViewCell *)[self.tableView cellForRowAtIndexPath:cellPath];
-        [analyzeElements addObject:((cell.isOn) ? @"Y" : @"N")];
+        [analyzeElements addObject:([cell.discomfortSwitch isOn] ? @"Yes" : @"No")];
         NSLog([cell.discomfortSwitch isOn] ? @"Yes" : @"No");
     }
     
     PossibleSolutionViewController *possibleSolutionViewController = [[PossibleSolutionViewController alloc]initWithNibName:@"PossibleSolutionViewController" bundle:nil];;
-    possibleSolutionViewController.possibleSolutionSwitches = analyzeElements;
+//    possibleSolutionViewController.possibleSolutionSwitches = analyzeElements;
+    possibleSolutionViewController.possibleSolutionSwitches = [analyzeElements copy];
+    
+//    NSLog(@"analyze");
+//    for (NSString *switchStatus in possibleSolutionViewController.possibleSolutionSwitches) {
+//        NSLog(@"%@", switchStatus);
+//    }
     [[self navigationController] pushViewController:possibleSolutionViewController animated:YES];
 }
 
