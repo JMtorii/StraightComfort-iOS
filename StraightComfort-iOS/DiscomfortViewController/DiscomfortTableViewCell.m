@@ -12,6 +12,7 @@
 
 @synthesize discomfortTitle = _discomfortTitle;
 @synthesize discomfortSwitch = _discomfortSwitch;
+@synthesize isOn = _isOn;
 
 - (void)awakeFromNib
 {
@@ -26,7 +27,7 @@
 }
 
 - (void)switchChanged:(id)sender {
-    isOn = TRUE;
+    isOn = (isOn) ? false : true;
 }
 
 @end

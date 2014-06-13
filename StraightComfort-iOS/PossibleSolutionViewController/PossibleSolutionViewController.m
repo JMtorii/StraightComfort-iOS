@@ -70,6 +70,10 @@
         cell = [nib objectAtIndex:0];
     }
     
+    for (NSString *switchStatus in self.possibleSolutionSwitches) {
+        NSLog(@"%@", switchStatus);
+    }
+    
 //    cell.possibleSolutionLabel.text = [discomfortArray objectAtIndex:indexPath.row];
 //    cell.possibleSolutionLabel.textColor = [UIColor colorWithRed:15.0/255.0 green:153.0/255.0 blue:255.0/255.0 alpha:1.0];
 //    cell.possibleSolutionLabel.font = [UIFont fontWithName:kChampagneLimousinesBold size:24];

@@ -73,14 +73,25 @@
     cell.discomfortTitle.textColor = [UIColor colorWithRed:15.0/255.0 green:153.0/255.0 blue:255.0/255.0 alpha:1.0];
     cell.discomfortTitle.font = [UIFont fontWithName:kChampagneLimousinesBold size:24];
         
-    NSLog([cell.discomfortSwitch isOn] ? @"Yes" : @"No");
+//    NSLog([cell.discomfortSwitch isOn] ? @"Yes" : @"No");
     
     return cell;
 }
 
 - (IBAction)analyzeButtonPressed:(id)sender {
     NSLog(@"myButtonPressed");
+    
+    NSMutableArray *analyzeElements = [[NSMutableArray alloc]init];
+    
+    for (int row = 0; row < [self.tableView numberOfRowsInSection:0]; row++) {
+        NSIndexPath* cellPath = [NSIndexPath indexPathForRow:row inSection:0];
+        DiscomfortTableViewCell* cell = (DiscomfortTableViewCell *)[self.tableView cellForRowAtIndexPath:cellPath];
+        [analyzeElements addObject:((cell.isOn) ? @"Y" : @"N")];
+        NSLog([cell.discomfortSwitch isOn] ? @"Yes" : @"No");
+    }
+    
     PossibleSolutionViewController *possibleSolutionViewController = [[PossibleSolutionViewController alloc]initWithNibName:@"PossibleSolutionViewController" bundle:nil];;
+    possibleSolutionViewController.possibleSolutionSwitches = analyzeElements;
     [[self navigationController] pushViewController:possibleSolutionViewController animated:YES];
 }
 

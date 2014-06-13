@@ -15,7 +15,7 @@
     NSDictionary *completePossibleSolutionDictionary;
 }
 
-@property(nonatomic) NSMutableArray *possibleSolutionSwitches;
+@property(nonatomic) NSArray *possibleSolutionSwitches;
 
 
 @end

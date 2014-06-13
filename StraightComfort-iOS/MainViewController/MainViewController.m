@@ -45,13 +45,13 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-    UILabel *line1 = (UILabel *)[cell viewWithTag:100];
-    line1.text = [homeTitlesLine1 objectAtIndex:indexPath.row];
-    line1.font = [UIFont fontWithName:kChampagneLimousinesBold size:30];
+    UILabel *firstLine = (UILabel *)[cell viewWithTag:100];
+    firstLine.text = [homeTitlesLine1 objectAtIndex:indexPath.row];
+    firstLine.font = [UIFont fontWithName:kChampagneLimousinesBold size:30];
     
-    UILabel *line2 = (UILabel *)[cell viewWithTag:101];
-    line2.text = [homeTitlesLine2 objectAtIndex:indexPath.row];
-    line2.font = [UIFont fontWithName:kChampagneLimousinesBold size:30];
+    UILabel *secondLine = (UILabel *)[cell viewWithTag:101];
+    secondLine.text = [homeTitlesLine2 objectAtIndex:indexPath.row];
+    secondLine.font = [UIFont fontWithName:kChampagneLimousinesBold size:30];
     
     return cell;
 }
