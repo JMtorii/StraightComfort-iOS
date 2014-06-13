@@ -86,8 +86,8 @@
     for (int row = 0; row < [self.tableView numberOfRowsInSection:0]; row++) {
         NSIndexPath* cellPath = [NSIndexPath indexPathForRow:row inSection:0];
         DiscomfortTableViewCell* cell = (DiscomfortTableViewCell *)[self.tableView cellForRowAtIndexPath:cellPath];
-        [analyzeElements addObject:([cell.discomfortSwitch isOn] ? @"Yes" : @"No")];
-        NSLog([cell.discomfortSwitch isOn] ? @"Yes" : @"No");
+        [analyzeElements addObject:([cell.discomfortSwitch isOn] ? @"Y" : @"N")];
+        NSLog([cell.discomfortSwitch isOn] ? @"Y" : @"N");
     }
     
     PossibleSolutionViewController *possibleSolutionViewController = [[PossibleSolutionViewController alloc]initWithNibName:@"PossibleSolutionViewController" bundle:nil];;

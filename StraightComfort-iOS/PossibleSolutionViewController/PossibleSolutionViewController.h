@@ -11,9 +11,12 @@
 #import "Constants.h"
 
 @interface PossibleSolutionViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
-    NSArray *sectionNames;
+    NSArray *completeSectionNames;
     NSDictionary *completePossibleSolutionDictionary;
+    NSMutableArray *finalSectionNames;
 }
+
+- (void)initSectionNames;
 
 @property(nonatomic) NSArray *possibleSolutionSwitches;
 

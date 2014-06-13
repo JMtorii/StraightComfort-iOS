@@ -15,18 +15,14 @@
     [super viewDidLoad];
     self.navigationItem.title = @"Possible Solutions";
     
-    sectionNames = [NSArray arrayWithObjects:@"Neck", @"Upper Back", @"Lower Back", @"Wrists", @"Legs", nil];
-    completePossibleSolutionDictionary = @{@"Neck": @[@"Monitor", @"Documents"], 
-                                   @"Upper Back": @[@"Keyboard Tray", @"Chair"],
-                                   @"Lower Back": @[@"Chair"],
-                                   @"Wrists": @[@"Armrest", @"Mouse"],
-                                   @"Legs": @[@"Chair"]};
+    completeSectionNames = [NSArray arrayWithObjects:@"Neck", @"Upper Back", @"Lower Back", @"Wrists", @"Legs", nil];
+    completePossibleSolutionDictionary = @{[completeSectionNames objectAtIndex:0]: @[@"Monitor", @"Documents"], 
+                                   [completeSectionNames objectAtIndex:1]: @[@"Keyboard Tray", @"Chair"],
+                                   [completeSectionNames objectAtIndex:2]: @[@"Chair"],
+                                   [completeSectionNames objectAtIndex:3]: @[@"Armrest", @"Mouse"],
+                                   [completeSectionNames objectAtIndex:4]: @[@"Chair"]};
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self initSectionNames];
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,7 +36,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return [sectionNames count];
+    return [finalSectionNames count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -56,7 +52,7 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section 
 {
-    return [sectionNames objectAtIndex:section];
+    return [finalSectionNames objectAtIndex:section];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -69,19 +65,17 @@
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:tableIdentifier owner:self options:nil];
         cell = [nib objectAtIndex:0];
     }
-//    if (indexPath.row == 0) {
-//        NSLog(@"TESTING");
-//        for (NSString *switchStatus in self.possibleSolutionSwitches) {
-//            NSLog(@"%@", switchStatus);
-//        }
-//    }
-
-    
-//    cell.possibleSolutionLabel.text = [discomfortArray objectAtIndex:indexPath.row];
-//    cell.possibleSolutionLabel.textColor = [UIColor colorWithRed:15.0/255.0 green:153.0/255.0 blue:255.0/255.0 alpha:1.0];
-//    cell.possibleSolutionLabel.font = [UIFont fontWithName:kChampagneLimousinesBold size:24];
     
     return cell;
+}
+
+- (void) initSectionNames {
+    finalSectionNames = [[NSMutableArray alloc]init];
+    for (int index = 0; index < [self.possibleSolutionSwitches count]; index++) {
+        if ([[self.possibleSolutionSwitches objectAtIndex:index] isEqualToString:@"Y"]) {
+            [finalSectionNames addObject:[completeSectionNames objectAtIndex:index]];
+        }
+    }
 }
 
 
