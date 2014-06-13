@@ -42,7 +42,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 2;
+    return [[completePossibleSolutionDictionary objectForKey:[finalSectionNames objectAtIndex:section]]count];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -65,6 +65,8 @@
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:tableIdentifier owner:self options:nil];
         cell = [nib objectAtIndex:0];
     }
+    
+    cell.possibleSolutionLabel.text = [[completePossibleSolutionDictionary objectForKey:[finalSectionNames objectAtIndex:indexPath.section]]objectAtIndex:indexPath.row];
     
     return cell;
 }
