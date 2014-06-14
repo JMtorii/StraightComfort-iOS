@@ -14,13 +14,13 @@
 {
     [super viewDidLoad];
     self.navigationItem.title = @"Possible Solutions";
-    
+
     completeSectionNames = [NSArray arrayWithObjects:@"Neck", @"Upper Back", @"Lower Back", @"Wrists", @"Legs", nil];
     completePossibleSolutionDictionary = @{[completeSectionNames objectAtIndex:0]: @[@"Monitor", @"Documents"], 
-                                   [completeSectionNames objectAtIndex:1]: @[@"Keyboard Tray", @"Chair"],
-                                   [completeSectionNames objectAtIndex:2]: @[@"Chair"],
-                                   [completeSectionNames objectAtIndex:3]: @[@"Armrest", @"Mouse"],
-                                   [completeSectionNames objectAtIndex:4]: @[@"Chair"]};
+                                   [completeSectionNames objectAtIndex:1]: @[@"Keyboard Tray (height)", @"Chair (armrest height)"],
+                                   [completeSectionNames objectAtIndex:2]: @[@"Chair (backrest height)"],
+                                   [completeSectionNames objectAtIndex:3]: @[@"Armrest (usage)", @"Mouse"],
+                                   [completeSectionNames objectAtIndex:4]: @[@"Chair (height, seat depth)"]};
     
     [self initSectionNames];
 }
@@ -47,7 +47,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 85;
+    return 75;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section 
@@ -67,16 +67,24 @@
     }
     
     cell.possibleSolutionLabel.text = [[completePossibleSolutionDictionary objectForKey:[finalSectionNames objectAtIndex:indexPath.section]]objectAtIndex:indexPath.row];
+    cell.possibleSolutionLabel.textColor = [UIColor colorWithRed:15.0/255.0 green:153.0/255.0 blue:255.0/255.0 alpha:1.0];
+    cell.possibleSolutionLabel.font = [UIFont fontWithName:kChampagneLimousinesBold size:22];
     
     return cell;
 }
 
 - (void) initSectionNames {
+    BOOL hasOneSectionName = false;
     finalSectionNames = [[NSMutableArray alloc]init];
     for (int index = 0; index < [self.possibleSolutionSwitches count]; index++) {
         if ([[self.possibleSolutionSwitches objectAtIndex:index] isEqualToString:@"Y"]) {
             [finalSectionNames addObject:[completeSectionNames objectAtIndex:index]];
+            hasOneSectionName = true;
         }
+    }
+    
+    if (!hasOneSectionName) {
+        finalSectionNames = [completeSectionNames copy];
     }
 }
 

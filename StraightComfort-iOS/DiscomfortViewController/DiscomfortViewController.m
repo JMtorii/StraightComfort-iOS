@@ -98,6 +98,7 @@
 //    for (NSString *switchStatus in possibleSolutionViewController.possibleSolutionSwitches) {
 //        NSLog(@"%@", switchStatus);
 //    }
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
     [[self navigationController] pushViewController:possibleSolutionViewController animated:YES];
 }
 
