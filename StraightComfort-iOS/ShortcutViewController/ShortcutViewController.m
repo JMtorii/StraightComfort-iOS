@@ -14,6 +14,12 @@
 {
     [super viewDidLoad];
     self.navigationItem.title = @"Workstation Shortcut";
+//    UIBarButtonItem *helpItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:nil];
+//    self.navigationItem.rightBarButtonItems = @[helpItem];
+    
+    UIButton *rightHelpBarButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightHelpBarButton];
+    
     workstationShortcutArray = [NSArray arrayWithObjects:@"CHAIR", @"KEYBOARD TRAY", @"MOUSE", @"MONITOR", @"DOCUMENTS", @"WORK AREA & STORAGE", nil];
     
     // Uncomment the following line to preserve selection between presentations.

@@ -176,6 +176,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E0E7BAB194CD8740065D676 /* TutorialViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TutorialViewController;
+			sourceTree = "<group>";
+		};
 		B60D9D8319307CEF00CBE191 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +318,7 @@
 			children = (
 				B6E8C83718C50DC400550D49 /* AppDelegate.h */,
 				B6E8C83818C50DC400550D49 /* AppDelegate.m */,
+				4E0E7BAB194CD8740065D676 /* TutorialViewController */,
 				B6DAB624192088EB00649B99 /* MainViewController */,
 				B6550D521931682A00FAF97F /* ShortcutViewController */,
 				B6550D531931685000FAF97F /* DiscomfortViewController */,

@@ -18,6 +18,9 @@
     [super viewDidLoad];
     self.navigationItem.title = @"Discomfort";
     discomfortArray = [NSArray arrayWithObjects:@"NECK", @"UPPER BACK", @"LOWER BACK", @"WRISTS", @"LEGS", nil];
+    
+    UIButton *rightHelpBarButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightHelpBarButton];
 
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     self.tableView.scrollEnabled = false;

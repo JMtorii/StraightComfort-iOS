@@ -17,6 +17,9 @@
     // Initialize table data
     homeTitlesLine1 = [NSArray arrayWithObjects:@"FULL", @"WORKSTATION", @"DISCOMFORT", nil];
     homeTitlesLine2 = [NSArray arrayWithObjects:@"WORKSTATION SETUP", @"SHORTCUT", @"", nil];
+    
+    UIButton *rightHelpBarButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightHelpBarButton];
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,7 +67,6 @@
     UIViewController *viewController;
     
     if (indexPath.row == 0) {
-        
         
     } else if (indexPath.row == 1) {
         viewController = [[ShortcutViewController alloc]initWithNibName:@"ShortcutViewController" bundle:nil];
