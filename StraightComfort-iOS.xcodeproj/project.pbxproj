@@ -11,6 +11,9 @@
 		4E065E85193A865400A70377 /* chair.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E065E84193A865400A70377 /* chair.png */; };
 		4E065E89193AD33B00A70377 /* DiscomfortTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E065E87193AD33B00A70377 /* DiscomfortTableViewCell.m */; };
 		4E065E8A193AD33B00A70377 /* DiscomfortTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E065E88193AD33B00A70377 /* DiscomfortTableViewCell.xib */; };
+		4E0E7BAF194E39CF0065D676 /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0E7BAE194E39CF0065D676 /* TutorialViewController.m */; };
+		4E0E7BB2194E3AF40065D676 /* TutorialContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0E7BB1194E3AF40065D676 /* TutorialContentViewController.m */; };
+		4E0E7BB4194E3DAB0065D676 /* TutorialViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E0E7BB3194E3DAB0065D676 /* TutorialViewController.storyboard */; };
 		4E339C05193403D700B9BDE3 /* DiscomfortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E339C03193403D700B9BDE3 /* DiscomfortViewController.m */; };
 		4E339C06193403D700B9BDE3 /* DiscomfortViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E339C04193403D700B9BDE3 /* DiscomfortViewController.xib */; };
 		B60D9D82192F29AE00CBE191 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60D9D81192F29AE00CBE191 /* MainTableViewCell.m */; };
@@ -83,6 +86,11 @@
 		4E065E86193AD33B00A70377 /* DiscomfortTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscomfortTableViewCell.h; sourceTree = "<group>"; };
 		4E065E87193AD33B00A70377 /* DiscomfortTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscomfortTableViewCell.m; sourceTree = "<group>"; };
 		4E065E88193AD33B00A70377 /* DiscomfortTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscomfortTableViewCell.xib; sourceTree = "<group>"; };
+		4E0E7BAD194E39CF0065D676 /* TutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialViewController.h; sourceTree = "<group>"; };
+		4E0E7BAE194E39CF0065D676 /* TutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialViewController.m; sourceTree = "<group>"; };
+		4E0E7BB0194E3AF40065D676 /* TutorialContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialContentViewController.h; sourceTree = "<group>"; };
+		4E0E7BB1194E3AF40065D676 /* TutorialContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialContentViewController.m; sourceTree = "<group>"; };
+		4E0E7BB3194E3DAB0065D676 /* TutorialViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TutorialViewController.storyboard; sourceTree = "<group>"; };
 		4E339C02193403D700B9BDE3 /* DiscomfortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiscomfortViewController.h; path = "StraightComfort-iOS/DiscomfortViewController/DiscomfortViewController.h"; sourceTree = SOURCE_ROOT; };
 		4E339C03193403D700B9BDE3 /* DiscomfortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiscomfortViewController.m; path = "StraightComfort-iOS/DiscomfortViewController/DiscomfortViewController.m"; sourceTree = SOURCE_ROOT; };
 		4E339C04193403D700B9BDE3 /* DiscomfortViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DiscomfortViewController.xib; path = "StraightComfort-iOS/DiscomfortViewController/DiscomfortViewController.xib"; sourceTree = SOURCE_ROOT; };
@@ -179,6 +187,11 @@
 		4E0E7BAB194CD8740065D676 /* TutorialViewController */ = {
 			isa = PBXGroup;
 			children = (
+				4E0E7BAD194E39CF0065D676 /* TutorialViewController.h */,
+				4E0E7BAE194E39CF0065D676 /* TutorialViewController.m */,
+				4E0E7BB0194E3AF40065D676 /* TutorialContentViewController.h */,
+				4E0E7BB1194E3AF40065D676 /* TutorialContentViewController.m */,
+				4E0E7BB3194E3DAB0065D676 /* TutorialViewController.storyboard */,
 			);
 			path = TutorialViewController;
 			sourceTree = "<group>";
@@ -458,6 +471,7 @@
 				B6AE72B61942F1BE00FBFB5E /* PossibleSolutionTableViewCell.xib in Resources */,
 				B6DAB62D192745B100649B99 /* MainViewController.storyboard in Resources */,
 				B60D9D9A1930823A00CBE191 /* Icon120.png in Resources */,
+				4E0E7BB4194E3DAB0065D676 /* TutorialViewController.storyboard in Resources */,
 				B60D9D9C1930823A00CBE191 /* Launch5geniphone.png in Resources */,
 				B6AE72C01946CFF200FBFB5E /* mouse.ai in Resources */,
 				B6E8C83318C50DC400550D49 /* InfoPlist.strings in Resources */,
@@ -507,7 +521,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6AE72B119404F4400FBFB5E /* ShortcutViewController.m in Sources */,
+				4E0E7BB2194E3AF40065D676 /* TutorialContentViewController.m in Sources */,
 				4E339C05193403D700B9BDE3 /* DiscomfortViewController.m in Sources */,
+				4E0E7BAF194E39CF0065D676 /* TutorialViewController.m in Sources */,
 				B6AE72AE19404F4400FBFB5E /* ShortcutTableViewCell.m in Sources */,
 				B6E8C83918C50DC400550D49 /* AppDelegate.m in Sources */,
 				B6550D56193168FD00FAF97F /* MainViewNavigationController.m in Sources */,

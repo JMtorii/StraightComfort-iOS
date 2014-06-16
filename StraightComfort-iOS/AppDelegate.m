@@ -10,33 +10,40 @@
 
 @implementation AppDelegate
 
+
+// This is not the best implementation
+// If this doesn't work, put "Main storyboard file base name" -> String -> MainViewController in plist
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
-                                                           [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0], NSForegroundColorAttributeName, [UIFont fontWithName:kChampagneLimousinesBold size:22.0], NSFontAttributeName, nil]];
-    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-    
-//    UIButton *rightHelpBarButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
-//    [[UIBarButtonItem appearance] setR:backButtonImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-
-      // this will definitely not work
-//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightHelpBarButton];
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     
     if (![[NSUserDefaults standardUserDefaults] boolForKey:@"hasPerformedFirstLaunch"]) {
         // On first launch, this block will execute
-        mainStoryboard = [UIStoryboard storyboardWithName:@"MainViewController" bundle: nil];
-        navController = (UINavigationController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"MainViewNavigationController"];
+        mainStoryboard = [UIStoryboard storyboardWithName:@"TutorialViewController" bundle: nil];
+        TutorialViewController *tutorialViewController = [mainStoryboard instantiateViewControllerWithIdentifier:@"TutorialViewController"];
+        
+//        TutorialViewController *tutorialViewController = [[TutorialViewController alloc] init];
+        
+        self.window.rootViewController = tutorialViewController;
         
         // Set the "hasPerformedFirstLaunch" key so this block won't execute again
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasPerformedFirstLaunch"];
         [[NSUserDefaults standardUserDefaults] synchronize];
-    }
-    else {
+    } else {
         // On subsequent launches, this block will execute
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+        [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                               [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0], NSForegroundColorAttributeName, [UIFont fontWithName:kChampagneLimousinesBold size:22.0], NSFontAttributeName, nil]];
+        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+        
+        
+        mainStoryboard = [UIStoryboard storyboardWithName:@"MainViewController" bundle: nil];
+        navController = (UINavigationController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"MainViewNavigationController"];
+        self.window.rootViewController = navController;
     }
+
     
-    
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

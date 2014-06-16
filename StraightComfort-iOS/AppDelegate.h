@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MainViewController.h"
+#import "TutorialViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
     UIStoryboard *mainStoryboard;
