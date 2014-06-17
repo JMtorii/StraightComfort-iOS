@@ -50,11 +50,11 @@
     
     UILabel *firstLine = (UILabel *)[cell viewWithTag:100];
     firstLine.text = [homeTitlesLine1 objectAtIndex:indexPath.row];
-    firstLine.font = [UIFont fontWithName:kChampagneLimousinesBold size:30];
+    firstLine.font = [UIFont fontWithName:kRobotoRegular size:25];
     
     UILabel *secondLine = (UILabel *)[cell viewWithTag:101];
     secondLine.text = [homeTitlesLine2 objectAtIndex:indexPath.row];
-    secondLine.font = [UIFont fontWithName:kChampagneLimousinesBold size:30];
+    secondLine.font = [UIFont fontWithName:kRobotoRegular size:25];
     
     return cell;
 }

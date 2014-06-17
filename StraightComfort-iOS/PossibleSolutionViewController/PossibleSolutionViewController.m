@@ -71,7 +71,7 @@
     
     cell.possibleSolutionLabel.text = [[completePossibleSolutionDictionary objectForKey:[finalSectionNames objectAtIndex:indexPath.section]]objectAtIndex:indexPath.row];
     cell.possibleSolutionLabel.textColor = [UIColor colorWithRed:15.0/255.0 green:153.0/255.0 blue:255.0/255.0 alpha:1.0];
-    cell.possibleSolutionLabel.font = [UIFont fontWithName:kChampagneLimousinesBold size:22];
+    cell.possibleSolutionLabel.font = [UIFont fontWithName:kRobotoRegular size:22];
     
     return cell;
 }

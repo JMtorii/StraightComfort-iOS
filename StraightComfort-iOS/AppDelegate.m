@@ -33,7 +33,7 @@
         // On subsequent launches, this block will execute
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
         [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
-                                                               [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0], NSForegroundColorAttributeName, [UIFont fontWithName:kChampagneLimousinesBold size:22.0], NSFontAttributeName, nil]];
+                                                               [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0], NSForegroundColorAttributeName, [UIFont fontWithName:kRobotoMedium size:22.0], NSFontAttributeName, nil]];
         [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
         
         
