@@ -27,8 +27,8 @@
         // Override point for customization after application launch.
         UIPageControl *pageControl = [UIPageControl appearance];
         pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
-        pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
-        pageControl.backgroundColor = [UIColor whiteColor];
+        pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
+//        pageControl.backgroundColor = [UIColor whiteColor];
         
         navController.navigationBar.hidden = YES;
         
