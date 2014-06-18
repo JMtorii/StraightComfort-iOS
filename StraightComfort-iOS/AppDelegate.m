@@ -20,11 +20,17 @@
     if (![[NSUserDefaults standardUserDefaults] boolForKey:@"hasPerformedFirstLaunch"]) {
         // On first launch, this block will execute
         mainStoryboard = [UIStoryboard storyboardWithName:@"TutorialViewController" bundle: nil];
-        TutorialViewController *tutorialViewController = [mainStoryboard instantiateViewControllerWithIdentifier:@"TutorialViewController"];
+        navController = (UINavigationController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"TutorialViewNavigationController"];
+//        TutorialViewController *tutorialViewController = [mainStoryboard instantiateViewControllerWithIdentifier:@"TutorialViewController"];
+        self.window.rootViewController = navController;
         
-//        TutorialViewController *tutorialViewController = [[TutorialViewController alloc] init];
+        // Override point for customization after application launch.
+        UIPageControl *pageControl = [UIPageControl appearance];
+        pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+        pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+        pageControl.backgroundColor = [UIColor whiteColor];
         
-        self.window.rootViewController = tutorialViewController;
+        navController.navigationBar.hidden = YES;
         
         // Set the "hasPerformedFirstLaunch" key so this block won't execute again
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"hasPerformedFirstLaunch"];
