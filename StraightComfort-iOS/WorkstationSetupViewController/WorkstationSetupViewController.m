@@ -1,18 +1,18 @@
 //
-//  TutorialContentViewController.m
+//  WorkstationSetupViewController.m
 //  StraightComfort-iOS
 //
-//  Created by Mark Torii on 6/15/14.
+//  Created by Jun Torii on 2014-06-18.
 //  Copyright (c) 2014 Jun Torii. All rights reserved.
 //
 
-#import "TutorialContentViewController.h"
+#import "WorkstationSetupViewController.h"
 
-@interface TutorialContentViewController ()
+@interface WorkstationSetupViewController ()
 
 @end
 
-@implementation TutorialContentViewController
+@implementation WorkstationSetupViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,8 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.backgroundImageView.image = [UIImage imageNamed:self.imageFile];    
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning

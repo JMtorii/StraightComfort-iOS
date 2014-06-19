@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Constants.h"
+#import "WorkstationSetupViewController.h"
 #import "ShortcutViewController.h"
 #import "DiscomfortViewController.h"
 #import "AppDelegate.h"

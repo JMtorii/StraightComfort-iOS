@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "TutorialContentViewController.h"
+#import "Constants.h"
 
 @interface TutorialViewController : UIViewController <UIPageViewControllerDataSource>
 
 - (IBAction)startWalkthrough:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) UIPageViewController *pageViewController;
+@property NSString *titleText;
 @property (strong, nonatomic) NSArray *pageTitles;
 @property (strong, nonatomic) NSArray *pageImages;
 

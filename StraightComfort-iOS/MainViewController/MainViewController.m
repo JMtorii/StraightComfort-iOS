@@ -67,7 +67,8 @@
     UIViewController *viewController;
     
     if (indexPath.row == 0) {
-        
+        viewController = [[WorkstationSetupViewController alloc]initWithNibName:@"WorkstationSetupViewController" bundle:nil];
+    
     } else if (indexPath.row == 1) {
         viewController = [[ShortcutViewController alloc]initWithNibName:@"ShortcutViewController" bundle:nil];
         

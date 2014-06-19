@@ -19,7 +19,7 @@
     [super viewDidLoad];
 	// Create the data model
     _pageTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip", @"Free Regular Update"];
-    _pageImages = @[@"page1.png", @"page2.png", @"page3.png", @"page4.png"];
+    _pageImages = @[@"welcomePage1.png", @"page2.png", @"page3.png", @"page4.png"];
     
     // Create page view controller
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TutorialViewController"];
@@ -27,14 +27,21 @@
     
     TutorialContentViewController *startingViewController = [self viewControllerAtIndex:0];
     NSArray *viewControllers = @[startingViewController];
-    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
+    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     
     // Change the size of page view controller
-    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 170);
     
     [self addChildViewController:_pageViewController];
     [self.view addSubview:_pageViewController.view];
     [self.pageViewController didMoveToParentViewController:self];
+    
+//    for (UIView *view in self.pageViewController.view.subviews ) {
+//        if ([view isKindOfClass:[UIScrollView class]]) {
+//            UIScrollView *scroll = (UIScrollView *)view;
+//            scroll.bounces = NO;
+//        }
+//    }
     
 }
 
@@ -59,8 +66,11 @@
     // Create a new view controller and pass suitable data.
     TutorialContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TutorialContentViewController"];
     pageContentViewController.imageFile = self.pageImages[index];
-    pageContentViewController.titleText = self.pageTitles[index];
     pageContentViewController.pageIndex = index;
+    
+    self.titleText = self.pageTitles[index];
+    self.titleLabel.text = self.titleText;
+    self.titleLabel.font = [UIFont fontWithName:kRobotoRegular size:20];
     
     return pageContentViewController;
 }
@@ -103,5 +113,7 @@
 {
     return 0;
 }
+
+
 
 @end
