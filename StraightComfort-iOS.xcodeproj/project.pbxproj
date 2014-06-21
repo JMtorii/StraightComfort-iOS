@@ -16,6 +16,15 @@
 		4E0E7BB4194E3DAB0065D676 /* TutorialViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E0E7BB3194E3DAB0065D676 /* TutorialViewController.storyboard */; };
 		4E339C05193403D700B9BDE3 /* DiscomfortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E339C03193403D700B9BDE3 /* DiscomfortViewController.m */; };
 		4E339C06193403D700B9BDE3 /* DiscomfortViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E339C04193403D700B9BDE3 /* DiscomfortViewController.xib */; };
+		4EB572491955FA460022E9C9 /* WorkstationSetupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB572481955FA460022E9C9 /* WorkstationSetupViewController.storyboard */; };
+		4EB5724D1955FABD0022E9C9 /* WorkstationContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB5724C1955FABD0022E9C9 /* WorkstationContentViewController.m */; };
+		4EB5725A19564DBE0022E9C9 /* SymDepend.cache in Resources */ = {isa = PBXBuildFile; fileRef = 4EB5725119564DBE0022E9C9 /* SymDepend.cache */; };
+		4EB5725B19564DBE0022E9C9 /* bouncingBallExample.xfl in Resources */ = {isa = PBXBuildFile; fileRef = 4EB5725219564DBE0022E9C9 /* bouncingBallExample.xfl */; };
+		4EB5725C19564DBE0022E9C9 /* DOMDocument.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4EB5725319564DBE0022E9C9 /* DOMDocument.xml */; };
+		4EB5725D19564DBE0022E9C9 /* Symbol 1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4EB5725519564DBE0022E9C9 /* Symbol 1.xml */; };
+		4EB5725E19564DBE0022E9C9 /* metadata.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4EB5725719564DBE0022E9C9 /* metadata.xml */; };
+		4EB5725F19564DBE0022E9C9 /* MobileSettings.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4EB5725819564DBE0022E9C9 /* MobileSettings.xml */; };
+		4EB5726019564DBE0022E9C9 /* PublishSettings.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4EB5725919564DBE0022E9C9 /* PublishSettings.xml */; };
 		B60D9D82192F29AE00CBE191 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60D9D81192F29AE00CBE191 /* MainTableViewCell.m */; };
 		B60D9D951930823A00CBE191 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D9D891930823A00CBE191 /* Icon.png */; };
 		B60D9D961930823A00CBE191 /* Icon40.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D9D8A1930823A00CBE191 /* Icon40.png */; };
@@ -56,7 +65,6 @@
 		B61B2EB51952AF8600AE5908 /* welcomePage1.psd in Resources */ = {isa = PBXBuildFile; fileRef = B61B2EB41952AF8600AE5908 /* welcomePage1.psd */; };
 		B61B2EB71952AFA300AE5908 /* welcomePage1.png in Resources */ = {isa = PBXBuildFile; fileRef = B61B2EB61952AFA300AE5908 /* welcomePage1.png */; };
 		B61B2EBD1952BA2A00AE5908 /* WorkstationSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B61B2EBB1952BA2A00AE5908 /* WorkstationSetupViewController.m */; };
-		B61B2EBE1952BA2A00AE5908 /* WorkstationSetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B61B2EBC1952BA2A00AE5908 /* WorkstationSetupViewController.xib */; };
 		B643E7F7192F21C50062159A /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B643E7F6192F21C50062159A /* MainTableViewCell.xib */; };
 		B6550D56193168FD00FAF97F /* MainViewNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6550D55193168FD00FAF97F /* MainViewNavigationController.m */; };
 		B6AE72A519404DAF00FBFB5E /* PossibleSolutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE72A319404DAF00FBFB5E /* PossibleSolutionViewController.m */; };
@@ -118,6 +126,16 @@
 		4E339C02193403D700B9BDE3 /* DiscomfortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiscomfortViewController.h; path = "StraightComfort-iOS/DiscomfortViewController/DiscomfortViewController.h"; sourceTree = SOURCE_ROOT; };
 		4E339C03193403D700B9BDE3 /* DiscomfortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiscomfortViewController.m; path = "StraightComfort-iOS/DiscomfortViewController/DiscomfortViewController.m"; sourceTree = SOURCE_ROOT; };
 		4E339C04193403D700B9BDE3 /* DiscomfortViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DiscomfortViewController.xib; path = "StraightComfort-iOS/DiscomfortViewController/DiscomfortViewController.xib"; sourceTree = SOURCE_ROOT; };
+		4EB572481955FA460022E9C9 /* WorkstationSetupViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WorkstationSetupViewController.storyboard; sourceTree = "<group>"; };
+		4EB5724B1955FABD0022E9C9 /* WorkstationContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkstationContentViewController.h; sourceTree = "<group>"; };
+		4EB5724C1955FABD0022E9C9 /* WorkstationContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkstationContentViewController.m; sourceTree = "<group>"; };
+		4EB5725119564DBE0022E9C9 /* SymDepend.cache */ = {isa = PBXFileReference; lastKnownFileType = file; path = SymDepend.cache; sourceTree = "<group>"; };
+		4EB5725219564DBE0022E9C9 /* bouncingBallExample.xfl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bouncingBallExample.xfl; sourceTree = "<group>"; };
+		4EB5725319564DBE0022E9C9 /* DOMDocument.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DOMDocument.xml; sourceTree = "<group>"; };
+		4EB5725519564DBE0022E9C9 /* Symbol 1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Symbol 1.xml"; sourceTree = "<group>"; };
+		4EB5725719564DBE0022E9C9 /* metadata.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = metadata.xml; sourceTree = "<group>"; };
+		4EB5725819564DBE0022E9C9 /* MobileSettings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MobileSettings.xml; sourceTree = "<group>"; };
+		4EB5725919564DBE0022E9C9 /* PublishSettings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PublishSettings.xml; sourceTree = "<group>"; };
 		B60D9D80192F29AE00CBE191 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
 		B60D9D81192F29AE00CBE191 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
 		B60D9D8419307D6500CBE191 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -161,7 +179,6 @@
 		B61B2EB61952AFA300AE5908 /* welcomePage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcomePage1.png; sourceTree = "<group>"; };
 		B61B2EBA1952BA2A00AE5908 /* WorkstationSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkstationSetupViewController.h; sourceTree = "<group>"; };
 		B61B2EBB1952BA2A00AE5908 /* WorkstationSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkstationSetupViewController.m; sourceTree = "<group>"; };
-		B61B2EBC1952BA2A00AE5908 /* WorkstationSetupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkstationSetupViewController.xib; sourceTree = "<group>"; };
 		B643E7F6192F21C50062159A /* MainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		B6550D54193168FD00FAF97F /* MainViewNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewNavigationController.h; sourceTree = "<group>"; };
 		B6550D55193168FD00FAF97F /* MainViewNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewNavigationController.m; sourceTree = "<group>"; };
@@ -245,6 +262,52 @@
 			path = TutorialViewController;
 			sourceTree = "<group>";
 		};
+		4EB5724E19564DBE0022E9C9 /* Flash Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4EB5724F19564DBE0022E9C9 /* bouncingBallExample */,
+			);
+			path = "Flash Assets";
+			sourceTree = "<group>";
+		};
+		4EB5724F19564DBE0022E9C9 /* bouncingBallExample */ = {
+			isa = PBXGroup;
+			children = (
+				4EB5725019564DBE0022E9C9 /* bin */,
+				4EB5725219564DBE0022E9C9 /* bouncingBallExample.xfl */,
+				4EB5725319564DBE0022E9C9 /* DOMDocument.xml */,
+				4EB5725419564DBE0022E9C9 /* LIBRARY */,
+				4EB5725619564DBE0022E9C9 /* META-INF */,
+				4EB5725819564DBE0022E9C9 /* MobileSettings.xml */,
+				4EB5725919564DBE0022E9C9 /* PublishSettings.xml */,
+			);
+			path = bouncingBallExample;
+			sourceTree = "<group>";
+		};
+		4EB5725019564DBE0022E9C9 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				4EB5725119564DBE0022E9C9 /* SymDepend.cache */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		4EB5725419564DBE0022E9C9 /* LIBRARY */ = {
+			isa = PBXGroup;
+			children = (
+				4EB5725519564DBE0022E9C9 /* Symbol 1.xml */,
+			);
+			path = LIBRARY;
+			sourceTree = "<group>";
+		};
+		4EB5725619564DBE0022E9C9 /* META-INF */ = {
+			isa = PBXGroup;
+			children = (
+				4EB5725719564DBE0022E9C9 /* metadata.xml */,
+			);
+			path = "META-INF";
+			sourceTree = "<group>";
+		};
 		B60D9D8319307CEF00CBE191 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +328,7 @@
 		B60D9D881930818100CBE191 /* Original Assets */ = {
 			isa = PBXGroup;
 			children = (
+				4EB5724E19564DBE0022E9C9 /* Flash Assets */,
 				B61B2EB31952AF8600AE5908 /* Rasterized Assets */,
 				B6FF554B1938570B00B9324D /* Vector Assets */,
 				4E065E84193A865400A70377 /* chair.png */,
@@ -330,7 +394,9 @@
 			children = (
 				B61B2EBA1952BA2A00AE5908 /* WorkstationSetupViewController.h */,
 				B61B2EBB1952BA2A00AE5908 /* WorkstationSetupViewController.m */,
-				B61B2EBC1952BA2A00AE5908 /* WorkstationSetupViewController.xib */,
+				4EB5724B1955FABD0022E9C9 /* WorkstationContentViewController.h */,
+				4EB5724C1955FABD0022E9C9 /* WorkstationContentViewController.m */,
+				4EB572481955FA460022E9C9 /* WorkstationSetupViewController.storyboard */,
 			);
 			path = WorkstationSetupViewController;
 			sourceTree = "<group>";
@@ -557,11 +623,12 @@
 				B61B2EA21950027100AE5908 /* Roboto-CondensedItalic.ttf in Resources */,
 				B60D9D971930823A00CBE191 /* Icon60.png in Resources */,
 				B6AE72C61946D19000FBFB5E /* monitor.ai in Resources */,
+				4EB5725C19564DBE0022E9C9 /* DOMDocument.xml in Resources */,
 				B61B2EB21951568E00AE5908 /* page4.png in Resources */,
 				B6AE72BE1946CC7800FBFB5E /* keyboard.png in Resources */,
 				B61B2EA81950027100AE5908 /* Roboto-Regular.ttf in Resources */,
 				B60D9D9B1930823A00CBE191 /* Icon152.png in Resources */,
-				B61B2EBE1952BA2A00AE5908 /* WorkstationSetupViewController.xib in Resources */,
+				4EB5726019564DBE0022E9C9 /* PublishSettings.xml in Resources */,
 				B60D9DA81930829E00CBE191 /* Champagne & Limousines Italic.ttf in Resources */,
 				B61B2E9D1950027100AE5908 /* Roboto-Bold.ttf in Resources */,
 				B6AE72B61942F1BE00FBFB5E /* PossibleSolutionTableViewCell.xib in Resources */,
@@ -574,10 +641,12 @@
 				4E0E7BB4194E3DAB0065D676 /* TutorialViewController.storyboard in Resources */,
 				B60D9D9C1930823A00CBE191 /* Launch5geniphone.png in Resources */,
 				B6AE72C01946CFF200FBFB5E /* mouse.ai in Resources */,
+				4EB5725F19564DBE0022E9C9 /* MobileSettings.xml in Resources */,
 				B6E8C83318C50DC400550D49 /* InfoPlist.strings in Resources */,
 				4E065E8A193AD33B00A70377 /* DiscomfortTableViewCell.xib in Resources */,
 				B61B2EA01950027100AE5908 /* Roboto-BoldItalic.ttf in Resources */,
 				B61B2EB51952AF8600AE5908 /* welcomePage1.psd in Resources */,
+				4EB5725D19564DBE0022E9C9 /* Symbol 1.xml in Resources */,
 				B60D9D991930823A00CBE191 /* Icon80.png in Resources */,
 				B61B2E9B1950027100AE5908 /* Roboto-Black.ttf in Resources */,
 				B60D9D981930823A00CBE191 /* Icon76.png in Resources */,
@@ -589,6 +658,7 @@
 				B61B2EA71950027100AE5908 /* Roboto-MediumItalic.ttf in Resources */,
 				B6FF554D1938573900B9324D /* fancyChair.ai in Resources */,
 				B61B2EAF1951568E00AE5908 /* page1.png in Resources */,
+				4EB5725B19564DBE0022E9C9 /* bouncingBallExample.xfl in Resources */,
 				B6AE72A619404DAF00FBFB5E /* PossibleSolutionViewController.xib in Resources */,
 				4E065E7D193A7D1C00A70377 /* chair.ai in Resources */,
 				B6AE72C21946D02B00FBFB5E /* mouse.png in Resources */,
@@ -600,16 +670,19 @@
 				B60D9D9E1930823A00CBE191 /* Launchipad@2x.png in Resources */,
 				B61B2E9C1950027100AE5908 /* Roboto-BlackItalic.ttf in Resources */,
 				B643E7F7192F21C50062159A /* MainTableViewCell.xib in Resources */,
+				4EB572491955FA460022E9C9 /* WorkstationSetupViewController.storyboard in Resources */,
 				B6AE72CA1946D46800FBFB5E /* documents.png in Resources */,
 				4E339C06193403D700B9BDE3 /* DiscomfortViewController.xib in Resources */,
 				B61B2EA11950027100AE5908 /* Roboto-Condensed.ttf in Resources */,
 				B60D9DA91930829E00CBE191 /* Champagne & Limousines.ttf in Resources */,
 				B61B2EB01951568E00AE5908 /* page2.png in Resources */,
+				4EB5725E19564DBE0022E9C9 /* metadata.xml in Resources */,
 				B6AE72C81946D45800FBFB5E /* documents.ai in Resources */,
 				B61B2E9E1950027100AE5908 /* Roboto-BoldCondensed.ttf in Resources */,
 				B61B2EA91950027100AE5908 /* Roboto-Thin.ttf in Resources */,
 				B60D9D9D1930823A00CBE191 /* Launchipad.png in Resources */,
 				B6AE72AF19404F4400FBFB5E /* ShortcutTableViewCell.xib in Resources */,
+				4EB5725A19564DBE0022E9C9 /* SymDepend.cache in Resources */,
 				B60D9DA71930829E00CBE191 /* Champagne & Limousines Bold.ttf in Resources */,
 				B61B2EAA1950027100AE5908 /* Roboto-ThinItalic.ttf in Resources */,
 				B61B2EA31950027100AE5908 /* Roboto-Italic.ttf in Resources */,
@@ -638,6 +711,7 @@
 				4E339C05193403D700B9BDE3 /* DiscomfortViewController.m in Sources */,
 				4E0E7BAF194E39CF0065D676 /* TutorialViewController.m in Sources */,
 				B6AE72AE19404F4400FBFB5E /* ShortcutTableViewCell.m in Sources */,
+				4EB5724D1955FABD0022E9C9 /* WorkstationContentViewController.m in Sources */,
 				B6E8C83918C50DC400550D49 /* AppDelegate.m in Sources */,
 				B6550D56193168FD00FAF97F /* MainViewNavigationController.m in Sources */,
 				4E065E89193AD33B00A70377 /* DiscomfortTableViewCell.m in Sources */,

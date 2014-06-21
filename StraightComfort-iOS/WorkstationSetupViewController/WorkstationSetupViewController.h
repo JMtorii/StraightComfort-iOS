@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TutorialContentViewController.h"
+#import "Constants.h"
 
-@interface WorkstationSetupViewController : UIPageViewController
+@interface WorkstationSetupViewController : UIViewController <UIPageViewControllerDataSource>
+
+@property (strong, nonatomic) UIPageViewController *pageViewController;
+@property (strong, nonatomic) NSArray *pageTitles;
+@property (strong, nonatomic) NSArray *pageImages;
 
 @end

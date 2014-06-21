@@ -1,0 +1,33 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" currentTimeline="1" xflVersion="2.4" creatorInfo="Adobe Flash Professional CC" platform="Macintosh" versionInfo="Saved by Adobe Flash Macintosh 13.1 build 226" majorVersion="13" minorVersion="1" buildNumber="226" objectsSnapTo="false" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F">
+     <symbols>
+          <Include href="Symbol 1.xml" loadImmediate="false" itemID="53a5ec0b-00000004" lastModified="1403382795"/>
+     </symbols>
+     <timelines>
+          <DOMTimeline name="Scene 1" currentFrame="39">
+               <layers>
+                    <DOMLayer name="Layer 1" color="#4F80FF" current="true" isSelected="true" animationType="motion object">
+                         <frames>
+                              <DOMFrame index="0" duration="40" tweenType="motion object" motionTweenRotate="none" motionTweenScale="false" isMotionObject="true" visibleAnimationKeyframes="2097151" keyMode="8195">
+                                   <motionObjectXML><AnimationCore TimeScale="24000" Version="1" duration="40000"><TimeMap strength="0" type="Quadratic"/><metadata><names><name langID="en_US" value=""/></names><Settings orientToPath="0" xformPtXOffsetPct="0.5" xformPtYOffsetPct="0.5" xformPtZOffsetPixels="0"/></metadata><PropertyContainer id="headContainer"><PropertyContainer id="Basic_Motion"><Property enabled="1" id="Motion_X" ignoreTimeMap="0" readonly="0" visible="1"><Keyframe anchor="0,0" next="0,0" previous="0,0" roving="0" timevalue="0"/><Keyframe anchor="0,0" next="0,0" previous="0,0" roving="0" timevalue="18000"/><Keyframe anchor="0,0" next="0,0" previous="0,0" roving="0" timevalue="39000"/></Property><Property enabled="1" id="Motion_Y" ignoreTimeMap="0" readonly="0" visible="1"><Keyframe anchor="0,0" next="0,0" previous="0,0" roving="0" timevalue="0"/><Keyframe anchor="0,-154" next="0,-154" previous="0,-154" roving="0" timevalue="18000"/><Keyframe anchor="0,-2" next="0,-2" previous="0,-2" roving="0" timevalue="39000"/></Property><Property enabled="1" id="Rotation_Z" ignoreTimeMap="0" readonly="0" visible="1"><Keyframe anchor="0,0" next="0,0" previous="0,0" roving="0" timevalue="0"/></Property></PropertyContainer><PropertyContainer id="Transformation"><Property enabled="1" id="Skew_X" ignoreTimeMap="0" readonly="0" visible="1"><Keyframe anchor="0,0" next="0,0" previous="0,0" roving="0" timevalue="0"/></Property><Property enabled="1" id="Skew_Y" ignoreTimeMap="0" readonly="0" visible="1"><Keyframe anchor="0,0" next="0,0" previous="0,0" roving="0" timevalue="0"/></Property><Property enabled="1" id="Scale_X" ignoreTimeMap="0" readonly="0" visible="1"><Keyframe anchor="0,100" next="0,100" previous="0,100" roving="0" timevalue="0"/></Property><Property enabled="1" id="Scale_Y" ignoreTimeMap="0" readonly="0" visible="1"><Keyframe anchor="0,100" next="0,100" previous="0,100" roving="0" timevalue="0"/></Property></PropertyContainer><PropertyContainer id="Colors"/><PropertyContainer id="Filters"/></PropertyContainer></AnimationCore></motionObjectXML>
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 1">
+                                             <matrix>
+                                                  <Matrix tx="215" ty="223.95"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="54" y="54"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <PrinterSettings platform="macintosh"/>
+     <publishHistory>
+          <PublishItem publishSize="335" publishTime="1403382829"/>
+          <PublishItem publishSize="260" publishTime="1403382817"/>
+     </publishHistory>
+</DOMDocument>

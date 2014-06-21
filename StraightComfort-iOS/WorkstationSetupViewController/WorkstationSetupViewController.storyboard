@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3RC-Lc-pvs">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="4O4-jd-bg3">
+            <objects>
+                <pageViewController storyboardIdentifier="WorkstationSetupPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="vWv-81-ot1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zod-zs-GiF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="904" y="-655"/>
+        </scene>
+        <!--Workstation Setup View Controller-->
+        <scene sceneID="AC7-CW-apr">
+            <objects>
+                <viewController storyboardIdentifier="WorkstationSetupViewController" id="3RC-Lc-pvs" customClass="WorkstationSetupViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4dm-v4-xe3"/>
+                        <viewControllerLayoutGuide type="bottom" id="aHL-g3-z8z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g3X-5m-hF8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LZP-F7-4M6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2GL-Gw-BR5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="401" y="-308"/>
+        </scene>
+        <!--Workstation Content View Controller-->
+        <scene sceneID="IsY-ZU-9Ma">
+            <objects>
+                <viewController storyboardIdentifier="WorkstationSetupContentViewController" id="4lp-xh-Dur" customClass="WorkstationContentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xHS-PS-Z4P"/>
+                        <viewControllerLayoutGuide type="bottom" id="eae-V9-tlW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9vB-gp-OX9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l0v-Tg-MdE">
+                                <rect key="frame" x="20" y="89" width="280" height="199"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="l0v-Tg-MdE" id="2Yu-BN-pgc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zua-VJ-qos" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="904" y="102"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
