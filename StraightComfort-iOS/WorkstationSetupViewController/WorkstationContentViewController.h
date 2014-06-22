@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Constants.h"
 
 @interface WorkstationContentViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+@property (weak, nonatomic) IBOutlet UIView *descriptionFrame;
+@property (weak, nonatomic) IBOutlet UIView *animationFrame;
 @property NSUInteger pageIndex;
 
 @property NSString *imageFile;

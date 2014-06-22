@@ -27,17 +27,16 @@
 {
     [super viewDidLoad];
     
-    self.backgroundImageView.image = [UIImage imageNamed:self.imageFile];
+//    self.backgroundImageView.image = [UIImage imageNamed:self.imageFile];
     
     // Do not change width! This ensures 20px on both ends.
-    CGRect labelFrame = CGRectMake(20, 310, 280, 150);
+    CGRect labelFrame = CGRectMake(20, 295, 280, 150);
     UILabel *descriptionLabel = [[UILabel alloc] initWithFrame:labelFrame];
     [descriptionLabel setBackgroundColor:[UIColor orangeColor]];
     
-
     [descriptionLabel setText:@"a a a a a a a a a a a a a a a a aiii a a a a a a a a a"];
     
-    [descriptionLabel setFont:[UIFont systemFontOfSize:20]];
+    [descriptionLabel setFont:[UIFont fontWithName:kRobotoRegular size:18]];
     
     // Tell the label to use an unlimited number of lines
     [descriptionLabel setNumberOfLines:0];

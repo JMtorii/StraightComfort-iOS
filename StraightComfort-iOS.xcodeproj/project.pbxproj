@@ -60,13 +60,10 @@
 		B61B2EA81950027100AE5908 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B61B2E981950027100AE5908 /* Roboto-Regular.ttf */; };
 		B61B2EA91950027100AE5908 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B61B2E991950027100AE5908 /* Roboto-Thin.ttf */; };
 		B61B2EAA1950027100AE5908 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B61B2E9A1950027100AE5908 /* Roboto-ThinItalic.ttf */; };
-		B61B2EAF1951568E00AE5908 /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = B61B2EAB1951568E00AE5908 /* page1.png */; };
-		B61B2EB01951568E00AE5908 /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = B61B2EAC1951568E00AE5908 /* page2.png */; };
-		B61B2EB11951568E00AE5908 /* page3.png in Resources */ = {isa = PBXBuildFile; fileRef = B61B2EAD1951568E00AE5908 /* page3.png */; };
-		B61B2EB21951568E00AE5908 /* page4.png in Resources */ = {isa = PBXBuildFile; fileRef = B61B2EAE1951568E00AE5908 /* page4.png */; };
 		B61B2EB51952AF8600AE5908 /* welcomePage1.psd in Resources */ = {isa = PBXBuildFile; fileRef = B61B2EB41952AF8600AE5908 /* welcomePage1.psd */; };
 		B61B2EB71952AFA300AE5908 /* welcomePage1.png in Resources */ = {isa = PBXBuildFile; fileRef = B61B2EB61952AFA300AE5908 /* welcomePage1.png */; };
 		B61B2EBD1952BA2A00AE5908 /* WorkstationSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B61B2EBB1952BA2A00AE5908 /* WorkstationSetupViewController.m */; };
+		B61B2EC219567E9100AE5908 /* WorkstationSetupStrings.xml in Resources */ = {isa = PBXBuildFile; fileRef = B61B2EC119567E9100AE5908 /* WorkstationSetupStrings.xml */; };
 		B643E7F7192F21C50062159A /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B643E7F6192F21C50062159A /* MainTableViewCell.xib */; };
 		B6550D56193168FD00FAF97F /* MainViewNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6550D55193168FD00FAF97F /* MainViewNavigationController.m */; };
 		B6AE72A519404DAF00FBFB5E /* PossibleSolutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE72A319404DAF00FBFB5E /* PossibleSolutionViewController.m */; };
@@ -177,14 +174,11 @@
 		B61B2E981950027100AE5908 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		B61B2E991950027100AE5908 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		B61B2E9A1950027100AE5908 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
-		B61B2EAB1951568E00AE5908 /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page1.png; sourceTree = "<group>"; };
-		B61B2EAC1951568E00AE5908 /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page2.png; sourceTree = "<group>"; };
-		B61B2EAD1951568E00AE5908 /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page3.png; sourceTree = "<group>"; };
-		B61B2EAE1951568E00AE5908 /* page4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page4.png; sourceTree = "<group>"; };
 		B61B2EB41952AF8600AE5908 /* welcomePage1.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = welcomePage1.psd; sourceTree = "<group>"; };
 		B61B2EB61952AFA300AE5908 /* welcomePage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcomePage1.png; sourceTree = "<group>"; };
 		B61B2EBA1952BA2A00AE5908 /* WorkstationSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkstationSetupViewController.h; sourceTree = "<group>"; };
 		B61B2EBB1952BA2A00AE5908 /* WorkstationSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkstationSetupViewController.m; sourceTree = "<group>"; };
+		B61B2EC119567E9100AE5908 /* WorkstationSetupStrings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = WorkstationSetupStrings.xml; sourceTree = "<group>"; };
 		B643E7F6192F21C50062159A /* MainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		B6550D54193168FD00FAF97F /* MainViewNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewNavigationController.h; sourceTree = "<group>"; };
 		B6550D55193168FD00FAF97F /* MainViewNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewNavigationController.m; sourceTree = "<group>"; };
@@ -336,6 +330,7 @@
 		B60D9D8319307CEF00CBE191 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				B61B2EC31956848700AE5908 /* XMLParser */,
 				B60D9D8419307D6500CBE191 /* Constants.h */,
 			);
 			path = Utilities;
@@ -422,8 +417,16 @@
 				4EB5724B1955FABD0022E9C9 /* WorkstationContentViewController.h */,
 				4EB5724C1955FABD0022E9C9 /* WorkstationContentViewController.m */,
 				4EB572481955FA460022E9C9 /* WorkstationSetupViewController.storyboard */,
+				B61B2EC119567E9100AE5908 /* WorkstationSetupStrings.xml */,
 			);
 			path = WorkstationSetupViewController;
+			sourceTree = "<group>";
+		};
+		B61B2EC31956848700AE5908 /* XMLParser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = XMLParser;
 			sourceTree = "<group>";
 		};
 		B6550D521931682A00FAF97F /* ShortcutViewController */ = {
@@ -505,10 +508,6 @@
 		B6E8C82E18C50DC400550D49 /* StraightComfort-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				B61B2EAB1951568E00AE5908 /* page1.png */,
-				B61B2EAC1951568E00AE5908 /* page2.png */,
-				B61B2EAD1951568E00AE5908 /* page3.png */,
-				B61B2EAE1951568E00AE5908 /* page4.png */,
 				B6E8C83718C50DC400550D49 /* AppDelegate.h */,
 				B6E8C83818C50DC400550D49 /* AppDelegate.m */,
 				4E0E7BAB194CD8740065D676 /* TutorialViewController */,
@@ -650,7 +649,6 @@
 				B60D9D971930823A00CBE191 /* Icon60.png in Resources */,
 				B6AE72C61946D19000FBFB5E /* monitor.ai in Resources */,
 				4EB5725C19564DBE0022E9C9 /* DOMDocument.xml in Resources */,
-				B61B2EB21951568E00AE5908 /* page4.png in Resources */,
 				B6AE72BE1946CC7800FBFB5E /* keyboard.png in Resources */,
 				B61B2EA81950027100AE5908 /* Roboto-Regular.ttf in Resources */,
 				B60D9D9B1930823A00CBE191 /* Icon152.png in Resources */,
@@ -683,12 +681,10 @@
 				B6AE72B81945923C00FBFB5E /* keyboard.ai in Resources */,
 				B61B2EA71950027100AE5908 /* Roboto-MediumItalic.ttf in Resources */,
 				B6FF554D1938573900B9324D /* fancyChair.ai in Resources */,
-				B61B2EAF1951568E00AE5908 /* page1.png in Resources */,
 				4EB5725B19564DBE0022E9C9 /* bouncingBallExample.xfl in Resources */,
 				B6AE72A619404DAF00FBFB5E /* PossibleSolutionViewController.xib in Resources */,
 				4E065E7D193A7D1C00A70377 /* chair.ai in Resources */,
 				B6AE72C21946D02B00FBFB5E /* mouse.png in Resources */,
-				B61B2EB11951568E00AE5908 /* page3.png in Resources */,
 				B6E8C83B18C50DC400550D49 /* Images.xcassets in Resources */,
 				4E065E85193A865400A70377 /* chair.png in Resources */,
 				B60D9DA01930823A00CBE191 /* logo.png in Resources */,
@@ -697,11 +693,11 @@
 				B61B2E9C1950027100AE5908 /* Roboto-BlackItalic.ttf in Resources */,
 				B643E7F7192F21C50062159A /* MainTableViewCell.xib in Resources */,
 				4EB572491955FA460022E9C9 /* WorkstationSetupViewController.storyboard in Resources */,
+				B61B2EC219567E9100AE5908 /* WorkstationSetupStrings.xml in Resources */,
 				B6AE72CA1946D46800FBFB5E /* documents.png in Resources */,
 				4E339C06193403D700B9BDE3 /* DiscomfortViewController.xib in Resources */,
 				B61B2EA11950027100AE5908 /* Roboto-Condensed.ttf in Resources */,
 				B60D9DA91930829E00CBE191 /* Champagne & Limousines.ttf in Resources */,
-				B61B2EB01951568E00AE5908 /* page2.png in Resources */,
 				4EB5725E19564DBE0022E9C9 /* metadata.xml in Resources */,
 				B6AE72C81946D45800FBFB5E /* documents.ai in Resources */,
 				B61B2E9E1950027100AE5908 /* Roboto-BoldCondensed.ttf in Resources */,

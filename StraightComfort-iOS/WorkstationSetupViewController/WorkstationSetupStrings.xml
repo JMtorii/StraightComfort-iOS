@@ -1,0 +1,79 @@
+<workstationSetup>
+    
+    <workstationGroup>
+        <title>Chair</title>
+        <descGroup>
+            <descPoint>We must adjust the chair to the proper height by using lever 1 as shown in the picture. The height of the chair should be at an appropriate level so that your thighs are parallel to the floor as well as your feet flat on the ground.</desc>
+            <descPoint>If possible, the seat depth should be adjusted as well. It should be close enough to the backrest so that you can use its support and also leave 2 to 3 fingers’ space between the edge of the seat and the back of your knee.</desc>
+            <descPoint>The backrest height should be adjusted so that its support fits the natural curve of your lumbar spine. Always try to remember to sit all the way back in your seat to use the support! Try not to sit on the edge of the seat while at your desk.</desc>
+            <descPoint>The backrest angle should be slightly more than 90 degrees.</desc>
+            <descPoint>If available, the tilt should be parallel to the ground.</desc>
+            <descPoint>Armrests are recommended to be adjusted to the widest settings to avoid obstruction when using the keyboard or mouse.</desc>
+        </descGroup>
+    </workstationGroup>
+    
+    <workstationGroup>
+        <title>Keyboard Tray</title>
+        <descGroup>
+            <descPoint>To obtain the correct working height, adjust the keyboard tray up or down so that your wrists are straight, forearms are parallel to the floor, and your palms are facing down.</desc>
+            <descPoint>Your arms and shoulders should be relaxed, with your elbows at your side.</desc>
+            <descPoint>If the keyboard and mouse are located on the desk surface, adjust the chair height until your arms are parallel to the floor and your wrists are straight. You may require a footrest to support your legs and feet if they are no longer supported by the floor.</desc>
+            <descPoint>Avoid resting your wrists while typing. Only use wrist supports during rest periods. If possible, remove your hands from the keyboard entirely to promote micro-breaks. Make sure to place the support under your palms and not your wrists.</desc>
+        </descGroup>
+    </workstationGroup>
+    
+    <workstationGroup>
+        <title>Mouse</title>
+        <descGroup>
+            <descPoint>The mouse should be positioned at the same height as the keyboard, and as close as possible to reduce reaching.</desc>
+            <descPoint>When using the mouse, your wrist should be straight and grip relaxed. Move the mouse using your arm and not your wrist.</desc>
+            <descPoint>Avoid resting your wrist when using the mouse. Only use wrist supports during rest periods. If possible, remove your hand from the mouse entirely to promote micro-breaks.</desc>
+            <descPoint>Alternate between right and left hand usage to reduce exposure and promote tissue recovery and use keyboard shortcuts when possible to minimize mouse use.</desc>
+        </descGroup>
+    </workstationGroup>
+    
+    <workstationGroup>
+        <title>Monitor</title>
+        <descGroup>
+            <descPoint>Adjust the monitor height so that your line of sight falls within the top 2” of the screen.</desc>
+            <descPoint>Adjust the monitor distance to about one arm’s length away.</desc>
+            <descPoint>Align the middle of your body with the “B” key, with the middle of the monitor.</desc>
+            <descPoint>If you wear Bifocals, lower your monitor to a position that allows you to view the screen using neutral neck postures. Wearing specific computer glasses is another option when prolonged computer work is required.</desc>
+            <descPoint>Most CRT (old style) monitors are not height adjustable however the height can be raised using a riser or CPU. Alternatively, if the monitor is already on top of a CPU and is too high, lower the monitor to the desk surface to reduce the height.</desc>
+            <descPoint>Laptop use: If you have a laptop at your workstation, consider using an external mouse and keyboard, and raising or mounting the laptop monitor to the appropriate height.</desc>
+        </descGroup>
+    </workstationGroup>
+    
+    <workstationGroup>
+        <title>Documents</title>
+        <descGroup>
+            <descPoint>Tasks requiring data entry from paper documents may require a slant board or document holder.</desc>
+            <descPoint>The document holder or slant board should be placed on the desk surface directly in front of the monitor.</desc>
+            <descPoint>The holder also can be located off to the left or right side of the monitor. Alternating between left and right sides is encouraged to promote tissue recovery.</desc>
+            <descPoint>Task lighting: If you require additional lighting, ensure it is positioned below eye level to eliminate direct glare off documents or even the monitor.</desc>
+        </descGroup>
+    </workstationGroup>
+    
+    <workstationGroup>
+        <title>Organization of Work Area and Storage</title>
+        <descGroup>
+            <descPoint>Position materials that you use frequently, or for long periods of time, within your primary reach zone, about forearms length away.</desc>
+            <descPoint>Bookshelves are often loaded with heavy binders, charts and reference material. The heaviest and most frequently used binders should be placed on the shelves that require the least amount of reaching or bending.</desc>
+            <descPoint>Position your telephone set on the side of your non dominant hand. Try using the phone with your non dominant hand so that you can use your dominant hand for other tasks such as writing.</desc>
+            <descPoint>If you use your telephone for prolonged periods of time or if frequently typing simultaneously, consider use of a headset. This prevents the use of awkward neck and shoulder postures when talking on the phone and performing other tasks simultaneously (e.g. writing, typing)</desc>
+            <descPoint>Ensure that there is adequate space for leg clearance, underneath your desk surface.</desc>
+            <descPoint>Relocate garbage/recycling containers, boxes, or files, to another nearby area if possible.</desc>
+            <descPoint>Wires: Ensure that all wires and extension cords are securely fastened and out of the way, to reduce the risk of tripping.</desc>
+        </descGroup>
+    </workstationGroup>
+    
+    <workstationGroup>
+        <title>Additional Topics</title>
+        <descGroup>
+            <descPoint>Task lighting: If you require additional lighting, ensure it is positioned below eye level to eliminate direct glare.</desc>
+            <descPoint>Laptop use: If you have a laptop at your workstation, consider using an external mouse and keyboard, and raising or mounting the laptop monitor to the appropriate height.</desc>
+            <descPoint>Wires: Ensure that all wires and extension cords are securely fastened and out of the way, to reduce the risk of tripping.</desc>
+        </descGroup>
+    </workstationGroup>
+    
+</workstationSetup>
