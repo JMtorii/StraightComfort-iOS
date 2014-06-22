@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "Constants.h"
+#import "FLAnimatedImage.h"
+#import "FLAnimatedImageView.h"
 
 @interface WorkstationContentViewController : UIViewController
 

@@ -27,7 +27,7 @@
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationSetupPageViewController"];
     self.pageViewController.dataSource = self;
     
-    TutorialContentViewController *startingViewController = [self viewControllerAtIndex:0];
+    WorkstationContentViewController *startingViewController = [self viewControllerAtIndex:0];
     NSArray *viewControllers = @[startingViewController];
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     
@@ -54,20 +54,20 @@
 }
 
 - (IBAction)startWalkthrough:(id)sender {
-    TutorialContentViewController *startingViewController = [self viewControllerAtIndex:0];
+    WorkstationContentViewController *startingViewController = [self viewControllerAtIndex:0];
     NSArray *viewControllers = @[startingViewController];
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionReverse animated:NO completion:nil];
 }
 
-- (TutorialContentViewController *)viewControllerAtIndex:(NSUInteger)index
+- (WorkstationContentViewController *)viewControllerAtIndex:(NSUInteger)index
 {
     if (([self.pageTitles count] == 0) || (index >= [self.pageTitles count])) {
         return nil;
     }
     
     // Create a new view controller and pass suitable data.
-    TutorialContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationSetupContentViewController"];
-    pageContentViewController.imageFile = self.pageImages[index];
+    WorkstationContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationSetupContentViewController"];
+//    pageContentViewController.imageFile = self.pageImages[index];
     pageContentViewController.pageIndex = index;
     
     return pageContentViewController;
@@ -77,7 +77,7 @@
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
-    NSUInteger index = ((TutorialContentViewController*) viewController).pageIndex;
+    NSUInteger index = ((WorkstationContentViewController*) viewController).pageIndex;
     
     if ((index == 0) || (index == NSNotFound)) {
         return nil;
@@ -89,7 +89,7 @@
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
-    NSUInteger index = ((TutorialContentViewController*) viewController).pageIndex;
+    NSUInteger index = ((WorkstationContentViewController*) viewController).pageIndex;
     
     if (index == NSNotFound) {
         return nil;

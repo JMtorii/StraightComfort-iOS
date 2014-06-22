@@ -27,12 +27,24 @@
 {
     [super viewDidLoad];
     
-//    self.backgroundImageView.image = [UIImage imageNamed:self.imageFile];
+    UIPageControl *pageControl = [UIPageControl appearance];
+    pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+    pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+    
+    NSURL *url1 = [[NSBundle mainBundle] URLForResource:@"bouncingBallExample" withExtension:@"gif"];
+    NSData *data1 = [NSData dataWithContentsOfURL:url1];
+    FLAnimatedImage *image = [[FLAnimatedImage alloc] initWithAnimatedGIFData:data1];
+    FLAnimatedImageView *imageView = [[FLAnimatedImageView alloc] init];
+    imageView.animatedImage = image;
+    imageView.frame = CGRectMake(20.0, 89.0, 280.0, 199.0);
+    
+    [self.view addSubview:imageView];
+    
     
     // Do not change width! This ensures 20px on both ends.
-    CGRect labelFrame = CGRectMake(20, 295, 280, 150);
+    CGRect labelFrame = CGRectMake(20, 296, 280, 233);
     UILabel *descriptionLabel = [[UILabel alloc] initWithFrame:labelFrame];
-    [descriptionLabel setBackgroundColor:[UIColor orangeColor]];
+//    [descriptionLabel setBackgroundColor:[UIColor orangeColor]];
     
     [descriptionLabel setText:@"a a a a a a a a a a a a a a a a aiii a a a a a a a a a"];
     
@@ -41,6 +53,7 @@
     // Tell the label to use an unlimited number of lines
     [descriptionLabel setNumberOfLines:0];
     [descriptionLabel sizeToFit];
+    
     
     [self.view addSubview:descriptionLabel];
 }

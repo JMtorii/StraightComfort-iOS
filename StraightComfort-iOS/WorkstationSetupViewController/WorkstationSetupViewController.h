@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TutorialContentViewController.h"
+#import "WorkstationContentViewController.h"
 #import "Constants.h"
 
 @interface WorkstationSetupViewController : UIViewController <UIPageViewControllerDataSource>
