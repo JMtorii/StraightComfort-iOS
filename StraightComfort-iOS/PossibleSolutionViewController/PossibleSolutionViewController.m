@@ -39,23 +39,25 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return [finalSectionNames count];
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [[completePossibleSolutionDictionary objectForKey:[finalSectionNames objectAtIndex:section]]count];
+    return [finalSectionNames count];
+}
+
+- (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if (section == 0)
+        return 1.0f;
+    return 32.0f;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 75;
-}
-
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section 
-{
-    return [finalSectionNames objectAtIndex:section];
+    return 140;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -69,7 +71,7 @@
         cell = [nib objectAtIndex:0];
     }
     
-    cell.possibleSolutionLabel.text = [[completePossibleSolutionDictionary objectForKey:[finalSectionNames objectAtIndex:indexPath.section]]objectAtIndex:indexPath.row];
+    cell.possibleSolutionLabel.text = [finalSectionNames objectAtIndex:indexPath.row];
     cell.possibleSolutionLabel.textColor = [UIColor colorWithRed:15.0/255.0 green:153.0/255.0 blue:255.0/255.0 alpha:1.0];
     cell.possibleSolutionLabel.font = [UIFont fontWithName:kRobotoRegular size:22];
     
