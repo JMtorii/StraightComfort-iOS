@@ -7,19 +7,13 @@
             <DOMFrame index="0" keyMode="9728">
               <elements>
                 <DOMGroup selected="true">
-                  <matrix>
-                    <Matrix tx="-215" ty="-223.95"/>
-                  </matrix>
                   <members>
                     <DOMShape selected="true">
-                      <matrix>
-                        <Matrix tx="-215" ty="-223.95"/>
-                      </matrix>
                       <fills>
                         <FillStyle index="1">
                           <RadialGradient>
                             <matrix>
-                              <Matrix a="0.0665283203125" d="0.0665283203125" tx="269" ty="277.95"/>
+                              <Matrix a="0.0665283203125" d="0.0665283203125" tx="54" ty="54"/>
                             </matrix>
                             <GradientEntry color="#0000FF" ratio="0"/>
                             <GradientEntry ratio="1"/>
@@ -36,8 +30,7 @@
                         </StrokeStyle>
                       </strokes>
                       <edges>
-                        <Edge fillStyle1="1" strokeStyle="1" edges="!6460 5559S6[6460 6006 6143 6322!6143 6322[5827 6639 5380 6639!5380 6639[4933 6639 4616 6322!4616 6322[4300 6006 4300 5559!4300 5559[4300 5112 4616 4795!4616 4795[4933 4479 5380 4479!5380 4479[5827 4479 6143 4795!6143 4795[6460 5112 6460
- 5559"/>
+                        <Edge fillStyle1="1" strokeStyle="1" edges="!1843 1843S6[1527 2160 1080 2160!1080 2160[633 2160 316 1843!316 1843[0 1527 0 1080!0 1080[0 633 316 316!316 316[633 0 1080 0!1080 0[1527 0 1843 316!1843 316[2160 633 2160 1080!2160 1080[2160 1527 1843 1843"/>
                       </edges>
                     </DOMShape>
                   </members>

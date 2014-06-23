@@ -66,6 +66,7 @@
 		B61B2EBD1952BA2A00AE5908 /* WorkstationSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B61B2EBB1952BA2A00AE5908 /* WorkstationSetupViewController.m */; };
 		B61B2EC219567E9100AE5908 /* WorkstationSetupStrings.xml in Resources */ = {isa = PBXBuildFile; fileRef = B61B2EC119567E9100AE5908 /* WorkstationSetupStrings.xml */; };
 		B643E7F7192F21C50062159A /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B643E7F6192F21C50062159A /* MainTableViewCell.xib */; };
+		B64926631957E89B00AE2D08 /* WorkstationSetupXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B64926621957E89B00AE2D08 /* WorkstationSetupXMLParser.m */; };
 		B6550D56193168FD00FAF97F /* MainViewNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6550D55193168FD00FAF97F /* MainViewNavigationController.m */; };
 		B6AE72A519404DAF00FBFB5E /* PossibleSolutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE72A319404DAF00FBFB5E /* PossibleSolutionViewController.m */; };
 		B6AE72A619404DAF00FBFB5E /* PossibleSolutionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72A419404DAF00FBFB5E /* PossibleSolutionViewController.xib */; };
@@ -182,6 +183,8 @@
 		B61B2EBB1952BA2A00AE5908 /* WorkstationSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkstationSetupViewController.m; sourceTree = "<group>"; };
 		B61B2EC119567E9100AE5908 /* WorkstationSetupStrings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = WorkstationSetupStrings.xml; sourceTree = "<group>"; };
 		B643E7F6192F21C50062159A /* MainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		B64926611957E89B00AE2D08 /* WorkstationSetupXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkstationSetupXMLParser.h; sourceTree = "<group>"; };
+		B64926621957E89B00AE2D08 /* WorkstationSetupXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkstationSetupXMLParser.m; sourceTree = "<group>"; };
 		B6550D54193168FD00FAF97F /* MainViewNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewNavigationController.h; sourceTree = "<group>"; };
 		B6550D55193168FD00FAF97F /* MainViewNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewNavigationController.m; sourceTree = "<group>"; };
 		B6AE72A219404DAF00FBFB5E /* PossibleSolutionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PossibleSolutionViewController.h; sourceTree = "<group>"; };
@@ -428,6 +431,8 @@
 		B61B2EC31956848700AE5908 /* XMLParser */ = {
 			isa = PBXGroup;
 			children = (
+				B64926611957E89B00AE2D08 /* WorkstationSetupXMLParser.h */,
+				B64926621957E89B00AE2D08 /* WorkstationSetupXMLParser.m */,
 			);
 			path = XMLParser;
 			sourceTree = "<group>";
@@ -742,6 +747,7 @@
 				B6E8C83918C50DC400550D49 /* AppDelegate.m in Sources */,
 				B6550D56193168FD00FAF97F /* MainViewNavigationController.m in Sources */,
 				4E065E89193AD33B00A70377 /* DiscomfortTableViewCell.m in Sources */,
+				B64926631957E89B00AE2D08 /* WorkstationSetupXMLParser.m in Sources */,
 				B6AE72A519404DAF00FBFB5E /* PossibleSolutionViewController.m in Sources */,
 				B6AE72B51942F1BE00FBFB5E /* PossibleSolutionTableViewCell.m in Sources */,
 				B61B2EBD1952BA2A00AE5908 /* WorkstationSetupViewController.m in Sources */,

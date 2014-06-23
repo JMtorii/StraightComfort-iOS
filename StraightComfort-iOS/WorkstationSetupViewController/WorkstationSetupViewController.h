@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "WorkstationContentViewController.h"
 #import "Constants.h"
+#import "WorkstationSetupXMLParser.h"
 
 @interface WorkstationSetupViewController : UIViewController <UIPageViewControllerDataSource>
 

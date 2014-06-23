@@ -45,6 +45,19 @@
     //        }
     //    }
     
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"WorkstationSetupStrings" ofType:@"xml"];
+    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:[NSData dataWithContentsOfFile:path]];
+    WorkstationSetupXMLParser *parser = [[WorkstationSetupXMLParser alloc] initXMLParser];
+    [xmlParser setDelegate:parser];
+    BOOL success = [xmlParser parse];
+    
+    if(success){
+        NSLog(@"No Errors");
+    }
+    else{
+        NSLog(@"Error Error Error!!!");
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning
