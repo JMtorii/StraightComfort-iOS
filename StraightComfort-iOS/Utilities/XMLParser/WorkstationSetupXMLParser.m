@@ -11,6 +11,7 @@
 @implementation WorkstationSetupXMLParser
 
 @synthesize curElem = _curElem;
+@synthesize startingElem = _startingElem;
 @synthesize imageName = _imageName;
 @synthesize pointDesc = _pointDesc;
 @synthesize descDictionary = _descDictionary;
@@ -24,52 +25,67 @@
 
 -(void) parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qualifiedName attributes:(NSDictionary *)attributeDict
 {
-    if([elementName isEqualToString:@"Books"]) {
-        //Initialize the array.
-//        appdelegate.books = [[NSMutableArray alloc] init];
-    }
-    else if([elementName isEqualToString:@"Book"]) {
+    if ([elementName isEqualToString:@"workstationGroup"]) {
+        workstationSetupDictionary = [[NSMutableDictionary alloc] init];
+        startingElem = nil;
         
-        //Initialize the book.
-//        book = [[Book alloc] init];
+    } else if([elementName isEqualToString:@"allDesc"]) {
+        descDictionary = [[NSMutableDictionary alloc] init];
+        startingElem = nil;
         
-        //Extract the attribute here.
-//        book.bookID = [[attributeDict objectForKey:@"id"] integerValue];
-        
-//        NSLog(@"Reading id value :%i", book.bookID);
+    } else if([elementName isEqualToString:@"title"] || [elementName isEqualToString:@"descImage"] || [elementName isEqualToString:@"descPoint"]) {
+        startingElem = [NSMutableString stringWithString:elementName];
+    } else {
+        startingElem = nil;
     }
     
-    NSLog(@"Processing Element: %@", elementName);
+    NSLog(@"didStartElement: %@", elementName);
 }
 
-- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
+- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string 
+{
+    NSString *stringToDisplay = [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
-    if(!curElem)
-        curElem = [[NSMutableString alloc] initWithString:string];
-    else
-        [curElem appendString:string];
+    if (!curElem && startingElem) {
+        if (![stringToDisplay isEqual:@""]) {
+            curElem = [[NSMutableString alloc] initWithString:stringToDisplay];
+            NSLog(@"foundCharacters: %@", curElem);
+        }
+        
+    }
+        
+//    else
+//        [curElem appendString:stringToDisplay];
     
-    NSLog(@"Processing Value: %@", curElem);
+    
     
 }
 
-- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName
-  namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
-    
-    if([elementName isEqualToString:@"Books"])
+- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName 
+{
+    if([elementName isEqualToString:@"workstationSetup"]){
         return;
     
-    if([elementName isEqualToString:@"Book"]) {
-//        [appdelegate.books addObject:book];
+    } else if([elementName isEqualToString:@"descImage"]) {
+        imageName = curElem;
+        curElem = nil;
+
+    } else if([elementName isEqualToString:@"descPoint"]) {
+        pointDesc = curElem;
+        curElem = nil;
+
+    } else if([elementName isEqualToString:@"descGroup"]) {
+        [descDictionary setObject:pointDesc forKey:imageName];
         
-//        [book release];
-//        book = nil;
-    }
-    else
-//        [book setValue:curElem forKey:elementName];
+    } else if([elementName isEqualToString:@"title"]) {
+        title = curElem;
+        curElem = nil;
+        
+    } else if([elementName isEqualToString:@"allDesc"]) {
+        [workstationSetupDictionary setObject:descDictionary forKey:title];
+        
+    } 
     
-//    [curElem release];
-    curElem = nil;
 }
 
 @end

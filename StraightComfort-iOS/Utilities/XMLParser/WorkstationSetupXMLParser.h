@@ -10,6 +10,7 @@
 
 @interface WorkstationSetupXMLParser : NSObject <NSXMLParserDelegate> {
     NSMutableString *curElem;
+    NSMutableString *startingElem;
     NSMutableString *imageName;
     NSMutableString *pointDesc;
     NSMutableDictionary *descDictionary;
@@ -18,6 +19,7 @@
 }
 
 @property (nonatomic, retain) NSMutableString *curElem;
+@property (nonatomic, retain) NSMutableString *startingElem;
 @property (nonatomic, retain) NSMutableString *imageName;
 @property (nonatomic, retain) NSMutableString *pointDesc;
 @property (nonatomic, retain) NSMutableDictionary *descDictionary;
