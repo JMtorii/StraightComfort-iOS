@@ -14,19 +14,22 @@
 
 @implementation WorkstationSetupViewController
 
+@synthesize pageTitles = _pageTitles;
+@synthesize pageImages = _pageImages;
+@synthesize titles = _titles;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.navigationItem.title = @"Full Workstation Shortcut";
     
-	// Create the data model
     _pageTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip", @"Free Regular Update"];
     _pageImages = @[@"welcomePage1.png", @"page2.png", @"page3.png", @"page4.png"];
-    
+        
     // Create page view controller
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationSetupPageViewController"];
     self.pageViewController.dataSource = self;
-    
+        
     WorkstationContentViewController *startingViewController = [self viewControllerAtIndex:0];
     NSArray *viewControllers = @[startingViewController];
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
@@ -58,6 +61,15 @@
         NSLog(@"Error Error Error!!!");
     }
     
+    _titles = [parser.workstationSetupDictionary allKeys];
+    
+    NSArray *keys=[parser.workstationSetupDictionary allKeys];
+    
+    NSLog(@"%d", [keys count]);
+    for (NSString *str in keys) {
+        NSLog(@"Titles: %@", str);
+    }
+        
 }
 
 - (void)didReceiveMemoryWarning
@@ -117,7 +129,7 @@
 
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
 {
-    return [self.pageTitles count];
+    return [self.pageTitles count];    
 }
 
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController

@@ -25,7 +25,7 @@
 
 -(void) parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qualifiedName attributes:(NSDictionary *)attributeDict
 {
-    if ([elementName isEqualToString:@"workstationGroup"]) {
+    if ([elementName isEqualToString:@"workstationSetup"]) {
         workstationSetupDictionary = [[NSMutableDictionary alloc] init];
         startingElem = nil;
         
@@ -35,8 +35,10 @@
         
     } else if([elementName isEqualToString:@"title"] || [elementName isEqualToString:@"descImage"] || [elementName isEqualToString:@"descPoint"]) {
         startingElem = [NSMutableString stringWithString:elementName];
+        
     } else {
         startingElem = nil;
+        
     }
     
     NSLog(@"didStartElement: %@", elementName);
@@ -53,12 +55,6 @@
         }
         
     }
-        
-//    else
-//        [curElem appendString:stringToDisplay];
-    
-    
-    
 }
 
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName 
@@ -83,6 +79,13 @@
         
     } else if([elementName isEqualToString:@"allDesc"]) {
         [workstationSetupDictionary setObject:descDictionary forKey:title];
+        
+    } else if([elementName isEqualToString:@"workstationGroup"]) {
+        NSArray *keys=[workstationSetupDictionary allKeys];
+        NSLog(@"Count: %d", [keys count]);
+        for (NSString *str in keys) {
+            NSLog(@"%@", str);
+        }
         
     } 
     
