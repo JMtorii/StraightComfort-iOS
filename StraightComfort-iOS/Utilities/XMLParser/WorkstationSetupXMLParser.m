@@ -87,8 +87,13 @@
             NSLog(@"%@", str);
         }
         
-    } 
+    }
     
+}
+
+- (NSMutableDictionary *) getDictionary
+{
+    return workstationSetupDictionary;
 }
 
 @end

@@ -61,12 +61,10 @@
         NSLog(@"Error Error Error!!!");
     }
     
-    _titles = [parser.workstationSetupDictionary allKeys];
+    self.titles =[[parser getDictionary] allKeys];
     
-    NSArray *keys=[parser.workstationSetupDictionary allKeys];
-    
-    NSLog(@"%d", [keys count]);
-    for (NSString *str in keys) {
+    NSLog(@"%d", [self.titles count]);
+    for (NSString *str in self.titles) {
         NSLog(@"Titles: %@", str);
     }
         

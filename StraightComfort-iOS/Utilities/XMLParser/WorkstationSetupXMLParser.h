@@ -27,5 +27,6 @@
 @property (nonatomic, retain) NSMutableDictionary *workstationSetupDictionary;
 
 - (WorkstationSetupXMLParser*) initXMLParser;
+- (NSMutableDictionary *) getDictionary;
 
 @end
