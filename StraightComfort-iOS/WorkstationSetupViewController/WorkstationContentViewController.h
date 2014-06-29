@@ -10,13 +10,23 @@
 #import "Constants.h"
 #import "FLAnimatedImage.h"
 #import "FLAnimatedImageView.h"
+#import "WorkstationSetupViewController.h"
+#import "AppDelegate.h"
 
-@interface WorkstationContentViewController : UIViewController
+@class AppDelegate;
+
+@interface WorkstationContentViewController : UIViewController {
+//    int groupIndex;
+    AppDelegate *appDelegate;
+}
 
 @property (weak, nonatomic) IBOutlet UIView *descriptionFrame;
 @property (weak, nonatomic) IBOutlet UIView *animationFrame;
 @property NSUInteger pageIndex;
+//@property int groupIndex;;
 
 @property NSString *imageFile;
+
+- (IBAction)nextGroup:(id)sender;
 
 @end

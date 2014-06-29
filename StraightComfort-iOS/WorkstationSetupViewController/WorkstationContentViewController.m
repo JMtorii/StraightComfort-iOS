@@ -14,6 +14,8 @@
 
 @implementation WorkstationContentViewController
 
+//@synthesize groupIndex = _groupIndex;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -44,7 +46,7 @@
     // Do not change width! This ensures 20px on both ends.
     CGRect labelFrame = CGRectMake(20, 296, 280, 233);
     UILabel *descriptionLabel = [[UILabel alloc] initWithFrame:labelFrame];
-//    [descriptionLabel setBackgroundColor:[UIColor orangeColor]];
+    [descriptionLabel setBackgroundColor:[UIColor orangeColor]];
     
     [descriptionLabel setText:@"a a a a a a a a a a a a a a a a aiii a a a a a a a a a"];
     
@@ -63,5 +65,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)nextGroup:(id)sender
+{
+    appDelegate.groupIndex += 1;
+    NSLog(@"groupIndex: %d", appDelegate.groupIndex);
+}
+
 
 @end

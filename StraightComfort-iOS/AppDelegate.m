@@ -10,6 +10,8 @@
 
 @implementation AppDelegate
 
+@synthesize groupIndex = _groupIndex;
+
 
 // This is not the best implementation
 // If this doesn't work, put "Main storyboard file base name" -> String -> MainViewController in plist

@@ -13,10 +13,10 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
     UIStoryboard *mainStoryboard;
     UINavigationController *navController;
+    int groupIndex;
 }
 
 @property (strong, nonatomic) UIWindow *window;
-
-
+@property int groupIndex;
 
 @end

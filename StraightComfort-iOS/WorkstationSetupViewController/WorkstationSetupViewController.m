@@ -17,10 +17,18 @@
 @synthesize pageImages = _pageImages;
 @synthesize titles = _titles;
 @synthesize curDescDictionary = _curDescDictionary;
+//@synthesize groupIndex = _groupIndex;
+
+static int groupIndex;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UIPageControl *pageControl = [UIPageControl appearance];
+    pageControl.pageIndicatorTintColor = [UIColor redColor];
+    pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+    
     self.navigationItem.title = @"Full Workstation Shortcut";
     
     _pageImages = @[@"welcomePage1.png", @"page2.png", @"page3.png", @"page4.png"];
@@ -44,7 +52,6 @@
     
     [self initTitles:[[parser getDictionary] allKeys]];
     [self initCurDescDictionary:[[parser getDictionary] objectForKey:[self.titles objectAtIndex:groupIndex]]];
-    [self initCurDescKeys];
     
     NSLog(@"%d #######", [self.descKeys count]);
     for (NSString *str in self.titles) {
@@ -81,12 +88,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)startWalkthrough:(id)sender {
-    WorkstationContentViewController *startingViewController = [self viewControllerAtIndex:0];
-    NSArray *viewControllers = @[startingViewController];
-    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionReverse animated:NO completion:nil];
 }
 
 - (WorkstationContentViewController *)viewControllerAtIndex:(NSUInteger)index
@@ -153,11 +154,15 @@
 {
     self.curDescDictionary = [descDictionary copy];
     self.navigationItem.title = [self.titles objectAtIndex:groupIndex];
+    
+    [self initCurDescKeys];
 }
 
 - (void)initCurDescKeys
 {
     self.descKeys = [[[self.curDescDictionary allKeys] reverseObjectEnumerator] allObjects];
 }
+
+
 
 @end
