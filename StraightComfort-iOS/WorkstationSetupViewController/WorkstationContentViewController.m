@@ -19,6 +19,7 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
     if (self) {
         // Custom initialization
     }
@@ -32,6 +33,8 @@
     UIPageControl *pageControl = [UIPageControl appearance];
     pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
     pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+    
+    appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
     NSURL *url1 = [[NSBundle mainBundle] URLForResource:@"bouncingBallExample" withExtension:@"gif"];
     NSData *data1 = [NSData dataWithContentsOfURL:url1];
@@ -68,8 +71,8 @@
 
 - (IBAction)nextGroup:(id)sender
 {
-    appDelegate.groupIndex += 1;
-    NSLog(@"groupIndex: %d", appDelegate.groupIndex);
+    [appDelegate incGroupIndex];
+    NSLog(@"groupIndex: %d", [appDelegate getGroupIndex]);
 }
 
 

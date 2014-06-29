@@ -83,4 +83,14 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)incGroupIndex
+{
+    groupIndex++;
+}
+
+- (int)getGroupIndex
+{
+    return groupIndex;
+}
+
 @end

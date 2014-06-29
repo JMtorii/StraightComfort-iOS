@@ -13,7 +13,6 @@
 
 
 @interface WorkstationSetupViewController : UIViewController <UIPageViewControllerDataSource> {
-//    static int groupIndex;
 }
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;
@@ -22,7 +21,6 @@
 @property (strong, nonatomic) NSArray *titles;
 @property (strong, nonatomic) NSDictionary *curDescDictionary;
 @property (strong, nonatomic) NSArray *descKeys;
-//@property int groupIndex;
 
 
 - (void)initTitles:(NSArray *)parserTitles;

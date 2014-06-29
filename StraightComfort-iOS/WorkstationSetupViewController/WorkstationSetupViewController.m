@@ -17,7 +17,6 @@
 @synthesize pageImages = _pageImages;
 @synthesize titles = _titles;
 @synthesize curDescDictionary = _curDescDictionary;
-//@synthesize groupIndex = _groupIndex;
 
 static int groupIndex;
 
