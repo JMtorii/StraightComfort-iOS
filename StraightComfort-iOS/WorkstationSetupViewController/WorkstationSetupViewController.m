@@ -14,17 +14,44 @@
 
 @implementation WorkstationSetupViewController
 
-@synthesize pageTitles = _pageTitles;
 @synthesize pageImages = _pageImages;
 @synthesize titles = _titles;
+@synthesize curDescDictionary = _curDescDictionary;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.navigationItem.title = @"Full Workstation Shortcut";
     
-    _pageTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip", @"Free Regular Update"];
     _pageImages = @[@"welcomePage1.png", @"page2.png", @"page3.png", @"page4.png"];
+    
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"WorkstationSetupStrings" ofType:@"xml"];
+    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:[NSData dataWithContentsOfFile:path]];
+    WorkstationSetupXMLParser *parser = [[WorkstationSetupXMLParser alloc] initXMLParser];
+    [xmlParser setDelegate:parser];
+    BOOL success = [xmlParser parse];
+    
+    if(success){
+        NSLog(@"No Errors");
+    }
+    else{
+        NSLog(@"Error Error Error!!!");
+    }
+    
+    // Set pages data
+    groupIndex = 0;
+    
+    [self initTitles:[[parser getDictionary] allKeys]];
+    [self initCurDescDictionary:[[parser getDictionary] objectForKey:[self.titles objectAtIndex:groupIndex]]];
+    [self initCurDescKeys];
+    
+    NSLog(@"%d #######", [self.descKeys count]);
+    for (NSString *str in self.titles) {
+        NSLog(@"Titles: %@", str);
+    }
+    
+    
         
     // Create page view controller
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationSetupPageViewController"];
@@ -47,26 +74,6 @@
     //            scroll.bounces = NO;
     //        }
     //    }
-    
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"WorkstationSetupStrings" ofType:@"xml"];
-    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:[NSData dataWithContentsOfFile:path]];
-    WorkstationSetupXMLParser *parser = [[WorkstationSetupXMLParser alloc] initXMLParser];
-    [xmlParser setDelegate:parser];
-    BOOL success = [xmlParser parse];
-    
-    if(success){
-        NSLog(@"No Errors");
-    }
-    else{
-        NSLog(@"Error Error Error!!!");
-    }
-    
-    self.titles =[[parser getDictionary] allKeys];
-    
-    NSLog(@"%d", [self.titles count]);
-    for (NSString *str in self.titles) {
-        NSLog(@"Titles: %@", str);
-    }
         
 }
 
@@ -84,7 +91,8 @@
 
 - (WorkstationContentViewController *)viewControllerAtIndex:(NSUInteger)index
 {
-    if (([self.pageTitles count] == 0) || (index >= [self.pageTitles count])) {
+    NSLog(@"HEY: %d", [self.titles count]);
+    if (([self.curDescDictionary count] == 0) || (index >= [self.curDescDictionary count])) {
         return nil;
     }
     
@@ -119,7 +127,7 @@
     }
     
     index++;
-    if (index == [self.pageTitles count]) {
+    if (index == [self.curDescDictionary count]) {
         return nil;
     }
     return [self viewControllerAtIndex:index];
@@ -127,12 +135,29 @@
 
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
 {
-    return [self.pageTitles count];    
+    return [self.curDescDictionary count];
 }
 
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController
 {
     return 0;
+}
+
+- (void)initTitles:(NSArray *)parserTitles
+{
+    self.titles = [[parserTitles reverseObjectEnumerator] allObjects];;
+}
+
+
+- (void)initCurDescDictionary:(NSMutableDictionary *)descDictionary
+{
+    self.curDescDictionary = [descDictionary copy];
+    self.navigationItem.title = [self.titles objectAtIndex:groupIndex];
+}
+
+- (void)initCurDescKeys
+{
+    self.descKeys = [[[self.curDescDictionary allKeys] reverseObjectEnumerator] allObjects];
 }
 
 @end

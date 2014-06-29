@@ -11,12 +11,19 @@
 #import "Constants.h"
 #import "WorkstationSetupXMLParser.h"
 
-@interface WorkstationSetupViewController : UIViewController <UIPageViewControllerDataSource> 
+@interface WorkstationSetupViewController : UIViewController <UIPageViewControllerDataSource> {
+    int groupIndex;
+}
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;
 
-@property (strong, nonatomic) NSArray *pageTitles;
 @property (strong, nonatomic) NSArray *pageImages;
 @property (strong, nonatomic) NSArray *titles;
+@property (strong, nonatomic) NSDictionary *curDescDictionary;
+@property (strong, nonatomic) NSArray *descKeys;
+
+- (void)initTitles:(NSArray *)parserTitles;
+- (void)initCurDescDictionary:(NSMutableDictionary *)descDictionary;
+- (void)initCurDescKeys;
 
 @end
