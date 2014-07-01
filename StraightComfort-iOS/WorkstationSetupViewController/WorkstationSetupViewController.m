@@ -91,8 +91,7 @@ static int groupIndex;
 //    pageContentViewController.descLabel = 
     pageContentViewController.pageIndex = index;
     NSString *str = [[self.curDescArray objectAtIndex:index] objectForKey:[self.descImages objectAtIndex:index]];
-    NSString *str1 = @"sdfsafa";
-    [pageContentViewController setText:str];
+    pageContentViewController.descLabel.text = str;
     return pageContentViewController;
 }
 

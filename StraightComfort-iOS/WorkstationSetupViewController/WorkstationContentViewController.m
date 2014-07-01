@@ -42,20 +42,19 @@
     
     // Do not change width! This ensures 20px on both ends.
     CGRect labelFrame = CGRectMake(20, 296, 280, 233);
-    descLabel = [[UILabel alloc] initWithFrame:labelFrame];
-    [descLabel setBackgroundColor:[UIColor orangeColor]];
+    self.descLabel = [[UILabel alloc] initWithFrame:labelFrame];
+    [self.descLabel setBackgroundColor:[UIColor orangeColor]];
     
-    [descLabel setText:@"a a a a a a a a a a a a a a a a aiii a a a a a a a a a"];
+//    [descLabel setText:_descText];
     
-    [descLabel setFont:[UIFont fontWithName:kRobotoRegular size:18]];
+    [self.descLabel setFont:[UIFont fontWithName:kRobotoRegular size:18]];
     
     // Tell the label to use an unlimited number of lines
-    [descLabel setNumberOfLines:0];
-    [descLabel sizeToFit];
+    [self.descLabel setNumberOfLines:0];
+    [self.descLabel sizeToFit];
     
-    [self.view addSubview:descLabel];
+    [self.view addSubview:self.descLabel];
     
-    [descLabel setText:@"asfdfsdasadffdsafads"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -69,12 +68,6 @@
     [appDelegate incGroupIndex];
     NSLog(@"groupIndex: %d", [appDelegate getGroupIndex]);
 }
-
-- (void) setText:(NSString *)str
-{
-    [descLabel setText:str];
-}
-
 
 
 @end
