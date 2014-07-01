@@ -13,17 +13,18 @@
 
 
 @interface WorkstationSetupViewController : UIViewController <UIPageViewControllerDataSource> {
+    NSArray *workstationArray;
 }
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;
 
 @property (strong, nonatomic) NSArray *pageImages;
 @property (strong, nonatomic) NSArray *titles;
-@property (strong, nonatomic) NSDictionary *curDescDictionary;
-@property (strong, nonatomic) NSArray *descKeys;
+@property (strong, nonatomic) NSArray *curDescArray;
+@property (strong, nonatomic) NSArray *descImages;
 
 
-- (void)initTitles:(NSArray *)parserTitles;
-- (void)initCurDescDictionary:(NSMutableDictionary *)descDictionary;
+- (void)initTitles;
+- (void)initCurDescArray;
 - (void)initCurDescKeys;
 @end

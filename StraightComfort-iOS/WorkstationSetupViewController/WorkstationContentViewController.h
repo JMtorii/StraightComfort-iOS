@@ -18,15 +18,18 @@
 @interface WorkstationContentViewController : UIViewController {
 //    int groupIndex;
     AppDelegate *appDelegate;
+    UILabel *descLabel;
 }
 
 @property (weak, nonatomic) IBOutlet UIView *descriptionFrame;
 @property (weak, nonatomic) IBOutlet UIView *animationFrame;
+//@property (strong, nonatomic) UILabel *descLabel;
 @property NSUInteger pageIndex;
 //@property int groupIndex;;
 
 @property NSString *imageFile;
 
 - (IBAction)nextGroup:(id)sender;
+- (void) setText:(NSString *)str;
 
 @end

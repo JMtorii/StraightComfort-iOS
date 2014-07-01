@@ -14,9 +14,11 @@
 
 @implementation WorkstationSetupViewController
 
+@synthesize pageViewController = _pageViewController;
 @synthesize pageImages = _pageImages;
 @synthesize titles = _titles;
-@synthesize curDescDictionary = _curDescDictionary;
+@synthesize curDescArray = _curDescArray;
+@synthesize descImages = _descImages;
 
 static int groupIndex;
 
@@ -30,29 +32,17 @@ static int groupIndex;
     
     self.navigationItem.title = @"Full Workstation Shortcut";
     
-    _pageImages = @[@"welcomePage1.png", @"page2.png", @"page3.png", @"page4.png"];
-    
-    
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"WorkstationSetupStrings" ofType:@"xml"];
-    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:[NSData dataWithContentsOfFile:path]];
-    WorkstationSetupXMLParser *parser = [[WorkstationSetupXMLParser alloc] initXMLParser];
-    [xmlParser setDelegate:parser];
-    BOOL success = [xmlParser parse];
-    
-    if(success){
-        NSLog(@"No Errors");
-    }
-    else{
-        NSLog(@"Error Error Error!!!");
-    }
-    
     // Set pages data
     groupIndex = 0;
     
-    [self initTitles:[[parser getDictionary] allKeys]];
-    [self initCurDescDictionary:[[parser getDictionary] objectForKey:[self.titles objectAtIndex:groupIndex]]];
+    workstationArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"WorkstationSetupStrings" ofType:@"plist"]];
     
-    NSLog(@"%d #######", [self.descKeys count]);
+    //initialize
+    [self initTitles];
+    [self initCurDescArray];
+    [self initCurDescKeys];
+    
+    NSLog(@"%d #######", [self.descImages count]);
     for (NSString *str in self.titles) {
         NSLog(@"Titles: %@", str);
     }
@@ -91,16 +81,18 @@ static int groupIndex;
 
 - (WorkstationContentViewController *)viewControllerAtIndex:(NSUInteger)index
 {
-    NSLog(@"HEY: %d", [self.titles count]);
-    if (([self.curDescDictionary count] == 0) || (index >= [self.curDescDictionary count])) {
+    if (([self.descImages count] == 0) || (index >= [self.descImages count])) {
         return nil;
     }
     
     // Create a new view controller and pass suitable data.
     WorkstationContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationSetupContentViewController"];
 //    pageContentViewController.imageFile = self.pageImages[index];
+//    pageContentViewController.descLabel = 
     pageContentViewController.pageIndex = index;
-    
+    NSString *str = [[self.curDescArray objectAtIndex:index] objectForKey:[self.descImages objectAtIndex:index]];
+    NSString *str1 = @"sdfsafa";
+    [pageContentViewController setText:str];
     return pageContentViewController;
 }
 
@@ -127,7 +119,7 @@ static int groupIndex;
     }
     
     index++;
-    if (index == [self.curDescDictionary count]) {
+    if (index == [self.descImages count]) {
         return nil;
     }
     return [self viewControllerAtIndex:index];
@@ -135,7 +127,7 @@ static int groupIndex;
 
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
 {
-    return [self.curDescDictionary count];
+    return [self.descImages count];
 }
 
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController
@@ -143,23 +135,35 @@ static int groupIndex;
     return 0;
 }
 
-- (void)initTitles:(NSArray *)parserTitles
+- (void)initTitles
 {
-    self.titles = [[parserTitles reverseObjectEnumerator] allObjects];;
+    NSMutableArray *tmp = [[NSMutableArray alloc]init];
+    for (NSDictionary *dict in workstationArray) {
+        [tmp addObject:[[dict allKeys] objectAtIndex:0]];
+    }
+    
+    self.titles = tmp;
 }
 
 
-- (void)initCurDescDictionary:(NSMutableDictionary *)descDictionary
+- (void)initCurDescArray
 {
-    self.curDescDictionary = [descDictionary copy];
+//    self.curDescDictionary = [descDictionary copy];
+    self.curDescArray = [[workstationArray objectAtIndex:groupIndex] objectForKey:[self.titles objectAtIndex:groupIndex]];
     self.navigationItem.title = [self.titles objectAtIndex:groupIndex];
     
-    [self initCurDescKeys];
+//    [self initCurDescKeys];
 }
 
 - (void)initCurDescKeys
 {
-    self.descKeys = [[[self.curDescDictionary allKeys] reverseObjectEnumerator] allObjects];
+    NSMutableArray *tmp = [[NSMutableArray alloc]init];
+    for (NSDictionary *dict in self.curDescArray) {
+        [tmp addObject:[[dict allKeys] objectAtIndex:0]];
+    }
+    
+    self.descImages = tmp;
+//    self.descKeys = [[[self.curDescDictionary allKeys] reverseObjectEnumerator] allObjects];
 }
 
 

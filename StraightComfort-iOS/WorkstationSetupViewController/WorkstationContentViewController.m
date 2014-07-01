@@ -8,13 +8,7 @@
 
 #import "WorkstationContentViewController.h"
 
-@interface WorkstationContentViewController ()
-
-@end
-
 @implementation WorkstationContentViewController
-
-//@synthesize groupIndex = _groupIndex;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -48,19 +42,20 @@
     
     // Do not change width! This ensures 20px on both ends.
     CGRect labelFrame = CGRectMake(20, 296, 280, 233);
-    UILabel *descriptionLabel = [[UILabel alloc] initWithFrame:labelFrame];
-    [descriptionLabel setBackgroundColor:[UIColor orangeColor]];
+    descLabel = [[UILabel alloc] initWithFrame:labelFrame];
+    [descLabel setBackgroundColor:[UIColor orangeColor]];
     
-    [descriptionLabel setText:@"a a a a a a a a a a a a a a a a aiii a a a a a a a a a"];
+    [descLabel setText:@"a a a a a a a a a a a a a a a a aiii a a a a a a a a a"];
     
-    [descriptionLabel setFont:[UIFont fontWithName:kRobotoRegular size:18]];
+    [descLabel setFont:[UIFont fontWithName:kRobotoRegular size:18]];
     
     // Tell the label to use an unlimited number of lines
-    [descriptionLabel setNumberOfLines:0];
-    [descriptionLabel sizeToFit];
+    [descLabel setNumberOfLines:0];
+    [descLabel sizeToFit];
     
+    [self.view addSubview:descLabel];
     
-    [self.view addSubview:descriptionLabel];
+    [descLabel setText:@"asfdfsdasadffdsafads"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -74,6 +69,12 @@
     [appDelegate incGroupIndex];
     NSLog(@"groupIndex: %d", [appDelegate getGroupIndex]);
 }
+
+- (void) setText:(NSString *)str
+{
+    [descLabel setText:str];
+}
+
 
 
 @end
