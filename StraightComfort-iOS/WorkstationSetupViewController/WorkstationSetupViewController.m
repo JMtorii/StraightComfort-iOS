@@ -91,7 +91,7 @@ static int groupIndex;
 //    pageContentViewController.descLabel = 
     pageContentViewController.pageIndex = index;
     NSString *str = [[self.curDescArray objectAtIndex:index] objectForKey:[self.descImages objectAtIndex:index]];
-    pageContentViewController.descLabel.text = str;
+    pageContentViewController.descText = str;
     return pageContentViewController;
 }
 

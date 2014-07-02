@@ -13,7 +13,6 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    
     if (self) {
         // Custom initialization
     }
@@ -42,18 +41,17 @@
     
     // Do not change width! This ensures 20px on both ends.
     CGRect labelFrame = CGRectMake(20, 296, 280, 233);
-    self.descLabel = [[UILabel alloc] initWithFrame:labelFrame];
-    [self.descLabel setBackgroundColor:[UIColor orangeColor]];
-    
-//    [descLabel setText:_descText];
-    
-    [self.descLabel setFont:[UIFont fontWithName:kRobotoRegular size:18]];
+    _descLabel = [[UILabel alloc] initWithFrame:labelFrame];
+    [_descLabel setBackgroundColor:[UIColor orangeColor]];
+    [_descLabel setText:_descText];
+        
+    [_descLabel setFont:[UIFont fontWithName:kRobotoRegular size:18]];
     
     // Tell the label to use an unlimited number of lines
-    [self.descLabel setNumberOfLines:0];
-    [self.descLabel sizeToFit];
+    [_descLabel setNumberOfLines:0];
+    [_descLabel sizeToFit];
     
-    [self.view addSubview:self.descLabel];
+    [self.view addSubview:_descLabel];
     
 }
 
