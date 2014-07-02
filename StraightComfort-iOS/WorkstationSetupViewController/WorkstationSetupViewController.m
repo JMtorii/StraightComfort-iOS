@@ -8,10 +8,6 @@
 
 #import "WorkstationSetupViewController.h"
 
-@interface WorkstationSetupViewController ()
-
-@end
-
 @implementation WorkstationSetupViewController
 
 @synthesize pageViewController = _pageViewController;
@@ -25,11 +21,7 @@ static int groupIndex;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    UIPageControl *pageControl = [UIPageControl appearance];
-    pageControl.pageIndicatorTintColor = [UIColor redColor];
-    pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
-    
+        
     self.navigationItem.title = @"Full Workstation Shortcut";
     
     // Set pages data
@@ -42,13 +34,6 @@ static int groupIndex;
     [self initCurDescArray];
     [self initCurDescKeys];
     
-    NSLog(@"%d #######", [self.descImages count]);
-    for (NSString *str in self.titles) {
-        NSLog(@"Titles: %@", str);
-    }
-    
-    
-        
     // Create page view controller
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationSetupPageViewController"];
     self.pageViewController.dataSource = self;
@@ -87,11 +72,8 @@ static int groupIndex;
     
     // Create a new view controller and pass suitable data.
     WorkstationContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationSetupContentViewController"];
-//    pageContentViewController.imageFile = self.pageImages[index];
-//    pageContentViewController.descLabel = 
     pageContentViewController.pageIndex = index;
-    NSString *str = [[self.curDescArray objectAtIndex:index] objectForKey:[self.descImages objectAtIndex:index]];
-    pageContentViewController.descText = str;
+    pageContentViewController.descText = [[self.curDescArray objectAtIndex:index] objectForKey:[self.descImages objectAtIndex:index]];
     return pageContentViewController;
 }
 
@@ -147,11 +129,8 @@ static int groupIndex;
 
 - (void)initCurDescArray
 {
-//    self.curDescDictionary = [descDictionary copy];
     self.curDescArray = [[workstationArray objectAtIndex:groupIndex] objectForKey:[self.titles objectAtIndex:groupIndex]];
-    self.navigationItem.title = [self.titles objectAtIndex:groupIndex];
-    
-//    [self initCurDescKeys];
+    self.navigationItem.title = [self.titles objectAtIndex:groupIndex];    
 }
 
 - (void)initCurDescKeys
@@ -162,7 +141,6 @@ static int groupIndex;
     }
     
     self.descImages = tmp;
-//    self.descKeys = [[[self.curDescDictionary allKeys] reverseObjectEnumerator] allObjects];
 }
 
 

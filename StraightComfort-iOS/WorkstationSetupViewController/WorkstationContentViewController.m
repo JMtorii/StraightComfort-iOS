@@ -40,10 +40,11 @@
     
     
     // Do not change width! This ensures 20px on both ends.
-    CGRect labelFrame = CGRectMake(20, 296, 280, 233);
+    CGRect labelFrame = CGRectMake(20, 340, 280, 233);
     _descLabel = [[UILabel alloc] initWithFrame:labelFrame];
-    [_descLabel setBackgroundColor:[UIColor orangeColor]];
+//    [_descLabel setBackgroundColor:[UIColor orangeColor]];
     [_descLabel setText:_descText];
+    [_descLabel setTextColor:[UIColor whiteColor]];
         
     [_descLabel setFont:[UIFont fontWithName:kRobotoRegular size:18]];
     
@@ -59,12 +60,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)nextGroup:(id)sender
-{
-    [appDelegate incGroupIndex];
-    NSLog(@"groupIndex: %d", [appDelegate getGroupIndex]);
 }
 
 

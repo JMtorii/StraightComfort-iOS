@@ -27,6 +27,4 @@
 
 @property NSString *imageFile;
 
-- (IBAction)nextGroup:(id)sender;
-
 @end

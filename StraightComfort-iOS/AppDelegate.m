@@ -19,6 +19,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     
+    UIPageControl *pageControl = [UIPageControl appearance];
+    pageControl.pageIndicatorTintColor = [UIColor blackColor];
+    pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+    pageControl.backgroundColor = [UIColor colorWithRed:30.0/255.0 green:174.0/255.0 blue:252.0/255.0 alpha:1.0];
+    
     if (![[NSUserDefaults standardUserDefaults] boolForKey:@"hasPerformedFirstLaunch"]) {
         // On first launch, this block will execute
         mainStoryboard = [UIStoryboard storyboardWithName:@"TutorialViewController" bundle: nil];
@@ -27,9 +32,8 @@
         self.window.rootViewController = navController;
         
         // Override point for customization after application launch.
-        UIPageControl *pageControl = [UIPageControl appearance];
-        pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
-        pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
+//        pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+//        pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
 //        pageControl.backgroundColor = [UIColor whiteColor];
         
         navController.navigationBar.hidden = YES;
