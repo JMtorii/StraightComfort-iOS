@@ -14,7 +14,7 @@
 
 @interface WorkstationSetupViewController : UIViewController <UIPageViewControllerDataSource> {
     NSArray *workstationArray;
-    int pageIndex;
+//    int pageIndex;
 }
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;

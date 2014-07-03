@@ -23,10 +23,6 @@
 {
     [super viewDidLoad];
     
-    UIPageControl *pageControl = [UIPageControl appearance];
-    pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
-    pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
-    
     appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
     NSURL *url1 = [[NSBundle mainBundle] URLForResource:@"bouncingBallExample" withExtension:@"gif"];

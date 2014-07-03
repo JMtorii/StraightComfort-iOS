@@ -26,7 +26,6 @@ static int groupIndex;
     
     // Set pages data
     groupIndex = 0;
-    pageIndex = 0;
     
     workstationArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"WorkstationSetupStrings" ofType:@"plist"]];
     
@@ -67,26 +66,29 @@ static int groupIndex;
 
 - (UIViewController *)viewControllerAtIndex:(NSUInteger)index
 {
-    if (([self.descImages count] == 0) || (index >= [self.descImages count] + 2)) {
+    if (([self.descImages count] == 0) || (groupIndex == 0 && index >= [self.descImages count] + 2) || (groupIndex > 0 && index >= [self.descImages count] + 1)) {
         return nil;
     }
     
     UIViewController *pageContentViewController;
-    if (index == 0) {
+    
+    if ((groupIndex == 0 && (index == 0 || index == [self.descImages count] + 1)) || (groupIndex > 0 && [self.descImages count])) {
         pageContentViewController = (WorkstationIntroEndViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationIntroEndViewController"];
-        
-    } else if (index == [self.descImages count] + 1) {
-        pageContentViewController = (WorkstationIntroEndViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationIntroEndViewController"];
+        ((WorkstationIntroEndViewController*)pageContentViewController).pageIndex = index;
         
     } else {
         pageContentViewController = (WorkstationContentViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationSetupContentViewController"];
         ((WorkstationContentViewController*)pageContentViewController).pageIndex = index;
-        ((WorkstationContentViewController*)pageContentViewController).descText = [[self.curDescArray objectAtIndex:(index - 1)] objectForKey:[self.descImages objectAtIndex:(index - 1)]];
         
+        if (groupIndex == 0) {
+            ((WorkstationContentViewController*)pageContentViewController).descText = [[self.curDescArray objectAtIndex:(index - 1)] objectForKey:[self.descImages objectAtIndex:(index - 1)]];
+        } else {
+            ((WorkstationContentViewController*)pageContentViewController).descText = [[self.curDescArray objectAtIndex:index] objectForKey:[self.descImages objectAtIndex:index]];
+        }
+    
     }
     
     // Create a new view controller and pass suitable data.
-    
     return pageContentViewController;
 }
 
@@ -94,32 +96,50 @@ static int groupIndex;
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
-    if ((pageIndex == 0) || (pageIndex == NSNotFound)) {
+    NSUInteger index;
+    if ([viewController isKindOfClass:[WorkstationContentViewController class]] ) {
+        index = ((WorkstationContentViewController*) viewController).pageIndex;
+    } else {
+        index = ((WorkstationIntroEndViewController*) viewController).pageIndex;
+    }    
+    
+    if ((index == 0) || (index == NSNotFound)) {
         return nil;
     }
     
-    pageIndex--;
-    return [self viewControllerAtIndex:pageIndex];
+    index--;
+    return [self viewControllerAtIndex:index];
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
+    NSUInteger index;
+    if ([viewController isKindOfClass:[WorkstationContentViewController class]] ) {
+        index = ((WorkstationContentViewController*) viewController).pageIndex;
+    } else {
+        index = ((WorkstationIntroEndViewController*) viewController).pageIndex;
+    }
     
-    if (pageIndex == NSNotFound) {
+    if (index == NSNotFound) {
         return nil;
     }
     
-    pageIndex++;
+    index++;
     
-    if (pageIndex == [self.descImages count] + 1) {
+    if ((groupIndex == 0 && index == [self.descImages count] + 2) || (groupIndex > 0 && index == [self.descImages count] + 1)) {
         return nil;
     }
-    return [self viewControllerAtIndex:pageIndex];
+    
+    return [self viewControllerAtIndex:index];
 }
 
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
 {
-    return [self.descImages count] + 2;
+    if (groupIndex == 0) {
+        return [self.descImages count] + 2;
+    } else {
+        return [self.descImages count] + 1;
+    }
 }
 
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController

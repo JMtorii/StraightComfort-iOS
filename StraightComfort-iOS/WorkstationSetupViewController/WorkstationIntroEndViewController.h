@@ -10,4 +10,6 @@
 
 @interface WorkstationIntroEndViewController : UIViewController
 
+@property NSUInteger pageIndex;
+
 @end
