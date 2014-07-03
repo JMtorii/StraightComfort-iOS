@@ -19,9 +19,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     
-    UIPageControl *pageControl = [UIPageControl appearance];
-    pageControl.pageIndicatorTintColor = [UIColor blackColor];
-    pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+//    UIPageControl *pageControl = [UIPageControl appearance];
+    UIPageControl *pageControl = [UIPageControl appearanceWhenContainedIn:[WorkstationSetupViewController class], nil];
+
+    pageControl.pageIndicatorTintColor = [UIColor darkGrayColor];
+    pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
     pageControl.backgroundColor = [UIColor colorWithRed:30.0/255.0 green:174.0/255.0 blue:252.0/255.0 alpha:1.0];
     
     if (![[NSUserDefaults standardUserDefaults] boolForKey:@"hasPerformedFirstLaunch"]) {
