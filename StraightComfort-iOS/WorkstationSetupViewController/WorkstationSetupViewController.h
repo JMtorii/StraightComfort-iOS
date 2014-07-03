@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "WorkstationContentViewController.h"
+#import "WorkstationIntroEndViewController.h"
 #import "Constants.h"
-#import "WorkstationSetupXMLParser.h"
 
 
 @interface WorkstationSetupViewController : UIViewController <UIPageViewControllerDataSource> {
     NSArray *workstationArray;
+    int pageIndex;
 }
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;

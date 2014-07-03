@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0169D0196506BE00652084 /* WorkstationIntroEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0169CF196506BE00652084 /* WorkstationIntroEndViewController.m */; };
 		4E065E7D193A7D1C00A70377 /* chair.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4E065E7C193A7D1C00A70377 /* chair.ai */; };
 		4E065E85193A865400A70377 /* chair.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E065E84193A865400A70377 /* chair.png */; };
 		4E065E89193AD33B00A70377 /* DiscomfortTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E065E87193AD33B00A70377 /* DiscomfortTableViewCell.m */; };
@@ -115,6 +116,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E0169CE196506BE00652084 /* WorkstationIntroEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkstationIntroEndViewController.h; sourceTree = "<group>"; };
+		4E0169CF196506BE00652084 /* WorkstationIntroEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkstationIntroEndViewController.m; sourceTree = "<group>"; };
 		4E065E7C193A7D1C00A70377 /* chair.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chair.ai; sourceTree = "<group>"; };
 		4E065E84193A865400A70377 /* chair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chair.png; sourceTree = "<group>"; };
 		4E065E86193AD33B00A70377 /* DiscomfortTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscomfortTableViewCell.h; sourceTree = "<group>"; };
@@ -420,11 +423,13 @@
 		B61B2EB91952B98600AE5908 /* WorkstationSetupViewController */ = {
 			isa = PBXGroup;
 			children = (
+				4EB572481955FA460022E9C9 /* WorkstationSetupViewController.storyboard */,
 				B61B2EBA1952BA2A00AE5908 /* WorkstationSetupViewController.h */,
 				B61B2EBB1952BA2A00AE5908 /* WorkstationSetupViewController.m */,
 				4EB5724B1955FABD0022E9C9 /* WorkstationContentViewController.h */,
 				4EB5724C1955FABD0022E9C9 /* WorkstationContentViewController.m */,
-				4EB572481955FA460022E9C9 /* WorkstationSetupViewController.storyboard */,
+				4E0169CE196506BE00652084 /* WorkstationIntroEndViewController.h */,
+				4E0169CF196506BE00652084 /* WorkstationIntroEndViewController.m */,
 				B61B2EC119567E9100AE5908 /* WorkstationSetupStrings.xml */,
 				B61783871962587500A7185D /* WorkstationSetupStrings.plist */,
 			);
@@ -751,6 +756,7 @@
 				B6E8C83918C50DC400550D49 /* AppDelegate.m in Sources */,
 				B6550D56193168FD00FAF97F /* MainViewNavigationController.m in Sources */,
 				4E065E89193AD33B00A70377 /* DiscomfortTableViewCell.m in Sources */,
+				4E0169D0196506BE00652084 /* WorkstationIntroEndViewController.m in Sources */,
 				B64926631957E89B00AE2D08 /* WorkstationSetupXMLParser.m in Sources */,
 				B6AE72A519404DAF00FBFB5E /* PossibleSolutionViewController.m in Sources */,
 				B6AE72B51942F1BE00FBFB5E /* PossibleSolutionTableViewCell.m in Sources */,

@@ -26,6 +26,7 @@ static int groupIndex;
     
     // Set pages data
     groupIndex = 0;
+    pageIndex = 0;
     
     workstationArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"WorkstationSetupStrings" ofType:@"plist"]];
     
@@ -38,7 +39,7 @@ static int groupIndex;
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationSetupPageViewController"];
     self.pageViewController.dataSource = self;
         
-    WorkstationContentViewController *startingViewController = [self viewControllerAtIndex:0];
+    UIViewController *startingViewController = [self viewControllerAtIndex:0];
     NSArray *viewControllers = @[startingViewController];
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     
@@ -64,16 +65,28 @@ static int groupIndex;
     // Dispose of any resources that can be recreated.
 }
 
-- (WorkstationContentViewController *)viewControllerAtIndex:(NSUInteger)index
+- (UIViewController *)viewControllerAtIndex:(NSUInteger)index
 {
-    if (([self.descImages count] == 0) || (index >= [self.descImages count])) {
+    if (([self.descImages count] == 0) || (index >= [self.descImages count] + 2)) {
         return nil;
     }
     
+    UIViewController *pageContentViewController;
+    if (index == 0) {
+        pageContentViewController = (WorkstationIntroEndViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationIntroEndViewController"];
+        
+    } else if (index == [self.descImages count] + 1) {
+        pageContentViewController = (WorkstationIntroEndViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationIntroEndViewController"];
+        
+    } else {
+        pageContentViewController = (WorkstationContentViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationSetupContentViewController"];
+        ((WorkstationContentViewController*)pageContentViewController).pageIndex = index;
+        ((WorkstationContentViewController*)pageContentViewController).descText = [[self.curDescArray objectAtIndex:(index - 1)] objectForKey:[self.descImages objectAtIndex:(index - 1)]];
+        
+    }
+    
     // Create a new view controller and pass suitable data.
-    WorkstationContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationSetupContentViewController"];
-    pageContentViewController.pageIndex = index;
-    pageContentViewController.descText = [[self.curDescArray objectAtIndex:index] objectForKey:[self.descImages objectAtIndex:index]];
+    
     return pageContentViewController;
 }
 
@@ -81,34 +94,32 @@ static int groupIndex;
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
-    NSUInteger index = ((WorkstationContentViewController*) viewController).pageIndex;
-    
-    if ((index == 0) || (index == NSNotFound)) {
+    if ((pageIndex == 0) || (pageIndex == NSNotFound)) {
         return nil;
     }
     
-    index--;
-    return [self viewControllerAtIndex:index];
+    pageIndex--;
+    return [self viewControllerAtIndex:pageIndex];
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
-    NSUInteger index = ((WorkstationContentViewController*) viewController).pageIndex;
     
-    if (index == NSNotFound) {
+    if (pageIndex == NSNotFound) {
         return nil;
     }
     
-    index++;
-    if (index == [self.descImages count]) {
+    pageIndex++;
+    
+    if (pageIndex == [self.descImages count] + 1) {
         return nil;
     }
-    return [self viewControllerAtIndex:index];
+    return [self viewControllerAtIndex:pageIndex];
 }
 
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
 {
-    return [self.descImages count];
+    return [self.descImages count] + 2;
 }
 
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController
