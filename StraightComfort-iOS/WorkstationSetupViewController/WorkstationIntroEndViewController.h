@@ -7,9 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Constants.h"
+#import "AppDelegate.h"
 
-@interface WorkstationIntroEndViewController : UIViewController
+@class AppDelegate;
+
+@interface WorkstationIntroEndViewController : UIViewController {
+    AppDelegate *appDelegate;
+}
 
 @property NSUInteger pageIndex;
+@property (weak, nonatomic) IBOutlet UILabel *mainTitle;
+@property (weak, nonatomic) IBOutlet UILabel *desc;
+@property (weak, nonatomic) IBOutlet UILabel *swipeLabel;
+@property (weak, nonatomic) IBOutlet UIButton *nextButton;
+
+- (IBAction)next:(id)sender;
+
 
 @end

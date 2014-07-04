@@ -13,13 +13,12 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
     UIStoryboard *mainStoryboard;
     UINavigationController *navController;
-    int groupIndex;
 }
 
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic) int groupIndex;
 
-- (void)incGroupIndex;
-- (int)getGroupIndex;
+//- (void)incGroupIndex;
+//- (int)getGroupIndex;
 
 @end

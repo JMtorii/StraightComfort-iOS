@@ -14,6 +14,8 @@
 {
     [super viewDidLoad];
     
+    appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
     // Initialize table data
     homeTitlesLine1 = [NSArray arrayWithObjects:@"FULL", @"WORKSTATION", @"DISCOMFORT", nil];
     homeTitlesLine2 = [NSArray arrayWithObjects:@"WORKSTATION SETUP", @"SHORTCUT", @"", nil];
@@ -75,7 +77,7 @@
         
 //        viewController = [[WorkstationSetupViewController alloc]initWithNibName:@"WorkstationSetupViewController" bundle:nil];
         
-        
+//        appDelegate.groupIndex = 0;
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"WorkstationSetupViewController" bundle:nil];
         viewController = [sb instantiateViewControllerWithIdentifier:@"WorkstationSetupViewController"];
 //        viewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;

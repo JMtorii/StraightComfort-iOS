@@ -19,10 +19,13 @@
  * view controller. The MainTableViewCell and MainViewNavigationController class are not used.
  */
 
+@class AppDelegate;
+
 @interface MainViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource> {
     NSArray *homeTitlesLine1;
     NSArray *homeTitlesLine2;
     IBOutlet UILabel *line1;
+    AppDelegate *appDelegate;
 }
 
 

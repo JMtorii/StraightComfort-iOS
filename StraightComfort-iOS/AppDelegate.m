@@ -26,6 +26,8 @@
     pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
     pageControl.backgroundColor = [UIColor colorWithRed:30.0/255.0 green:174.0/255.0 blue:252.0/255.0 alpha:1.0];
     
+    self.groupIndex = 0;
+    
     if (![[NSUserDefaults standardUserDefaults] boolForKey:@"hasPerformedFirstLaunch"]) {
         // On first launch, this block will execute
         mainStoryboard = [UIStoryboard storyboardWithName:@"TutorialViewController" bundle: nil];
@@ -89,14 +91,14 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-- (void)incGroupIndex
-{
-    groupIndex++;
-}
-
-- (int)getGroupIndex
-{
-    return groupIndex;
-}
+//- (void)incGroupIndex
+//{
+//    groupIndex++;
+//}
+//
+//- (int)getGroupIndex
+//{
+//    return groupIndex;
+//}
 
 @end

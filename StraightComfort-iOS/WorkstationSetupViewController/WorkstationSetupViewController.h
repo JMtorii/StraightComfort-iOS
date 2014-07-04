@@ -10,11 +10,14 @@
 #import "WorkstationContentViewController.h"
 #import "WorkstationIntroEndViewController.h"
 #import "Constants.h"
+#import "AppDelegate.h"
+
+@class AppDelegate;
 
 
 @interface WorkstationSetupViewController : UIViewController <UIPageViewControllerDataSource> {
     NSArray *workstationArray;
-//    int pageIndex;
+    AppDelegate *appDelegate;
 }
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;

@@ -8,9 +8,6 @@
 
 #import "WorkstationIntroEndViewController.h"
 
-@interface WorkstationIntroEndViewController ()
-
-@end
 
 @implementation WorkstationIntroEndViewController
 
@@ -26,6 +23,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
+    self.desc.text = @"Let's work to improve your workstation!";
+    [self.desc setFont:[UIFont fontWithName:kRobotoRegular size:18]];
+        
+    (self.pageIndex > 0) ? [self.nextButton setHidden:false] : [self.nextButton setHidden:true];
+    
+    if (self.pageIndex > 0) {
+        [self.nextButton setHidden:false];
+        [self.swipeLabel setHidden:true];
+        
+    } else {
+        [self.nextButton setHidden:true];
+        [self.swipeLabel setHidden:false];
+        
+    }
     // Do any additional setup after loading the view.
 }
 
@@ -33,6 +47,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)next:(id)sender {
+//    [appDelegate incGroupIndex];
+    appDelegate.groupIndex++;
+    NSLog(@"%d", appDelegate.groupIndex);
 }
 
 /*

@@ -16,16 +16,14 @@
 @synthesize curDescArray = _curDescArray;
 @synthesize descImages = _descImages;
 
-static int groupIndex;
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
         
     self.navigationItem.title = @"Full Workstation Shortcut";
     
-    // Set pages data
-    groupIndex = 0;
+    appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    NSLog(@"%d", appDelegate.groupIndex);
     
     workstationArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"WorkstationSetupStrings" ofType:@"plist"]];
     
@@ -66,13 +64,13 @@ static int groupIndex;
 
 - (UIViewController *)viewControllerAtIndex:(NSUInteger)index
 {
-    if (([self.descImages count] == 0) || (groupIndex == 0 && index >= [self.descImages count] + 2) || (groupIndex > 0 && index >= [self.descImages count] + 1)) {
+    if (([self.descImages count] == 0) || (appDelegate.groupIndex == 0 && index >= [self.descImages count] + 2) || (appDelegate.groupIndex > 0 && index >= [self.descImages count] + 1)) {
         return nil;
     }
     
     UIViewController *pageContentViewController;
     
-    if ((groupIndex == 0 && (index == 0 || index == [self.descImages count] + 1)) || (groupIndex > 0 && [self.descImages count])) {
+    if ((appDelegate.groupIndex == 0 && (index == 0 || index == [self.descImages count] + 1)) || (appDelegate.groupIndex > 0 && index == [self.descImages count])) {
         pageContentViewController = (WorkstationIntroEndViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationIntroEndViewController"];
         ((WorkstationIntroEndViewController*)pageContentViewController).pageIndex = index;
         
@@ -80,7 +78,7 @@ static int groupIndex;
         pageContentViewController = (WorkstationContentViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationSetupContentViewController"];
         ((WorkstationContentViewController*)pageContentViewController).pageIndex = index;
         
-        if (groupIndex == 0) {
+        if (appDelegate.groupIndex == 0) {
             ((WorkstationContentViewController*)pageContentViewController).descText = [[self.curDescArray objectAtIndex:(index - 1)] objectForKey:[self.descImages objectAtIndex:(index - 1)]];
         } else {
             ((WorkstationContentViewController*)pageContentViewController).descText = [[self.curDescArray objectAtIndex:index] objectForKey:[self.descImages objectAtIndex:index]];
@@ -126,7 +124,7 @@ static int groupIndex;
     
     index++;
     
-    if ((groupIndex == 0 && index == [self.descImages count] + 2) || (groupIndex > 0 && index == [self.descImages count] + 1)) {
+    if ((appDelegate.groupIndex == 0 && index == [self.descImages count] + 2) || (appDelegate.groupIndex > 0 && index == [self.descImages count] + 1)) {
         return nil;
     }
     
@@ -135,7 +133,7 @@ static int groupIndex;
 
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
 {
-    if (groupIndex == 0) {
+    if (appDelegate.groupIndex == 0) {
         return [self.descImages count] + 2;
     } else {
         return [self.descImages count] + 1;
@@ -160,8 +158,8 @@ static int groupIndex;
 
 - (void)initCurDescArray
 {
-    self.curDescArray = [[workstationArray objectAtIndex:groupIndex] objectForKey:[self.titles objectAtIndex:groupIndex]];
-    self.navigationItem.title = [self.titles objectAtIndex:groupIndex];    
+    self.curDescArray = [[workstationArray objectAtIndex:appDelegate.groupIndex] objectForKey:[self.titles objectAtIndex:appDelegate.groupIndex]];
+    self.navigationItem.title = [self.titles objectAtIndex:appDelegate.groupIndex];
 }
 
 - (void)initCurDescKeys
