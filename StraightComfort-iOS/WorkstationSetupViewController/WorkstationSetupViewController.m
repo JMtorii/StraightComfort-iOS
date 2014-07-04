@@ -56,6 +56,17 @@
         
 }
 
+-(void) viewWillDisappear:(BOOL)animated {
+    if ([self.navigationController.viewControllers indexOfObject:self]==NSNotFound) {
+        // Navigation button was pressed. Do some stuff
+        if (appDelegate.groupIndex > 0) {
+            appDelegate.groupIndex--;
+        }
+//        [self.navigationController popViewControllerAnimated:NO];
+    }
+    [super viewWillDisappear:animated];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

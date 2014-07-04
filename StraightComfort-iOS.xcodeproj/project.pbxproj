@@ -487,9 +487,9 @@
 		B6DAB624192088EB00649B99 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B6DAB62C192745B100649B99 /* MainViewController.storyboard */,
 				B6DAB627192738CE00649B99 /* MainViewController.h */,
 				B6DAB628192738CE00649B99 /* MainViewController.m */,
-				B6DAB62C192745B100649B99 /* MainViewController.storyboard */,
 				B643E7F6192F21C50062159A /* MainTableViewCell.xib */,
 				B60D9D80192F29AE00CBE191 /* MainTableViewCell.h */,
 				B60D9D81192F29AE00CBE191 /* MainTableViewCell.m */,

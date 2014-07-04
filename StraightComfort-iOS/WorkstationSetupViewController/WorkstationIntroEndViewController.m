@@ -53,6 +53,9 @@
 //    [appDelegate incGroupIndex];
     appDelegate.groupIndex++;
     NSLog(@"%d", appDelegate.groupIndex);
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"WorkstationSetupViewController" bundle:nil];
+    UIViewController *viewController = [sb instantiateViewControllerWithIdentifier:@"WorkstationSetupViewController"];
+    [[self navigationController] pushViewController:viewController animated:YES];
 }
 
 /*
