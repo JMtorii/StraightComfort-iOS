@@ -24,28 +24,34 @@
     
     appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     NSLog(@"%d", appDelegate.groupIndex);
-    
     workstationArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"WorkstationSetupStrings" ofType:@"plist"]];
-    
-    //initialize
+
     [self initTitles];
-    [self initCurDescArray];
-    [self initCurDescKeys];
     
-    // Create page view controller
-    self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationSetupPageViewController"];
-    self.pageViewController.dataSource = self;
+    if (appDelegate.groupIndex == 0 || appDelegate.groupIndex < [self.titles count]) {
         
-    UIViewController *startingViewController = [self viewControllerAtIndex:0];
-    NSArray *viewControllers = @[startingViewController];
-    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+        //initialize
+        
+        [self initCurDescArray];
+        [self initCurDescKeys];
+        
+        // Create page view controller
+        self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationSetupPageViewController"];
+        self.pageViewController.dataSource = self;
+        
+        UIViewController *startingViewController = [self viewControllerAtIndex:0];
+        NSArray *viewControllers = @[startingViewController];
+        [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+        
+        // Change the size of page view controller
+        self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+        
+        [self addChildViewController:_pageViewController];
+        [self.view addSubview:_pageViewController.view];
+        [self.pageViewController didMoveToParentViewController:self];
+        
+    }
     
-    // Change the size of page view controller
-    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
-    
-    [self addChildViewController:_pageViewController];
-    [self.view addSubview:_pageViewController.view];
-    [self.pageViewController didMoveToParentViewController:self];
         
     //    for (UIView *view in self.pageViewController.view.subviews ) {
     //        if ([view isKindOfClass:[UIScrollView class]]) {
@@ -56,13 +62,18 @@
         
 }
 
+-(void) viewDidAppear:(BOOL)animated
+{
+    
+}
+
 -(void) viewWillDisappear:(BOOL)animated {
     if ([self.navigationController.viewControllers indexOfObject:self]==NSNotFound) {
         // Navigation button was pressed. Do some stuff
         if (appDelegate.groupIndex > 0) {
             appDelegate.groupIndex--;
         }
-//        [self.navigationController popViewControllerAnimated:NO];
+        [self.navigationController popViewControllerAnimated:NO];
     }
     [super viewWillDisappear:animated];
 }
@@ -164,6 +175,8 @@
     }
     
     self.titles = tmp;
+    
+    appDelegate.maxGroupIndex = [self.titles count] - 1;
 }
 
 

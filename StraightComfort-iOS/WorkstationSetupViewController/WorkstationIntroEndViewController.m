@@ -52,10 +52,24 @@
 - (IBAction)next:(id)sender {
 //    [appDelegate incGroupIndex];
     appDelegate.groupIndex++;
-    NSLog(@"%d", appDelegate.groupIndex);
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"WorkstationSetupViewController" bundle:nil];
-    UIViewController *viewController = [sb instantiateViewControllerWithIdentifier:@"WorkstationSetupViewController"];
-    [[self navigationController] pushViewController:viewController animated:YES];
+    
+    if (appDelegate.groupIndex <= appDelegate.maxGroupIndex) {
+        NSLog(@"%d", appDelegate.groupIndex);
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"WorkstationSetupViewController" bundle:nil];
+        UIViewController *viewController = [sb instantiateViewControllerWithIdentifier:@"WorkstationSetupViewController"];
+        [[self navigationController] pushViewController:viewController animated:YES];
+        
+    } else {
+        for (UIViewController *controller in self.navigationController.viewControllers) {
+                
+            //Do not forget to import AnOldViewController.h
+            if ([controller isKindOfClass:[MainViewController class]]) { 
+
+                [self.navigationController popToViewController:controller animated:YES];
+                break;
+            }
+        }
+    }
 }
 
 /*

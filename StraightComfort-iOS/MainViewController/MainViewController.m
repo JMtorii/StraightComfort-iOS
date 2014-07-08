@@ -77,7 +77,7 @@
         
 //        viewController = [[WorkstationSetupViewController alloc]initWithNibName:@"WorkstationSetupViewController" bundle:nil];
         
-//        appDelegate.groupIndex = 0;
+        appDelegate.groupIndex = 0;
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"WorkstationSetupViewController" bundle:nil];
         viewController = [sb instantiateViewControllerWithIdentifier:@"WorkstationSetupViewController"];
 //        viewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;

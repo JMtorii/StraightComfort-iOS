@@ -42,7 +42,7 @@
     [_descLabel setText:_descText];
     [_descLabel setTextColor:[UIColor whiteColor]];
         
-    [_descLabel setFont:[UIFont fontWithName:kRobotoRegular size:18]];
+    [_descLabel setFont:[UIFont fontWithName:kRobotoRegular size:16]];
     
     // Tell the label to use an unlimited number of lines
     [_descLabel setNumberOfLines:0];

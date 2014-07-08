@@ -17,6 +17,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic) int groupIndex;
+@property (nonatomic) int maxGroupIndex;
 
 //- (void)incGroupIndex;
 //- (int)getGroupIndex;
