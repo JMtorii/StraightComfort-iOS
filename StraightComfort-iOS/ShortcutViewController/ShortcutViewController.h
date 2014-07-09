@@ -8,10 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "ShortcutTableViewCell.h"
+#import "WorkstationSetupViewController.h"
 #import "Constants.h"
+#import "AppDelegate.h"
+
+@class AppDelegate;
+
 
 @interface ShortcutViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     NSArray *workstationShortcutArray;
+    AppDelegate *appDelegate;
 }
 
 @end

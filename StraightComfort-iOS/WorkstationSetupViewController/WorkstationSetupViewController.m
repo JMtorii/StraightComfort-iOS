@@ -11,10 +11,10 @@
 @implementation WorkstationSetupViewController
 
 @synthesize pageViewController = _pageViewController;
-@synthesize pageImages = _pageImages;
-@synthesize titles = _titles;
-@synthesize curDescArray = _curDescArray;
-@synthesize descImages = _descImages;
+//@synthesize pageImages = _pageImages;
+//@synthesize titles = _titles;
+//@synthesize curDescArray = _curDescArray;
+//@synthesize descImages = _descImages;
 
 - (void)viewDidLoad
 {
@@ -24,16 +24,18 @@
     
     appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     NSLog(@"%d", appDelegate.groupIndex);
-    workstationArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"WorkstationSetupStrings" ofType:@"plist"]];
+//    appDelegate.workstationArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"WorkstationSetupStrings" ofType:@"plist"]];
+//    workstationArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"WorkstationSetupStrings" ofType:@"plist"]];
 
-    [self initTitles];
+    [appDelegate initTitles];
     
-    if (appDelegate.groupIndex == 0 || appDelegate.groupIndex < [self.titles count]) {
+    if (appDelegate.groupIndex == 0 || appDelegate.groupIndex < [appDelegate.titles count]) {
         
         //initialize
         
-        [self initCurDescArray];
-        [self initCurDescKeys];
+        [appDelegate initCurDescArray];
+        [appDelegate initCurDescKeys];
+        self.navigationItem.title = [appDelegate.titles objectAtIndex:appDelegate.groupIndex];
         
         // Create page view controller
         self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationSetupPageViewController"];
@@ -86,13 +88,13 @@
 
 - (UIViewController *)viewControllerAtIndex:(NSUInteger)index
 {
-    if (([self.descImages count] == 0) || (appDelegate.groupIndex == 0 && index >= [self.descImages count] + 2) || (appDelegate.groupIndex > 0 && index >= [self.descImages count] + 1)) {
+    if (([appDelegate.descImages count] == 0) || (appDelegate.groupIndex == 0 && index >= [appDelegate.descImages count] + 2) || (appDelegate.groupIndex > 0 && index >= [appDelegate.descImages count] + 1)) {
         return nil;
     }
     
     UIViewController *pageContentViewController;
     
-    if ((appDelegate.groupIndex == 0 && (index == 0 || index == [self.descImages count] + 1)) || (appDelegate.groupIndex > 0 && index == [self.descImages count])) {
+    if ((appDelegate.groupIndex == 0 && (index == 0 || index == [appDelegate.descImages count] + 1)) || (appDelegate.groupIndex > 0 && index == [appDelegate.descImages count])) {
         pageContentViewController = (WorkstationIntroEndViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationIntroEndViewController"];
         ((WorkstationIntroEndViewController*)pageContentViewController).pageIndex = index;
         
@@ -101,9 +103,9 @@
         ((WorkstationContentViewController*)pageContentViewController).pageIndex = index;
         
         if (appDelegate.groupIndex == 0) {
-            ((WorkstationContentViewController*)pageContentViewController).descText = [[self.curDescArray objectAtIndex:(index - 1)] objectForKey:[self.descImages objectAtIndex:(index - 1)]];
+            ((WorkstationContentViewController*)pageContentViewController).descText = [[appDelegate.curDescArray objectAtIndex:(index - 1)] objectForKey:[appDelegate.descImages objectAtIndex:(index - 1)]];
         } else {
-            ((WorkstationContentViewController*)pageContentViewController).descText = [[self.curDescArray objectAtIndex:index] objectForKey:[self.descImages objectAtIndex:index]];
+            ((WorkstationContentViewController*)pageContentViewController).descText = [[appDelegate.curDescArray objectAtIndex:index] objectForKey:[appDelegate.descImages objectAtIndex:index]];
         }
     
     }
@@ -146,7 +148,7 @@
     
     index++;
     
-    if ((appDelegate.groupIndex == 0 && index == [self.descImages count] + 2) || (appDelegate.groupIndex > 0 && index == [self.descImages count] + 1)) {
+    if ((appDelegate.groupIndex == 0 && index == [appDelegate.descImages count] + 2) || (appDelegate.groupIndex > 0 && index == [appDelegate.descImages count] + 1)) {
         return nil;
     }
     
@@ -156,9 +158,9 @@
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
 {
     if (appDelegate.groupIndex == 0) {
-        return [self.descImages count] + 2;
+        return [appDelegate.descImages count] + 2;
     } else {
-        return [self.descImages count] + 1;
+        return [appDelegate.descImages count] + 1;
     }
 }
 
@@ -167,34 +169,34 @@
     return 0;
 }
 
-- (void)initTitles
-{
-    NSMutableArray *tmp = [[NSMutableArray alloc]init];
-    for (NSDictionary *dict in workstationArray) {
-        [tmp addObject:[[dict allKeys] objectAtIndex:0]];
-    }
-    
-    self.titles = tmp;
-    
-    appDelegate.maxGroupIndex = [self.titles count] - 1;
-}
-
-
-- (void)initCurDescArray
-{
-    self.curDescArray = [[workstationArray objectAtIndex:appDelegate.groupIndex] objectForKey:[self.titles objectAtIndex:appDelegate.groupIndex]];
-    self.navigationItem.title = [self.titles objectAtIndex:appDelegate.groupIndex];
-}
-
-- (void)initCurDescKeys
-{
-    NSMutableArray *tmp = [[NSMutableArray alloc]init];
-    for (NSDictionary *dict in self.curDescArray) {
-        [tmp addObject:[[dict allKeys] objectAtIndex:0]];
-    }
-    
-    self.descImages = tmp;
-}
+//- (void)initTitles
+//{
+//    NSMutableArray *tmp = [[NSMutableArray alloc]init];
+//    for (NSDictionary *dict in workstationArray) {
+//        [tmp addObject:[[dict allKeys] objectAtIndex:0]];
+//    }
+//    
+//    self.titles = tmp;
+//    
+//    appDelegate.maxGroupIndex = [self.titles count] - 1;
+//}
+//
+//
+//- (void)initCurDescArray
+//{
+//    self.curDescArray = [[workstationArray objectAtIndex:appDelegate.groupIndex] objectForKey:[self.titles objectAtIndex:appDelegate.groupIndex]];
+//    self.navigationItem.title = [self.titles objectAtIndex:appDelegate.groupIndex];
+//}
+//
+//- (void)initCurDescKeys
+//{
+//    NSMutableArray *tmp = [[NSMutableArray alloc]init];
+//    for (NSDictionary *dict in self.curDescArray) {
+//        [tmp addObject:[[dict allKeys] objectAtIndex:0]];
+//    }
+//    
+//    self.descImages = tmp;
+//}
 
 
 

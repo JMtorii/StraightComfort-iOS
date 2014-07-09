@@ -50,7 +50,6 @@
 }
 
 - (IBAction)next:(id)sender {
-//    [appDelegate incGroupIndex];
     appDelegate.groupIndex++;
     
     if (appDelegate.groupIndex <= appDelegate.maxGroupIndex) {
@@ -62,7 +61,6 @@
     } else {
         for (UIViewController *controller in self.navigationController.viewControllers) {
                 
-            //Do not forget to import AnOldViewController.h
             if ([controller isKindOfClass:[MainViewController class]]) { 
 
                 [self.navigationController popToViewController:controller animated:YES];

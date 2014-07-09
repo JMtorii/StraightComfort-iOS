@@ -19,7 +19,7 @@
     
     UIButton *rightHelpBarButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightHelpBarButton];
-    
+    appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     workstationShortcutArray = [NSArray arrayWithObjects:@"CHAIR", @"KEYBOARD TRAY", @"MOUSE", @"MONITOR", @"DOCUMENTS", @"WORK AREA & STORAGE", nil];
     
     // Uncomment the following line to preserve selection between presentations.
@@ -100,60 +100,21 @@
     return cell;
 }
 
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
 #pragma mark - Table view delegate
 
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here, for example:
-    // Create the next view controller.
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:<#@"Nib name"#> bundle:nil];
+    appDelegate.groupIndex = 0;
+    appDelegate.workstationArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"WorkstationSetupStrings" ofType:@"plist"]];
+    appDelegate.titles = [[NSArray alloc] initWithObjects:[[workstationShortcutArray objectAtIndex:indexPath.row] capitalizedString], nil];
+    appDelegate.maxGroupIndex = 1;
     
-    // Pass the selected object to the new view controller.
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"WorkstationSetupViewController" bundle:nil];
+    UIViewController *viewController = [sb instantiateViewControllerWithIdentifier:@"WorkstationSetupViewController"];
+    [[self navigationController] pushViewController:viewController animated:YES];
     
-    // Push the view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
 }
-*/
+
 
 @end

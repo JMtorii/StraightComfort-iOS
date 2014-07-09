@@ -101,4 +101,32 @@
 //    return groupIndex;
 //}
 
+- (void)initTitles
+{
+    NSMutableArray *tmp = [[NSMutableArray alloc]init];
+    for (NSDictionary *dict in self.workstationArray) {
+        [tmp addObject:[[dict allKeys] objectAtIndex:0]];
+    }
+    
+    self.titles = tmp;
+    
+    self.maxGroupIndex = [self.titles count] - 1;
+}
+
+
+- (void)initCurDescArray
+{
+    self.curDescArray = [[self.workstationArray objectAtIndex:self.groupIndex] objectForKey:[self.titles objectAtIndex:self.groupIndex]];
+}
+
+- (void)initCurDescKeys
+{
+    NSMutableArray *tmp = [[NSMutableArray alloc]init];
+    for (NSDictionary *dict in self.curDescArray) {
+        [tmp addObject:[[dict allKeys] objectAtIndex:0]];
+    }
+    
+    self.descImages = tmp;
+}
+
 @end

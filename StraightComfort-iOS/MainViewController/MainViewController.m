@@ -69,25 +69,20 @@
     UIViewController *viewController;
     
     if (indexPath.row == 0) {
-        
-//        UIStoryboard *workstationStoryboard = [UIStoryboard storyboardWithName:@"WorkstationSetupViewController" bundle: nil];
-//        viewController = (UINavigationController*)[workstationStoryboard instantiateViewControllerWithIdentifier: @"WorkstationSetupNavigationController"];
-        
-        
-        
-//        viewController = [[WorkstationSetupViewController alloc]initWithNibName:@"WorkstationSetupViewController" bundle:nil];
-        
         appDelegate.groupIndex = 0;
+        appDelegate.workstationArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"WorkstationSetupStrings" ofType:@"plist"]];
+        [appDelegate initTitles];
+        
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"WorkstationSetupViewController" bundle:nil];
         viewController = [sb instantiateViewControllerWithIdentifier:@"WorkstationSetupViewController"];
-//        viewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-//        [self presentViewController:viewController animated:YES completion:NULL];
+        
     
     } else if (indexPath.row == 1) {
         viewController = [[ShortcutViewController alloc]initWithNibName:@"ShortcutViewController" bundle:nil];
         
     } else {
         viewController = [[DiscomfortViewController alloc]initWithNibName:@"DiscomfortTableViewController" bundle:nil];
+    
     }
     
     [[self navigationController] pushViewController:viewController animated:YES];
