@@ -108,7 +108,9 @@
     appDelegate.groupIndex = 0;
     appDelegate.workstationArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"WorkstationSetupStrings" ofType:@"plist"]];
     appDelegate.titles = [[NSArray alloc] initWithObjects:[[workstationShortcutArray objectAtIndex:indexPath.row] capitalizedString], nil];
-    appDelegate.maxGroupIndex = 1;
+    appDelegate.maxGroupIndex = 0;
+    
+    NSLog(@"%@", [[workstationShortcutArray objectAtIndex:indexPath.row] capitalizedString]);
     
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"WorkstationSetupViewController" bundle:nil];
     UIViewController *viewController = [sb instantiateViewControllerWithIdentifier:@"WorkstationSetupViewController"];

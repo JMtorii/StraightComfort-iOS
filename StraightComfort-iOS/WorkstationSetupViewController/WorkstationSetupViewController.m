@@ -27,7 +27,7 @@
 //    appDelegate.workstationArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"WorkstationSetupStrings" ofType:@"plist"]];
 //    workstationArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"WorkstationSetupStrings" ofType:@"plist"]];
 
-    [appDelegate initTitles];
+//    [appDelegate initTitles];
     
     if (appDelegate.groupIndex == 0 || appDelegate.groupIndex < [appDelegate.titles count]) {
         
