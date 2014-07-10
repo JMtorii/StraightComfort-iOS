@@ -26,6 +26,8 @@
                                    [completeSectionNames objectAtIndex:4]: @[@"Chair (height, seat depth)"]};
     
     [self initSectionNames];
+    
+    allRawDataArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"PossibleSolutionStrings" ofType:@"plist"]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -74,6 +76,10 @@
     cell.possibleSolutionLabel.text = [finalSectionNames objectAtIndex:indexPath.row];
     cell.possibleSolutionLabel.textColor = [UIColor colorWithRed:15.0/255.0 green:153.0/255.0 blue:255.0/255.0 alpha:1.0];
     cell.possibleSolutionLabel.font = [UIFont fontWithName:kRobotoRegular size:22];
+    
+    cell.pointDesc1.font = [UIFont fontWithName:kRobotoRegular size:13];
+    
+    cell.pointDesc2.font = [UIFont fontWithName:kRobotoRegular size:13];
     
     return cell;
 }

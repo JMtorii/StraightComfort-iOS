@@ -76,8 +76,6 @@
     cell.discomfortTitle.textColor = [UIColor colorWithRed:15.0/255.0 green:153.0/255.0 blue:255.0/255.0 alpha:1.0];
     cell.discomfortTitle.font = [UIFont fontWithName:kRobotoRegular size:22];
         
-//    NSLog([cell.discomfortSwitch isOn] ? @"Yes" : @"No");
-    
     return cell;
 }
 

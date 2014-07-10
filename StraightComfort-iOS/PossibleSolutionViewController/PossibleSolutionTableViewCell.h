@@ -11,5 +11,7 @@
 @interface PossibleSolutionTableViewCell : UITableViewCell
 
 @property (nonatomic, weak) IBOutlet UILabel *possibleSolutionLabel;
+@property (nonatomic, weak) IBOutlet UILabel *pointDesc1;
+@property (nonatomic, weak) IBOutlet UILabel *pointDesc2;
 
 @end

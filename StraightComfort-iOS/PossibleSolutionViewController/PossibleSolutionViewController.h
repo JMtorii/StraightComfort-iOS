@@ -14,6 +14,7 @@
     NSArray *completeSectionNames;
     NSDictionary *completePossibleSolutionDictionary;
     NSMutableArray *finalSectionNames;
+    NSArray *allRawDataArray;
 }
 
 - (void)initSectionNames;
