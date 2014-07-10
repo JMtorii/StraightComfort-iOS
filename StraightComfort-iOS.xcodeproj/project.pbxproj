@@ -88,6 +88,7 @@
 		B6AE72CA1946D46800FBFB5E /* documents.png in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72C91946D46800FBFB5E /* documents.png */; };
 		B6AE72CC1946D6CD00FBFB5E /* workarea.png in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72CB1946D6CD00FBFB5E /* workarea.png */; };
 		B6AE72CE1946D6D600FBFB5E /* workarea.ai in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72CD1946D6D600FBFB5E /* workarea.ai */; };
+		B6D7DF35196E566100478A94 /* PossibleSolutionStrings.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6D7DF34196E566100478A94 /* PossibleSolutionStrings.plist */; };
 		B6DAB62A192738CE00649B99 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DAB628192738CE00649B99 /* MainViewController.m */; };
 		B6DAB62D192745B100649B99 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DAB62C192745B100649B99 /* MainViewController.storyboard */; };
 		B6E8C82918C50DC400550D49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E8C82818C50DC400550D49 /* Foundation.framework */; };
@@ -214,6 +215,7 @@
 		B6AE72C91946D46800FBFB5E /* documents.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = documents.png; sourceTree = "<group>"; };
 		B6AE72CB1946D6CD00FBFB5E /* workarea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = workarea.png; sourceTree = "<group>"; };
 		B6AE72CD1946D6D600FBFB5E /* workarea.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = workarea.ai; sourceTree = "<group>"; };
+		B6D7DF34196E566100478A94 /* PossibleSolutionStrings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PossibleSolutionStrings.plist; sourceTree = "<group>"; };
 		B6DAB62019207D5E00649B99 /* StraightComfort-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StraightComfort-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DAB62119207D5E00649B99 /* StraightComfort-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StraightComfort-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DAB627192738CE00649B99 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -432,6 +434,7 @@
 				4E0169CF196506BE00652084 /* WorkstationIntroEndViewController.m */,
 				B61B2EC119567E9100AE5908 /* WorkstationSetupStrings.xml */,
 				B61783871962587500A7185D /* WorkstationSetupStrings.plist */,
+				B6D7DF34196E566100478A94 /* PossibleSolutionStrings.plist */,
 			);
 			path = WorkstationSetupViewController;
 			sourceTree = "<group>";
@@ -660,6 +663,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B61B2EA61950027100AE5908 /* Roboto-Medium.ttf in Resources */,
+				B6D7DF35196E566100478A94 /* PossibleSolutionStrings.plist in Resources */,
 				B60D9D9F1930823A00CBE191 /* Launchiphone.png in Resources */,
 				B61B2EA21950027100AE5908 /* Roboto-CondensedItalic.ttf in Resources */,
 				4EB5726A195750A00022E9C9 /* bouncingBallExample.gif in Resources */,
