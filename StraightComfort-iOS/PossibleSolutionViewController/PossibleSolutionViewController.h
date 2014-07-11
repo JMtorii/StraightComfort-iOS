@@ -18,6 +18,7 @@
 }
 
 - (void)initSectionNames;
+- (NSMutableArray *) getPointDescLabels:(int)index;
 
 @property(nonatomic) NSArray *possibleSolutionSwitches;
 

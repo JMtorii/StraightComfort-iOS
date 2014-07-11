@@ -77,14 +77,24 @@
     cell.possibleSolutionLabel.textColor = [UIColor colorWithRed:15.0/255.0 green:153.0/255.0 blue:255.0/255.0 alpha:1.0];
     cell.possibleSolutionLabel.font = [UIFont fontWithName:kRobotoRegular size:22];
     
+    NSArray *descs = [self getPointDescLabels: [completeSectionNames indexOfObject:[finalSectionNames objectAtIndex:indexPath.row]]];
+    
+    cell.pointDesc1.text = [descs objectAtIndex:0];
     cell.pointDesc1.font = [UIFont fontWithName:kRobotoRegular size:13];
     
+    if ([descs count] > 1) {
+        cell.pointDesc2.text = [descs objectAtIndex:1];
+    } else {
+        cell.pointDesc2.text = @"";
+    }
+        
     cell.pointDesc2.font = [UIFont fontWithName:kRobotoRegular size:13];
     
     return cell;
 }
 
-- (void) initSectionNames {
+- (void) initSectionNames 
+{
     BOOL hasOneSectionName = false;
     finalSectionNames = [[NSMutableArray alloc]init];
     for (int index = 0; index < [self.possibleSolutionSwitches count]; index++) {
@@ -99,6 +109,14 @@
     }
 }
 
-
+- (NSMutableArray *) getPointDescLabels:(int)index
+{
+    NSMutableArray *retArray = [[NSMutableArray alloc] init];
+    for (NSDictionary *dict in [allRawDataArray objectAtIndex:index]) {
+        [retArray addObject:[[dict allKeys] objectAtIndex:0]];
+    }
+    
+    return retArray;
+}
 
 @end
