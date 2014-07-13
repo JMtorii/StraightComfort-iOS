@@ -11,10 +11,7 @@
 @implementation WorkstationSetupViewController
 
 @synthesize pageViewController = _pageViewController;
-//@synthesize pageImages = _pageImages;
-//@synthesize titles = _titles;
-//@synthesize curDescArray = _curDescArray;
-//@synthesize descImages = _descImages;
+
 
 - (void)viewDidLoad
 {
@@ -24,15 +21,8 @@
     
     appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     NSLog(@"%d", appDelegate.groupIndex);
-//    appDelegate.workstationArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"WorkstationSetupStrings" ofType:@"plist"]];
-//    workstationArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"WorkstationSetupStrings" ofType:@"plist"]];
-
-//    [appDelegate initTitles];
     
     if (appDelegate.groupIndex == 0 || appDelegate.groupIndex < [appDelegate.titles count]) {
-        
-        //initialize
-        
         [appDelegate initCurDescArray];
         [appDelegate initCurDescKeys];
         self.navigationItem.title = [appDelegate.titles objectAtIndex:appDelegate.groupIndex];
@@ -62,22 +52,6 @@
     //        }
     //    }
         
-}
-
--(void) viewDidAppear:(BOOL)animated
-{
-    
-}
-
--(void) viewWillDisappear:(BOOL)animated {
-    if ([self.navigationController.viewControllers indexOfObject:self]==NSNotFound) {
-        // Navigation button was pressed. Do some stuff
-        if (appDelegate.groupIndex > 0) {
-            appDelegate.groupIndex--;
-        }
-        [self.navigationController popViewControllerAnimated:NO];
-    }
-    [super viewWillDisappear:animated];
 }
 
 - (void)didReceiveMemoryWarning
@@ -168,36 +142,6 @@
 {
     return 0;
 }
-
-//- (void)initTitles
-//{
-//    NSMutableArray *tmp = [[NSMutableArray alloc]init];
-//    for (NSDictionary *dict in workstationArray) {
-//        [tmp addObject:[[dict allKeys] objectAtIndex:0]];
-//    }
-//    
-//    self.titles = tmp;
-//    
-//    appDelegate.maxGroupIndex = [self.titles count] - 1;
-//}
-//
-//
-//- (void)initCurDescArray
-//{
-//    self.curDescArray = [[workstationArray objectAtIndex:appDelegate.groupIndex] objectForKey:[self.titles objectAtIndex:appDelegate.groupIndex]];
-//    self.navigationItem.title = [self.titles objectAtIndex:appDelegate.groupIndex];
-//}
-//
-//- (void)initCurDescKeys
-//{
-//    NSMutableArray *tmp = [[NSMutableArray alloc]init];
-//    for (NSDictionary *dict in self.curDescArray) {
-//        [tmp addObject:[[dict allKeys] objectAtIndex:0]];
-//    }
-//    
-//    self.descImages = tmp;
-//}
-
 
 
 @end

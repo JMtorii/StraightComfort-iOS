@@ -117,14 +117,12 @@
 - (void)initCurDescArray
 {
     for (NSDictionary *dict in self.workstationArray) {
-        
-        if ([dict objectForKey:[self.titles objectAtIndex:self.groupIndex]] /* && [[dict allKeys] objectAtIndex:0] == [self.titles objectAtIndex:self.groupIndex]*/) {
+        if ([dict objectForKey:[self.titles objectAtIndex:self.groupIndex]]) {
             self.curDescArray = [dict objectForKey:[self.titles objectAtIndex:self.groupIndex]];
             break;
         }
     }
     
-//    self.curDescArray = [[self.workstationArray objectAtIndex:self.groupIndex] objectForKey:[self.titles objectAtIndex:self.groupIndex]];
 }
 
 - (void)initCurDescKeys

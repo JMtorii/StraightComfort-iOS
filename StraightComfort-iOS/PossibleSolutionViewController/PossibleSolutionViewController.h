@@ -9,12 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "PossibleSolutionTableViewCell.h"
 #import "Constants.h"
+#import "AppDelegate.h"
+
+@class AppDelegate;
 
 @interface PossibleSolutionViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     NSArray *completeSectionNames;
     NSDictionary *completePossibleSolutionDictionary;
     NSMutableArray *finalSectionNames;
     NSArray *allRawDataArray;
+    AppDelegate *appDelegate;
 }
 
 - (void)initSectionNames;

@@ -15,6 +15,8 @@
     [super viewDidLoad];
     self.navigationItem.title = @"Possible Solutions";
     
+    appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
     UIButton *rightHelpBarButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightHelpBarButton];
 
@@ -91,6 +93,21 @@
     cell.pointDesc2.font = [UIFont fontWithName:kRobotoRegular size:13];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    appDelegate.groupIndex = 0;
+    appDelegate.workstationArray = [[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"PossibleSolutionStrings" ofType:@"plist"]] objectAtIndex:indexPath.row];
+    appDelegate.titles = [self getPointDescLabels:indexPath.row];
+    appDelegate.maxGroupIndex = [appDelegate.titles count] - 1;
+    
+//    NSLog(@"%@", [[workstationShortcutArray objectAtIndex:indexPath.row] capitalizedString]);
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"WorkstationSetupViewController" bundle:nil];
+    UIViewController *viewController = [sb instantiateViewControllerWithIdentifier:@"WorkstationSetupViewController"];
+    [[self navigationController] pushViewController:viewController animated:YES];
+    
 }
 
 - (void) initSectionNames 
