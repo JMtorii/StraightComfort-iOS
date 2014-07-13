@@ -26,21 +26,49 @@
     
     appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
-    self.desc.text = @"Let's work to improve your workstation!";
-    [self.desc setFont:[UIFont fontWithName:kRobotoRegular size:18]];
+    if (appDelegate.groupIndex == 0 && self.pageIndex == 0) {
+        self.mainTitle.text = @"Let's improve your workstation!";
+        self.mainTitle.textColor = [UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1.0];
+        self.mainTitle.font = [UIFont fontWithName:kRobotoThin size:28];
         
-    (self.pageIndex > 0) ? [self.nextButton setHidden:false] : [self.nextButton setHidden:true];
-    
-    if (self.pageIndex > 0) {
-        [self.nextButton setHidden:false];
-        [self.swipeLabel setHidden:true];
+        self.desc.text = @"Swipe left";
+        self.desc.font = [UIFont fontWithName:kRobotoRegular size:18];
         
-    } else {
+        NSURL *url = [[NSBundle mainBundle] URLForResource:@"finger" withExtension:@"gif"];
+        NSData *data1 = [NSData dataWithContentsOfURL:url];
+        FLAnimatedImage *image = [[FLAnimatedImage alloc] initWithAnimatedGIFData:data1];
+        FLAnimatedImageView *imageView = [[FLAnimatedImageView alloc] init];
+        imageView.animatedImage = image;
+        imageView.frame = CGRectMake(20.0, 330.0, 280.0, 199.0);
+        [self.view addSubview:imageView];
+        
         [self.nextButton setHidden:true];
-        [self.swipeLabel setHidden:false];
+                
+    } else if (appDelegate.groupIndex != appDelegate.maxGroupIndex){
+        self.mainTitle.text = @"Yay!";
+        self.mainTitle.textColor = [UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1.0];
+        self.mainTitle.font = [UIFont fontWithName:kRobotoThin size:28];
+        
+        self.desc.text = @"We just made your workstation a bit better :)";
+        self.desc.font = [UIFont fontWithName:kRobotoRegular size:16];
+        
+        [self.nextButton setHidden:false];
+        [self.nextButton setTitle:@"Make life better" forState:UIControlStateNormal];
+        self.nextButton.titleLabel.font = [UIFont fontWithName:kRobotoRegular size:22];
+                
+    } else {
+        self.mainTitle.text = @"Life's a lot better now! :)";
+        self.mainTitle.textColor = [UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1.0];
+        self.mainTitle.font = [UIFont fontWithName:kRobotoThin size:28];
+        
+        [self.desc setHidden:true];
+        
+        [self.nextButton setHidden:false];
+        [self.nextButton setTitle:@"Return home" forState:UIControlStateNormal];
+        self.nextButton.titleLabel.font = [UIFont fontWithName:kRobotoRegular size:22];
         
     }
-    // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning

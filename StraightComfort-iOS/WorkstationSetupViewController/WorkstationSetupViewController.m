@@ -71,7 +71,7 @@
     if ((appDelegate.groupIndex == 0 && (index == 0 || index == [appDelegate.descImages count] + 1)) || (appDelegate.groupIndex > 0 && index == [appDelegate.descImages count])) {
         pageContentViewController = (WorkstationIntroEndViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationIntroEndViewController"];
         ((WorkstationIntroEndViewController*)pageContentViewController).pageIndex = index;
-        
+                
     } else {
         pageContentViewController = (WorkstationContentViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"WorkstationSetupContentViewController"];
         ((WorkstationContentViewController*)pageContentViewController).pageIndex = index;
