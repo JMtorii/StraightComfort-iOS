@@ -25,7 +25,7 @@
     
     appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
-    NSURL *url1 = [[NSBundle mainBundle] URLForResource:@"bouncingBallExample" withExtension:@"gif"];
+    NSURL *url1 = [[NSBundle mainBundle] URLForResource:@"monitorUpExample" withExtension:@"gif"];
     NSData *data1 = [NSData dataWithContentsOfURL:url1];
     FLAnimatedImage *image = [[FLAnimatedImage alloc] initWithAnimatedGIFData:data1];
     FLAnimatedImageView *imageView = [[FLAnimatedImageView alloc] init];
