@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4E0169D0196506BE00652084 /* WorkstationIntroEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0169CF196506BE00652084 /* WorkstationIntroEndViewController.m */; };
-		4E065E7D193A7D1C00A70377 /* chair.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4E065E7C193A7D1C00A70377 /* chair.ai */; };
 		4E065E85193A865400A70377 /* chair.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E065E84193A865400A70377 /* chair.png */; };
 		4E065E89193AD33B00A70377 /* DiscomfortTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E065E87193AD33B00A70377 /* DiscomfortTableViewCell.m */; };
 		4E065E8A193AD33B00A70377 /* DiscomfortTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E065E88193AD33B00A70377 /* DiscomfortTableViewCell.xib */; };
@@ -17,28 +16,9 @@
 		4E0E7BB4194E3DAB0065D676 /* TutorialViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E0E7BB3194E3DAB0065D676 /* TutorialViewController.storyboard */; };
 		4E339C05193403D700B9BDE3 /* DiscomfortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E339C03193403D700B9BDE3 /* DiscomfortViewController.m */; };
 		4E339C06193403D700B9BDE3 /* DiscomfortViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E339C04193403D700B9BDE3 /* DiscomfortViewController.xib */; };
-		4E4B926019732A26002EDCD4 /* SymDepend.cache in Resources */ = {isa = PBXBuildFile; fileRef = 4E4B925419732A26002EDCD4 /* SymDepend.cache */; };
-		4E4B926119732A26002EDCD4 /* DOMDocument.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4E4B925519732A26002EDCD4 /* DOMDocument.xml */; };
-		4E4B926219732A26002EDCD4 /* arrow.ai.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4E4B925719732A26002EDCD4 /* arrow.ai.xml */; };
-		4E4B926319732A26002EDCD4 /* monitorExample.ai.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4E4B925819732A26002EDCD4 /* monitorExample.ai.xml */; };
-		4E4B926419732A26002EDCD4 /* Tween 1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4E4B925919732A26002EDCD4 /* Tween 1.xml */; };
-		4E4B926519732A26002EDCD4 /* Tween 2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4E4B925A19732A26002EDCD4 /* Tween 2.xml */; };
-		4E4B926619732A26002EDCD4 /* metadata.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4E4B925C19732A26002EDCD4 /* metadata.xml */; };
-		4E4B926719732A26002EDCD4 /* MobileSettings.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4E4B925D19732A26002EDCD4 /* MobileSettings.xml */; };
-		4E4B926819732A26002EDCD4 /* monitorUpExample.xfl in Resources */ = {isa = PBXBuildFile; fileRef = 4E4B925E19732A26002EDCD4 /* monitorUpExample.xfl */; };
-		4E4B926919732A26002EDCD4 /* PublishSettings.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4E4B925F19732A26002EDCD4 /* PublishSettings.xml */; };
 		4E4B926B19732A3C002EDCD4 /* monitorUpExample.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4E4B926A19732A3C002EDCD4 /* monitorUpExample.gif */; };
-		4E4B926D19732A56002EDCD4 /* monitorExample.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4E4B926C19732A56002EDCD4 /* monitorExample.ai */; };
-		4E4B926F19732A5D002EDCD4 /* arrow.ai in Resources */ = {isa = PBXBuildFile; fileRef = 4E4B926E19732A5D002EDCD4 /* arrow.ai */; };
 		4EB572491955FA460022E9C9 /* WorkstationSetupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB572481955FA460022E9C9 /* WorkstationSetupViewController.storyboard */; };
 		4EB5724D1955FABD0022E9C9 /* WorkstationContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB5724C1955FABD0022E9C9 /* WorkstationContentViewController.m */; };
-		4EB5725A19564DBE0022E9C9 /* SymDepend.cache in Resources */ = {isa = PBXBuildFile; fileRef = 4EB5725119564DBE0022E9C9 /* SymDepend.cache */; };
-		4EB5725B19564DBE0022E9C9 /* bouncingBallExample.xfl in Resources */ = {isa = PBXBuildFile; fileRef = 4EB5725219564DBE0022E9C9 /* bouncingBallExample.xfl */; };
-		4EB5725C19564DBE0022E9C9 /* DOMDocument.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4EB5725319564DBE0022E9C9 /* DOMDocument.xml */; };
-		4EB5725D19564DBE0022E9C9 /* Symbol 1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4EB5725519564DBE0022E9C9 /* Symbol 1.xml */; };
-		4EB5725E19564DBE0022E9C9 /* metadata.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4EB5725719564DBE0022E9C9 /* metadata.xml */; };
-		4EB5725F19564DBE0022E9C9 /* MobileSettings.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4EB5725819564DBE0022E9C9 /* MobileSettings.xml */; };
-		4EB5726019564DBE0022E9C9 /* PublishSettings.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4EB5725919564DBE0022E9C9 /* PublishSettings.xml */; };
 		4EB57267195650160022E9C9 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB57264195650160022E9C9 /* FLAnimatedImage.m */; };
 		4EB57268195650160022E9C9 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB57266195650160022E9C9 /* FLAnimatedImageView.m */; };
 		4EB5726A195750A00022E9C9 /* bouncingBallExample.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4EB57269195750A00022E9C9 /* bouncingBallExample.gif */; };
@@ -76,21 +56,12 @@
 		B61B2EA81950027100AE5908 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B61B2E981950027100AE5908 /* Roboto-Regular.ttf */; };
 		B61B2EA91950027100AE5908 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B61B2E991950027100AE5908 /* Roboto-Thin.ttf */; };
 		B61B2EAA1950027100AE5908 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B61B2E9A1950027100AE5908 /* Roboto-ThinItalic.ttf */; };
-		B61B2EB51952AF8600AE5908 /* welcomePage1.psd in Resources */ = {isa = PBXBuildFile; fileRef = B61B2EB41952AF8600AE5908 /* welcomePage1.psd */; };
 		B61B2EB71952AFA300AE5908 /* welcomePage1.png in Resources */ = {isa = PBXBuildFile; fileRef = B61B2EB61952AFA300AE5908 /* welcomePage1.png */; };
 		B61B2EBD1952BA2A00AE5908 /* WorkstationSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B61B2EBB1952BA2A00AE5908 /* WorkstationSetupViewController.m */; };
 		B61B2EC219567E9100AE5908 /* WorkstationSetupStrings.xml in Resources */ = {isa = PBXBuildFile; fileRef = B61B2EC119567E9100AE5908 /* WorkstationSetupStrings.xml */; };
 		B643E7F7192F21C50062159A /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B643E7F6192F21C50062159A /* MainTableViewCell.xib */; };
 		B64926631957E89B00AE2D08 /* WorkstationSetupXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B64926621957E89B00AE2D08 /* WorkstationSetupXMLParser.m */; };
 		B64BC99519725D890062A4EA /* finger.gif in Resources */ = {isa = PBXBuildFile; fileRef = B64BC99419725D890062A4EA /* finger.gif */; };
-		B64BC9A319725DA00062A4EA /* SymDepend.cache in Resources */ = {isa = PBXBuildFile; fileRef = B64BC99919725DA00062A4EA /* SymDepend.cache */; };
-		B64BC9A419725DA00062A4EA /* DOMDocument.xml in Resources */ = {isa = PBXBuildFile; fileRef = B64BC99A19725DA00062A4EA /* DOMDocument.xml */; };
-		B64BC9A519725DA00062A4EA /* finger.xfl in Resources */ = {isa = PBXBuildFile; fileRef = B64BC99B19725DA00062A4EA /* finger.xfl */; };
-		B64BC9A619725DA00062A4EA /* Arrow.xml in Resources */ = {isa = PBXBuildFile; fileRef = B64BC99D19725DA00062A4EA /* Arrow.xml */; };
-		B64BC9A719725DA00062A4EA /* finger.ai.xml in Resources */ = {isa = PBXBuildFile; fileRef = B64BC99E19725DA00062A4EA /* finger.ai.xml */; };
-		B64BC9A819725DA00062A4EA /* metadata.xml in Resources */ = {isa = PBXBuildFile; fileRef = B64BC9A019725DA00062A4EA /* metadata.xml */; };
-		B64BC9A919725DA00062A4EA /* MobileSettings.xml in Resources */ = {isa = PBXBuildFile; fileRef = B64BC9A119725DA00062A4EA /* MobileSettings.xml */; };
-		B64BC9AA19725DA00062A4EA /* PublishSettings.xml in Resources */ = {isa = PBXBuildFile; fileRef = B64BC9A219725DA00062A4EA /* PublishSettings.xml */; };
 		B6550D56193168FD00FAF97F /* MainViewNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6550D55193168FD00FAF97F /* MainViewNavigationController.m */; };
 		B6AE72A519404DAF00FBFB5E /* PossibleSolutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE72A319404DAF00FBFB5E /* PossibleSolutionViewController.m */; };
 		B6AE72A619404DAF00FBFB5E /* PossibleSolutionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72A419404DAF00FBFB5E /* PossibleSolutionViewController.xib */; };
@@ -100,16 +71,11 @@
 		B6AE72B119404F4400FBFB5E /* ShortcutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE72AD19404F4400FBFB5E /* ShortcutViewController.m */; };
 		B6AE72B51942F1BE00FBFB5E /* PossibleSolutionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE72B31942F1BE00FBFB5E /* PossibleSolutionTableViewCell.m */; };
 		B6AE72B61942F1BE00FBFB5E /* PossibleSolutionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72B41942F1BE00FBFB5E /* PossibleSolutionTableViewCell.xib */; };
-		B6AE72B81945923C00FBFB5E /* keyboard.ai in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72B71945923C00FBFB5E /* keyboard.ai */; };
 		B6AE72BE1946CC7800FBFB5E /* keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72BD1946CC7800FBFB5E /* keyboard.png */; };
-		B6AE72C01946CFF200FBFB5E /* mouse.ai in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72BF1946CFF200FBFB5E /* mouse.ai */; };
 		B6AE72C21946D02B00FBFB5E /* mouse.png in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72C11946D02B00FBFB5E /* mouse.png */; };
 		B6AE72C41946D18700FBFB5E /* monitor.png in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72C31946D18700FBFB5E /* monitor.png */; };
-		B6AE72C61946D19000FBFB5E /* monitor.ai in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72C51946D19000FBFB5E /* monitor.ai */; };
-		B6AE72C81946D45800FBFB5E /* documents.ai in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72C71946D45800FBFB5E /* documents.ai */; };
 		B6AE72CA1946D46800FBFB5E /* documents.png in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72C91946D46800FBFB5E /* documents.png */; };
 		B6AE72CC1946D6CD00FBFB5E /* workarea.png in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72CB1946D6CD00FBFB5E /* workarea.png */; };
-		B6AE72CE1946D6D600FBFB5E /* workarea.ai in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72CD1946D6D600FBFB5E /* workarea.ai */; };
 		B6D7DF35196E566100478A94 /* PossibleSolutionStrings.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6D7DF34196E566100478A94 /* PossibleSolutionStrings.plist */; };
 		B6DAB62A192738CE00649B99 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DAB628192738CE00649B99 /* MainViewController.m */; };
 		B6DAB62D192745B100649B99 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DAB62C192745B100649B99 /* MainViewController.storyboard */; };
@@ -125,7 +91,6 @@
 		B6E8C84418C50DC400550D49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E8C82C18C50DC400550D49 /* UIKit.framework */; };
 		B6E8C84C18C50DC400550D49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6E8C84A18C50DC400550D49 /* InfoPlist.strings */; };
 		B6E8C84E18C50DC400550D49 /* StraightComfort_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E8C84D18C50DC400550D49 /* StraightComfort_iOSTests.m */; };
-		B6FF554D1938573900B9324D /* fancyChair.ai in Resources */ = {isa = PBXBuildFile; fileRef = B6FF554C1938573900B9324D /* fancyChair.ai */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,7 +106,6 @@
 /* Begin PBXFileReference section */
 		4E0169CE196506BE00652084 /* WorkstationIntroEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkstationIntroEndViewController.h; sourceTree = "<group>"; };
 		4E0169CF196506BE00652084 /* WorkstationIntroEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkstationIntroEndViewController.m; sourceTree = "<group>"; };
-		4E065E7C193A7D1C00A70377 /* chair.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chair.ai; sourceTree = "<group>"; };
 		4E065E84193A865400A70377 /* chair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chair.png; sourceTree = "<group>"; };
 		4E065E86193AD33B00A70377 /* DiscomfortTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscomfortTableViewCell.h; sourceTree = "<group>"; };
 		4E065E87193AD33B00A70377 /* DiscomfortTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscomfortTableViewCell.m; sourceTree = "<group>"; };
@@ -154,29 +118,10 @@
 		4E339C02193403D700B9BDE3 /* DiscomfortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiscomfortViewController.h; path = "StraightComfort-iOS/DiscomfortViewController/DiscomfortViewController.h"; sourceTree = SOURCE_ROOT; };
 		4E339C03193403D700B9BDE3 /* DiscomfortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiscomfortViewController.m; path = "StraightComfort-iOS/DiscomfortViewController/DiscomfortViewController.m"; sourceTree = SOURCE_ROOT; };
 		4E339C04193403D700B9BDE3 /* DiscomfortViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DiscomfortViewController.xib; path = "StraightComfort-iOS/DiscomfortViewController/DiscomfortViewController.xib"; sourceTree = SOURCE_ROOT; };
-		4E4B925419732A26002EDCD4 /* SymDepend.cache */ = {isa = PBXFileReference; lastKnownFileType = file; path = SymDepend.cache; sourceTree = "<group>"; };
-		4E4B925519732A26002EDCD4 /* DOMDocument.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DOMDocument.xml; sourceTree = "<group>"; };
-		4E4B925719732A26002EDCD4 /* arrow.ai.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = arrow.ai.xml; sourceTree = "<group>"; };
-		4E4B925819732A26002EDCD4 /* monitorExample.ai.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = monitorExample.ai.xml; sourceTree = "<group>"; };
-		4E4B925919732A26002EDCD4 /* Tween 1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Tween 1.xml"; sourceTree = "<group>"; };
-		4E4B925A19732A26002EDCD4 /* Tween 2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Tween 2.xml"; sourceTree = "<group>"; };
-		4E4B925C19732A26002EDCD4 /* metadata.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = metadata.xml; sourceTree = "<group>"; };
-		4E4B925D19732A26002EDCD4 /* MobileSettings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MobileSettings.xml; sourceTree = "<group>"; };
-		4E4B925E19732A26002EDCD4 /* monitorUpExample.xfl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = monitorUpExample.xfl; sourceTree = "<group>"; };
-		4E4B925F19732A26002EDCD4 /* PublishSettings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PublishSettings.xml; sourceTree = "<group>"; };
 		4E4B926A19732A3C002EDCD4 /* monitorUpExample.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = monitorUpExample.gif; sourceTree = "<group>"; };
-		4E4B926C19732A56002EDCD4 /* monitorExample.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = monitorExample.ai; sourceTree = "<group>"; };
-		4E4B926E19732A5D002EDCD4 /* arrow.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = arrow.ai; sourceTree = "<group>"; };
 		4EB572481955FA460022E9C9 /* WorkstationSetupViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WorkstationSetupViewController.storyboard; sourceTree = "<group>"; };
 		4EB5724B1955FABD0022E9C9 /* WorkstationContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkstationContentViewController.h; sourceTree = "<group>"; };
 		4EB5724C1955FABD0022E9C9 /* WorkstationContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkstationContentViewController.m; sourceTree = "<group>"; };
-		4EB5725119564DBE0022E9C9 /* SymDepend.cache */ = {isa = PBXFileReference; lastKnownFileType = file; path = SymDepend.cache; sourceTree = "<group>"; };
-		4EB5725219564DBE0022E9C9 /* bouncingBallExample.xfl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bouncingBallExample.xfl; sourceTree = "<group>"; };
-		4EB5725319564DBE0022E9C9 /* DOMDocument.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DOMDocument.xml; sourceTree = "<group>"; };
-		4EB5725519564DBE0022E9C9 /* Symbol 1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Symbol 1.xml"; sourceTree = "<group>"; };
-		4EB5725719564DBE0022E9C9 /* metadata.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = metadata.xml; sourceTree = "<group>"; };
-		4EB5725819564DBE0022E9C9 /* MobileSettings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MobileSettings.xml; sourceTree = "<group>"; };
-		4EB5725919564DBE0022E9C9 /* PublishSettings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PublishSettings.xml; sourceTree = "<group>"; };
 		4EB57263195650160022E9C9 /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
 		4EB57264195650160022E9C9 /* FLAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImage.m; sourceTree = "<group>"; };
 		4EB57265195650160022E9C9 /* FLAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImageView.h; sourceTree = "<group>"; };
@@ -218,7 +163,6 @@
 		B61B2E981950027100AE5908 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		B61B2E991950027100AE5908 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		B61B2E9A1950027100AE5908 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
-		B61B2EB41952AF8600AE5908 /* welcomePage1.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = welcomePage1.psd; sourceTree = "<group>"; };
 		B61B2EB61952AFA300AE5908 /* welcomePage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcomePage1.png; sourceTree = "<group>"; };
 		B61B2EBA1952BA2A00AE5908 /* WorkstationSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkstationSetupViewController.h; sourceTree = "<group>"; };
 		B61B2EBB1952BA2A00AE5908 /* WorkstationSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkstationSetupViewController.m; sourceTree = "<group>"; };
@@ -227,14 +171,6 @@
 		B64926611957E89B00AE2D08 /* WorkstationSetupXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkstationSetupXMLParser.h; sourceTree = "<group>"; };
 		B64926621957E89B00AE2D08 /* WorkstationSetupXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkstationSetupXMLParser.m; sourceTree = "<group>"; };
 		B64BC99419725D890062A4EA /* finger.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = finger.gif; sourceTree = "<group>"; };
-		B64BC99919725DA00062A4EA /* SymDepend.cache */ = {isa = PBXFileReference; lastKnownFileType = file; path = SymDepend.cache; sourceTree = "<group>"; };
-		B64BC99A19725DA00062A4EA /* DOMDocument.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DOMDocument.xml; sourceTree = "<group>"; };
-		B64BC99B19725DA00062A4EA /* finger.xfl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = finger.xfl; sourceTree = "<group>"; };
-		B64BC99D19725DA00062A4EA /* Arrow.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Arrow.xml; sourceTree = "<group>"; };
-		B64BC99E19725DA00062A4EA /* finger.ai.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = finger.ai.xml; sourceTree = "<group>"; };
-		B64BC9A019725DA00062A4EA /* metadata.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = metadata.xml; sourceTree = "<group>"; };
-		B64BC9A119725DA00062A4EA /* MobileSettings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = MobileSettings.xml; sourceTree = "<group>"; };
-		B64BC9A219725DA00062A4EA /* PublishSettings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PublishSettings.xml; sourceTree = "<group>"; };
 		B6550D54193168FD00FAF97F /* MainViewNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewNavigationController.h; sourceTree = "<group>"; };
 		B6550D55193168FD00FAF97F /* MainViewNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewNavigationController.m; sourceTree = "<group>"; };
 		B6AE72A219404DAF00FBFB5E /* PossibleSolutionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PossibleSolutionViewController.h; sourceTree = "<group>"; };
@@ -249,16 +185,11 @@
 		B6AE72B21942F1BE00FBFB5E /* PossibleSolutionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PossibleSolutionTableViewCell.h; sourceTree = "<group>"; };
 		B6AE72B31942F1BE00FBFB5E /* PossibleSolutionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PossibleSolutionTableViewCell.m; sourceTree = "<group>"; };
 		B6AE72B41942F1BE00FBFB5E /* PossibleSolutionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PossibleSolutionTableViewCell.xib; sourceTree = "<group>"; };
-		B6AE72B71945923C00FBFB5E /* keyboard.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = keyboard.ai; sourceTree = "<group>"; };
 		B6AE72BD1946CC7800FBFB5E /* keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard.png; sourceTree = "<group>"; };
-		B6AE72BF1946CFF200FBFB5E /* mouse.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mouse.ai; sourceTree = "<group>"; };
 		B6AE72C11946D02B00FBFB5E /* mouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mouse.png; sourceTree = "<group>"; };
 		B6AE72C31946D18700FBFB5E /* monitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monitor.png; sourceTree = "<group>"; };
-		B6AE72C51946D19000FBFB5E /* monitor.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = monitor.ai; sourceTree = "<group>"; };
-		B6AE72C71946D45800FBFB5E /* documents.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = documents.ai; sourceTree = "<group>"; };
 		B6AE72C91946D46800FBFB5E /* documents.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = documents.png; sourceTree = "<group>"; };
 		B6AE72CB1946D6CD00FBFB5E /* workarea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = workarea.png; sourceTree = "<group>"; };
-		B6AE72CD1946D6D600FBFB5E /* workarea.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = workarea.ai; sourceTree = "<group>"; };
 		B6D7DF34196E566100478A94 /* PossibleSolutionStrings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PossibleSolutionStrings.plist; sourceTree = "<group>"; };
 		B6DAB62019207D5E00649B99 /* StraightComfort-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StraightComfort-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DAB62119207D5E00649B99 /* StraightComfort-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StraightComfort-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -279,7 +210,6 @@
 		B6E8C84918C50DC400550D49 /* StraightComfort-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StraightComfort-iOSTests-Info.plist"; sourceTree = "<group>"; };
 		B6E8C84B18C50DC400550D49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B6E8C84D18C50DC400550D49 /* StraightComfort_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StraightComfort_iOSTests.m; sourceTree = "<group>"; };
-		B6FF554C1938573900B9324D /* fancyChair.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fancyChair.ai; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,95 +246,6 @@
 				4E0E7BB3194E3DAB0065D676 /* TutorialViewController.storyboard */,
 			);
 			path = TutorialViewController;
-			sourceTree = "<group>";
-		};
-		4E4B925219732A26002EDCD4 /* monitorUpExample */ = {
-			isa = PBXGroup;
-			children = (
-				4E4B925319732A26002EDCD4 /* bin */,
-				4E4B925519732A26002EDCD4 /* DOMDocument.xml */,
-				4E4B925619732A26002EDCD4 /* LIBRARY */,
-				4E4B925B19732A26002EDCD4 /* META-INF */,
-				4E4B925D19732A26002EDCD4 /* MobileSettings.xml */,
-				4E4B925E19732A26002EDCD4 /* monitorUpExample.xfl */,
-				4E4B925F19732A26002EDCD4 /* PublishSettings.xml */,
-			);
-			path = monitorUpExample;
-			sourceTree = "<group>";
-		};
-		4E4B925319732A26002EDCD4 /* bin */ = {
-			isa = PBXGroup;
-			children = (
-				4E4B925419732A26002EDCD4 /* SymDepend.cache */,
-			);
-			path = bin;
-			sourceTree = "<group>";
-		};
-		4E4B925619732A26002EDCD4 /* LIBRARY */ = {
-			isa = PBXGroup;
-			children = (
-				4E4B925719732A26002EDCD4 /* arrow.ai.xml */,
-				4E4B925819732A26002EDCD4 /* monitorExample.ai.xml */,
-				4E4B925919732A26002EDCD4 /* Tween 1.xml */,
-				4E4B925A19732A26002EDCD4 /* Tween 2.xml */,
-			);
-			path = LIBRARY;
-			sourceTree = "<group>";
-		};
-		4E4B925B19732A26002EDCD4 /* META-INF */ = {
-			isa = PBXGroup;
-			children = (
-				4E4B925C19732A26002EDCD4 /* metadata.xml */,
-			);
-			path = "META-INF";
-			sourceTree = "<group>";
-		};
-		4EB5724E19564DBE0022E9C9 /* Flash Assets */ = {
-			isa = PBXGroup;
-			children = (
-				4E4B925219732A26002EDCD4 /* monitorUpExample */,
-				B64BC99619725DA00062A4EA /* finger */,
-				4EB5724F19564DBE0022E9C9 /* bouncingBallExample */,
-			);
-			path = "Flash Assets";
-			sourceTree = "<group>";
-		};
-		4EB5724F19564DBE0022E9C9 /* bouncingBallExample */ = {
-			isa = PBXGroup;
-			children = (
-				4EB5725019564DBE0022E9C9 /* bin */,
-				4EB5725219564DBE0022E9C9 /* bouncingBallExample.xfl */,
-				4EB5725319564DBE0022E9C9 /* DOMDocument.xml */,
-				4EB5725419564DBE0022E9C9 /* LIBRARY */,
-				4EB5725619564DBE0022E9C9 /* META-INF */,
-				4EB5725819564DBE0022E9C9 /* MobileSettings.xml */,
-				4EB5725919564DBE0022E9C9 /* PublishSettings.xml */,
-			);
-			path = bouncingBallExample;
-			sourceTree = "<group>";
-		};
-		4EB5725019564DBE0022E9C9 /* bin */ = {
-			isa = PBXGroup;
-			children = (
-				4EB5725119564DBE0022E9C9 /* SymDepend.cache */,
-			);
-			path = bin;
-			sourceTree = "<group>";
-		};
-		4EB5725419564DBE0022E9C9 /* LIBRARY */ = {
-			isa = PBXGroup;
-			children = (
-				4EB5725519564DBE0022E9C9 /* Symbol 1.xml */,
-			);
-			path = LIBRARY;
-			sourceTree = "<group>";
-		};
-		4EB5725619564DBE0022E9C9 /* META-INF */ = {
-			isa = PBXGroup;
-			children = (
-				4EB5725719564DBE0022E9C9 /* metadata.xml */,
-			);
-			path = "META-INF";
 			sourceTree = "<group>";
 		};
 		4EB57261195650160022E9C9 /* Library */ = {
@@ -447,9 +288,6 @@
 		B60D9D881930818100CBE191 /* Original Assets */ = {
 			isa = PBXGroup;
 			children = (
-				4EB5724E19564DBE0022E9C9 /* Flash Assets */,
-				B61B2EB31952AF8600AE5908 /* Rasterized Assets */,
-				B6FF554B1938570B00B9324D /* Vector Assets */,
 				4E065E84193A865400A70377 /* chair.png */,
 				B6AE72BD1946CC7800FBFB5E /* keyboard.png */,
 				B6AE72C11946D02B00FBFB5E /* mouse.png */,
@@ -503,14 +341,6 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		B61B2EB31952AF8600AE5908 /* Rasterized Assets */ = {
-			isa = PBXGroup;
-			children = (
-				B61B2EB41952AF8600AE5908 /* welcomePage1.psd */,
-			);
-			path = "Rasterized Assets";
-			sourceTree = "<group>";
-		};
 		B61B2EB91952B98600AE5908 /* WorkstationSetupViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -535,53 +365,6 @@
 				B64926621957E89B00AE2D08 /* WorkstationSetupXMLParser.m */,
 			);
 			path = XMLParser;
-			sourceTree = "<group>";
-		};
-		B64BC99619725DA00062A4EA /* finger */ = {
-			isa = PBXGroup;
-			children = (
-				B64BC99719725DA00062A4EA /* finger */,
-			);
-			path = finger;
-			sourceTree = "<group>";
-		};
-		B64BC99719725DA00062A4EA /* finger */ = {
-			isa = PBXGroup;
-			children = (
-				B64BC99819725DA00062A4EA /* bin */,
-				B64BC99A19725DA00062A4EA /* DOMDocument.xml */,
-				B64BC99B19725DA00062A4EA /* finger.xfl */,
-				B64BC99C19725DA00062A4EA /* LIBRARY */,
-				B64BC99F19725DA00062A4EA /* META-INF */,
-				B64BC9A119725DA00062A4EA /* MobileSettings.xml */,
-				B64BC9A219725DA00062A4EA /* PublishSettings.xml */,
-			);
-			path = finger;
-			sourceTree = "<group>";
-		};
-		B64BC99819725DA00062A4EA /* bin */ = {
-			isa = PBXGroup;
-			children = (
-				B64BC99919725DA00062A4EA /* SymDepend.cache */,
-			);
-			path = bin;
-			sourceTree = "<group>";
-		};
-		B64BC99C19725DA00062A4EA /* LIBRARY */ = {
-			isa = PBXGroup;
-			children = (
-				B64BC99D19725DA00062A4EA /* Arrow.xml */,
-				B64BC99E19725DA00062A4EA /* finger.ai.xml */,
-			);
-			path = LIBRARY;
-			sourceTree = "<group>";
-		};
-		B64BC99F19725DA00062A4EA /* META-INF */ = {
-			isa = PBXGroup;
-			children = (
-				B64BC9A019725DA00062A4EA /* metadata.xml */,
-			);
-			path = "META-INF";
 			sourceTree = "<group>";
 		};
 		B6550D521931682A00FAF97F /* ShortcutViewController */ = {
@@ -709,22 +492,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B6FF554B1938570B00B9324D /* Vector Assets */ = {
-			isa = PBXGroup;
-			children = (
-				4E065E7C193A7D1C00A70377 /* chair.ai */,
-				B6AE72B71945923C00FBFB5E /* keyboard.ai */,
-				B6AE72BF1946CFF200FBFB5E /* mouse.ai */,
-				B6AE72C51946D19000FBFB5E /* monitor.ai */,
-				B6AE72C71946D45800FBFB5E /* documents.ai */,
-				B6AE72CD1946D6D600FBFB5E /* workarea.ai */,
-				B6FF554C1938573900B9324D /* fancyChair.ai */,
-				4E4B926C19732A56002EDCD4 /* monitorExample.ai */,
-				4E4B926E19732A5D002EDCD4 /* arrow.ai */,
-			);
-			path = "Vector Assets";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -803,66 +570,36 @@
 				B61B2EA61950027100AE5908 /* Roboto-Medium.ttf in Resources */,
 				B6D7DF35196E566100478A94 /* PossibleSolutionStrings.plist in Resources */,
 				B60D9D9F1930823A00CBE191 /* Launchiphone.png in Resources */,
-				4E4B926F19732A5D002EDCD4 /* arrow.ai in Resources */,
 				B61B2EA21950027100AE5908 /* Roboto-CondensedItalic.ttf in Resources */,
 				4EB5726A195750A00022E9C9 /* bouncingBallExample.gif in Resources */,
 				B60D9D971930823A00CBE191 /* Icon60.png in Resources */,
-				B64BC9AA19725DA00062A4EA /* PublishSettings.xml in Resources */,
-				B6AE72C61946D19000FBFB5E /* monitor.ai in Resources */,
-				B64BC9A719725DA00062A4EA /* finger.ai.xml in Resources */,
-				4E4B926D19732A56002EDCD4 /* monitorExample.ai in Resources */,
-				4EB5725C19564DBE0022E9C9 /* DOMDocument.xml in Resources */,
-				4E4B926419732A26002EDCD4 /* Tween 1.xml in Resources */,
 				B6AE72BE1946CC7800FBFB5E /* keyboard.png in Resources */,
 				B61B2EA81950027100AE5908 /* Roboto-Regular.ttf in Resources */,
 				4E4B926B19732A3C002EDCD4 /* monitorUpExample.gif in Resources */,
 				B60D9D9B1930823A00CBE191 /* Icon152.png in Resources */,
-				4EB5726019564DBE0022E9C9 /* PublishSettings.xml in Resources */,
 				B60D9DA81930829E00CBE191 /* Champagne & Limousines Italic.ttf in Resources */,
 				B61B2E9D1950027100AE5908 /* Roboto-Bold.ttf in Resources */,
 				B6AE72B61942F1BE00FBFB5E /* PossibleSolutionTableViewCell.xib in Resources */,
-				B64BC9A819725DA00062A4EA /* metadata.xml in Resources */,
 				B61B2E9F1950027100AE5908 /* Roboto-BoldCondensedItalic.ttf in Resources */,
 				B61B2EB71952AFA300AE5908 /* welcomePage1.png in Resources */,
 				B6DAB62D192745B100649B99 /* MainViewController.storyboard in Resources */,
 				B61B2EA51950027100AE5908 /* Roboto-LightItalic.ttf in Resources */,
 				B60D9D9A1930823A00CBE191 /* Icon120.png in Resources */,
 				B61B2EA41950027100AE5908 /* Roboto-Light.ttf in Resources */,
-				B64BC9A419725DA00062A4EA /* DOMDocument.xml in Resources */,
 				4E0E7BB4194E3DAB0065D676 /* TutorialViewController.storyboard in Resources */,
-				4E4B926019732A26002EDCD4 /* SymDepend.cache in Resources */,
 				B60D9D9C1930823A00CBE191 /* Launch5geniphone.png in Resources */,
-				B6AE72C01946CFF200FBFB5E /* mouse.ai in Resources */,
-				4EB5725F19564DBE0022E9C9 /* MobileSettings.xml in Resources */,
-				B64BC9A919725DA00062A4EA /* MobileSettings.xml in Resources */,
 				B6E8C83318C50DC400550D49 /* InfoPlist.strings in Resources */,
-				B64BC9A319725DA00062A4EA /* SymDepend.cache in Resources */,
 				4E065E8A193AD33B00A70377 /* DiscomfortTableViewCell.xib in Resources */,
 				B61B2EA01950027100AE5908 /* Roboto-BoldItalic.ttf in Resources */,
-				B61B2EB51952AF8600AE5908 /* welcomePage1.psd in Resources */,
-				4E4B926219732A26002EDCD4 /* arrow.ai.xml in Resources */,
-				4E4B926619732A26002EDCD4 /* metadata.xml in Resources */,
-				B64BC9A519725DA00062A4EA /* finger.xfl in Resources */,
-				4EB5725D19564DBE0022E9C9 /* Symbol 1.xml in Resources */,
 				B60D9D991930823A00CBE191 /* Icon80.png in Resources */,
 				B61B2E9B1950027100AE5908 /* Roboto-Black.ttf in Resources */,
-				4E4B926719732A26002EDCD4 /* MobileSettings.xml in Resources */,
-				B64BC9A619725DA00062A4EA /* Arrow.xml in Resources */,
 				B60D9D981930823A00CBE191 /* Icon76.png in Resources */,
-				4E4B926319732A26002EDCD4 /* monitorExample.ai.xml in Resources */,
-				B6AE72CE1946D6D600FBFB5E /* workarea.ai in Resources */,
 				B6AE72CC1946D6CD00FBFB5E /* workarea.png in Resources */,
 				B60D9D961930823A00CBE191 /* Icon40.png in Resources */,
 				B60D9D951930823A00CBE191 /* Icon.png in Resources */,
-				B6AE72B81945923C00FBFB5E /* keyboard.ai in Resources */,
 				B61B2EA71950027100AE5908 /* Roboto-MediumItalic.ttf in Resources */,
-				B6FF554D1938573900B9324D /* fancyChair.ai in Resources */,
-				4E4B926519732A26002EDCD4 /* Tween 2.xml in Resources */,
-				4EB5725B19564DBE0022E9C9 /* bouncingBallExample.xfl in Resources */,
-				4E4B926919732A26002EDCD4 /* PublishSettings.xml in Resources */,
 				B6AE72A619404DAF00FBFB5E /* PossibleSolutionViewController.xib in Resources */,
 				B61783881962587500A7185D /* WorkstationSetupStrings.plist in Resources */,
-				4E065E7D193A7D1C00A70377 /* chair.ai in Resources */,
 				B6AE72C21946D02B00FBFB5E /* mouse.png in Resources */,
 				B6E8C83B18C50DC400550D49 /* Images.xcassets in Resources */,
 				4E065E85193A865400A70377 /* chair.png in Resources */,
@@ -872,21 +609,16 @@
 				B64BC99519725D890062A4EA /* finger.gif in Resources */,
 				B61B2E9C1950027100AE5908 /* Roboto-BlackItalic.ttf in Resources */,
 				B643E7F7192F21C50062159A /* MainTableViewCell.xib in Resources */,
-				4E4B926119732A26002EDCD4 /* DOMDocument.xml in Resources */,
-				4E4B926819732A26002EDCD4 /* monitorUpExample.xfl in Resources */,
 				4EB572491955FA460022E9C9 /* WorkstationSetupViewController.storyboard in Resources */,
 				B61B2EC219567E9100AE5908 /* WorkstationSetupStrings.xml in Resources */,
 				B6AE72CA1946D46800FBFB5E /* documents.png in Resources */,
 				4E339C06193403D700B9BDE3 /* DiscomfortViewController.xib in Resources */,
 				B61B2EA11950027100AE5908 /* Roboto-Condensed.ttf in Resources */,
 				B60D9DA91930829E00CBE191 /* Champagne & Limousines.ttf in Resources */,
-				4EB5725E19564DBE0022E9C9 /* metadata.xml in Resources */,
-				B6AE72C81946D45800FBFB5E /* documents.ai in Resources */,
 				B61B2E9E1950027100AE5908 /* Roboto-BoldCondensed.ttf in Resources */,
 				B61B2EA91950027100AE5908 /* Roboto-Thin.ttf in Resources */,
 				B60D9D9D1930823A00CBE191 /* Launchipad.png in Resources */,
 				B6AE72AF19404F4400FBFB5E /* ShortcutTableViewCell.xib in Resources */,
-				4EB5725A19564DBE0022E9C9 /* SymDepend.cache in Resources */,
 				B60D9DA71930829E00CBE191 /* Champagne & Limousines Bold.ttf in Resources */,
 				B61B2EAA1950027100AE5908 /* Roboto-ThinItalic.ttf in Resources */,
 				B61B2EA31950027100AE5908 /* Roboto-Italic.ttf in Resources */,
