@@ -18,9 +18,7 @@
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic) int groupIndex;
 @property (nonatomic) int maxGroupIndex;
-//@property (strong, nonatomic) NSMutableArray *keyTitles;
 @property (strong, nonatomic) NSArray *workstationArray;
-@property (strong, nonatomic) NSArray *pageImages;
 @property (strong, nonatomic) NSArray *titles;
 @property (strong, nonatomic) NSArray *curDescArray;
 @property (strong, nonatomic) NSArray *descImages;

@@ -21,7 +21,6 @@
 		4EB5724D1955FABD0022E9C9 /* WorkstationContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB5724C1955FABD0022E9C9 /* WorkstationContentViewController.m */; };
 		4EB57267195650160022E9C9 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB57264195650160022E9C9 /* FLAnimatedImage.m */; };
 		4EB57268195650160022E9C9 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB57266195650160022E9C9 /* FLAnimatedImageView.m */; };
-		4EB5726A195750A00022E9C9 /* bouncingBallExample.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4EB57269195750A00022E9C9 /* bouncingBallExample.gif */; };
 		B60D9D82192F29AE00CBE191 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60D9D81192F29AE00CBE191 /* MainTableViewCell.m */; };
 		B60D9D951930823A00CBE191 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D9D891930823A00CBE191 /* Icon.png */; };
 		B60D9D961930823A00CBE191 /* Icon40.png in Resources */ = {isa = PBXBuildFile; fileRef = B60D9D8A1930823A00CBE191 /* Icon40.png */; };
@@ -62,6 +61,7 @@
 		B643E7F7192F21C50062159A /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B643E7F6192F21C50062159A /* MainTableViewCell.xib */; };
 		B64926631957E89B00AE2D08 /* WorkstationSetupXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B64926621957E89B00AE2D08 /* WorkstationSetupXMLParser.m */; };
 		B64BC99519725D890062A4EA /* finger.gif in Resources */ = {isa = PBXBuildFile; fileRef = B64BC99419725D890062A4EA /* finger.gif */; };
+		B64BC9AE197665480062A4EA /* chairImage0.gif in Resources */ = {isa = PBXBuildFile; fileRef = B64BC9AD197665480062A4EA /* chairImage0.gif */; };
 		B6550D56193168FD00FAF97F /* MainViewNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6550D55193168FD00FAF97F /* MainViewNavigationController.m */; };
 		B6AE72A519404DAF00FBFB5E /* PossibleSolutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE72A319404DAF00FBFB5E /* PossibleSolutionViewController.m */; };
 		B6AE72A619404DAF00FBFB5E /* PossibleSolutionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72A419404DAF00FBFB5E /* PossibleSolutionViewController.xib */; };
@@ -126,7 +126,6 @@
 		4EB57264195650160022E9C9 /* FLAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImage.m; sourceTree = "<group>"; };
 		4EB57265195650160022E9C9 /* FLAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImageView.h; sourceTree = "<group>"; };
 		4EB57266195650160022E9C9 /* FLAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImageView.m; sourceTree = "<group>"; };
-		4EB57269195750A00022E9C9 /* bouncingBallExample.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bouncingBallExample.gif; sourceTree = "<group>"; };
 		B60D9D80192F29AE00CBE191 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
 		B60D9D81192F29AE00CBE191 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
 		B60D9D8419307D6500CBE191 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -171,6 +170,7 @@
 		B64926611957E89B00AE2D08 /* WorkstationSetupXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkstationSetupXMLParser.h; sourceTree = "<group>"; };
 		B64926621957E89B00AE2D08 /* WorkstationSetupXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkstationSetupXMLParser.m; sourceTree = "<group>"; };
 		B64BC99419725D890062A4EA /* finger.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = finger.gif; sourceTree = "<group>"; };
+		B64BC9AD197665480062A4EA /* chairImage0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chairImage0.gif; sourceTree = "<group>"; };
 		B6550D54193168FD00FAF97F /* MainViewNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewNavigationController.h; sourceTree = "<group>"; };
 		B6550D55193168FD00FAF97F /* MainViewNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewNavigationController.m; sourceTree = "<group>"; };
 		B6AE72A219404DAF00FBFB5E /* PossibleSolutionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PossibleSolutionViewController.h; sourceTree = "<group>"; };
@@ -309,7 +309,7 @@
 				B61B2EB61952AFA300AE5908 /* welcomePage1.png */,
 				B64BC99419725D890062A4EA /* finger.gif */,
 				4E4B926A19732A3C002EDCD4 /* monitorUpExample.gif */,
-				4EB57269195750A00022E9C9 /* bouncingBallExample.gif */,
+				B64BC9AD197665480062A4EA /* chairImage0.gif */,
 			);
 			path = "Original Assets";
 			sourceTree = "<group>";
@@ -571,7 +571,6 @@
 				B6D7DF35196E566100478A94 /* PossibleSolutionStrings.plist in Resources */,
 				B60D9D9F1930823A00CBE191 /* Launchiphone.png in Resources */,
 				B61B2EA21950027100AE5908 /* Roboto-CondensedItalic.ttf in Resources */,
-				4EB5726A195750A00022E9C9 /* bouncingBallExample.gif in Resources */,
 				B60D9D971930823A00CBE191 /* Icon60.png in Resources */,
 				B6AE72BE1946CC7800FBFB5E /* keyboard.png in Resources */,
 				B61B2EA81950027100AE5908 /* Roboto-Regular.ttf in Resources */,
@@ -620,6 +619,7 @@
 				B60D9D9D1930823A00CBE191 /* Launchipad.png in Resources */,
 				B6AE72AF19404F4400FBFB5E /* ShortcutTableViewCell.xib in Resources */,
 				B60D9DA71930829E00CBE191 /* Champagne & Limousines Bold.ttf in Resources */,
+				B64BC9AE197665480062A4EA /* chairImage0.gif in Resources */,
 				B61B2EAA1950027100AE5908 /* Roboto-ThinItalic.ttf in Resources */,
 				B61B2EA31950027100AE5908 /* Roboto-Italic.ttf in Resources */,
 				B60D9DA61930829E00CBE191 /* Champagne & Limousines Bold Italic.ttf in Resources */,

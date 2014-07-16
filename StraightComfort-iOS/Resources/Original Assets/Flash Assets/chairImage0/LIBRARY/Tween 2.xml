@@ -1,0 +1,50 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Tween 2" itemID="53c4c7d1-00000287" symbolType="graphic" lastModified="1405405137">
+  <timeline>
+    <DOMTimeline name="Tween 2">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape selected="true" isDrawingObject="true">
+                  <matrix>
+                    <Matrix a="3.08795166015625" d="3.08795166015625" tx="-184.1" ty="-259.1"/>
+                  </matrix>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#E7E8E9"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" caps="none" weight="0.25" joints="miter" miterLimit="10">
+                        <fill>
+                          <SolidColor color="#E7E8E9"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle0="1" strokeStyle="1" edges="!1143 1591[1088 1591 1085 1604!1085 1604[1083 1613 1085 1631!1085 1631[1087 1647 1091 1655!1091 1655[1094 1660 1090 1681!1090 1681[1087 1695 1102 1699!1102 1699[1119 1704 1175 1731!1175 1731[1177 1732 1203 1747!1203 1747[1225 1760 1243
+ 1764!1243 1764[1258 1767 1278 1764!1278 1764[1301 1760 1301 1751!1301 1751[1301 1740 1298 1736!1298 1736[1294 1730 1277 1719!1277 1719[1223 1686 1208 1675!1208 1675[1152 1634 1158 1623!1158 1623[1162 1615 1157 1603!1157 1603[1152 1591
+ 1143 1591"/>
+                    <Edge cubics="!1091 1655(;1099,1672 1076,1692 1102,1699q1091 1655Q1094 1660q1090 1681Q1087 1695q1102 1699);"/>
+                    <Edge cubics="!1102 1699(;1119,1704 1160,1725 1175,1731q1102 1699Q1119 1704q1175 1731);"/>
+                    <Edge cubics="!1175 1731(;1189,1736 1212,1758 1243,1764q1175 1731Q1177 1732q1203 1747Q1225 1760q1243 1764);"/>
+                    <Edge cubics="!1243 1764(;1259,1767 1301,1764 1301,1751q1243 1764Q1258 1767q1278 1764Q1301 1760q1301 1751);"/>
+                    <Edge cubics="!1301 1751(;1301,1738 1301,1734 1277,1719q1301 1751Q1301 1740q1298 1736Q1294 1730q1277 1719);"/>
+                    <Edge cubics="!1277 1719(;1261,1708 1223,1686 1208,1675q1277 1719Q1223 1686q1208 1675);"/>
+                    <Edge cubics="!1208 1675(;1193,1664 1153,1632 1158,1623q1208 1675Q1152 1634q1158 1623);"/>
+                    <Edge cubics="!1158 1623(;1163,1613 1156,1591 1143,1591q1158 1623Q1162 1615q1157 1603Q1152 1591q1143 1591);"/>
+                    <Edge cubics="!1143 1591(;1130,1591 1088,1591 1085,1604q1143 1591Q1088 1591q1085 1604);"/>
+                    <Edge cubics="!1085 1604(;1082,1617 1086,1645 1091,1655q1085 1604Q1083 1613q1085 1631Q1087 1647q1091 1655);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

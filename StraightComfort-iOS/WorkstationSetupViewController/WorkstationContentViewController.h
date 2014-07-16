@@ -21,6 +21,7 @@
 
 @property (weak, nonatomic) IBOutlet UIView *descriptionFrame;
 @property (weak, nonatomic) IBOutlet UIView *animationFrame;
+@property (strong, nonatomic) NSString *imageName;
 @property (strong, nonatomic) NSString *descText;
 @property (strong, nonatomic) UILabel *descLabel;
 @property NSUInteger pageIndex;

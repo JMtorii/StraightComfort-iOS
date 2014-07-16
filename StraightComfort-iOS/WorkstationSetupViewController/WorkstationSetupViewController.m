@@ -77,8 +77,10 @@
         ((WorkstationContentViewController*)pageContentViewController).pageIndex = index;
         
         if (appDelegate.groupIndex == 0) {
+            ((WorkstationContentViewController*)pageContentViewController).imageName = [appDelegate.descImages objectAtIndex:index - 1];
             ((WorkstationContentViewController*)pageContentViewController).descText = [[appDelegate.curDescArray objectAtIndex:(index - 1)] objectForKey:[appDelegate.descImages objectAtIndex:(index - 1)]];
         } else {
+            ((WorkstationContentViewController*)pageContentViewController).imageName = [appDelegate.descImages objectAtIndex:index];
             ((WorkstationContentViewController*)pageContentViewController).descText = [[appDelegate.curDescArray objectAtIndex:index] objectForKey:[appDelegate.descImages objectAtIndex:index]];
         }
     
