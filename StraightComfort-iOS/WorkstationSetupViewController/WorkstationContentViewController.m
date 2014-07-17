@@ -30,7 +30,7 @@
     FLAnimatedImage *image = [[FLAnimatedImage alloc] initWithAnimatedGIFData:data1];
     FLAnimatedImageView *imageView = [[FLAnimatedImageView alloc] init];
     imageView.animatedImage = image;
-    imageView.frame = CGRectMake(20.0, 89.0, 280.0, 199.0);
+    imageView.frame = CGRectMake(20.0, 89.0, 280.0, 220.0);
     
     [self.view addSubview:imageView];
     

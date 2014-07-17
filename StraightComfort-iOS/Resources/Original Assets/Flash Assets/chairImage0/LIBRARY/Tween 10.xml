@@ -8,9 +8,9 @@
               <elements>
                 <DOMGroup>
                   <members>
-                    <DOMGroup>
+                    <DOMGroup selected="true">
                       <members>
-                        <DOMGroup>
+                        <DOMGroup selected="true">
                           <members>
                             <DOMShape isDrawingObject="true">
                               <fills>

@@ -106,7 +106,7 @@
                                 <color key="backgroundColor" red="0.11764705882352941" green="0.68235294117647061" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zxp-fB-2F3">
-                                <rect key="frame" x="20" y="89" width="280" height="199"/>
+                                <rect key="frame" x="20" y="89" width="280" height="220"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="deviceRGB"/>
                             </view>
