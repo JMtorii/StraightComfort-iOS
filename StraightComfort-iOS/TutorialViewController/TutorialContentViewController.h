@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Constants.h"
 
 @interface TutorialContentViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *descriptionFrame;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+@property (strong, nonatomic) NSString *curDescText;
+@property (strong, nonatomic) UILabel *curDescLabel;
 @property NSUInteger pageIndex;
-
 @property NSString *imageFile;
 
 @end

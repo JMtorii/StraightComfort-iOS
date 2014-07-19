@@ -27,7 +27,21 @@
 {
     [super viewDidLoad];
     
-    self.backgroundImageView.image = [UIImage imageNamed:self.imageFile];    
+    self.backgroundImageView.image = [UIImage imageNamed:self.imageFile];
+    self.titleLabel.font = [UIFont fontWithName:kRobotoRegular size:20];
+    
+    // Do not change width! This ensures 20px on both ends.
+    CGRect labelFrame = CGRectMake(20, 340, 280, 233);
+    _curDescLabel = [[UILabel alloc] initWithFrame:labelFrame];
+    [_curDescLabel setText:_curDescText];
+    [_curDescLabel setTextColor:[UIColor whiteColor]];
+    [_curDescLabel setFont:[UIFont fontWithName:kRobotoRegular size:16]];
+    
+    // Tell the label to use an unlimited number of lines
+    [_curDescLabel setNumberOfLines:0];
+    [_curDescLabel sizeToFit];
+    
+    [self.view addSubview:_curDescLabel];
 }
 
 - (void)didReceiveMemoryWarning
