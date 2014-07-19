@@ -1,0 +1,70 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Tween 18" itemID="53c9c922-00047e92" symbolType="graphic" lastModified="1405733154">
+  <timeline>
+    <DOMTimeline name="Tween 18">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape selected="true" isDrawingObject="true">
+                  <matrix>
+                    <Matrix tx="-144.7" ty="-124.45"/>
+                  </matrix>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#CCCCCC"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#E7E8E9"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" caps="none" weight="0.25" joints="miter" miterLimit="10">
+                        <fill>
+                          <SolidColor color="#CCCCCC"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                    <StrokeStyle index="2">
+                      <SolidStroke scaleMode="normal" caps="none" weight="0.25" joints="miter" miterLimit="10">
+                        <fill>
+                          <SolidColor color="#E7E8E9"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!3791 2710[3727 2734 3663 2761!3663 2761[3531 2819 3535 2838!3535 2838[3540 2853 3506 2849!3506 2849[3393 2834 3327 2830!3327 2830[3237 2834 3227 2832!3227 2832[2976 2859 2786 2876!2786 2876[2418 2906 2235 2806!2235 2806[2175 2781 2141
+ 2764!2141 2764[2079 2730 2045 2685!2045 2685[1945 2551 2037 2238!2037 2238[2090 2059 2186 2104!2186 2104[2218 2116 2299 2161!2299 2161[2379 #897.12 2488 2214!2488 2214[2597 #8B4.C9 2681 2261!2681 2261[2765 #8F5.36 2838.5 2287.5!2838.5
+ 2287.5[2912 #8E9.ED 3061 2272!3061 2272[3131 2268 3533 2272!3533 2272[3565 2274 3608 2272!3608 2272[3637 2274 3663 2293!3663 2293[3706 2327 3721 2359!3721 2359[3750 2419 3769 2559!3769 2559[3784 2676 3791 2710"/>
+                    <Edge fillStyle1="2" strokeStyle="2" edges="
+!3791 2710[3793 2708 3795 2708!3795 2708[3795 2736 3791 2710"/>
+                    <Edge cubics="!3533 2272(;3597,2274 3623,2263 3663,2293q3533 2272Q3565 2274q3608 2272Q3637 2274q3663 2293);"/>
+                    <Edge cubics="!3663 2293(;3703,2325 3742,2346 3769,2559q3663 2293Q3706 2327q3721 2359Q3750 2419q3769 2559);"/>
+                    <Edge cubics="!3535 2838(;3544,2866 3514,2842 3327,2830q3535 2838Q3540 2853q3506 2849Q3393 2834q3327 2830);"/>
+                    <Edge cubics="!3327 2830(;3312,2830 3237,2834 3227,2832q3327 2830Q3237 2834q3227 2832);"/>
+                    <Edge cubics="!3227 2832(;3069,2817 2537,2972 2235,2806q3227 2832Q2976 2859q2786 2876Q2418 2906q2235 2806);"/>
+                    <Edge cubics="!2235 2806(;2135,2751 1894,2725 2037,2238q2235 2806Q2175 2781q2141 2764Q2079 2730q2045 2685Q1945 2551q2037 2238);"/>
+                    <Edge cubics="!3061 2272(;3131,2268 3533,2272 3533,2272q3061 2272Q3131 2268q3533 2272);"/>
+                    <Edge cubics="!3663 2761(;3576,2800 3533,2825 3535,2838q3663 2761Q3531 2819q3535 2838);"/>
+                    <Edge cubics="!3791 2710(;3748,2725 3706,2742 3663,2761p3791 2710Q3727 2734q3663 2761);"/>
+                    <Edge cubics="!3795 2708(;3793,2708 3793,2708 3791,2710q3795 2708Q3793 2708p3791 2710);"/>
+                    <Edge cubics="!3791 2710(;3793,2727 3795,2727 3795,2708p3791 2710Q3795 2736q3795 2708);"/>
+                    <Edge cubics="!3769 2559(;3780,2638 3786,2687 3791,2710q3769 2559Q3784 2676p3791 2710);"/>
+                    <Edge cubics="!2839 2288(;2888,2284 2962,2279 3061,2272q2839 2288Q2912 2282q3061 2272);"/>
+                    <Edge cubics="!2488 2214(;2561,2224 2625,2240 2681,2261q2488 2214Q2597 2229q2681 2261);"/>
+                    <Edge cubics="!2681 2261(;2737,2282 2790,2291 2839,2288q2681 2261Q2765 2293q2839 2288);"/>
+                    <Edge cubics="!2186 2104(;2207,2112 2245,2131 2299,2161q2186 2104Q2218 2116q2299 2161);"/>
+                    <Edge cubics="!2037 2238(;2072,2119 2122,2074 2186,2104q2037 2238Q2090 2059q2186 2104);"/>
+                    <Edge cubics="!2299 2161(;2352,2186 2415,2204 2488,2214q2299 2161Q2379 2199q2488 2214);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
