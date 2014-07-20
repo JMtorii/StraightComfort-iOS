@@ -20,8 +20,8 @@
     homeTitlesLine1 = [NSArray arrayWithObjects:@"FULL", @"WORKSTATION", @"DISCOMFORT", nil];
     homeTitlesLine2 = [NSArray arrayWithObjects:@"WORKSTATION SETUP", @"SHORTCUT", @"", nil];
     
-    UIButton *rightHelpBarButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightHelpBarButton];
+//    UIButton *rightHelpBarButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightHelpBarButton];
 }
 
 - (void)didReceiveMemoryWarning

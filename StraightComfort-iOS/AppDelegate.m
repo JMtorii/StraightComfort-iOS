@@ -91,15 +91,18 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-//- (void)incGroupIndex
-//{
-//    groupIndex++;
-//}
-//
-//- (int)getGroupIndex
-//{
-//    return groupIndex;
-//}
+- (void)goToMainViewController
+{
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0], NSForegroundColorAttributeName, [UIFont fontWithName:kRobotoMedium size:22.0], NSFontAttributeName, nil]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    
+    mainStoryboard = [UIStoryboard storyboardWithName:@"MainViewController" bundle: nil];
+    navController = (UINavigationController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"MainViewNavigationController"];
+    self.window.rootViewController = navController;
+}
 
 - (void)initTitles
 {
@@ -112,7 +115,6 @@
     
     self.maxGroupIndex = [self.titles count] - 1;
 }
-
 
 - (void)initCurDescArray
 {

@@ -14,19 +14,13 @@
 {
     [super viewDidLoad];
     self.navigationItem.title = @"Workstation Shortcut";
-//    UIBarButtonItem *helpItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:nil];
-//    self.navigationItem.rightBarButtonItems = @[helpItem];
     
-    UIButton *rightHelpBarButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightHelpBarButton];
+//    UIButton *rightHelpBarButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightHelpBarButton];
+    
     appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     workstationShortcutArray = [NSArray arrayWithObjects:@"CHAIR", @"KEYBOARD TRAY", @"MOUSE", @"MONITOR", @"DOCUMENTS", @"WORK AREA & STORAGE", nil];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning

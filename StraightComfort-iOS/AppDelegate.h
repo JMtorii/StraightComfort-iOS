@@ -23,12 +23,10 @@
 @property (strong, nonatomic) NSArray *curDescArray;
 @property (strong, nonatomic) NSArray *descImages;
 
-
+- (void)goToMainViewController;
 - (void)initTitles;
 - (void)initCurDescArray;
 - (void)initCurDescKeys;
 
-//- (void)incGroupIndex;
-//- (int)getGroupIndex;
 
 @end

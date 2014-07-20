@@ -27,13 +27,15 @@
 {
     [super viewDidLoad];
     
+    appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    
     self.backgroundImageView.image = [UIImage imageNamed:self.imageFile];
     
     self.titleLabel.text = self.titleLabelText;
-    self.titleLabel.font = [UIFont fontWithName:kRobotoRegular size:20];
+    self.titleLabel.font = [UIFont fontWithName:kRobotoMedium size:19];
     
     // Do not change width! This ensures 20px on both ends.
-    CGRect labelFrame = CGRectMake(20, 440, 290, 233);
+    CGRect labelFrame = CGRectMake(20, 440, 290, 50);
     _curDescLabel = [[UILabel alloc] initWithFrame:labelFrame];
     [_curDescLabel setText:_curDescText];
     [_curDescLabel setTextColor:[UIColor whiteColor]];
@@ -44,12 +46,27 @@
     [_curDescLabel sizeToFit];
     
     [self.view addSubview:_curDescLabel];
+    
+    [self.startButton.titleLabel setFont:[UIFont fontWithName:kRobotoBold size:16]];
+    
+    if (self.isButtonVisible) {
+        self.startButton.enabled = true;
+        self.startButton.hidden = false;
+    } else {
+        self.startButton.enabled = false;
+        self.startButton.hidden = true;
+    }
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)start:(id)sender
+{
+    [appDelegate goToMainViewController];
 }
 
 @end

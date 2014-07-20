@@ -17,8 +17,8 @@
     
     appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
-    UIButton *rightHelpBarButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightHelpBarButton];
+//    UIButton *rightHelpBarButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightHelpBarButton];
 
     completeSectionNames = [NSArray arrayWithObjects:@"Neck", @"Upper Back", @"Lower Back", @"Wrists", @"Legs", nil];
     completePossibleSolutionDictionary = @{[completeSectionNames objectAtIndex:0]: @[@"Monitor", @"Documents"], 

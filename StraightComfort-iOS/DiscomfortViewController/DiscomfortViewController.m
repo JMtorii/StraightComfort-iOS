@@ -19,21 +19,13 @@
     self.navigationItem.title = @"Discomfort";
     discomfortArray = [NSArray arrayWithObjects:@"NECK", @"UPPER BACK", @"LOWER BACK", @"WRISTS", @"LEGS", nil];
     
-    UIButton *rightHelpBarButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightHelpBarButton];
+//    UIButton *rightHelpBarButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightHelpBarButton];
 
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     self.tableView.scrollEnabled = false;
     
     [self.analyzeButton addTarget:self action:@selector(analyzeButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    
-    
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning

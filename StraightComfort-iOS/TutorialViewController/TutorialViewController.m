@@ -69,6 +69,8 @@
     pageContentViewController.titleLabelText = self.pageTitles[index];
     pageContentViewController.curDescText = self.pageDesc[index];
     
+    pageContentViewController.isButtonVisible = (index == [self.pageTitles count] - 1) ? true : false;
+    
     return pageContentViewController;
 }
 
