@@ -17,9 +17,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Create the data model
-    _pageTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip", @"Free Regular Update"];
-    _pageImages = @[@"welcomePage1.png", @"page2.png", @"page3.png", @"page4.png"];
+    
+    tutorialArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"TutorialStrings" ofType:@"plist"]];
+    
+    [self generatePageTitles];
+    [self generatePageImages];
+    [self generatePageDesc];
     
     // Create page view controller
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TutorialViewController"];
@@ -30,7 +33,7 @@
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     
     // Change the size of page view controller
-    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 170);
+    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     
     [self addChildViewController:_pageViewController];
     [self.view addSubview:_pageViewController.view];
@@ -51,11 +54,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)startWalkthrough:(id)sender {
-    TutorialContentViewController *startingViewController = [self viewControllerAtIndex:0];
-    NSArray *viewControllers = @[startingViewController];
-    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionReverse animated:NO completion:nil];
-}
 
 - (TutorialContentViewController *)viewControllerAtIndex:(NSUInteger)index
 {
@@ -68,9 +66,8 @@
     pageContentViewController.imageFile = self.pageImages[index];
     pageContentViewController.pageIndex = index;
     
-    self.titleText = self.pageTitles[index];
-    self.titleLabel.text = self.titleText;
-    self.titleLabel.font = [UIFont fontWithName:kRobotoRegular size:20];
+    pageContentViewController.titleLabel.text = self.pageTitles[index];
+    pageContentViewController.curDescText = self.pageDesc[index];
     
     return pageContentViewController;
 }
@@ -113,6 +110,43 @@
 {
     return 0;
 }
+
+- (void) generatePageTitles
+{
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    for (NSDictionary *dict in tutorialArray) {
+        [array addObject:[dict objectForKey:@"title"]];
+    }
+    
+    self.pageTitles = array;
+}
+
+- (void) generatePageImages
+{
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    for (NSDictionary *dict in tutorialArray) {
+        for (NSString *key in [dict allKeys]) {
+            if (![key isEqual:@"title"]) {
+                [array addObject:key];
+            }
+        }
+    }
+    
+    self.pageImages = array;
+}
+
+- (void) generatePageDesc
+{
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    
+    for (int i = 0; i < [tutorialArray count]; i++) {
+        [array addObject:[[tutorialArray objectAtIndex:i] objectForKey:[self.pageImages objectAtIndex:i]]];
+    }
+    
+    self.pageDesc = array;
+}
+
+
 
 
 

@@ -3,10 +3,28 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>welcomePage1</key>
-		<string></string>
+		<key>title</key>
+		<string>Welcome!</string>
+		<key>welcomePage0</key>
+		<string>Welcome to Straight Comfort! Use Straight Comfort to improve your workstation.</string>
 	</dict>
-	<dict/>
-	<dict/>
+	<dict>
+		<key>title</key>
+		<string>Improve your entire workstation</string>
+		<key>welcomePage1</key>
+		<string>Go through the entire workstation setup to make your work life more comfortable.</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Improve a certain component</string>
+		<key>welcomePage2</key>
+		<string>Don&apos;t want to go through the entire workstation setup? Improve just a specific workstation part.</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Improve based on body part</string>
+		<key>welcomePage3</key>
+		<string>Does one of your body parts hurt while working at your workstation? Filter your workstation solutions based on pain in a certain body part.</string>
+	</dict>
 </array>
 </plist>
