@@ -66,7 +66,7 @@
     pageContentViewController.imageFile = self.pageImages[index];
     pageContentViewController.pageIndex = index;
     
-    pageContentViewController.titleLabel.text = self.pageTitles[index];
+    pageContentViewController.titleLabelText = self.pageTitles[index];
     pageContentViewController.curDescText = self.pageDesc[index];
     
     return pageContentViewController;

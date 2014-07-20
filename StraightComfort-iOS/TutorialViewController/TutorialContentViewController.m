@@ -28,10 +28,12 @@
     [super viewDidLoad];
     
     self.backgroundImageView.image = [UIImage imageNamed:self.imageFile];
+    
+    self.titleLabel.text = self.titleLabelText;
     self.titleLabel.font = [UIFont fontWithName:kRobotoRegular size:20];
     
     // Do not change width! This ensures 20px on both ends.
-    CGRect labelFrame = CGRectMake(20, 380, 280, 233);
+    CGRect labelFrame = CGRectMake(20, 440, 290, 233);
     _curDescLabel = [[UILabel alloc] initWithFrame:labelFrame];
     [_curDescLabel setText:_curDescText];
     [_curDescLabel setTextColor:[UIColor whiteColor]];
