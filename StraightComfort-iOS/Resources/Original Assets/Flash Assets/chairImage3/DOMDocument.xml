@@ -1,4 +1,4 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="280" height="220" currentTimeline="1" xflVersion="2.2" creatorInfo="Adobe Flash Professional CS6" platform="Macintosh" versionInfo="Saved by Adobe Flash Macintosh 12.0 build 481" majorVersion="12" buildNumber="481" viewAngle3D="29.6861623351787" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="280" height="220" currentTimeline="1" xflVersion="2.2" creatorInfo="Adobe Flash Professional CS6" platform="Macintosh" versionInfo="Saved by Adobe Flash Macintosh 12.0 build 481" majorVersion="12" buildNumber="481" viewAngle3D="29.6861623351787" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveHasPrompted="true">
      <symbols>
           <Include href="side-chair.ai.xml" itemIcon="1" loadImmediate="false" itemID="53cde9eb-00000268" lastModified="1406003691"/>
           <Include href="side-person.ai.xml" itemIcon="1" loadImmediate="false" itemID="53cde9f8-0000026a" lastModified="1406003704"/>
@@ -16,7 +16,7 @@
           <Include href="Tween 12.xml" itemIcon="1" loadImmediate="false" itemID="53cdf70c-00000299" lastModified="1406007052"/>
      </symbols>
      <timelines>
-          <DOMTimeline name="Scene 1" currentFrame="99">
+          <DOMTimeline name="Scene 1">
                <layers>
                     <DOMLayer name="dots2" color="#4FFF4F" autoNamed="false">
                          <frames>
@@ -302,7 +302,7 @@
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="legs" color="#4F80FF" current="true" isSelected="true" autoNamed="false">
+                    <DOMLayer name="legs" color="#4F80FF" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" duration="34" keyMode="9728">
                                    <elements>
@@ -1208,7 +1208,7 @@
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="back" color="#FF800A" autoNamed="false">
+                    <DOMLayer name="back" color="#FF800A" current="true" isSelected="true" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" duration="34" keyMode="9728">
                                    <elements>
@@ -1340,7 +1340,7 @@
                               </DOMFrame>
                               <DOMFrame index="99" keyMode="15872">
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="Tween 7" symbolType="graphic" loop="loop">
+                                        <DOMSymbolInstance libraryItemName="Tween 7" selected="true" symbolType="graphic" loop="loop">
                                              <matrix>
                                                   <Matrix a="0.966262817382812" b="-0.257583618164062" c="0.257583618164062" d="0.966262817382812" tx="97.05" ty="97.95"/>
                                              </matrix>
