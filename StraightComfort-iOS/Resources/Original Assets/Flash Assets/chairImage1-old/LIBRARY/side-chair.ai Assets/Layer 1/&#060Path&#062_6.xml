@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="side-chair.ai Assets/Layer 1/&lt;Path&gt;_6" itemID="53d33702-00000283" lastModified="1406351106">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="side-chair.ai Assets/Layer 1/&amp;#060Path&amp;#062_6" itemID="53d33702-00000283" lastModified="1406351106">
   <timeline>
-    <DOMTimeline name="&lt;Path&gt;_6">
+    <DOMTimeline name="&amp;#060Path&amp;#062_6">
       <layers>
         <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
           <frames>

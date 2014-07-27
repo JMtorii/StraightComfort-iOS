@@ -1,0 +1,96 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="side-chair.ai" itemID="53d33702-00000290" symbolType="graphic" lastModified="1406351106">
+  <timeline>
+    <DOMTimeline name="side-chair.ai">
+      <layers>
+        <DOMLayer name="Layer 1" color="#0000FF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="side-chair.ai Assets/Layer 1/&amp;#060Path&amp;#062_9" selected="true">
+                  <matrix>
+                    <Matrix tx="2.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="6.8" y="20"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="side-chair.ai Assets/Layer 1/&amp;#060Path&amp;#062_8" selected="true">
+                  <matrix>
+                    <Matrix ty="14.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="5.6" y="14.65"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="side-chair.ai Assets/Layer 1/&amp;#060Path&amp;#062_7" selected="true">
+                  <matrix>
+                    <Matrix tx="9.5" ty="36.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="18.3" y="4.25"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="side-chair.ai Assets/Layer 1/&amp;#060Path&amp;#062_6" selected="true">
+                  <matrix>
+                    <Matrix tx="17.7" ty="41.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="9" y="2.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="side-chair.ai Assets/Layer 1/&amp;#060Path&amp;#062_5" selected="true">
+                  <matrix>
+                    <Matrix tx="23.75" ty="37.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="3.95" y="10.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="side-chair.ai Assets/Layer 1/&amp;#060Path&amp;#062_4" selected="true">
+                  <matrix>
+                    <Matrix tx="5.5" ty="54.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="22.5" y="4.9"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="side-chair.ai Assets/Layer 1/&amp;#060Path&amp;#062_3" selected="true">
+                  <matrix>
+                    <Matrix tx="6.25" ty="62.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="3.35" y="2.9"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="side-chair.ai Assets/Layer 1/&amp;#060Path&amp;#062_2" selected="true">
+                  <matrix>
+                    <Matrix tx="43.75" ty="63.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="3.05" y="2.55"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="side-chair.ai Assets/Layer 1/&amp;#060Path&amp;#062_1" selected="true">
+                  <matrix>
+                    <Matrix tx="4.2" ty="37.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="4.85" y="2.9"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="side-chair.ai Assets/Layer 1/&amp;#060Path&amp;#062" selected="true">
+                  <matrix>
+                    <Matrix tx="17.55" ty="28.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="9.75" y="5.6"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

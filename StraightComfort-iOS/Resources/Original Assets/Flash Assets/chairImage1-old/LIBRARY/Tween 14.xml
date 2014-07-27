@@ -1,20 +1,14 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Tween 13" itemID="53ca220e-00000344" symbolType="graphic" lastModified="1405755918">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Tween 14" itemID="53ca220e-00000346" symbolType="graphic" lastModified="1405755918">
   <timeline>
-    <DOMTimeline name="Tween 13">
+    <DOMTimeline name="Tween 14">
       <layers>
         <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
                 <DOMGroup selected="true">
-                  <matrix>
-                    <Matrix tx="-93.5" ty="-100.1"/>
-                  </matrix>
                   <members>
                     <DOMGroup>
-                      <matrix>
-                        <Matrix tx="-98.5" ty="-73.6"/>
-                      </matrix>
                       <members>
                         <DOMShape selected="true" isDrawingObject="true">
                           <matrix>
@@ -111,9 +105,6 @@
                       </members>
                     </DOMGroup>
                     <DOMGroup>
-                      <matrix>
-                        <Matrix tx="-98.5" ty="-73.6"/>
-                      </matrix>
                       <members>
                         <DOMShape selected="true" isDrawingObject="true">
                           <matrix>
@@ -243,9 +234,6 @@
                       </members>
                     </DOMGroup>
                     <DOMGroup>
-                      <matrix>
-                        <Matrix tx="-98.5" ty="-73.6"/>
-                      </matrix>
                       <members>
                         <DOMShape selected="true" isDrawingObject="true">
                           <matrix>

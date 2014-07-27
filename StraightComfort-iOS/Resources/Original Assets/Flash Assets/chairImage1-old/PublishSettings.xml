@@ -1,7 +1,7 @@
 <flash_profiles>
 <flash_profile version="1.0" name="Default" current="true">
   <PublishFormatProperties enabled="true">
-    <defaultNames>1</defaultNames>
+    <defaultNames>0</defaultNames>
     <flash>1</flash>
     <projectorWin>0</projectorWin>
     <projectorMac>0</projectorMac>
@@ -12,20 +12,20 @@
     <svg>0</svg>
     <rnwk>0</rnwk>
     <swc>0</swc>
-    <flashDefaultName>1</flashDefaultName>
+    <flashDefaultName>0</flashDefaultName>
     <projectorWinDefaultName>1</projectorWinDefaultName>
     <projectorMacDefaultName>1</projectorMacDefaultName>
-    <htmlDefaultName>1</htmlDefaultName>
+    <htmlDefaultName>0</htmlDefaultName>
     <gifDefaultName>1</gifDefaultName>
     <jpegDefaultName>1</jpegDefaultName>
     <pngDefaultName>1</pngDefaultName>
     <svgDefaultName>1</svgDefaultName>
     <rnwkDefaultName>1</rnwkDefaultName>
     <swcDefaultName>1</swcDefaultName>
-    <flashFileName>chairImage1.swf</flashFileName>
+    <flashFileName>chairImage1-old.swf</flashFileName>
     <projectorWinFileName>chairImage1.exe</projectorWinFileName>
     <projectorMacFileName>chairImage1.app</projectorMacFileName>
-    <htmlFileName>chairImage1.html</htmlFileName>
+    <htmlFileName>chairImage1-old.html</htmlFileName>
     <gifFileName>chairImage1.gif</gifFileName>
     <jpegFileName>chairImage1.jpg</jpegFileName>
     <pngFileName>chairImage1.png</pngFileName>
@@ -56,7 +56,7 @@
     <WindowMode>0</WindowMode>
     <DisplayMenu>1</DisplayMenu>
     <DeviceFont>0</DeviceFont>
-    <TemplateFileName>/Users/juntorii/Library/Application Support/Adobe/Flash CS6/en_US/Configuration/HTML/Default.html</TemplateFileName>
+    <TemplateFileName>/Users/mtorii/Library/Application Support/Adobe/Flash CC/en_US/Configuration/HTML/Default.html</TemplateFileName>
     <showTagWarnMsg>1</showTagWarnMsg>
   </PublishHtmlProperties>
   <PublishFlashProperties enabled="true">
@@ -146,7 +146,7 @@
     <Animated>0</Animated>
     <MatchMovieDim>1</MatchMovieDim>
     <Loop>1</Loop>
-    <LoopCount></LoopCount>
+    <LoopCount>0</LoopCount>
     <Smooth>1</Smooth>
     <MaxColors>255</MaxColors>
   </PublishGifProperties>

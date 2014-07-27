@@ -7,11 +7,8 @@
             <DOMFrame index="0" keyMode="9728">
               <elements>
                 <DOMGroup selected="true">
-                  <matrix>
-                    <Matrix a="1.03921508789062" b="-0.03515625" c="0.03515625" d="1.03921508789062" tx="-199.75" ty="-152.25"/>
-                  </matrix>
                   <transformationPoint>
-                    <Point x="174.2" y="119.55"/>
+                    <Point x="-14.5" y="-34.15"/>
                   </transformationPoint>
                   <members>
                     <DOMShape selected="true" isDrawingObject="true">
