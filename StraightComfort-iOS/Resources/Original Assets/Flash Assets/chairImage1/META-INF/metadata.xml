@@ -5,8 +5,13 @@
             xmlns:xmp="http://ns.adobe.com/xap/1.0/">
          <xmp:CreatorTool>Adobe Flash Professional CS6 - build 481</xmp:CreatorTool>
          <xmp:CreateDate>2014-07-14T22:55:41-07:00</xmp:CreateDate>
+<<<<<<< HEAD
          <xmp:MetadataDate>2014-07-31T20:33:39-07:00</xmp:MetadataDate>
          <xmp:ModifyDate>2014-07-31T20:33:39-07:00</xmp:ModifyDate>
+=======
+         <xmp:MetadataDate>2014-07-21T21:32:52-07:00</xmp:MetadataDate>
+         <xmp:ModifyDate>2014-07-21T21:32:52-07:00</xmp:ModifyDate>
+>>>>>>> parent of 025ad1e... Tried out some property changes
       </rdf:Description>
       <rdf:Description rdf:about=""
             xmlns:dc="http://purl.org/dc/elements/1.1/">
@@ -15,7 +20,11 @@
       <rdf:Description rdf:about=""
             xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
             xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#">
+<<<<<<< HEAD
          <xmpMM:InstanceID>xmp.iid:F77F1174072068118083EF0475EE74E4</xmpMM:InstanceID>
+=======
+         <xmpMM:InstanceID>xmp.iid:ED7F1174072068118A6D81709AF92E92</xmpMM:InstanceID>
+>>>>>>> parent of 025ad1e... Tried out some property changes
          <xmpMM:DocumentID>xmp.did:F77F1174072068118C1488D057F67EED</xmpMM:DocumentID>
          <xmpMM:OriginalDocumentID>xmp.did:F77F1174072068118C1488D057F67EED</xmpMM:OriginalDocumentID>
          <xmpMM:History>
@@ -38,6 +47,7 @@
                   <stEvt:when>2014-07-14T22:55:41-07:00</stEvt:when>
                   <stEvt:softwareAgent>Adobe Flash Professional CS6 - build 481</stEvt:softwareAgent>
                </rdf:li>
+<<<<<<< HEAD
                <rdf:li rdf:parseType="Resource">
                   <stEvt:action>created</stEvt:action>
                   <stEvt:instanceID>xmp.iid:F77F1174072068118C14F437167BC3D3</stEvt:instanceID>
@@ -55,6 +65,8 @@
                   <stEvt:instanceID>xmp.iid:F77F1174072068118083EF0475EE74E4</stEvt:instanceID>
                   <stEvt:when>2014-07-14T22:55:41-07:00</stEvt:when>
                </rdf:li>
+=======
+>>>>>>> parent of 025ad1e... Tried out some property changes
             </rdf:Seq>
          </xmpMM:History>
       </rdf:Description>
