@@ -43,15 +43,17 @@
         [self.pageViewController didMoveToParentViewController:self];
         
     }
+        
+}
+
+- (void) viewWillDisappear:(BOOL)animated {
+    if ([self.navigationController.viewControllers indexOfObject:self]==NSNotFound) {
+        // back button was pressed.  We know this is true because self is no longer
+        // in the navigation stack.
+        appDelegate.groupIndex--;
+    }
     
-        
-    //    for (UIView *view in self.pageViewController.view.subviews ) {
-    //        if ([view isKindOfClass:[UIScrollView class]]) {
-    //            UIScrollView *scroll = (UIScrollView *)view;
-    //            scroll.bounces = NO;
-    //        }
-    //    }
-        
+    [super viewWillDisappear:animated];
 }
 
 - (void)didReceiveMemoryWarning
