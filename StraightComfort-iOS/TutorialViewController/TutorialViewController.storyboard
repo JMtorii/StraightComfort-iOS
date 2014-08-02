@@ -24,8 +24,8 @@
             <objects>
                 <viewController id="XXS-5O-acy" customClass="TutorialViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wj0-Ed-5Dv"/>
-                        <viewControllerLayoutGuide type="bottom" id="Euc-ff-mZc"/>
+                        <viewControllerLayoutGuide type="top" id="mqR-gM-iMr"/>
+                        <viewControllerLayoutGuide type="bottom" id="UgV-66-dea"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IYa-mb-F0S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -49,8 +49,8 @@
             <objects>
                 <viewController storyboardIdentifier="TutorialContentViewController" id="bJr-9e-NkB" customClass="TutorialContentViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Hfc-Oe-OQO"/>
-                        <viewControllerLayoutGuide type="bottom" id="z1O-NK-ePc"/>
+                        <viewControllerLayoutGuide type="top" id="ClA-9Y-OgI"/>
+                        <viewControllerLayoutGuide type="bottom" id="kC8-D2-Y4i"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fxe-ge-uUd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>

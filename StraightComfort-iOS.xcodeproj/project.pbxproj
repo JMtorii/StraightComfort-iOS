@@ -796,6 +796,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/StraightComfort-iOS/StraightComfort-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "StraightComfort-iOS";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -810,6 +811,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/StraightComfort-iOS/StraightComfort-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "StraightComfort-iOS";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

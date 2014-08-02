@@ -17,20 +17,28 @@
             <objects>
                 <viewController storyboardIdentifier="WorkstationSetupViewController" id="3RC-Lc-pvs" customClass="WorkstationSetupViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4dm-v4-xe3"/>
-                        <viewControllerLayoutGuide type="bottom" id="aHL-g3-z8z"/>
+                        <viewControllerLayoutGuide type="top" id="t8h-xg-htq"/>
+                        <viewControllerLayoutGuide type="bottom" id="c71-dh-4ys"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="g3X-5m-hF8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZNs-bo-F6L">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNs-bo-F6L">
                                 <rect key="frame" x="0.0" y="325" width="320" height="243"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1176470588" green="0.68235294120000001" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="243" id="vIY-P6-Bpd"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZNs-bo-F6L" firstAttribute="leading" secondItem="g3X-5m-hF8" secondAttribute="leading" id="1eF-mg-eN5"/>
+                            <constraint firstAttribute="bottom" secondItem="ZNs-bo-F6L" secondAttribute="bottom" id="BGG-ec-PMB"/>
+                            <constraint firstAttribute="trailing" secondItem="ZNs-bo-F6L" secondAttribute="trailing" id="hJo-mv-eW6"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LZP-F7-4M6"/>
                 </viewController>
@@ -43,8 +51,8 @@
             <objects>
                 <viewController storyboardIdentifier="WorkstationIntroEndViewController" id="zB9-T4-Mj8" customClass="WorkstationIntroEndViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Hju-0m-6us"/>
-                        <viewControllerLayoutGuide type="bottom" id="9rL-2m-Q2D"/>
+                        <viewControllerLayoutGuide type="top" id="3M7-ng-dvh"/>
+                        <viewControllerLayoutGuide type="bottom" id="him-V5-pER"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rhl-zD-QSC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -93,25 +101,37 @@
             <objects>
                 <viewController storyboardIdentifier="WorkstationSetupContentViewController" id="4lp-xh-Dur" customClass="WorkstationContentViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xHS-PS-Z4P"/>
-                        <viewControllerLayoutGuide type="bottom" id="eae-V9-tlW"/>
+                        <viewControllerLayoutGuide type="top" id="dUM-gK-bGz"/>
+                        <viewControllerLayoutGuide type="bottom" id="QAB-wf-FoL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9vB-gp-OX9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WNE-AH-JPE">
-                                <rect key="frame" x="0.0" y="325" width="320" height="243"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WNE-AH-JPE">
+                                <rect key="frame" x="0.0" y="328" width="320" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.11764705882352941" green="0.68235294117647061" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="240" id="fMG-G7-7Y5"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zxp-fB-2F3">
-                                <rect key="frame" x="20" y="89" width="280" height="220"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zxp-fB-2F3">
+                                <rect key="frame" x="20" y="89" width="280" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WNE-AH-JPE" firstAttribute="top" secondItem="Zxp-fB-2F3" secondAttribute="bottom" constant="9" id="9dr-47-FIg"/>
+                            <constraint firstItem="Zxp-fB-2F3" firstAttribute="top" secondItem="dUM-gK-bGz" secondAttribute="bottom" constant="69" id="U3u-By-gAj"/>
+                            <constraint firstAttribute="bottom" secondItem="WNE-AH-JPE" secondAttribute="bottom" id="ZUI-wo-JcU"/>
+                            <constraint firstAttribute="trailing" secondItem="WNE-AH-JPE" secondAttribute="trailing" id="nRp-so-6N9"/>
+                            <constraint firstItem="WNE-AH-JPE" firstAttribute="leading" secondItem="9vB-gp-OX9" secondAttribute="leading" id="ufc-LO-QCT"/>
+                            <constraint firstItem="Zxp-fB-2F3" firstAttribute="centerX" secondItem="WNE-AH-JPE" secondAttribute="centerX" id="uzl-Sy-6Fv"/>
+                            <constraint firstItem="Zxp-fB-2F3" firstAttribute="leading" secondItem="9vB-gp-OX9" secondAttribute="leading" constant="20" symbolic="YES" id="zBF-v9-9uM"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="animationFrame" destination="Zxp-fB-2F3" id="UEg-O6-etR"/>
