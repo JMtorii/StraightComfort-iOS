@@ -85,7 +85,7 @@
         viewController = [[ShortcutViewController alloc]initWithNibName:@"ShortcutViewController" bundle:nil];
         
     } else {
-        viewController = [[DiscomfortViewController alloc]initWithNibName:@"DiscomfortTableViewController" bundle:nil];
+        viewController = [[DiscomfortViewController alloc]initWithNibName:@"DiscomfortViewController" bundle:nil];
     
     }
     

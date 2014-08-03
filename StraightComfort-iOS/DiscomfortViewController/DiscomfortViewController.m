@@ -17,8 +17,6 @@
 {
     [super viewDidLoad];
     
-    self.tableView.scrollEnabled = (IS_IPHONE_5) ? NO : YES;
-    
     self.navigationItem.title = @"Discomfort";
     discomfortArray = [NSArray arrayWithObjects:@"NECK", @"UPPER BACK", @"LOWER BACK", @"WRISTS", @"LEGS", nil];
     
@@ -51,7 +49,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return (IS_IPHONE_5) ? 85 : 70;
+    return (IS_IPHONE_5) ? 85 : 66.5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
