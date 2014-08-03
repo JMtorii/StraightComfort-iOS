@@ -16,6 +16,10 @@
     
     appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
+    if (!IS_IPHONE_5) {
+        self.tableView.scrollEnabled = YES;
+    }
+    
     // Initialize table data
     homeTitlesLine1 = [NSArray arrayWithObjects:@"FULL", @"WORKSTATION", @"DISCOMFORT", nil];
     homeTitlesLine2 = [NSArray arrayWithObjects:@"WORKSTATION SETUP", @"SHORTCUT", @"", nil];
