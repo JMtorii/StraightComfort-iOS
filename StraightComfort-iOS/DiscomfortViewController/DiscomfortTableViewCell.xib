@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -13,7 +13,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wxR-cU-0Xc">
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wxR-cU-0Xc">
                         <rect key="frame" x="251" y="24" width="51" height="31"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="onTintColor" red="0.26925676479999999" green="0.72058559089999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -21,14 +21,23 @@
                             <action selector="switchChanged:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GOK-kY-L6h"/>
                         </connections>
                     </switch>
-                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9l-HF-cyc">
-                        <rect key="frame" x="20" y="29" width="205" height="21"/>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9l-HF-cyc">
+                        <rect key="frame" x="20" y="31" width="205" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="205" id="dec-yn-bJE"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="wxR-cU-0Xc" firstAttribute="leading" secondItem="l9l-HF-cyc" secondAttribute="trailing" constant="26" id="R1i-6E-iPK"/>
+                    <constraint firstAttribute="centerY" secondItem="wxR-cU-0Xc" secondAttribute="centerY" constant="2.5" id="dkE-nZ-CpV"/>
+                    <constraint firstAttribute="centerY" secondItem="l9l-HF-cyc" secondAttribute="centerY" constant="0.5" id="kQy-zf-bCr"/>
+                    <constraint firstItem="l9l-HF-cyc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="zu8-WQ-Vmz"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="accessoryView" destination="wxR-cU-0Xc" id="pp0-bC-pqk"/>
