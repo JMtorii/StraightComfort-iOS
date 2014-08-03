@@ -45,6 +45,12 @@
     return [homeTitlesLine1 count];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+//    return (IS_IPHONE_5) ? 168 : 140;
+    return 168;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellIdentifier = @"MainTableViewCell";
