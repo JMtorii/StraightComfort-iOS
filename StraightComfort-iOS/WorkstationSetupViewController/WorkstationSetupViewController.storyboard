@@ -25,11 +25,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNs-bo-F6L">
-                                <rect key="frame" x="0.0" y="325" width="320" height="243"/>
+                                <rect key="frame" x="0.0" y="388" width="320" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1176470588" green="0.68235294120000001" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="243" id="vIY-P6-Bpd"/>
+                                    <constraint firstAttribute="height" constant="180" id="vIY-P6-Bpd"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -37,6 +37,7 @@
                         <constraints>
                             <constraint firstItem="ZNs-bo-F6L" firstAttribute="leading" secondItem="g3X-5m-hF8" secondAttribute="leading" id="1eF-mg-eN5"/>
                             <constraint firstAttribute="bottom" secondItem="ZNs-bo-F6L" secondAttribute="bottom" id="BGG-ec-PMB"/>
+                            <constraint firstItem="c71-dh-4ys" firstAttribute="top" secondItem="ZNs-bo-F6L" secondAttribute="bottom" id="T2u-L1-ynq"/>
                             <constraint firstAttribute="trailing" secondItem="ZNs-bo-F6L" secondAttribute="trailing" id="hJo-mv-eW6"/>
                         </constraints>
                     </view>
@@ -108,18 +109,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WNE-AH-JPE">
-                                <rect key="frame" x="0.0" y="328" width="320" height="240"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNE-AH-JPE">
+                                <rect key="frame" x="0.0" y="388" width="320" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.11764705882352941" green="0.68235294117647061" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="emZ-7P-MFi"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zxp-fB-2F3">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zxp-fB-2F3">
                                 <rect key="frame" x="20" y="89" width="280" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="WNE-AH-JPE" secondAttribute="bottom" id="5Ti-t4-VLa"/>
+                            <constraint firstItem="Zxp-fB-2F3" firstAttribute="leading" secondItem="9vB-gp-OX9" secondAttribute="leading" constant="20" symbolic="YES" id="Ny1-O0-Jr1"/>
+                            <constraint firstItem="Zxp-fB-2F3" firstAttribute="top" secondItem="dUM-gK-bGz" secondAttribute="bottom" constant="69" id="Zdt-4v-h4G"/>
+                            <constraint firstItem="WNE-AH-JPE" firstAttribute="centerX" secondItem="Zxp-fB-2F3" secondAttribute="centerX" id="bZF-Y0-Ip2"/>
+                            <constraint firstItem="WNE-AH-JPE" firstAttribute="top" secondItem="Zxp-fB-2F3" secondAttribute="bottom" constant="69" id="kap-T5-EBf"/>
+                            <constraint firstItem="QAB-wf-FoL" firstAttribute="top" secondItem="WNE-AH-JPE" secondAttribute="bottom" id="rEm-Fu-Doq"/>
+                            <constraint firstItem="WNE-AH-JPE" firstAttribute="leading" secondItem="9vB-gp-OX9" secondAttribute="leading" id="rmf-k6-eR6"/>
+                            <constraint firstAttribute="trailing" secondItem="WNE-AH-JPE" secondAttribute="trailing" id="s7D-un-oOl"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="animationFrame" destination="Zxp-fB-2F3" id="UEg-O6-etR"/>

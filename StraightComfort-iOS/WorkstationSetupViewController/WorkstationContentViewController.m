@@ -30,13 +30,12 @@
     FLAnimatedImage *image = [[FLAnimatedImage alloc] initWithAnimatedGIFData:data1];
     FLAnimatedImageView *imageView = [[FLAnimatedImageView alloc] init];
     imageView.animatedImage = image;
-    imageView.frame = CGRectMake(20.0, 89.0, 280.0, 220.0);
-    
+    imageView.frame = (IS_IPHONE_5) ? CGRectMake(20.0, 89.0, 280.0, 220.0) : CGRectMake(40.0, 79.0, 240.0, 180.0);    
     [self.view addSubview:imageView];
     
     
     // Do not change width! This ensures 20px on both ends.
-    CGRect labelFrame = CGRectMake(20, 340, 280, 233);
+    CGRect labelFrame = (IS_IPHONE_5) ? CGRectMake(20, 360, 280, 233) : CGRectMake(20, 280, 280, 233);
     _descLabel = [[UILabel alloc] initWithFrame:labelFrame];
 //    [_descLabel setBackgroundColor:[UIColor orangeColor]];
     [_descLabel setText:_descText];
