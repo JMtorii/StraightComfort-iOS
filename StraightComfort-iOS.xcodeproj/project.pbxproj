@@ -64,6 +64,7 @@
 		B64BC9AE197665480062A4EA /* chairImage0.gif in Resources */ = {isa = PBXBuildFile; fileRef = B64BC9AD197665480062A4EA /* chairImage0.gif */; };
 		B64BC9B01977A5EA0062A4EA /* TutorialStrings.plist in Resources */ = {isa = PBXBuildFile; fileRef = B64BC9AF1977A5EA0062A4EA /* TutorialStrings.plist */; };
 		B6550D56193168FD00FAF97F /* MainViewNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6550D55193168FD00FAF97F /* MainViewNavigationController.m */; };
+		B69807C119933ED100044128 /* additional-topics.png in Resources */ = {isa = PBXBuildFile; fileRef = B69807C019933ED100044128 /* additional-topics.png */; };
 		B6AE72A519404DAF00FBFB5E /* PossibleSolutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE72A319404DAF00FBFB5E /* PossibleSolutionViewController.m */; };
 		B6AE72A619404DAF00FBFB5E /* PossibleSolutionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72A419404DAF00FBFB5E /* PossibleSolutionViewController.xib */; };
 		B6AE72AE19404F4400FBFB5E /* ShortcutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE72A919404F4400FBFB5E /* ShortcutTableViewCell.m */; };
@@ -177,6 +178,7 @@
 		B64BC9AF1977A5EA0062A4EA /* TutorialStrings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TutorialStrings.plist; sourceTree = "<group>"; };
 		B6550D54193168FD00FAF97F /* MainViewNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewNavigationController.h; sourceTree = "<group>"; };
 		B6550D55193168FD00FAF97F /* MainViewNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewNavigationController.m; sourceTree = "<group>"; };
+		B69807C019933ED100044128 /* additional-topics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "additional-topics.png"; sourceTree = "<group>"; };
 		B6AE72A219404DAF00FBFB5E /* PossibleSolutionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PossibleSolutionViewController.h; sourceTree = "<group>"; };
 		B6AE72A319404DAF00FBFB5E /* PossibleSolutionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PossibleSolutionViewController.m; sourceTree = "<group>"; };
 		B6AE72A419404DAF00FBFB5E /* PossibleSolutionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PossibleSolutionViewController.xib; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 		B60D9D881930818100CBE191 /* Original Assets */ = {
 			isa = PBXGroup;
 			children = (
+				B69807C019933ED100044128 /* additional-topics.png */,
 				4E065E84193A865400A70377 /* chair.png */,
 				B6AE72BD1946CC7800FBFB5E /* keyboard.png */,
 				B6AE72C11946D02B00FBFB5E /* mouse.png */,
@@ -589,6 +592,7 @@
 				B6AE72B61942F1BE00FBFB5E /* PossibleSolutionTableViewCell.xib in Resources */,
 				B61B2E9F1950027100AE5908 /* Roboto-BoldCondensedItalic.ttf in Resources */,
 				B61B2EB71952AFA300AE5908 /* welcomePage1.png in Resources */,
+				B69807C119933ED100044128 /* additional-topics.png in Resources */,
 				B6DAB62D192745B100649B99 /* MainViewController.storyboard in Resources */,
 				B61B2EA51950027100AE5908 /* Roboto-LightItalic.ttf in Resources */,
 				B60D9D9A1930823A00CBE191 /* Icon120.png in Resources */,

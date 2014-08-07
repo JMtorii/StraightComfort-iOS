@@ -19,7 +19,7 @@
 //    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightHelpBarButton];
     
     appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    workstationShortcutArray = [NSArray arrayWithObjects:@"CHAIR", @"KEYBOARD TRAY", @"MOUSE", @"MONITOR", @"DOCUMENTS", @"WORK AREA & STORAGE", nil];
+    workstationShortcutArray = [NSArray arrayWithObjects:@"CHAIR", @"KEYBOARD TRAY", @"MOUSE", @"MONITOR", @"DOCUMENTS", @"ORGANIZATION", @"ADDITIONAL TOPICS", nil];
     
 }
 
@@ -84,6 +84,9 @@
             break;
         case 5:
             thumbnailImage = [UIImage imageNamed:@"workarea.png"];
+            break;
+        case 6:
+            thumbnailImage = [UIImage imageNamed:@"additional-topics.png"];
             break;
         default:
             break;
