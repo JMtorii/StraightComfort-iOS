@@ -20,14 +20,14 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="167"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MainTableViewCellLabel1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItZ-IN-g1d">
-                                            <rect key="frame" x="20" y="99" width="280" height="28"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MainTableViewCellLabel1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItZ-IN-g1d">
+                                            <rect key="frame" x="20" y="103" width="280" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" red="0.1176470667" green="0.68235296010000002" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="280" placeholderIntrinsicHeight="28" text="MainTableViewCellLabel2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bt3-yT-8vj">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="280" placeholderIntrinsicHeight="28" text="MainTableViewCellLabel2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bt3-yT-8vj">
                                             <rect key="frame" x="20" y="126" width="280" height="28"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -35,6 +35,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="bt3-yT-8vj" firstAttribute="trailing" secondItem="ItZ-IN-g1d" secondAttribute="trailing" id="Fo4-gw-0fx"/>
+                                        <constraint firstItem="bt3-yT-8vj" firstAttribute="leading" secondItem="ItZ-IN-g1d" secondAttribute="leading" id="NGC-3A-a0A"/>
+                                        <constraint firstAttribute="bottom" secondItem="ItZ-IN-g1d" secondAttribute="bottom" constant="40" id="OVJ-uG-abq"/>
+                                        <constraint firstAttribute="bottom" secondItem="bt3-yT-8vj" secondAttribute="bottom" constant="13" id="UnE-jR-ICq"/>
+                                        <constraint firstItem="bt3-yT-8vj" firstAttribute="leading" secondItem="dxe-7U-qCX" secondAttribute="leading" constant="20" symbolic="YES" id="p6x-57-JhJ"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>

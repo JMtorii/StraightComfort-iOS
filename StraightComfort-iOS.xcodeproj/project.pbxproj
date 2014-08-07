@@ -551,6 +551,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Jun Torii";
 				TargetAttributes = {
+					B6E8C82418C50DC400550D49 = {
+						DevelopmentTeam = QHQUS66VSQ;
+					};
 					B6E8C83F18C50DC400550D49 = {
 						TestTargetID = B6E8C82418C50DC400550D49;
 					};
@@ -795,11 +798,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StraightComfort-iOS/StraightComfort-iOS-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/StraightComfort-iOS/StraightComfort-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "StraightComfort-iOS";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -810,11 +816,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StraightComfort-iOS/StraightComfort-iOS-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/StraightComfort-iOS/StraightComfort-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "StraightComfort-iOS";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

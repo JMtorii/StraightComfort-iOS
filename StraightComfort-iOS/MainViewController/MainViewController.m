@@ -16,7 +16,7 @@
     
     appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
-    if (!IS_IPHONE_5) {
+    if (!IS_IPHONE) {
         self.tableView.scrollEnabled = YES;
     }
     
@@ -47,8 +47,13 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    return (IS_IPHONE_5) ? 168 : 140;
-    return 168;
+    if (IS_IPHONE_5) {
+        return 168;
+    } else if (IS_IPHONE && !IS_IPHONE_5) {
+        return 140;
+    } else {
+        return 200;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
