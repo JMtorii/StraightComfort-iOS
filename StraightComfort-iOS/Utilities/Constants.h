@@ -30,8 +30,8 @@
 #define kRobotoBoldCondensed @"Roboto-BoldCondensed"
 
 // Screen size
-// #define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 #define IS_IPHONE_5 (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 568.0)
 #define IS_RETINA ([[UIScreen mainScreen] scale] == 2.0)
-
+#define IS_IPAD_RETINA (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad && [[UIScreen mainScreen] scale] == 2.0)
