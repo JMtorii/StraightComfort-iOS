@@ -74,22 +74,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StraightComfort-iOS/PossibleSolutionViewController/PossibleSolutionViewController.m"
-            timestampString = "426757920.645307"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
-            landmarkName = "-initSectionNames"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StraightComfort-iOS/PossibleSolutionViewController/PossibleSolutionViewController.m"
             timestampString = "426757021.524919"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"

@@ -61,9 +61,13 @@
 		B643E7F7192F21C50062159A /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B643E7F6192F21C50062159A /* MainTableViewCell.xib */; };
 		B64926631957E89B00AE2D08 /* WorkstationSetupXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B64926621957E89B00AE2D08 /* WorkstationSetupXMLParser.m */; };
 		B64BC99519725D890062A4EA /* finger.gif in Resources */ = {isa = PBXBuildFile; fileRef = B64BC99419725D890062A4EA /* finger.gif */; };
-		B64BC9AE197665480062A4EA /* chairImage0.gif in Resources */ = {isa = PBXBuildFile; fileRef = B64BC9AD197665480062A4EA /* chairImage0.gif */; };
 		B64BC9B01977A5EA0062A4EA /* TutorialStrings.plist in Resources */ = {isa = PBXBuildFile; fileRef = B64BC9AF1977A5EA0062A4EA /* TutorialStrings.plist */; };
 		B6550D56193168FD00FAF97F /* MainViewNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6550D55193168FD00FAF97F /* MainViewNavigationController.m */; };
+		B68F65CC199494DD00D63433 /* chairImage0.gif in Resources */ = {isa = PBXBuildFile; fileRef = B68F65CB199494DD00D63433 /* chairImage0.gif */; };
+		B68F65CE199495D300D63433 /* chairImage1.gif in Resources */ = {isa = PBXBuildFile; fileRef = B68F65CD199495D300D63433 /* chairImage1.gif */; };
+		B68F65D2199496A700D63433 /* chairImage2.gif in Resources */ = {isa = PBXBuildFile; fileRef = B68F65CF199496A700D63433 /* chairImage2.gif */; };
+		B68F65D3199496A700D63433 /* chairImage3.gif in Resources */ = {isa = PBXBuildFile; fileRef = B68F65D0199496A700D63433 /* chairImage3.gif */; };
+		B68F65D61994974D00D63433 /* chairImage5.gif in Resources */ = {isa = PBXBuildFile; fileRef = B68F65D51994974D00D63433 /* chairImage5.gif */; };
 		B69807C119933ED100044128 /* additional-topics.png in Resources */ = {isa = PBXBuildFile; fileRef = B69807C019933ED100044128 /* additional-topics.png */; };
 		B6AE72A519404DAF00FBFB5E /* PossibleSolutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE72A319404DAF00FBFB5E /* PossibleSolutionViewController.m */; };
 		B6AE72A619404DAF00FBFB5E /* PossibleSolutionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72A419404DAF00FBFB5E /* PossibleSolutionViewController.xib */; };
@@ -174,10 +178,14 @@
 		B64926611957E89B00AE2D08 /* WorkstationSetupXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkstationSetupXMLParser.h; sourceTree = "<group>"; };
 		B64926621957E89B00AE2D08 /* WorkstationSetupXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkstationSetupXMLParser.m; sourceTree = "<group>"; };
 		B64BC99419725D890062A4EA /* finger.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = finger.gif; sourceTree = "<group>"; };
-		B64BC9AD197665480062A4EA /* chairImage0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chairImage0.gif; sourceTree = "<group>"; };
 		B64BC9AF1977A5EA0062A4EA /* TutorialStrings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TutorialStrings.plist; sourceTree = "<group>"; };
 		B6550D54193168FD00FAF97F /* MainViewNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewNavigationController.h; sourceTree = "<group>"; };
 		B6550D55193168FD00FAF97F /* MainViewNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewNavigationController.m; sourceTree = "<group>"; };
+		B68F65CB199494DD00D63433 /* chairImage0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chairImage0.gif; sourceTree = "<group>"; };
+		B68F65CD199495D300D63433 /* chairImage1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chairImage1.gif; sourceTree = "<group>"; };
+		B68F65CF199496A700D63433 /* chairImage2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chairImage2.gif; sourceTree = "<group>"; };
+		B68F65D0199496A700D63433 /* chairImage3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chairImage3.gif; sourceTree = "<group>"; };
+		B68F65D51994974D00D63433 /* chairImage5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chairImage5.gif; sourceTree = "<group>"; };
 		B69807C019933ED100044128 /* additional-topics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "additional-topics.png"; sourceTree = "<group>"; };
 		B6AE72A219404DAF00FBFB5E /* PossibleSolutionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PossibleSolutionViewController.h; sourceTree = "<group>"; };
 		B6AE72A319404DAF00FBFB5E /* PossibleSolutionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PossibleSolutionViewController.m; sourceTree = "<group>"; };
@@ -297,6 +305,11 @@
 		B60D9D881930818100CBE191 /* Original Assets */ = {
 			isa = PBXGroup;
 			children = (
+				B68F65CB199494DD00D63433 /* chairImage0.gif */,
+				B68F65CD199495D300D63433 /* chairImage1.gif */,
+				B68F65CF199496A700D63433 /* chairImage2.gif */,
+				B68F65D0199496A700D63433 /* chairImage3.gif */,
+				B68F65D51994974D00D63433 /* chairImage5.gif */,
 				B69807C019933ED100044128 /* additional-topics.png */,
 				4E065E84193A865400A70377 /* chair.png */,
 				B6AE72BD1946CC7800FBFB5E /* keyboard.png */,
@@ -321,7 +334,6 @@
 				B6EDCD62197BABF50003BD71 /* welcomePage2.png */,
 				B6EDCD63197BABF50003BD71 /* welcomePage3.png */,
 				B64BC99419725D890062A4EA /* finger.gif */,
-				B64BC9AD197665480062A4EA /* chairImage0.gif */,
 			);
 			path = "Original Assets";
 			sourceTree = "<group>";
@@ -586,6 +598,8 @@
 				B6D7DF35196E566100478A94 /* PossibleSolutionStrings.plist in Resources */,
 				B60D9D9F1930823A00CBE191 /* Launchiphone.png in Resources */,
 				B61B2EA21950027100AE5908 /* Roboto-CondensedItalic.ttf in Resources */,
+				B68F65CE199495D300D63433 /* chairImage1.gif in Resources */,
+				B68F65CC199494DD00D63433 /* chairImage0.gif in Resources */,
 				B60D9D971930823A00CBE191 /* Icon60.png in Resources */,
 				B6AE72BE1946CC7800FBFB5E /* keyboard.png in Resources */,
 				B61B2EA81950027100AE5908 /* Roboto-Regular.ttf in Resources */,
@@ -596,6 +610,7 @@
 				B61B2E9F1950027100AE5908 /* Roboto-BoldCondensedItalic.ttf in Resources */,
 				B61B2EB71952AFA300AE5908 /* welcomePage1.png in Resources */,
 				B69807C119933ED100044128 /* additional-topics.png in Resources */,
+				B68F65D3199496A700D63433 /* chairImage3.gif in Resources */,
 				B6DAB62D192745B100649B99 /* MainViewController.storyboard in Resources */,
 				B61B2EA51950027100AE5908 /* Roboto-LightItalic.ttf in Resources */,
 				B60D9D9A1930823A00CBE191 /* Icon120.png in Resources */,
@@ -620,6 +635,7 @@
 				4E065E85193A865400A70377 /* chair.png in Resources */,
 				B60D9DA01930823A00CBE191 /* logo.png in Resources */,
 				B6AE72C41946D18700FBFB5E /* monitor.png in Resources */,
+				B68F65D61994974D00D63433 /* chairImage5.gif in Resources */,
 				B60D9D9E1930823A00CBE191 /* Launchipad@2x.png in Resources */,
 				B64BC99519725D890062A4EA /* finger.gif in Resources */,
 				B61B2E9C1950027100AE5908 /* Roboto-BlackItalic.ttf in Resources */,
@@ -636,12 +652,12 @@
 				B60D9D9D1930823A00CBE191 /* Launchipad.png in Resources */,
 				B6AE72AF19404F4400FBFB5E /* ShortcutTableViewCell.xib in Resources */,
 				B60D9DA71930829E00CBE191 /* Champagne & Limousines Bold.ttf in Resources */,
-				B64BC9AE197665480062A4EA /* chairImage0.gif in Resources */,
 				B6EDCD64197BABF60003BD71 /* welcomePage2.png in Resources */,
 				B61B2EAA1950027100AE5908 /* Roboto-ThinItalic.ttf in Resources */,
 				B64BC9B01977A5EA0062A4EA /* TutorialStrings.plist in Resources */,
 				B61B2EA31950027100AE5908 /* Roboto-Italic.ttf in Resources */,
 				B60D9DA61930829E00CBE191 /* Champagne & Limousines Bold Italic.ttf in Resources */,
+				B68F65D2199496A700D63433 /* chairImage2.gif in Resources */,
 				B6AE72B019404F4400FBFB5E /* ShortcutViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
