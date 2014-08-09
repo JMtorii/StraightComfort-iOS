@@ -34,13 +34,15 @@
         self.desc.text = @"Swipe left";
         self.desc.font = [UIFont fontWithName:kRobotoRegular size:18];
         
-        NSURL *url = [[NSBundle mainBundle] URLForResource:@"finger" withExtension:@"gif"];
-        NSData *data1 = [NSData dataWithContentsOfURL:url];
-        FLAnimatedImage *image = [[FLAnimatedImage alloc] initWithAnimatedGIFData:data1];
-        FLAnimatedImageView *imageView = [[FLAnimatedImageView alloc] init];
-        imageView.animatedImage = image;
-        imageView.frame = CGRectMake(20.0, 330.0, 280.0, 199.0);
-        [self.view addSubview:imageView];
+        if (IS_IPHONE_5) {
+            NSURL *url = [[NSBundle mainBundle] URLForResource:@"finger" withExtension:@"gif"];
+            NSData *data1 = [NSData dataWithContentsOfURL:url];
+            FLAnimatedImage *image = [[FLAnimatedImage alloc] initWithAnimatedGIFData:data1];
+            FLAnimatedImageView *imageView = [[FLAnimatedImageView alloc] init];
+            imageView.animatedImage = image;
+            imageView.frame = CGRectMake(20.0, 330.0, 280.0, 199.0);
+            [self.view addSubview:imageView];
+        }
         
         [self.nextButton setHidden:true];
                 
