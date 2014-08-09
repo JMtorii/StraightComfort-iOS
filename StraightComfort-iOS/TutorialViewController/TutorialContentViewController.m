@@ -35,7 +35,7 @@
     self.titleLabel.font = [UIFont fontWithName:kRobotoMedium size:19];
     
     // Do not change width! This ensures 20px on both ends.
-    CGRect labelFrame = CGRectMake(20, 440, 290, 50);
+    CGRect labelFrame = (IS_IPHONE_5) ? CGRectMake(20, 425, 290, 50) : CGRectMake(20, 335, 290, 50);
     _curDescLabel = [[UILabel alloc] initWithFrame:labelFrame];
     [_curDescLabel setText:_curDescText];
     [_curDescLabel setTextColor:[UIColor whiteColor]];

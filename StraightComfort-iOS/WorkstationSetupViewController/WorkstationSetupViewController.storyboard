@@ -117,26 +117,16 @@
                                     <constraint firstAttribute="height" constant="180" id="emZ-7P-MFi"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zxp-fB-2F3">
-                                <rect key="frame" x="20" y="89" width="280" height="230"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="deviceRGB"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="WNE-AH-JPE" secondAttribute="bottom" id="5Ti-t4-VLa"/>
-                            <constraint firstItem="Zxp-fB-2F3" firstAttribute="leading" secondItem="9vB-gp-OX9" secondAttribute="leading" constant="20" symbolic="YES" id="Ny1-O0-Jr1"/>
-                            <constraint firstItem="Zxp-fB-2F3" firstAttribute="top" secondItem="dUM-gK-bGz" secondAttribute="bottom" constant="69" id="Zdt-4v-h4G"/>
-                            <constraint firstItem="WNE-AH-JPE" firstAttribute="centerX" secondItem="Zxp-fB-2F3" secondAttribute="centerX" id="bZF-Y0-Ip2"/>
-                            <constraint firstItem="WNE-AH-JPE" firstAttribute="top" secondItem="Zxp-fB-2F3" secondAttribute="bottom" constant="69" id="kap-T5-EBf"/>
                             <constraint firstItem="QAB-wf-FoL" firstAttribute="top" secondItem="WNE-AH-JPE" secondAttribute="bottom" id="rEm-Fu-Doq"/>
                             <constraint firstItem="WNE-AH-JPE" firstAttribute="leading" secondItem="9vB-gp-OX9" secondAttribute="leading" id="rmf-k6-eR6"/>
                             <constraint firstAttribute="trailing" secondItem="WNE-AH-JPE" secondAttribute="trailing" id="s7D-un-oOl"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="animationFrame" destination="Zxp-fB-2F3" id="UEg-O6-etR"/>
                         <outlet property="descriptionFrame" destination="WNE-AH-JPE" id="hrU-dd-PkQ"/>
                     </connections>
                 </viewController>
