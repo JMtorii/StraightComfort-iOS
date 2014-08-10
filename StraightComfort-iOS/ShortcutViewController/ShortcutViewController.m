@@ -62,7 +62,7 @@
     
     cell.shorcutTitleLabel.text = [workstationShortcutArray objectAtIndex:indexPath.row];
     cell.shorcutTitleLabel.textColor = [UIColor colorWithRed:15.0/255.0 green:153.0/255.0 blue:255.0/255.0 alpha:1.0];
-    cell.shorcutTitleLabel.font = [UIFont fontWithName:kRobotoRegular size:22];
+    cell.shorcutTitleLabel.font = (IS_IPHONE) ? [UIFont fontWithName:kRobotoRegular size:22] : [UIFont fontWithName:kRobotoRegular size:34];
     
     UIImage *thumbnailImage;
     

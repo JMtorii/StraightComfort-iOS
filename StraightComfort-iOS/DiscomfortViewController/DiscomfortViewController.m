@@ -49,12 +49,18 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return (IS_IPHONE_5) ? 85 : 66.5;
+    if (IS_IPHONE_5) {
+        return 85;
+    } else if (!IS_IPHONE_5 && IS_IPHONE) {
+        return 66.5;
+    } else {
+        return 176;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *tableIdentifier = @"DiscomfortTableViewCell";
+    NSString *tableIdentifier = (IS_IPHONE) ? @"DiscomfortTableViewCell_iPhone" : @"DiscomfortTableViewCell_iPad";
     DiscomfortTableViewCell *cell = (DiscomfortTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableIdentifier];
     
     // Configure the cell...
@@ -65,7 +71,7 @@
     
     cell.discomfortTitle.text = [discomfortArray objectAtIndex:indexPath.row];
     cell.discomfortTitle.textColor = [UIColor colorWithRed:15.0/255.0 green:153.0/255.0 blue:255.0/255.0 alpha:1.0];
-    cell.discomfortTitle.font = [UIFont fontWithName:kRobotoRegular size:22];
+    cell.discomfortTitle.font = (IS_IPHONE) ? [UIFont fontWithName:kRobotoRegular size:22] : [UIFont fontWithName:kRobotoRegular size:34];
         
     return cell;
 }
