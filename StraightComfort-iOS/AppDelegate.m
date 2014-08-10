@@ -98,8 +98,9 @@
                                                            [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0], NSForegroundColorAttributeName, [UIFont fontWithName:kRobotoMedium size:22.0], NSFontAttributeName, nil]];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     
-    
-    mainStoryboard = [UIStoryboard storyboardWithName:@"MainViewController" bundle: nil];
+    NSString *storyboardName = [[NSString alloc] init];
+    storyboardName = (IS_IPHONE) ? @"MainViewController_iPhone" : @"MainViewController_iPad";
+    mainStoryboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
     navController = (UINavigationController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"MainViewNavigationController"];
     self.window.rootViewController = navController;
 }

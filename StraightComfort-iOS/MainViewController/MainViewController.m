@@ -71,8 +71,8 @@
         firstLine.font = [UIFont fontWithName:kRobotoRegular size:25];
         secondLine.font = [UIFont fontWithName:kRobotoRegular size:25];
     } else {
-        firstLine.font = [UIFont fontWithName:kRobotoRegular size:35];
-        secondLine.font = [UIFont fontWithName:kRobotoRegular size:35];
+        firstLine.font = [UIFont fontWithName:kRobotoRegular size:40];
+        secondLine.font = [UIFont fontWithName:kRobotoRegular size:40];
     }
     
     return cell;

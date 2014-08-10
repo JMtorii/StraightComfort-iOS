@@ -63,7 +63,6 @@
         <scene sceneID="kkt-LZ-Th0">
             <objects>
                 <navigationController storyboardIdentifier="MainViewNavigationController" definesPresentationContext="YES" id="2SR-VM-x9s" sceneMemberID="viewController">
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0w4-8F-ogs">
                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>

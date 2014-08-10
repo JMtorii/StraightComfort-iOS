@@ -47,6 +47,10 @@
 		<string>Roboto-Thin.ttf</string>
 		<string>Roboto-ThinItalic.ttf</string>
 	</array>
+	<key>UIMainStoryboardFile</key>
+	<string>MainViewController_iPhone</string>
+	<key>UIMainStoryboardFile~ipad</key>
+	<string>MainViewController_iPad</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
