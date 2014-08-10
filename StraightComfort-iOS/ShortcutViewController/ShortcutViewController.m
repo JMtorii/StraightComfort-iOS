@@ -45,13 +45,13 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 90;
+    return (IS_IPHONE) ? 90 : 180;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *tableIdentifier = @"ShortcutTableViewCell";
+    NSString *tableIdentifier = (IS_IPHONE) ? @"ShortcutTableViewCell_iPhone" : @"ShortcutTableViewCell_iPad";
     ShortcutTableViewCell *cell = (ShortcutTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableIdentifier];
     
     // Configure the cell...

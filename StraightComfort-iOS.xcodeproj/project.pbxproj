@@ -17,6 +17,7 @@
 		4E339C05193403D700B9BDE3 /* DiscomfortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E339C03193403D700B9BDE3 /* DiscomfortViewController.m */; };
 		4E339C06193403D700B9BDE3 /* DiscomfortViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E339C04193403D700B9BDE3 /* DiscomfortViewController.xib */; };
 		4E44341A199800B4007CA97A /* MainViewController_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E443419199800B4007CA97A /* MainViewController_iPad.storyboard */; };
+		4E646811199814B40018E5B8 /* ShortcutTableViewCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E646810199814B40018E5B8 /* ShortcutTableViewCell_iPad.xib */; };
 		4EB572491955FA460022E9C9 /* WorkstationSetupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB572481955FA460022E9C9 /* WorkstationSetupViewController.storyboard */; };
 		4EB5724D1955FABD0022E9C9 /* WorkstationContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB5724C1955FABD0022E9C9 /* WorkstationContentViewController.m */; };
 		4EB57267195650160022E9C9 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB57264195650160022E9C9 /* FLAnimatedImage.m */; };
@@ -77,7 +78,7 @@
 		B6AE72A519404DAF00FBFB5E /* PossibleSolutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE72A319404DAF00FBFB5E /* PossibleSolutionViewController.m */; };
 		B6AE72A619404DAF00FBFB5E /* PossibleSolutionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72A419404DAF00FBFB5E /* PossibleSolutionViewController.xib */; };
 		B6AE72AE19404F4400FBFB5E /* ShortcutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE72A919404F4400FBFB5E /* ShortcutTableViewCell.m */; };
-		B6AE72AF19404F4400FBFB5E /* ShortcutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72AA19404F4400FBFB5E /* ShortcutTableViewCell.xib */; };
+		B6AE72AF19404F4400FBFB5E /* ShortcutTableViewCell_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72AA19404F4400FBFB5E /* ShortcutTableViewCell_iPhone.xib */; };
 		B6AE72B019404F4400FBFB5E /* ShortcutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72AB19404F4400FBFB5E /* ShortcutViewController.xib */; };
 		B6AE72B119404F4400FBFB5E /* ShortcutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE72AD19404F4400FBFB5E /* ShortcutViewController.m */; };
 		B6AE72B51942F1BE00FBFB5E /* PossibleSolutionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AE72B31942F1BE00FBFB5E /* PossibleSolutionTableViewCell.m */; };
@@ -132,6 +133,7 @@
 		4E339C03193403D700B9BDE3 /* DiscomfortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiscomfortViewController.m; path = "StraightComfort-iOS/DiscomfortViewController/DiscomfortViewController.m"; sourceTree = SOURCE_ROOT; };
 		4E339C04193403D700B9BDE3 /* DiscomfortViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DiscomfortViewController.xib; path = "StraightComfort-iOS/DiscomfortViewController/DiscomfortViewController.xib"; sourceTree = SOURCE_ROOT; };
 		4E443419199800B4007CA97A /* MainViewController_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainViewController_iPad.storyboard; sourceTree = "<group>"; };
+		4E646810199814B40018E5B8 /* ShortcutTableViewCell_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShortcutTableViewCell_iPad.xib; sourceTree = "<group>"; };
 		4EB572481955FA460022E9C9 /* WorkstationSetupViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WorkstationSetupViewController.storyboard; sourceTree = "<group>"; };
 		4EB5724B1955FABD0022E9C9 /* WorkstationContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkstationContentViewController.h; sourceTree = "<group>"; };
 		4EB5724C1955FABD0022E9C9 /* WorkstationContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkstationContentViewController.m; sourceTree = "<group>"; };
@@ -202,7 +204,7 @@
 		B6AE72A419404DAF00FBFB5E /* PossibleSolutionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PossibleSolutionViewController.xib; sourceTree = "<group>"; };
 		B6AE72A819404F4400FBFB5E /* ShortcutTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortcutTableViewCell.h; sourceTree = "<group>"; };
 		B6AE72A919404F4400FBFB5E /* ShortcutTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShortcutTableViewCell.m; sourceTree = "<group>"; };
-		B6AE72AA19404F4400FBFB5E /* ShortcutTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShortcutTableViewCell.xib; sourceTree = "<group>"; };
+		B6AE72AA19404F4400FBFB5E /* ShortcutTableViewCell_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShortcutTableViewCell_iPhone.xib; sourceTree = "<group>"; };
 		B6AE72AB19404F4400FBFB5E /* ShortcutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShortcutViewController.xib; sourceTree = "<group>"; };
 		B6AE72AC19404F4400FBFB5E /* ShortcutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortcutViewController.h; sourceTree = "<group>"; };
 		B6AE72AD19404F4400FBFB5E /* ShortcutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShortcutViewController.m; sourceTree = "<group>"; };
@@ -413,7 +415,8 @@
 				B6AE72AB19404F4400FBFB5E /* ShortcutViewController.xib */,
 				B6AE72A819404F4400FBFB5E /* ShortcutTableViewCell.h */,
 				B6AE72A919404F4400FBFB5E /* ShortcutTableViewCell.m */,
-				B6AE72AA19404F4400FBFB5E /* ShortcutTableViewCell.xib */,
+				B6AE72AA19404F4400FBFB5E /* ShortcutTableViewCell_iPhone.xib */,
+				4E646810199814B40018E5B8 /* ShortcutTableViewCell_iPad.xib */,
 			);
 			path = ShortcutViewController;
 			sourceTree = "<group>";
@@ -656,6 +659,7 @@
 				B68F65E11994A7CD00D63433 /* documentsImage2.gif in Resources */,
 				B6AE72C41946D18700FBFB5E /* monitor.png in Resources */,
 				B68F65D61994974D00D63433 /* chairImage5.gif in Resources */,
+				4E646811199814B40018E5B8 /* ShortcutTableViewCell_iPad.xib in Resources */,
 				B60D9D9E1930823A00CBE191 /* Launchipad@2x.png in Resources */,
 				B64BC99519725D890062A4EA /* finger.gif in Resources */,
 				B61B2E9C1950027100AE5908 /* Roboto-BlackItalic.ttf in Resources */,
@@ -670,7 +674,7 @@
 				B61B2E9E1950027100AE5908 /* Roboto-BoldCondensed.ttf in Resources */,
 				B61B2EA91950027100AE5908 /* Roboto-Thin.ttf in Resources */,
 				B60D9D9D1930823A00CBE191 /* Launchipad.png in Resources */,
-				B6AE72AF19404F4400FBFB5E /* ShortcutTableViewCell.xib in Resources */,
+				B6AE72AF19404F4400FBFB5E /* ShortcutTableViewCell_iPhone.xib in Resources */,
 				B60D9DA71930829E00CBE191 /* Champagne & Limousines Bold.ttf in Resources */,
 				B6EDCD64197BABF60003BD71 /* welcomePage2.png in Resources */,
 				B61B2EAA1950027100AE5908 /* Roboto-ThinItalic.ttf in Resources */,
