@@ -36,11 +36,12 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="bt3-yT-8vj" firstAttribute="trailing" secondItem="ItZ-IN-g1d" secondAttribute="trailing" id="Fo4-gw-0fx"/>
-                                        <constraint firstItem="bt3-yT-8vj" firstAttribute="leading" secondItem="ItZ-IN-g1d" secondAttribute="leading" id="NGC-3A-a0A"/>
-                                        <constraint firstAttribute="bottom" secondItem="ItZ-IN-g1d" secondAttribute="bottom" constant="40" id="OVJ-uG-abq"/>
-                                        <constraint firstAttribute="bottom" secondItem="bt3-yT-8vj" secondAttribute="bottom" constant="13" id="UnE-jR-ICq"/>
-                                        <constraint firstItem="bt3-yT-8vj" firstAttribute="leading" secondItem="dxe-7U-qCX" secondAttribute="leading" constant="20" symbolic="YES" id="p6x-57-JhJ"/>
+                                        <constraint firstItem="bt3-yT-8vj" firstAttribute="leading" secondItem="dxe-7U-qCX" secondAttribute="leading" constant="20" id="0hX-cQ-3Ro"/>
+                                        <constraint firstAttribute="bottom" secondItem="ItZ-IN-g1d" secondAttribute="bottom" constant="40" id="Di4-e1-B7U"/>
+                                        <constraint firstAttribute="trailing" secondItem="bt3-yT-8vj" secondAttribute="trailing" constant="20" id="EMN-wt-bT9"/>
+                                        <constraint firstAttribute="bottom" secondItem="bt3-yT-8vj" secondAttribute="bottom" constant="13" id="kiD-Gm-WMc"/>
+                                        <constraint firstItem="ItZ-IN-g1d" firstAttribute="leading" secondItem="dxe-7U-qCX" secondAttribute="leading" constant="20" id="mX2-dD-dhV"/>
+                                        <constraint firstAttribute="trailing" secondItem="ItZ-IN-g1d" secondAttribute="trailing" constant="20" id="wYQ-Xy-zOX"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>

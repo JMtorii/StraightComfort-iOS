@@ -16,10 +16,6 @@
     
     appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
-    if (!IS_IPHONE) {
-        self.tableView.scrollEnabled = YES;
-    }
-    
     // Initialize table data
     homeTitlesLine1 = [NSArray arrayWithObjects:@"FULL", @"WORKSTATION", @"DISCOMFORT", nil];
     homeTitlesLine2 = [NSArray arrayWithObjects:@"WORKSTATION SETUP", @"SHORTCUT", @"", nil];
@@ -52,7 +48,7 @@
     } else if (IS_IPHONE && !IS_IPHONE_5) {
         return 140;
     } else {
-        return 200;
+        return 320;
     }
 }
 
@@ -67,11 +63,17 @@
     
     UILabel *firstLine = (UILabel *)[cell viewWithTag:100];
     firstLine.text = [homeTitlesLine1 objectAtIndex:indexPath.row];
-    firstLine.font = [UIFont fontWithName:kRobotoRegular size:25];
     
     UILabel *secondLine = (UILabel *)[cell viewWithTag:101];
     secondLine.text = [homeTitlesLine2 objectAtIndex:indexPath.row];
-    secondLine.font = [UIFont fontWithName:kRobotoRegular size:25];
+    
+    if (IS_IPHONE) {
+        firstLine.font = [UIFont fontWithName:kRobotoRegular size:25];
+        secondLine.font = [UIFont fontWithName:kRobotoRegular size:25];
+    } else {
+        firstLine.font = [UIFont fontWithName:kRobotoRegular size:35];
+        secondLine.font = [UIFont fontWithName:kRobotoRegular size:35];
+    }
     
     return cell;
 }
