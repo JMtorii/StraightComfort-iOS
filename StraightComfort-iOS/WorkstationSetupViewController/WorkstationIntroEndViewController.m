@@ -33,7 +33,7 @@
         
         self.desc.text = @"Swipe left";
         
-        self.desc.font = (IS_IPHONE) ? [UIFont fontWithName:kRobotoRegular size:18] : [UIFont fontWithName:kRobotoRegular size:36];
+        self.desc.font = (IS_IPHONE) ? [UIFont fontWithName:kRobotoRegular size:18] : [UIFont fontWithName:kRobotoRegular size:25];
         
         if (IS_IPHONE_5) {
             NSURL *url = [[NSBundle mainBundle] URLForResource:@"finger" withExtension:@"gif"];

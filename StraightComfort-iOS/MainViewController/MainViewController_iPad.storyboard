@@ -21,7 +21,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MainTableViewCellLabel1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItZ-IN-g1d">
-                                            <rect key="frame" x="20" y="221" width="728" height="38"/>
+                                            <rect key="frame" x="47" y="192" width="595" height="38"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="38" id="BMc-sR-Jv5"/>
@@ -31,7 +31,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="280" placeholderIntrinsicHeight="28" text="MainTableViewCellLabel2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bt3-yT-8vj">
-                                            <rect key="frame" x="20" y="259" width="728" height="40"/>
+                                            <rect key="frame" x="47" y="230" width="595" height="40"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                             <color key="textColor" red="0.058815896999999999" green="0.60112940299999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -39,12 +39,12 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="bt3-yT-8vj" secondAttribute="bottom" constant="20" id="9Di-Jv-KVe"/>
+                                        <constraint firstAttribute="bottom" secondItem="bt3-yT-8vj" secondAttribute="bottom" constant="49" id="9Di-Jv-KVe"/>
                                         <constraint firstItem="ItZ-IN-g1d" firstAttribute="leading" secondItem="bt3-yT-8vj" secondAttribute="leading" id="APG-uL-bTm"/>
-                                        <constraint firstAttribute="bottom" secondItem="ItZ-IN-g1d" secondAttribute="bottom" constant="60" id="EDD-SM-WUw"/>
-                                        <constraint firstItem="bt3-yT-8vj" firstAttribute="leading" secondItem="dxe-7U-qCX" secondAttribute="leading" constant="20" id="PD4-EN-dkj"/>
+                                        <constraint firstAttribute="bottom" secondItem="ItZ-IN-g1d" secondAttribute="bottom" constant="89" id="EDD-SM-WUw"/>
+                                        <constraint firstItem="bt3-yT-8vj" firstAttribute="leading" secondItem="dxe-7U-qCX" secondAttribute="leading" constant="47" id="PD4-EN-dkj"/>
                                         <constraint firstItem="bt3-yT-8vj" firstAttribute="top" secondItem="ItZ-IN-g1d" secondAttribute="bottom" id="S32-eY-5Kn"/>
-                                        <constraint firstAttribute="trailing" secondItem="bt3-yT-8vj" secondAttribute="trailing" constant="20" id="fCj-na-7cq"/>
+                                        <constraint firstAttribute="trailing" secondItem="bt3-yT-8vj" secondAttribute="trailing" constant="126" id="fCj-na-7cq"/>
                                         <constraint firstItem="ItZ-IN-g1d" firstAttribute="trailing" secondItem="bt3-yT-8vj" secondAttribute="trailing" id="wE3-O5-5bG"/>
                                     </constraints>
                                 </tableViewCellContentView>
