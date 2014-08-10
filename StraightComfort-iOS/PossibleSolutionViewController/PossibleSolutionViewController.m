@@ -61,12 +61,16 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 125;
+    if (IS_IPHONE) {
+        return 125;
+    } else {
+        return 250;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *tableIdentifier = @"PossibleSolutionTableViewCell";
+    NSString *tableIdentifier = (IS_IPHONE) ? @"PossibleSolutionTableViewCell_iPhone" : @"PossibleSolutionTableViewCell_iPad";
     PossibleSolutionTableViewCell *cell = (PossibleSolutionTableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableIdentifier];
     
     // Configure the cell...
@@ -79,18 +83,27 @@
     cell.possibleSolutionLabel.textColor = [UIColor colorWithRed:15.0/255.0 green:153.0/255.0 blue:255.0/255.0 alpha:1.0];
     cell.possibleSolutionLabel.font = [UIFont fontWithName:kRobotoRegular size:22];
     
-    NSArray *descs = [self getPointDescLabels: [completeSectionNames indexOfObject:[finalSectionNames objectAtIndex:indexPath.row]]];
+    NSArray *descs = [self getPointDescLabels: (int)[completeSectionNames indexOfObject:[finalSectionNames objectAtIndex:indexPath.row]]];
     
     cell.pointDesc1.text = [descs objectAtIndex:0];
-    cell.pointDesc1.font = [UIFont fontWithName:kRobotoRegular size:13];
+    
     
     if ([descs count] > 1) {
         cell.pointDesc2.text = [descs objectAtIndex:1];
     } else {
         cell.pointDesc2.text = @"";
     }
-        
-    cell.pointDesc2.font = [UIFont fontWithName:kRobotoRegular size:13];
+    
+    if (IS_IPHONE) {
+        cell.possibleSolutionLabel.font = [UIFont fontWithName:kRobotoRegular size:22];
+        cell.pointDesc1.font = [UIFont fontWithName:kRobotoRegular size:13];
+        cell.pointDesc2.font = [UIFont fontWithName:kRobotoRegular size:13];
+    } else {
+        cell.possibleSolutionLabel.font = [UIFont fontWithName:kRobotoRegular size:44];
+        cell.pointDesc1.font = [UIFont fontWithName:kRobotoRegular size:26];
+        cell.pointDesc2.font = [UIFont fontWithName:kRobotoRegular size:26];
+    }
+    
     
     return cell;
 }
@@ -99,8 +112,8 @@
 {
     appDelegate.groupIndex = 0;
     appDelegate.workstationArray = [[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"PossibleSolutionStrings" ofType:@"plist"]] objectAtIndex:indexPath.row];
-    appDelegate.titles = [self getPointDescLabels:indexPath.row];
-    appDelegate.maxGroupIndex = [appDelegate.titles count] - 1;
+    appDelegate.titles = [self getPointDescLabels:(int)indexPath.row];
+    appDelegate.maxGroupIndex = (int)[appDelegate.titles count] - 1;
     
 //    NSLog(@"%@", [[workstationShortcutArray objectAtIndex:indexPath.row] capitalizedString]);
     
