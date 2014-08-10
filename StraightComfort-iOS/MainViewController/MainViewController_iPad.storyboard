@@ -20,14 +20,17 @@
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="319"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MainTableViewCellLabel1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItZ-IN-g1d">
-                                            <rect key="frame" x="20" y="141" width="728" height="38"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MainTableViewCellLabel1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItZ-IN-g1d">
+                                            <rect key="frame" x="20" y="221" width="728" height="38"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="38" id="BMc-sR-Jv5"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                             <color key="textColor" red="0.1176470667" green="0.68235296010000002" blue="0.98823535439999999" alpha="1" colorSpace="deviceRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" placeholderIntrinsicWidth="280" placeholderIntrinsicHeight="28" text="MainTableViewCellLabel2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bt3-yT-8vj">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="280" placeholderIntrinsicHeight="28" text="MainTableViewCellLabel2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bt3-yT-8vj">
                                             <rect key="frame" x="20" y="259" width="728" height="40"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -36,12 +39,13 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="ItZ-IN-g1d" secondAttribute="trailing" constant="20" id="DAm-hd-RgW"/>
-                                        <constraint firstItem="bt3-yT-8vj" firstAttribute="top" secondItem="ItZ-IN-g1d" secondAttribute="bottom" constant="8" id="FkH-cZ-9gR"/>
-                                        <constraint firstItem="ItZ-IN-g1d" firstAttribute="leading" secondItem="dxe-7U-qCX" secondAttribute="leading" constant="20" id="NRH-xv-HzD"/>
-                                        <constraint firstAttribute="bottom" secondItem="bt3-yT-8vj" secondAttribute="bottom" constant="20" id="OeD-Pk-dwd"/>
-                                        <constraint firstAttribute="trailing" secondItem="bt3-yT-8vj" secondAttribute="trailing" constant="20" id="Zrt-8q-IUI"/>
-                                        <constraint firstItem="bt3-yT-8vj" firstAttribute="leading" secondItem="dxe-7U-qCX" secondAttribute="leading" constant="20" id="bMl-Yi-p6m"/>
+                                        <constraint firstAttribute="bottom" secondItem="bt3-yT-8vj" secondAttribute="bottom" constant="20" id="9Di-Jv-KVe"/>
+                                        <constraint firstItem="ItZ-IN-g1d" firstAttribute="leading" secondItem="bt3-yT-8vj" secondAttribute="leading" id="APG-uL-bTm"/>
+                                        <constraint firstAttribute="bottom" secondItem="ItZ-IN-g1d" secondAttribute="bottom" constant="60" id="EDD-SM-WUw"/>
+                                        <constraint firstItem="bt3-yT-8vj" firstAttribute="leading" secondItem="dxe-7U-qCX" secondAttribute="leading" constant="20" id="PD4-EN-dkj"/>
+                                        <constraint firstItem="bt3-yT-8vj" firstAttribute="top" secondItem="ItZ-IN-g1d" secondAttribute="bottom" id="S32-eY-5Kn"/>
+                                        <constraint firstAttribute="trailing" secondItem="bt3-yT-8vj" secondAttribute="trailing" constant="20" id="fCj-na-7cq"/>
+                                        <constraint firstItem="ItZ-IN-g1d" firstAttribute="trailing" secondItem="bt3-yT-8vj" secondAttribute="trailing" id="wE3-O5-5bG"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -80,7 +84,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rXv-CG-5lQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-652" y="-1003"/>
+            <point key="canvasLocation" x="-454" y="-1003"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
