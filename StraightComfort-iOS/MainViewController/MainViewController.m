@@ -89,8 +89,8 @@
         appDelegate.groupIndex = 0;
         appDelegate.workstationArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"WorkstationSetupStrings" ofType:@"plist"]];
         [appDelegate initTitles];
-        
-        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"WorkstationSetupViewController" bundle:nil];
+        NSString *storyboardName = (IS_IPHONE) ? @"WorkstationSetupViewController_iPhone" : @"WorkstationSetupViewController_iPad";
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
         viewController = [sb instantiateViewControllerWithIdentifier:@"WorkstationSetupViewController"];
         
     

@@ -115,9 +115,8 @@
     appDelegate.titles = [self getPointDescLabels:(int)indexPath.row];
     appDelegate.maxGroupIndex = (int)[appDelegate.titles count] - 1;
     
-//    NSLog(@"%@", [[workstationShortcutArray objectAtIndex:indexPath.row] capitalizedString]);
-    
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"WorkstationSetupViewController" bundle:nil];
+    NSString *storyboardName = (IS_IPHONE) ? @"WorkstationSetupViewController_iPhone" : @"WorkstationSetupViewController_iPad";
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
     UIViewController *viewController = [sb instantiateViewControllerWithIdentifier:@"WorkstationSetupViewController"];
     [[self navigationController] pushViewController:viewController animated:YES];
     

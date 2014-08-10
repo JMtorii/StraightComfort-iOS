@@ -30,18 +30,38 @@
     FLAnimatedImage *image = [[FLAnimatedImage alloc] initWithAnimatedGIFData:data1];
     FLAnimatedImageView *imageView = [[FLAnimatedImageView alloc] init];
     imageView.animatedImage = image;
-    imageView.frame = (IS_IPHONE_5) ? CGRectMake(20.0, 89.0, 280.0, 220.0) : CGRectMake(40.0, 79.0, 240.0, 180.0);    
+    
+    if (IS_IPHONE_5) {
+        imageView.frame = CGRectMake(20.0, 89.0, 280.0, 220.0);
+    } else if (!IS_IPHONE_5 && IS_IPHONE) {
+        imageView.frame = CGRectMake(40.0, 79.0, 240.0, 180.0);
+    } else {
+        imageView.frame = CGRectMake(100.0, 130.0, 580.0, 520.0);
+    }
+    
     [self.view addSubview:imageView];
     
     
     // Do not change width! This ensures 20px on both ends.
-    CGRect labelFrame = (IS_IPHONE_5) ? CGRectMake(20, 360, 280, 233) : CGRectMake(20, 280, 280, 233);
+    CGRect labelFrame;
+    
+    if (IS_IPHONE_5) {
+        labelFrame = CGRectMake(20, 360, 280, 233);
+    } else if (!IS_IPHONE_5 && IS_IPHONE) {
+        labelFrame = CGRectMake(20, 280, 280, 233);
+    } else {
+        labelFrame = CGRectMake(60, 720, 660, 233);
+    }
+    
     _descLabel = [[UILabel alloc] initWithFrame:labelFrame];
-//    [_descLabel setBackgroundColor:[UIColor orangeColor]];
     [_descLabel setText:_descText];
     [_descLabel setTextColor:[UIColor whiteColor]];
-        
-    [_descLabel setFont:[UIFont fontWithName:kRobotoRegular size:16]];
+    
+    if (IS_IPHONE) {
+        [_descLabel setFont:[UIFont fontWithName:kRobotoRegular size:16]];
+    } else {
+        [_descLabel setFont:[UIFont fontWithName:kRobotoRegular size:28]];
+    }
     
     // Tell the label to use an unlimited number of lines
     [_descLabel setNumberOfLines:0];

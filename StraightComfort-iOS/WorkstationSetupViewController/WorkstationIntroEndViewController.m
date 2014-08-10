@@ -32,7 +32,8 @@
         self.mainTitle.font = [UIFont fontWithName:kRobotoThin size:28];
         
         self.desc.text = @"Swipe left";
-        self.desc.font = [UIFont fontWithName:kRobotoRegular size:18];
+        
+        self.desc.font = (IS_IPHONE) ? [UIFont fontWithName:kRobotoRegular size:18] : [UIFont fontWithName:kRobotoRegular size:36];
         
         if (IS_IPHONE_5) {
             NSURL *url = [[NSBundle mainBundle] URLForResource:@"finger" withExtension:@"gif"];
@@ -49,25 +50,42 @@
     } else if (appDelegate.groupIndex != appDelegate.maxGroupIndex){
         self.mainTitle.text = @"Yay!";
         self.mainTitle.textColor = [UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1.0];
-        self.mainTitle.font = [UIFont fontWithName:kRobotoThin size:28];
         
         self.desc.text = @"We just made your workstation a bit better :)";
-        self.desc.font = [UIFont fontWithName:kRobotoRegular size:16];
         
         [self.nextButton setHidden:false];
         [self.nextButton setTitle:@"Make life better" forState:UIControlStateNormal];
-        self.nextButton.titleLabel.font = [UIFont fontWithName:kRobotoRegular size:22];
+        
+        if (IS_IPHONE) {
+            self.mainTitle.font = [UIFont fontWithName:kRobotoThin size:28];
+            self.desc.font = [UIFont fontWithName:kRobotoRegular size:16];
+            self.nextButton.titleLabel.font = [UIFont fontWithName:kRobotoRegular size:22];
+            
+        } else {
+            self.mainTitle.font = [UIFont fontWithName:kRobotoThin size:56];
+            self.desc.font = [UIFont fontWithName:kRobotoRegular size:32];
+            self.nextButton.titleLabel.font = [UIFont fontWithName:kRobotoRegular size:44];
+            
+        }
                 
     } else {
         self.mainTitle.text = @"Life's a lot better now! :)";
         self.mainTitle.textColor = [UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1.0];
-        self.mainTitle.font = [UIFont fontWithName:kRobotoThin size:28];
         
         [self.desc setHidden:true];
         
         [self.nextButton setHidden:false];
         [self.nextButton setTitle:@"Return home" forState:UIControlStateNormal];
-        self.nextButton.titleLabel.font = [UIFont fontWithName:kRobotoRegular size:22];
+        
+        if (IS_IPHONE) {
+            self.mainTitle.font = [UIFont fontWithName:kRobotoThin size:28];
+            self.nextButton.titleLabel.font = [UIFont fontWithName:kRobotoRegular size:22];
+            
+        } else {
+            self.mainTitle.font = [UIFont fontWithName:kRobotoThin size:56];
+            self.nextButton.titleLabel.font = [UIFont fontWithName:kRobotoRegular size:44];
+            
+        }
         
     }
     
@@ -84,7 +102,8 @@
     
     if (appDelegate.groupIndex <= appDelegate.maxGroupIndex) {
         NSLog(@"%d", appDelegate.groupIndex);
-        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"WorkstationSetupViewController" bundle:nil];
+        NSString *storyboardName = (IS_IPHONE) ? @"WorkstationSetupViewController_iPhone" : @"WorkstationSetupViewController_iPad";
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
         UIViewController *viewController = [sb instantiateViewControllerWithIdentifier:@"WorkstationSetupViewController"];
         [[self navigationController] pushViewController:viewController animated:YES];
         

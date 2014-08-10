@@ -20,7 +20,8 @@
 		4E646811199814B40018E5B8 /* ShortcutTableViewCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E646810199814B40018E5B8 /* ShortcutTableViewCell_iPad.xib */; };
 		4E6F8207199819DB0045C981 /* DiscomfortTableViewCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E6F8206199819DB0045C981 /* DiscomfortTableViewCell_iPad.xib */; };
 		4E6F8209199823F00045C981 /* PossibleSolutionTableViewCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E6F8208199823F00045C981 /* PossibleSolutionTableViewCell_iPad.xib */; };
-		4EB572491955FA460022E9C9 /* WorkstationSetupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB572481955FA460022E9C9 /* WorkstationSetupViewController.storyboard */; };
+		4E6F820B1998269D0045C981 /* WorkstationSetupViewController_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E6F820A1998269D0045C981 /* WorkstationSetupViewController_iPad.storyboard */; };
+		4EB572491955FA460022E9C9 /* WorkstationSetupViewController_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB572481955FA460022E9C9 /* WorkstationSetupViewController_iPhone.storyboard */; };
 		4EB5724D1955FABD0022E9C9 /* WorkstationContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB5724C1955FABD0022E9C9 /* WorkstationContentViewController.m */; };
 		4EB57267195650160022E9C9 /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB57264195650160022E9C9 /* FLAnimatedImage.m */; };
 		4EB57268195650160022E9C9 /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB57266195650160022E9C9 /* FLAnimatedImageView.m */; };
@@ -138,7 +139,8 @@
 		4E646810199814B40018E5B8 /* ShortcutTableViewCell_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShortcutTableViewCell_iPad.xib; sourceTree = "<group>"; };
 		4E6F8206199819DB0045C981 /* DiscomfortTableViewCell_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscomfortTableViewCell_iPad.xib; sourceTree = "<group>"; };
 		4E6F8208199823F00045C981 /* PossibleSolutionTableViewCell_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PossibleSolutionTableViewCell_iPad.xib; sourceTree = "<group>"; };
-		4EB572481955FA460022E9C9 /* WorkstationSetupViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WorkstationSetupViewController.storyboard; sourceTree = "<group>"; };
+		4E6F820A1998269D0045C981 /* WorkstationSetupViewController_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WorkstationSetupViewController_iPad.storyboard; sourceTree = "<group>"; };
+		4EB572481955FA460022E9C9 /* WorkstationSetupViewController_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WorkstationSetupViewController_iPhone.storyboard; sourceTree = "<group>"; };
 		4EB5724B1955FABD0022E9C9 /* WorkstationContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkstationContentViewController.h; sourceTree = "<group>"; };
 		4EB5724C1955FABD0022E9C9 /* WorkstationContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkstationContentViewController.m; sourceTree = "<group>"; };
 		4EB57263195650160022E9C9 /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
@@ -388,7 +390,8 @@
 		B61B2EB91952B98600AE5908 /* WorkstationSetupViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4EB572481955FA460022E9C9 /* WorkstationSetupViewController.storyboard */,
+				4EB572481955FA460022E9C9 /* WorkstationSetupViewController_iPhone.storyboard */,
+				4E6F820A1998269D0045C981 /* WorkstationSetupViewController_iPad.storyboard */,
 				B61B2EBA1952BA2A00AE5908 /* WorkstationSetupViewController.h */,
 				B61B2EBB1952BA2A00AE5908 /* WorkstationSetupViewController.m */,
 				4EB5724B1955FABD0022E9C9 /* WorkstationContentViewController.h */,
@@ -661,6 +664,7 @@
 				B61783881962587500A7185D /* WorkstationSetupStrings.plist in Resources */,
 				B6EDCD65197BABF60003BD71 /* welcomePage3.png in Resources */,
 				B6AE72C21946D02B00FBFB5E /* mouse.png in Resources */,
+				4E6F820B1998269D0045C981 /* WorkstationSetupViewController_iPad.storyboard in Resources */,
 				B6E8C83B18C50DC400550D49 /* Images.xcassets in Resources */,
 				4E065E85193A865400A70377 /* chair.png in Resources */,
 				B60D9DA01930823A00CBE191 /* logo.png in Resources */,
@@ -672,7 +676,7 @@
 				B64BC99519725D890062A4EA /* finger.gif in Resources */,
 				B61B2E9C1950027100AE5908 /* Roboto-BlackItalic.ttf in Resources */,
 				B643E7F7192F21C50062159A /* MainTableViewCell.xib in Resources */,
-				4EB572491955FA460022E9C9 /* WorkstationSetupViewController.storyboard in Resources */,
+				4EB572491955FA460022E9C9 /* WorkstationSetupViewController_iPhone.storyboard in Resources */,
 				B61B2EC219567E9100AE5908 /* WorkstationSetupStrings.xml in Resources */,
 				B6AE72CA1946D46800FBFB5E /* documents.png in Resources */,
 				4E339C06193403D700B9BDE3 /* DiscomfortViewController.xib in Resources */,
