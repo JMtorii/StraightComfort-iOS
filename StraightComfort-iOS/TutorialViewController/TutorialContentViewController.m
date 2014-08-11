@@ -32,14 +32,24 @@
     self.backgroundImageView.image = [UIImage imageNamed:self.imageFile];
     
     self.titleLabel.text = self.titleLabelText;
-    self.titleLabel.font = [UIFont fontWithName:kRobotoMedium size:19];
+    self.titleLabel.font = (IS_IPHONE) ? [UIFont fontWithName:kRobotoMedium size:19] : [UIFont fontWithName:kRobotoMedium size:30];
     
-    // Do not change width! This ensures 20px on both ends.
-    CGRect labelFrame = (IS_IPHONE_5) ? CGRectMake(20, 425, 290, 50) : CGRectMake(20, 335, 290, 50);
+    CGRect labelFrame;
+    if (IS_IPHONE_5) {
+        labelFrame = CGRectMake(20, 425, 290, 50);
+    } else if (!IS_IPHONE_5 && IS_IPHONE) {
+        labelFrame = CGRectMake(20, 335, 290, 50);
+    } else {
+        labelFrame = CGRectMake(60, 760, 660, 233);
+    }
     _curDescLabel = [[UILabel alloc] initWithFrame:labelFrame];
     [_curDescLabel setText:_curDescText];
     [_curDescLabel setTextColor:[UIColor whiteColor]];
-    [_curDescLabel setFont:[UIFont fontWithName:kRobotoRegular size:16]];
+    if (IS_IPHONE) {
+        [_curDescLabel setFont:[UIFont fontWithName:kRobotoRegular size:16]];
+    } else {
+        [_curDescLabel setFont:[UIFont fontWithName:kRobotoRegular size:26]];
+    }
     
     // Tell the label to use an unlimited number of lines
     [_curDescLabel setNumberOfLines:0];
@@ -47,7 +57,11 @@
     
     [self.view addSubview:_curDescLabel];
     
-    [self.startButton.titleLabel setFont:[UIFont fontWithName:kRobotoBold size:16]];
+    if (IS_IPHONE) {
+        [self.startButton.titleLabel setFont:[UIFont fontWithName:kRobotoBold size:16]];
+    } else {
+        [self.startButton.titleLabel setFont:[UIFont fontWithName:kRobotoBold size:26]];
+    }
     
     if (self.isButtonVisible) {
         self.startButton.enabled = true;

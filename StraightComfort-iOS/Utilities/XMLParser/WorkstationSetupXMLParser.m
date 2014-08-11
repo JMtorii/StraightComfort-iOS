@@ -81,8 +81,8 @@
         [workstationSetupDictionary setObject:descDictionary forKey:title];
         
     } else if([elementName isEqualToString:@"workstationGroup"]) {
-        NSArray *keys=[workstationSetupDictionary allKeys];
-        NSLog(@"Count: %d", [keys count]);
+        NSArray *keys = [workstationSetupDictionary allKeys];
+        NSLog(@"Count: %d", (int)[keys count]);
         for (NSString *str in keys) {
             NSLog(@"%@", str);
         }

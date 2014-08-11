@@ -30,7 +30,8 @@
     
     if (![[NSUserDefaults standardUserDefaults] boolForKey:@"hasPerformedFirstLaunch"]) {
         // On first launch, this block will execute
-        mainStoryboard = [UIStoryboard storyboardWithName:@"TutorialViewController" bundle: nil];
+        NSString *storyboardName = (IS_IPHONE) ? @"TutorialViewController_iPhone" : @"TutorialViewController_iPad";
+        mainStoryboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
         navController = (UINavigationController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"TutorialViewNavigationController"];
 //        TutorialViewController *tutorialViewController = [mainStoryboard instantiateViewControllerWithIdentifier:@"TutorialViewController"];
         self.window.rootViewController = navController;
@@ -115,7 +116,7 @@
     
     self.titles = tmp;
     
-    self.maxGroupIndex = [self.titles count] - 1;
+    self.maxGroupIndex = (int)[self.titles count] - 1;
 }
 
 - (void)initCurDescArray
