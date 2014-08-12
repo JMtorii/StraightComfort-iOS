@@ -64,7 +64,7 @@
     if (IS_IPHONE) {
         return 125;
     } else {
-        return 250;
+        return 200;
     }
 }
 
@@ -99,9 +99,9 @@
         cell.pointDesc1.font = [UIFont fontWithName:kRobotoRegular size:13];
         cell.pointDesc2.font = [UIFont fontWithName:kRobotoRegular size:13];
     } else {
-        cell.possibleSolutionLabel.font = [UIFont fontWithName:kRobotoRegular size:44];
-        cell.pointDesc1.font = [UIFont fontWithName:kRobotoRegular size:26];
-        cell.pointDesc2.font = [UIFont fontWithName:kRobotoRegular size:26];
+        cell.possibleSolutionLabel.font = [UIFont fontWithName:kRobotoRegular size:34];
+        cell.pointDesc1.font = [UIFont fontWithName:kRobotoRegular size:24];
+        cell.pointDesc2.font = [UIFont fontWithName:kRobotoRegular size:24];
     }
     
     
