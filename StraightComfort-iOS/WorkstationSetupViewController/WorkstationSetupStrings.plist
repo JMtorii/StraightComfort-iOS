@@ -156,22 +156,5 @@
 			</dict>
 		</array>
 	</dict>
-	<dict>
-		<key>Additional Topics</key>
-		<array>
-			<dict>
-				<key>addTopicsImage0</key>
-				<string>Task lighting: If you require additional lighting, ensure it is positioned below eye level to eliminate direct glare.</string>
-			</dict>
-			<dict>
-				<key>addTopicsImage1</key>
-				<string>Laptop use: If you have a laptop at your workstation, consider using an external mouse and keyboard, and raising or mounting the laptop monitor to the appropriate height.</string>
-			</dict>
-			<dict>
-				<key>addTopicsImage2</key>
-				<string>Wires: Ensure that all wires and extension cords are securely fastened and out of the way, to reduce the risk of tripping.</string>
-			</dict>
-		</array>
-	</dict>
 </array>
 </plist>
