@@ -63,16 +63,37 @@
 		B61B2EB71952AFA300AE5908 /* welcomePage1.png in Resources */ = {isa = PBXBuildFile; fileRef = B61B2EB61952AFA300AE5908 /* welcomePage1.png */; };
 		B61B2EBD1952BA2A00AE5908 /* WorkstationSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B61B2EBB1952BA2A00AE5908 /* WorkstationSetupViewController.m */; };
 		B61B2EC219567E9100AE5908 /* WorkstationSetupStrings.xml in Resources */ = {isa = PBXBuildFile; fileRef = B61B2EC119567E9100AE5908 /* WorkstationSetupStrings.xml */; };
+		B61D0E5319A8F95000BEADF7 /* chairImage0.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E4D19A8F95000BEADF7 /* chairImage0.gif */; };
+		B61D0E5419A8F95000BEADF7 /* chairImage1.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E4E19A8F95000BEADF7 /* chairImage1.gif */; };
+		B61D0E5519A8F95000BEADF7 /* chairImage2.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E4F19A8F95000BEADF7 /* chairImage2.gif */; };
+		B61D0E5619A8F95000BEADF7 /* chairImage3.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E5019A8F95000BEADF7 /* chairImage3.gif */; };
+		B61D0E5719A8F95000BEADF7 /* chairImage4.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E5119A8F95000BEADF7 /* chairImage4.gif */; };
+		B61D0E5819A8F95000BEADF7 /* chairImage5.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E5219A8F95000BEADF7 /* chairImage5.gif */; };
+		B61D0E5D19AA525300BEADF7 /* keyboardTrayImage0.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E5919AA525300BEADF7 /* keyboardTrayImage0.gif */; };
+		B61D0E5E19AA525300BEADF7 /* keyboardTrayImage1.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E5A19AA525300BEADF7 /* keyboardTrayImage1.gif */; };
+		B61D0E5F19AA525300BEADF7 /* keyboardTrayImage2.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E5B19AA525300BEADF7 /* keyboardTrayImage2.gif */; };
+		B61D0E6019AA525300BEADF7 /* keyboardTrayImage3.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E5C19AA525300BEADF7 /* keyboardTrayImage3.gif */; };
+		B61D0E6519AA531A00BEADF7 /* mouseImage0.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E6119AA531A00BEADF7 /* mouseImage0.gif */; };
+		B61D0E6619AA531A00BEADF7 /* mouseImage1.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E6219AA531A00BEADF7 /* mouseImage1.gif */; };
+		B61D0E6719AA531A00BEADF7 /* mouseImage2.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E6319AA531A00BEADF7 /* mouseImage2.gif */; };
+		B61D0E6819AA531A00BEADF7 /* mouseImage3.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E6419AA531A00BEADF7 /* mouseImage3.gif */; };
+		B61D0E6F19AA541300BEADF7 /* monitorImage0.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E6919AA541300BEADF7 /* monitorImage0.gif */; };
+		B61D0E7019AA541300BEADF7 /* monitorImage1.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E6A19AA541300BEADF7 /* monitorImage1.gif */; };
+		B61D0E7119AA541300BEADF7 /* monitorImage2.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E6B19AA541300BEADF7 /* monitorImage2.gif */; };
+		B61D0E7219AA541300BEADF7 /* monitorImage3.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E6C19AA541300BEADF7 /* monitorImage3.gif */; };
+		B61D0E7319AA541300BEADF7 /* monitorImage4.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E6D19AA541300BEADF7 /* monitorImage4.gif */; };
+		B61D0E7419AA541300BEADF7 /* monitorImage5.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E6E19AA541300BEADF7 /* monitorImage5.gif */; };
+		B61D0E7B19AA573A00BEADF7 /* orgImage0.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E7519AA573A00BEADF7 /* orgImage0.gif */; };
+		B61D0E7C19AA573A00BEADF7 /* orgImage1.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E7619AA573A00BEADF7 /* orgImage1.gif */; };
+		B61D0E7D19AA573A00BEADF7 /* orgImage2.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E7719AA573A00BEADF7 /* orgImage2.gif */; };
+		B61D0E7E19AA573A00BEADF7 /* orgImage3.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E7819AA573A00BEADF7 /* orgImage3.gif */; };
+		B61D0E7F19AA573A00BEADF7 /* orgImage4.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E7919AA573A00BEADF7 /* orgImage4.gif */; };
+		B61D0E8019AA573A00BEADF7 /* orgImage5.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E7A19AA573A00BEADF7 /* orgImage5.gif */; };
+		B61D0E8219AA59EF00BEADF7 /* finger.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E8119AA59EF00BEADF7 /* finger.gif */; };
 		B643E7F7192F21C50062159A /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B643E7F6192F21C50062159A /* MainTableViewCell.xib */; };
 		B64926631957E89B00AE2D08 /* WorkstationSetupXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B64926621957E89B00AE2D08 /* WorkstationSetupXMLParser.m */; };
-		B64BC99519725D890062A4EA /* finger.gif in Resources */ = {isa = PBXBuildFile; fileRef = B64BC99419725D890062A4EA /* finger.gif */; };
 		B64BC9B01977A5EA0062A4EA /* TutorialStrings.plist in Resources */ = {isa = PBXBuildFile; fileRef = B64BC9AF1977A5EA0062A4EA /* TutorialStrings.plist */; };
 		B6550D56193168FD00FAF97F /* MainViewNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6550D55193168FD00FAF97F /* MainViewNavigationController.m */; };
-		B68F65CC199494DD00D63433 /* chairImage0.gif in Resources */ = {isa = PBXBuildFile; fileRef = B68F65CB199494DD00D63433 /* chairImage0.gif */; };
-		B68F65CE199495D300D63433 /* chairImage1.gif in Resources */ = {isa = PBXBuildFile; fileRef = B68F65CD199495D300D63433 /* chairImage1.gif */; };
-		B68F65D2199496A700D63433 /* chairImage2.gif in Resources */ = {isa = PBXBuildFile; fileRef = B68F65CF199496A700D63433 /* chairImage2.gif */; };
-		B68F65D3199496A700D63433 /* chairImage3.gif in Resources */ = {isa = PBXBuildFile; fileRef = B68F65D0199496A700D63433 /* chairImage3.gif */; };
-		B68F65D61994974D00D63433 /* chairImage5.gif in Resources */ = {isa = PBXBuildFile; fileRef = B68F65D51994974D00D63433 /* chairImage5.gif */; };
 		B68F65DB1994A7B300D63433 /* documentsImage0.gif in Resources */ = {isa = PBXBuildFile; fileRef = B68F65D71994A7B300D63433 /* documentsImage0.gif */; };
 		B68F65DC1994A7B300D63433 /* documentsImage1.gif in Resources */ = {isa = PBXBuildFile; fileRef = B68F65D81994A7B300D63433 /* documentsImage1.gif */; };
 		B68F65E11994A7CD00D63433 /* documentsImage2.gif in Resources */ = {isa = PBXBuildFile; fileRef = B68F65DF1994A7CD00D63433 /* documentsImage2.gif */; };
@@ -92,6 +113,10 @@
 		B6AE72C41946D18700FBFB5E /* monitor.png in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72C31946D18700FBFB5E /* monitor.png */; };
 		B6AE72CA1946D46800FBFB5E /* documents.png in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72C91946D46800FBFB5E /* documents.png */; };
 		B6AE72CC1946D6CD00FBFB5E /* workarea.png in Resources */ = {isa = PBXBuildFile; fileRef = B6AE72CB1946D6CD00FBFB5E /* workarea.png */; };
+		B6D499CF19AA8C3B001E678E /* welcomePage0-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D499CB19AA8C3B001E678E /* welcomePage0-iPad.png */; };
+		B6D499D019AA8C3B001E678E /* welcomePage1-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D499CC19AA8C3B001E678E /* welcomePage1-iPad.png */; };
+		B6D499D119AA8C3B001E678E /* welcomePage2-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D499CD19AA8C3B001E678E /* welcomePage2-iPad.png */; };
+		B6D499D219AA8C3B001E678E /* welcomePage3-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D499CE19AA8C3B001E678E /* welcomePage3-iPad.png */; };
 		B6D7DF35196E566100478A94 /* PossibleSolutionStrings.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6D7DF34196E566100478A94 /* PossibleSolutionStrings.plist */; };
 		B6DAB62A192738CE00649B99 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DAB628192738CE00649B99 /* MainViewController.m */; };
 		B6DAB62D192745B100649B99 /* MainViewController_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DAB62C192745B100649B99 /* MainViewController_iPhone.storyboard */; };
@@ -189,18 +214,39 @@
 		B61B2EBA1952BA2A00AE5908 /* WorkstationSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkstationSetupViewController.h; sourceTree = "<group>"; };
 		B61B2EBB1952BA2A00AE5908 /* WorkstationSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkstationSetupViewController.m; sourceTree = "<group>"; };
 		B61B2EC119567E9100AE5908 /* WorkstationSetupStrings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = WorkstationSetupStrings.xml; sourceTree = "<group>"; };
+		B61D0E4D19A8F95000BEADF7 /* chairImage0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chairImage0.gif; sourceTree = "<group>"; };
+		B61D0E4E19A8F95000BEADF7 /* chairImage1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chairImage1.gif; sourceTree = "<group>"; };
+		B61D0E4F19A8F95000BEADF7 /* chairImage2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chairImage2.gif; sourceTree = "<group>"; };
+		B61D0E5019A8F95000BEADF7 /* chairImage3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chairImage3.gif; sourceTree = "<group>"; };
+		B61D0E5119A8F95000BEADF7 /* chairImage4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chairImage4.gif; sourceTree = "<group>"; };
+		B61D0E5219A8F95000BEADF7 /* chairImage5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chairImage5.gif; sourceTree = "<group>"; };
+		B61D0E5919AA525300BEADF7 /* keyboardTrayImage0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = keyboardTrayImage0.gif; sourceTree = "<group>"; };
+		B61D0E5A19AA525300BEADF7 /* keyboardTrayImage1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = keyboardTrayImage1.gif; sourceTree = "<group>"; };
+		B61D0E5B19AA525300BEADF7 /* keyboardTrayImage2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = keyboardTrayImage2.gif; sourceTree = "<group>"; };
+		B61D0E5C19AA525300BEADF7 /* keyboardTrayImage3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = keyboardTrayImage3.gif; sourceTree = "<group>"; };
+		B61D0E6119AA531A00BEADF7 /* mouseImage0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mouseImage0.gif; sourceTree = "<group>"; };
+		B61D0E6219AA531A00BEADF7 /* mouseImage1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mouseImage1.gif; sourceTree = "<group>"; };
+		B61D0E6319AA531A00BEADF7 /* mouseImage2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mouseImage2.gif; sourceTree = "<group>"; };
+		B61D0E6419AA531A00BEADF7 /* mouseImage3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = mouseImage3.gif; sourceTree = "<group>"; };
+		B61D0E6919AA541300BEADF7 /* monitorImage0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = monitorImage0.gif; sourceTree = "<group>"; };
+		B61D0E6A19AA541300BEADF7 /* monitorImage1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = monitorImage1.gif; sourceTree = "<group>"; };
+		B61D0E6B19AA541300BEADF7 /* monitorImage2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = monitorImage2.gif; sourceTree = "<group>"; };
+		B61D0E6C19AA541300BEADF7 /* monitorImage3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = monitorImage3.gif; sourceTree = "<group>"; };
+		B61D0E6D19AA541300BEADF7 /* monitorImage4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = monitorImage4.gif; sourceTree = "<group>"; };
+		B61D0E6E19AA541300BEADF7 /* monitorImage5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = monitorImage5.gif; sourceTree = "<group>"; };
+		B61D0E7519AA573A00BEADF7 /* orgImage0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = orgImage0.gif; sourceTree = "<group>"; };
+		B61D0E7619AA573A00BEADF7 /* orgImage1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = orgImage1.gif; sourceTree = "<group>"; };
+		B61D0E7719AA573A00BEADF7 /* orgImage2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = orgImage2.gif; sourceTree = "<group>"; };
+		B61D0E7819AA573A00BEADF7 /* orgImage3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = orgImage3.gif; sourceTree = "<group>"; };
+		B61D0E7919AA573A00BEADF7 /* orgImage4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = orgImage4.gif; sourceTree = "<group>"; };
+		B61D0E7A19AA573A00BEADF7 /* orgImage5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = orgImage5.gif; sourceTree = "<group>"; };
+		B61D0E8119AA59EF00BEADF7 /* finger.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = finger.gif; sourceTree = "<group>"; };
 		B643E7F6192F21C50062159A /* MainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		B64926611957E89B00AE2D08 /* WorkstationSetupXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkstationSetupXMLParser.h; sourceTree = "<group>"; };
 		B64926621957E89B00AE2D08 /* WorkstationSetupXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkstationSetupXMLParser.m; sourceTree = "<group>"; };
-		B64BC99419725D890062A4EA /* finger.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = finger.gif; sourceTree = "<group>"; };
 		B64BC9AF1977A5EA0062A4EA /* TutorialStrings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TutorialStrings.plist; sourceTree = "<group>"; };
 		B6550D54193168FD00FAF97F /* MainViewNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewNavigationController.h; sourceTree = "<group>"; };
 		B6550D55193168FD00FAF97F /* MainViewNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewNavigationController.m; sourceTree = "<group>"; };
-		B68F65CB199494DD00D63433 /* chairImage0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chairImage0.gif; sourceTree = "<group>"; };
-		B68F65CD199495D300D63433 /* chairImage1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chairImage1.gif; sourceTree = "<group>"; };
-		B68F65CF199496A700D63433 /* chairImage2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chairImage2.gif; sourceTree = "<group>"; };
-		B68F65D0199496A700D63433 /* chairImage3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chairImage3.gif; sourceTree = "<group>"; };
-		B68F65D51994974D00D63433 /* chairImage5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chairImage5.gif; sourceTree = "<group>"; };
 		B68F65D71994A7B300D63433 /* documentsImage0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = documentsImage0.gif; sourceTree = "<group>"; };
 		B68F65D81994A7B300D63433 /* documentsImage1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = documentsImage1.gif; sourceTree = "<group>"; };
 		B68F65DF1994A7CD00D63433 /* documentsImage2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = documentsImage2.gif; sourceTree = "<group>"; };
@@ -224,6 +270,10 @@
 		B6AE72C31946D18700FBFB5E /* monitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monitor.png; sourceTree = "<group>"; };
 		B6AE72C91946D46800FBFB5E /* documents.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = documents.png; sourceTree = "<group>"; };
 		B6AE72CB1946D6CD00FBFB5E /* workarea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = workarea.png; sourceTree = "<group>"; };
+		B6D499CB19AA8C3B001E678E /* welcomePage0-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcomePage0-iPad.png"; sourceTree = "<group>"; };
+		B6D499CC19AA8C3B001E678E /* welcomePage1-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcomePage1-iPad.png"; sourceTree = "<group>"; };
+		B6D499CD19AA8C3B001E678E /* welcomePage2-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcomePage2-iPad.png"; sourceTree = "<group>"; };
+		B6D499CE19AA8C3B001E678E /* welcomePage3-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcomePage3-iPad.png"; sourceTree = "<group>"; };
 		B6D7DF34196E566100478A94 /* PossibleSolutionStrings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PossibleSolutionStrings.plist; sourceTree = "<group>"; };
 		B6DAB62019207D5E00649B99 /* StraightComfort-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StraightComfort-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DAB62119207D5E00649B99 /* StraightComfort-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StraightComfort-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -326,15 +376,36 @@
 		B60D9D881930818100CBE191 /* Original Assets */ = {
 			isa = PBXGroup;
 			children = (
-				B68F65CB199494DD00D63433 /* chairImage0.gif */,
-				B68F65CD199495D300D63433 /* chairImage1.gif */,
-				B68F65CF199496A700D63433 /* chairImage2.gif */,
-				B68F65D0199496A700D63433 /* chairImage3.gif */,
-				B68F65D51994974D00D63433 /* chairImage5.gif */,
+				B61D0E4D19A8F95000BEADF7 /* chairImage0.gif */,
+				B61D0E4E19A8F95000BEADF7 /* chairImage1.gif */,
+				B61D0E4F19A8F95000BEADF7 /* chairImage2.gif */,
+				B61D0E5019A8F95000BEADF7 /* chairImage3.gif */,
+				B61D0E5119A8F95000BEADF7 /* chairImage4.gif */,
+				B61D0E5219A8F95000BEADF7 /* chairImage5.gif */,
+				B61D0E5919AA525300BEADF7 /* keyboardTrayImage0.gif */,
+				B61D0E5A19AA525300BEADF7 /* keyboardTrayImage1.gif */,
+				B61D0E5B19AA525300BEADF7 /* keyboardTrayImage2.gif */,
+				B61D0E5C19AA525300BEADF7 /* keyboardTrayImage3.gif */,
+				B61D0E6119AA531A00BEADF7 /* mouseImage0.gif */,
+				B61D0E6219AA531A00BEADF7 /* mouseImage1.gif */,
+				B61D0E6319AA531A00BEADF7 /* mouseImage2.gif */,
+				B61D0E6419AA531A00BEADF7 /* mouseImage3.gif */,
+				B61D0E6919AA541300BEADF7 /* monitorImage0.gif */,
+				B61D0E6A19AA541300BEADF7 /* monitorImage1.gif */,
+				B61D0E6B19AA541300BEADF7 /* monitorImage2.gif */,
+				B61D0E6C19AA541300BEADF7 /* monitorImage3.gif */,
+				B61D0E6D19AA541300BEADF7 /* monitorImage4.gif */,
+				B61D0E6E19AA541300BEADF7 /* monitorImage5.gif */,
 				B68F65D71994A7B300D63433 /* documentsImage0.gif */,
 				B68F65D81994A7B300D63433 /* documentsImage1.gif */,
 				B68F65DF1994A7CD00D63433 /* documentsImage2.gif */,
 				B68F65E01994A7CD00D63433 /* documentsImage3.gif */,
+				B61D0E7519AA573A00BEADF7 /* orgImage0.gif */,
+				B61D0E7619AA573A00BEADF7 /* orgImage1.gif */,
+				B61D0E7719AA573A00BEADF7 /* orgImage2.gif */,
+				B61D0E7819AA573A00BEADF7 /* orgImage3.gif */,
+				B61D0E7919AA573A00BEADF7 /* orgImage4.gif */,
+				B61D0E7A19AA573A00BEADF7 /* orgImage5.gif */,
 				B69807C019933ED100044128 /* additional-topics.png */,
 				4E065E84193A865400A70377 /* chair.png */,
 				B6AE72BD1946CC7800FBFB5E /* keyboard.png */,
@@ -358,7 +429,11 @@
 				B61B2EB61952AFA300AE5908 /* welcomePage1.png */,
 				B6EDCD62197BABF50003BD71 /* welcomePage2.png */,
 				B6EDCD63197BABF50003BD71 /* welcomePage3.png */,
-				B64BC99419725D890062A4EA /* finger.gif */,
+				B6D499CB19AA8C3B001E678E /* welcomePage0-iPad.png */,
+				B6D499CC19AA8C3B001E678E /* welcomePage1-iPad.png */,
+				B6D499CD19AA8C3B001E678E /* welcomePage2-iPad.png */,
+				B6D499CE19AA8C3B001E678E /* welcomePage3-iPad.png */,
+				B61D0E8119AA59EF00BEADF7 /* finger.gif */,
 			);
 			path = "Original Assets";
 			sourceTree = "<group>";
@@ -627,23 +702,29 @@
 				B61B2EA61950027100AE5908 /* Roboto-Medium.ttf in Resources */,
 				B6D7DF35196E566100478A94 /* PossibleSolutionStrings.plist in Resources */,
 				B60D9D9F1930823A00CBE191 /* Launchiphone.png in Resources */,
+				B6D499CF19AA8C3B001E678E /* welcomePage0-iPad.png in Resources */,
 				B68F65E21994A7CD00D63433 /* documentsImage3.gif in Resources */,
 				B61B2EA21950027100AE5908 /* Roboto-CondensedItalic.ttf in Resources */,
-				B68F65CE199495D300D63433 /* chairImage1.gif in Resources */,
 				4E6F8207199819DB0045C981 /* DiscomfortTableViewCell_iPad.xib in Resources */,
-				B68F65CC199494DD00D63433 /* chairImage0.gif in Resources */,
 				B60D9D971930823A00CBE191 /* Icon60.png in Resources */,
 				B6AE72BE1946CC7800FBFB5E /* keyboard.png in Resources */,
+				B61D0E7D19AA573A00BEADF7 /* orgImage2.gif in Resources */,
+				B61D0E8219AA59EF00BEADF7 /* finger.gif in Resources */,
+				B6D499D219AA8C3B001E678E /* welcomePage3-iPad.png in Resources */,
 				B61B2EA81950027100AE5908 /* Roboto-Regular.ttf in Resources */,
 				B60D9D9B1930823A00CBE191 /* Icon152.png in Resources */,
 				4E6F8209199823F00045C981 /* PossibleSolutionTableViewCell_iPad.xib in Resources */,
+				B61D0E7219AA541300BEADF7 /* monitorImage3.gif in Resources */,
 				B60D9DA81930829E00CBE191 /* Champagne & Limousines Italic.ttf in Resources */,
+				B61D0E7419AA541300BEADF7 /* monitorImage5.gif in Resources */,
 				B61B2E9D1950027100AE5908 /* Roboto-Bold.ttf in Resources */,
 				B6AE72B61942F1BE00FBFB5E /* PossibleSolutionTableViewCell_iPhone.xib in Resources */,
+				B61D0E8019AA573A00BEADF7 /* orgImage5.gif in Resources */,
 				B61B2E9F1950027100AE5908 /* Roboto-BoldCondensedItalic.ttf in Resources */,
 				B61B2EB71952AFA300AE5908 /* welcomePage1.png in Resources */,
+				B61D0E7B19AA573A00BEADF7 /* orgImage0.gif in Resources */,
 				B69807C119933ED100044128 /* additional-topics.png in Resources */,
-				B68F65D3199496A700D63433 /* chairImage3.gif in Resources */,
+				B61D0E7F19AA573A00BEADF7 /* orgImage4.gif in Resources */,
 				B6DAB62D192745B100649B99 /* MainViewController_iPhone.storyboard in Resources */,
 				B61B2EA51950027100AE5908 /* Roboto-LightItalic.ttf in Resources */,
 				B60D9D9A1930823A00CBE191 /* Icon120.png in Resources */,
@@ -655,14 +736,19 @@
 				B68F65DB1994A7B300D63433 /* documentsImage0.gif in Resources */,
 				4E065E8A193AD33B00A70377 /* DiscomfortTableViewCell_iPhone.xib in Resources */,
 				B61B2EA01950027100AE5908 /* Roboto-BoldItalic.ttf in Resources */,
+				B61D0E6F19AA541300BEADF7 /* monitorImage0.gif in Resources */,
+				B61D0E5F19AA525300BEADF7 /* keyboardTrayImage2.gif in Resources */,
 				B60D9D991930823A00CBE191 /* Icon80.png in Resources */,
+				B61D0E5319A8F95000BEADF7 /* chairImage0.gif in Resources */,
 				B61B2E9B1950027100AE5908 /* Roboto-Black.ttf in Resources */,
 				B68F65DC1994A7B300D63433 /* documentsImage1.gif in Resources */,
 				B60D9D981930823A00CBE191 /* Icon76.png in Resources */,
 				B6AE72CC1946D6CD00FBFB5E /* workarea.png in Resources */,
 				B60D9D961930823A00CBE191 /* Icon40.png in Resources */,
+				B61D0E7119AA541300BEADF7 /* monitorImage2.gif in Resources */,
 				B60D9D951930823A00CBE191 /* Icon.png in Resources */,
 				B61B2EA71950027100AE5908 /* Roboto-MediumItalic.ttf in Resources */,
+				B61D0E5719A8F95000BEADF7 /* chairImage4.gif in Resources */,
 				B6AE72A619404DAF00FBFB5E /* PossibleSolutionViewController.xib in Resources */,
 				B61783881962587500A7185D /* WorkstationSetupStrings.plist in Resources */,
 				B6EDCD65197BABF60003BD71 /* welcomePage3.png in Resources */,
@@ -671,33 +757,47 @@
 				B6E8C83B18C50DC400550D49 /* Images.xcassets in Resources */,
 				4E065E85193A865400A70377 /* chair.png in Resources */,
 				B6993D5E1998721F008AB5CB /* TutorialViewController_iPad.storyboard in Resources */,
+				B61D0E7E19AA573A00BEADF7 /* orgImage3.gif in Resources */,
 				B60D9DA01930823A00CBE191 /* logo.png in Resources */,
+				B61D0E5E19AA525300BEADF7 /* keyboardTrayImage1.gif in Resources */,
 				B68F65E11994A7CD00D63433 /* documentsImage2.gif in Resources */,
+				B61D0E7019AA541300BEADF7 /* monitorImage1.gif in Resources */,
+				B61D0E6719AA531A00BEADF7 /* mouseImage2.gif in Resources */,
+				B6D499D119AA8C3B001E678E /* welcomePage2-iPad.png in Resources */,
+				B61D0E5D19AA525300BEADF7 /* keyboardTrayImage0.gif in Resources */,
 				B6AE72C41946D18700FBFB5E /* monitor.png in Resources */,
-				B68F65D61994974D00D63433 /* chairImage5.gif in Resources */,
 				4E646811199814B40018E5B8 /* ShortcutTableViewCell_iPad.xib in Resources */,
 				B60D9D9E1930823A00CBE191 /* Launchipad@2x.png in Resources */,
-				B64BC99519725D890062A4EA /* finger.gif in Resources */,
+				B61D0E7C19AA573A00BEADF7 /* orgImage1.gif in Resources */,
 				B61B2E9C1950027100AE5908 /* Roboto-BlackItalic.ttf in Resources */,
 				B643E7F7192F21C50062159A /* MainTableViewCell.xib in Resources */,
+				B61D0E6819AA531A00BEADF7 /* mouseImage3.gif in Resources */,
 				4EB572491955FA460022E9C9 /* WorkstationSetupViewController_iPhone.storyboard in Resources */,
 				B61B2EC219567E9100AE5908 /* WorkstationSetupStrings.xml in Resources */,
 				B6AE72CA1946D46800FBFB5E /* documents.png in Resources */,
 				4E339C06193403D700B9BDE3 /* DiscomfortViewController.xib in Resources */,
+				B6D499D019AA8C3B001E678E /* welcomePage1-iPad.png in Resources */,
+				B61D0E6519AA531A00BEADF7 /* mouseImage0.gif in Resources */,
 				4EB864BA197B1CC700E3D398 /* welcomePage0.png in Resources */,
+				B61D0E5619A8F95000BEADF7 /* chairImage3.gif in Resources */,
 				B61B2EA11950027100AE5908 /* Roboto-Condensed.ttf in Resources */,
 				B60D9DA91930829E00CBE191 /* Champagne & Limousines.ttf in Resources */,
+				B61D0E6019AA525300BEADF7 /* keyboardTrayImage3.gif in Resources */,
+				B61D0E5819A8F95000BEADF7 /* chairImage5.gif in Resources */,
 				B61B2E9E1950027100AE5908 /* Roboto-BoldCondensed.ttf in Resources */,
 				B61B2EA91950027100AE5908 /* Roboto-Thin.ttf in Resources */,
 				B60D9D9D1930823A00CBE191 /* Launchipad.png in Resources */,
 				B6AE72AF19404F4400FBFB5E /* ShortcutTableViewCell_iPhone.xib in Resources */,
+				B61D0E6619AA531A00BEADF7 /* mouseImage1.gif in Resources */,
+				B61D0E5519A8F95000BEADF7 /* chairImage2.gif in Resources */,
 				B60D9DA71930829E00CBE191 /* Champagne & Limousines Bold.ttf in Resources */,
 				B6EDCD64197BABF60003BD71 /* welcomePage2.png in Resources */,
 				B61B2EAA1950027100AE5908 /* Roboto-ThinItalic.ttf in Resources */,
 				B64BC9B01977A5EA0062A4EA /* TutorialStrings.plist in Resources */,
 				B61B2EA31950027100AE5908 /* Roboto-Italic.ttf in Resources */,
 				B60D9DA61930829E00CBE191 /* Champagne & Limousines Bold Italic.ttf in Resources */,
-				B68F65D2199496A700D63433 /* chairImage2.gif in Resources */,
+				B61D0E5419A8F95000BEADF7 /* chairImage1.gif in Resources */,
+				B61D0E7319AA541300BEADF7 /* monitorImage4.gif in Resources */,
 				B6AE72B019404F4400FBFB5E /* ShortcutViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

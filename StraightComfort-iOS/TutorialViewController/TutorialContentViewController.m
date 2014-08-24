@@ -29,8 +29,14 @@
     
     appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
-    self.backgroundImageView.image = [UIImage imageNamed:self.imageFile];
-    
+    if (IS_IPAD) {
+        NSString *fileName = [self.imageFile stringByAppendingString:@"-iPad"];
+        self.backgroundImageView.image = [UIImage imageNamed:fileName];
+    } else {
+        self.backgroundImageView.image = [UIImage imageNamed:self.imageFile];
+
+    }
+        
     self.titleLabel.text = self.titleLabelText;
     self.titleLabel.font = (IS_IPHONE) ? [UIFont fontWithName:kRobotoMedium size:19] : [UIFont fontWithName:kRobotoMedium size:30];
     
