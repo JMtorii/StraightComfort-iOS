@@ -24,7 +24,7 @@
 
     completeSectionNames = [NSArray arrayWithObjects:@"Neck", @"Upper Back", @"Lower Back", @"Wrists", @"Legs", nil];
     completePossibleSolutionDictionary = @{[completeSectionNames objectAtIndex:0]: @[@"Monitor", @"Documents"], 
-                                   [completeSectionNames objectAtIndex:1]: @[@"Keyboard Tray (height)", @"Chair (armrest height)"],
+                                   [completeSectionNames objectAtIndex:1]: @[@"Keyboard Tray (height)"],
                                    [completeSectionNames objectAtIndex:2]: @[@"Chair (backrest height)"],
                                    [completeSectionNames objectAtIndex:3]: @[@"Armrest (usage)", @"Mouse"],
                                    [completeSectionNames objectAtIndex:4]: @[@"Chair (height, seat depth)"]};
@@ -121,8 +121,22 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    int counter = 0;
+    int trueIndex = indexPath.row;
+    
+    for (int i = 0; i < [self.possibleSolutionSwitches count]; i++) {
+        if ([[self.possibleSolutionSwitches objectAtIndex:i] isEqualToString:@"Y"]) {
+            counter++;
+            
+            if (counter == indexPath.row + 1) {
+                trueIndex = i;
+                break;
+            }
+        }
+    }
+    
     appDelegate.groupIndex = 0;
-    appDelegate.workstationArray = [[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"PossibleSolutionStrings" ofType:@"plist"]] objectAtIndex:indexPath.row];
+    appDelegate.workstationArray = [[NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"PossibleSolutionStrings" ofType:@"plist"]] objectAtIndex:trueIndex];
     appDelegate.titles = [self getPointDescLabels:(int)indexPath.row];
     appDelegate.maxGroupIndex = (int)[appDelegate.titles count] - 1;
     
@@ -149,10 +163,26 @@
     }
 }
 
+// TODO: This needs to be modified 
 - (NSMutableArray *) getPointDescLabels:(int)index
-{
+{    
+    int counter = 0;
+    int trueIndex = index;
+    
+    for (int i = 0; i < [self.possibleSolutionSwitches count]; i++) {
+        if ([[self.possibleSolutionSwitches objectAtIndex:i] isEqualToString:@"Y"]) {
+            counter++;
+            
+            if (counter == index + 1) {
+                trueIndex = i;
+                break;
+            }
+        }
+    }
+    
     NSMutableArray *retArray = [[NSMutableArray alloc] init];
-    for (NSDictionary *dict in [allRawDataArray objectAtIndex:index]) {
+    // modify index
+    for (NSDictionary *dict in [allRawDataArray objectAtIndex:trueIndex]) {
         [retArray addObject:[[dict allKeys] objectAtIndex:0]];
     }
     
