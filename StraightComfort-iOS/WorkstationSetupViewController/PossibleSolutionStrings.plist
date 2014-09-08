@@ -8,7 +8,7 @@
 			<array>
 				<dict>
 					<key>monitorImage0</key>
-					<string>Adjust the monitor height so that your line of sight falls within the top 2” of the screen.</string>
+					<string>Adjust the monitor height so that the top of the screen is within 2 inches of your eye level. Your actual line of sight falls around 10 to 15 degrees under; therefore, you will be able to maintain a neutral neck posture.</string>
 				</dict>
 				<dict>
 					<key>monitorImage1</key>
@@ -24,7 +24,7 @@
 				</dict>
 				<dict>
 					<key>monitorImage4</key>
-					<string>Most CRT (old style) monitors are not height adjustable however the height can be raised using a riser or CPU. Alternatively, if the monitor is already on top of a CPU and is too high, lower the monitor to the desk surface to reduce the height.</string>
+					<string>Most CRT (old style) monitors are not height adjustable however the height can be raised using a riser or computer tower. Alternatively, if the monitor is already on top of a tower and is too high, lower the monitor to the desk surface to reduce the height.</string>
 				</dict>
 				<dict>
 					<key>monitorImage5</key>
@@ -45,7 +45,7 @@
 				</dict>
 				<dict>
 					<key>documentsImage2</key>
-					<string>The holder also can be located off to the left or right side of the monitor. Alternating between left and right sides is encouraged to promote tissue recovery.</string>
+					<string>The holder can be located off to the left or right side of the monitor. Alternating between the left and right sides is encouraged to promote tissue recovery.</string>
 				</dict>
 				<dict>
 					<key>documentsImage3</key>
@@ -55,15 +55,6 @@
 		</dict>
 	</array>
 	<array>
-		<dict>
-			<key>Chair</key>
-			<array>
-				<dict>
-					<key>chairImage5</key>
-					<string>Armrests are recommended to be adjusted to the widest settings to avoid obstruction when using the keyboard or mouse.</string>
-				</dict>
-			</array>
-		</dict>
 		<dict>
 			<key>Keyboard Tray</key>
 			<array>
@@ -80,7 +71,9 @@
 			<array>
 				<dict>
 					<key>chairImage2</key>
-					<string>The backrest height should be adjusted so that its support fits the natural curve of your lumbar spine. Always try to remember to sit all the way back in your seat to use the support! Try not to sit on the edge of the seat while at your desk.</string>
+					<string>The backrest height should be adjusted so that its support fits the natural curve of your lumbar spine. Always try to remember to sit all the way back in your seat to use the support. Try not to sit on the edge of the seat while at your desk.</string>
+					<key>chairImage3</key>
+					<string>The backrest angle should be slightly more than 90 degrees.</string>
 				</dict>
 			</array>
 		</dict>
@@ -123,11 +116,11 @@
 			<array>
 				<dict>
 					<key>chairImage0</key>
-					<string>We must adjust the chair to the proper height by using lever 1 as shown in the picture. The height of the chair should be at an appropriate level so that your thighs are parallel to the floor as well as your feet flat on the ground.</string>
+					<string>If possible, the seat depth should be adjusted. It should be close enough to the backrest so that you can use its support and also leave two to three fingers’ space between the edge of the seat and the back of your knee.</string>
 				</dict>
 				<dict>
 					<key>chairImage1</key>
-					<string>If possible, the seat depth should be adjusted as well. It should be close enough to the backrest so that you can use its support and also leave 2 to 3 fingers’ space between the edge of the seat and the back of your knee.</string>
+					<string>If possible, the seat depth should be adjusted. It should be close enough to the backrest so that you can use its support and also leave two to three fingers’ space between the edge of the seat and the back of your knee.</string>
 				</dict>
 			</array>
 		</dict>

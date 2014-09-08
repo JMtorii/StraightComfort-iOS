@@ -25,6 +25,7 @@
 - (NSMutableArray *) getPointDescLabels:(int)index;
 
 @property(nonatomic) NSArray *possibleSolutionSwitches;
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
 
 
 @end

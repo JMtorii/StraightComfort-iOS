@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShortcutViewController">
             <connections>
+                <outlet property="tableView" destination="SHn-Sr-OBa" id="rgG-WW-lB9"/>
                 <outlet property="view" destination="btj-iG-oqI" id="DAx-GA-h7o"/>
             </connections>
         </placeholder>

@@ -20,4 +20,6 @@
     AppDelegate *appDelegate;
 }
 
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
+
 @end

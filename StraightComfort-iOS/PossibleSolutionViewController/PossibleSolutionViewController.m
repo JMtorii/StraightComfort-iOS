@@ -10,6 +10,8 @@
 
 @implementation PossibleSolutionViewController
 
+@synthesize tableView = _tableView;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -30,6 +32,15 @@
     [self initSectionNames];
     
     allRawDataArray = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"PossibleSolutionStrings" ofType:@"plist"]];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    // this UIViewController is about to re-appear, make sure we remove the current selection in our table view
+    NSIndexPath *tableSelection = [self.tableView indexPathForSelectedRow];
+    [self.tableView deselectRowAtIndexPath:tableSelection animated:NO];
 }
 
 - (void)didReceiveMemoryWarning

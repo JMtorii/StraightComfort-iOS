@@ -10,6 +10,8 @@
 
 @implementation ShortcutViewController
 
+@synthesize tableView = _tableView;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -21,6 +23,15 @@
     appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     workstationShortcutArray = [NSArray arrayWithObjects:@"CHAIR", @"KEYBOARD TRAY", @"MOUSE", @"MONITOR", @"DOCUMENTS", @"ORGANIZATION", nil];
     
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    // this UIViewController is about to re-appear, make sure we remove the current selection in our table view
+    NSIndexPath *tableSelection = [self.tableView indexPathForSelectedRow];
+    [self.tableView deselectRowAtIndexPath:tableSelection animated:NO];
 }
 
 - (void)didReceiveMemoryWarning
