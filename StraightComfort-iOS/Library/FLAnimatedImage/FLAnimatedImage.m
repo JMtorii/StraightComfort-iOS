@@ -13,7 +13,13 @@
 #import <CoreGraphics/CoreGraphics.h>
 
 
+// From vm_param.h, define for iOS 8.0 or higher to build on device.
+#ifndef BYTE_SIZE
+#define BYTE_SIZE 8 // byte size in bits
+#endif
+
 #define MEGABYTE (1024 * 1024)
+
 
 // An animated image's data size (dimensions * frameCount) category; its value is the max allowed memory (in MB).
 // E.g.: A 100x200px GIF with 30 frames is ~2.3MB in our pixel format and would fall into the `FLAnimatedImageDataSizeCategoryAll` category.
@@ -161,7 +167,7 @@ typedef NS_ENUM(NSUInteger, FLAnimatedImageFrameCacheSize) {
         _cachedFrames = [[NSMutableArray alloc] init];
         _cachedFrameIndexes = [[NSMutableIndexSet alloc] init];
         _requestedFrameIndexes = [[NSMutableIndexSet alloc] init];
-
+        
         // Note: We could leverage `CGImageSourceCreateWithURL` too to add a second initializer `-initWithAnimatedGIFContentsOfURL:`.
         _imageSource = CGImageSourceCreateWithData((__bridge CFDataRef)data, NULL);
         // Early return on failure!
@@ -251,8 +257,8 @@ typedef NS_ENUM(NSUInteger, FLAnimatedImageFrameCacheSize) {
                     // Support frame delays as low as `kDelayTimeIntervalMinimum`, with anything below being rounded up to `kDelayTimeIntervalDefault` for legacy compatibility.
                     // This is how the fastest browsers do it as per 2012: http://nullsleep.tumblr.com/post/16524517190/animated-gif-minimum-frame-delay-browser-compatibility
                     const NSTimeInterval kDelayTimeIntervalMinimum = 0.02;
-                    // Use `[NSNumber compare:]` for comparison to let it decide how to deal with accurate float representation.
-                    if ([delayTime compare:@(kDelayTimeIntervalMinimum)] == NSOrderedAscending) {
+                    // To support the minimum even when rounding errors occur, use an epsilon when comparing. We downcast to float because that's what we get for delayTime from ImageIO.
+                    if ([delayTime floatValue] < ((float)kDelayTimeIntervalMinimum - FLT_EPSILON)) {
                         NSLog(@"Verbose: Rounding frame %zu's `delayTime` from %f up to default %f (minimum supported: %f).", i, [delayTime floatValue], kDelayTimeIntervalDefault, kDelayTimeIntervalMinimum);
                         delayTime = @(kDelayTimeIntervalDefault);
                     }
@@ -395,6 +401,8 @@ typedef NS_ENUM(NSUInteger, FLAnimatedImageFrameCacheSize) {
     }
     
     // Start streaming requested frames in the background into the cache.
+    // Avoid capturing self in the block as there's no reason to keep doing work if the animated image went away.
+    FLAnimatedImage * __weak weakSelf = self;
     dispatch_async(_serialQueue, ^{
         // Produce and cache next needed frame.
         void (^frameRangeBlock)(NSRange, BOOL *) = ^(NSRange range, BOOL *stop) {
@@ -403,7 +411,7 @@ typedef NS_ENUM(NSUInteger, FLAnimatedImageFrameCacheSize) {
 #if DEBUG
                 CFTimeInterval predrawBeginTime = CACurrentMediaTime();
 #endif
-                UIImage *image = [self predrawnImageAtIndex:i];
+                UIImage *image = [weakSelf predrawnImageAtIndex:i];
 #if DEBUG
                 CFTimeInterval predrawDuration = CACurrentMediaTime() - predrawBeginTime;
                 CFTimeInterval slowdownDuration = 0.0;
@@ -416,14 +424,14 @@ typedef NS_ENUM(NSUInteger, FLAnimatedImageFrameCacheSize) {
 #endif
                 // The results get returned one by one as soon as they're ready (and not in batch).
                 // The benefits of having the first frames as quick as possible outweigh building up a buffer to cope with potential hiccups when the CPU suddenly gets busy.
-                if (image) {
+                if (image && weakSelf) {
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        self.cachedFrames[i] = image;
-                        [self.cachedFrameIndexes addIndex:i];
-                        [self.requestedFrameIndexes removeIndex:i];
+                        weakSelf.cachedFrames[i] = image;
+                        [weakSelf.cachedFrameIndexes addIndex:i];
+                        [weakSelf.requestedFrameIndexes removeIndex:i];
 #if DEBUG
-                        if ([self.debug_delegate respondsToSelector:@selector(debug_animatedImage:didUpdateCachedFrames:)]) {
-                            [self.debug_delegate debug_animatedImage:self didUpdateCachedFrames:self.cachedFrameIndexes];
+                        if ([weakSelf.debug_delegate respondsToSelector:@selector(debug_animatedImage:didUpdateCachedFrames:)]) {
+                            [weakSelf.debug_delegate debug_animatedImage:weakSelf didUpdateCachedFrames:weakSelf.cachedFrameIndexes];
                         }
 #endif
                     });
@@ -706,6 +714,8 @@ typedef NS_ENUM(NSUInteger, FLAnimatedImageFrameCacheSize) {
 
 #pragma mark Life Cycle
 
+// This is the designated creation method of an `FLWeakProxy` and
+// as a subclass of `NSProxy` it doesn't respond to or need `-init`.
 + (instancetype)weakProxyForObject:(id)targetObject
 {
     FLWeakProxy *weakProxy = [FLWeakProxy alloc];

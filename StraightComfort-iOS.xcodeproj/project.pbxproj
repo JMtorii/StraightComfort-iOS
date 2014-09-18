@@ -83,9 +83,9 @@
 		B61D0E7F19AA573A00BEADF7 /* orgImage4.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E7919AA573A00BEADF7 /* orgImage4.gif */; };
 		B61D0E8019AA573A00BEADF7 /* orgImage5.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E7A19AA573A00BEADF7 /* orgImage5.gif */; };
 		B61D0E8219AA59EF00BEADF7 /* finger.gif in Resources */ = {isa = PBXBuildFile; fileRef = B61D0E8119AA59EF00BEADF7 /* finger.gif */; };
-		B624D1C019BD4B26008C33EC /* documentsImage1.gif in Resources */ = {isa = PBXBuildFile; fileRef = B624D1BD19BD4B26008C33EC /* documentsImage1.gif */; };
-		B624D1C119BD4B26008C33EC /* documentsImage2.gif in Resources */ = {isa = PBXBuildFile; fileRef = B624D1BE19BD4B26008C33EC /* documentsImage2.gif */; };
-		B624D1C219BD4B26008C33EC /* documentsImage3.gif in Resources */ = {isa = PBXBuildFile; fileRef = B624D1BF19BD4B26008C33EC /* documentsImage3.gif */; };
+		B63CCD6619CA9EB400BEDAFF /* documentsImage1.gif in Resources */ = {isa = PBXBuildFile; fileRef = B63CCD6319CA9EB400BEDAFF /* documentsImage1.gif */; };
+		B63CCD6719CA9EB400BEDAFF /* documentsImage2.gif in Resources */ = {isa = PBXBuildFile; fileRef = B63CCD6419CA9EB400BEDAFF /* documentsImage2.gif */; };
+		B63CCD6819CA9EB400BEDAFF /* documentsImage3.gif in Resources */ = {isa = PBXBuildFile; fileRef = B63CCD6519CA9EB400BEDAFF /* documentsImage3.gif */; };
 		B643E7F7192F21C50062159A /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B643E7F6192F21C50062159A /* MainTableViewCell.xib */; };
 		B64926631957E89B00AE2D08 /* WorkstationSetupXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B64926621957E89B00AE2D08 /* WorkstationSetupXMLParser.m */; };
 		B64BC9B01977A5EA0062A4EA /* TutorialStrings.plist in Resources */ = {isa = PBXBuildFile; fileRef = B64BC9AF1977A5EA0062A4EA /* TutorialStrings.plist */; };
@@ -234,9 +234,9 @@
 		B61D0E7919AA573A00BEADF7 /* orgImage4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = orgImage4.gif; sourceTree = "<group>"; };
 		B61D0E7A19AA573A00BEADF7 /* orgImage5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = orgImage5.gif; sourceTree = "<group>"; };
 		B61D0E8119AA59EF00BEADF7 /* finger.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = finger.gif; sourceTree = "<group>"; };
-		B624D1BD19BD4B26008C33EC /* documentsImage1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = documentsImage1.gif; sourceTree = "<group>"; };
-		B624D1BE19BD4B26008C33EC /* documentsImage2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = documentsImage2.gif; sourceTree = "<group>"; };
-		B624D1BF19BD4B26008C33EC /* documentsImage3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = documentsImage3.gif; sourceTree = "<group>"; };
+		B63CCD6319CA9EB400BEDAFF /* documentsImage1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = documentsImage1.gif; sourceTree = "<group>"; };
+		B63CCD6419CA9EB400BEDAFF /* documentsImage2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = documentsImage2.gif; sourceTree = "<group>"; };
+		B63CCD6519CA9EB400BEDAFF /* documentsImage3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = documentsImage3.gif; sourceTree = "<group>"; };
 		B643E7F6192F21C50062159A /* MainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		B64926611957E89B00AE2D08 /* WorkstationSetupXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkstationSetupXMLParser.h; sourceTree = "<group>"; };
 		B64926621957E89B00AE2D08 /* WorkstationSetupXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkstationSetupXMLParser.m; sourceTree = "<group>"; };
@@ -397,9 +397,9 @@
 				B61D0E6D19AA541300BEADF7 /* monitorImage4.gif */,
 				B61D0E6E19AA541300BEADF7 /* monitorImage5.gif */,
 				B68F65D71994A7B300D63433 /* documentsImage0.gif */,
-				B624D1BD19BD4B26008C33EC /* documentsImage1.gif */,
-				B624D1BE19BD4B26008C33EC /* documentsImage2.gif */,
-				B624D1BF19BD4B26008C33EC /* documentsImage3.gif */,
+				B63CCD6319CA9EB400BEDAFF /* documentsImage1.gif */,
+				B63CCD6419CA9EB400BEDAFF /* documentsImage2.gif */,
+				B63CCD6519CA9EB400BEDAFF /* documentsImage3.gif */,
 				B61D0E7519AA573A00BEADF7 /* orgImage0.gif */,
 				B61D0E7619AA573A00BEADF7 /* orgImage1.gif */,
 				B61D0E7719AA573A00BEADF7 /* orgImage2.gif */,
@@ -699,7 +699,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B624D1C119BD4B26008C33EC /* documentsImage2.gif in Resources */,
+				B63CCD6719CA9EB400BEDAFF /* documentsImage2.gif in Resources */,
 				B61B2EA61950027100AE5908 /* Roboto-Medium.ttf in Resources */,
 				B6D7DF35196E566100478A94 /* PossibleSolutionStrings.plist in Resources */,
 				B60D9D9F1930823A00CBE191 /* Launchiphone.png in Resources */,
@@ -715,7 +715,7 @@
 				4E6F8209199823F00045C981 /* PossibleSolutionTableViewCell_iPad.xib in Resources */,
 				B61D0E7219AA541300BEADF7 /* monitorImage3.gif in Resources */,
 				B60D9DA81930829E00CBE191 /* Champagne & Limousines Italic.ttf in Resources */,
-				B624D1C019BD4B26008C33EC /* documentsImage1.gif in Resources */,
+				B63CCD6619CA9EB400BEDAFF /* documentsImage1.gif in Resources */,
 				B61D0E7419AA541300BEADF7 /* monitorImage5.gif in Resources */,
 				B61B2E9D1950027100AE5908 /* Roboto-Bold.ttf in Resources */,
 				B6AE72B61942F1BE00FBFB5E /* PossibleSolutionTableViewCell_iPhone.xib in Resources */,
@@ -778,7 +778,7 @@
 				B61D0E6519AA531A00BEADF7 /* mouseImage0.gif in Resources */,
 				4EB864BA197B1CC700E3D398 /* welcomePage0.png in Resources */,
 				B61D0E5619A8F95000BEADF7 /* chairImage3.gif in Resources */,
-				B624D1C219BD4B26008C33EC /* documentsImage3.gif in Resources */,
+				B63CCD6819CA9EB400BEDAFF /* documentsImage3.gif in Resources */,
 				B68FBCCE19B534C9005B0DA6 /* Icon60.png in Resources */,
 				B61B2EA11950027100AE5908 /* Roboto-Condensed.ttf in Resources */,
 				B60D9DA91930829E00CBE191 /* Champagne & Limousines.ttf in Resources */,
