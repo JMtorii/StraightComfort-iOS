@@ -47,6 +47,8 @@
 		<string>Roboto-Thin.ttf</string>
 		<string>Roboto-ThinItalic.ttf</string>
 	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>MainViewController_iPhone</string>
 	<key>UIMainStoryboardFile</key>
 	<string>MainViewController_iPhone</string>
 	<key>UIMainStoryboardFile~ipad</key>

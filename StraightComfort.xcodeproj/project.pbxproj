@@ -291,7 +291,7 @@
 		B6E8C83818C50DC400550D49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B6E8C83A18C50DC400550D49 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B6E8C84118C50DC400550D49 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B6E8C84918C50DC400550D49 /* StraightComfort-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StraightComfort-iOSTests-Info.plist"; sourceTree = "<group>"; };
+		B6E8C84918C50DC400550D49 /* StraightComfortTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StraightComfortTests-Info.plist"; sourceTree = "<group>"; };
 		B6E8C84B18C50DC400550D49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B6E8C84D18C50DC400550D49 /* StraightComfort_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StraightComfort_iOSTests.m; sourceTree = "<group>"; };
 		B6EDCD62197BABF50003BD71 /* welcomePage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcomePage2.png; sourceTree = "<group>"; };
@@ -615,7 +615,7 @@
 		B6E8C84818C50DC400550D49 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B6E8C84918C50DC400550D49 /* StraightComfort-iOSTests-Info.plist */,
+				B6E8C84918C50DC400550D49 /* StraightComfortTests-Info.plist */,
 				B6E8C84A18C50DC400550D49 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
