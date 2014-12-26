@@ -43,7 +43,11 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (IS_IPHONE_5) {
+    if (IS_IPHONE_6) {
+        return 200;
+    } else if (IS_IPHONE_6P) {
+        return 232;
+    } else if (IS_IPHONE_5) {
         return 168;
     } else if (IS_IPHONE && !IS_IPHONE_5) {
         return 140;
