@@ -20,7 +20,7 @@
     self.navigationItem.title = @"Full Workstation Shortcut";
     
     appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    NSLog(@"%d", appDelegate.groupIndex);
+    //NSLog(@"%d", appDelegate.groupIndex);
     
     if (appDelegate.groupIndex == 0 || appDelegate.groupIndex < [appDelegate.titles count]) {
         [appDelegate initCurDescArray];

@@ -21,7 +21,7 @@
     homeTitlesLine2 = [NSArray arrayWithObjects:@"WORKSTATION SETUP", @"SHORTCUT", @"", nil];
     
 //    UIButton *rightHelpBarButton = [UIButton buttonWithType:UIButtonTypeInfoDark];
-//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightHelpBarButton];
+//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomVi'ew:rightHelpBarButton];
 }
 
 - (void)didReceiveMemoryWarning

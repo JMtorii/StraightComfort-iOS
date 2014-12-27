@@ -67,7 +67,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0mT-VU-fCV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0mT-VU-fCV">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyk-QF-lz5">
@@ -104,8 +104,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kC8-D2-Y4i" firstAttribute="top" secondItem="eyk-QF-lz5" secondAttribute="bottom" id="Cev-pa-mjs"/>
+                            <constraint firstItem="0mT-VU-fCV" firstAttribute="bottom" secondItem="kC8-D2-Y4i" secondAttribute="top" id="JOy-3v-6zD"/>
                             <constraint firstAttribute="trailing" secondItem="eyk-QF-lz5" secondAttribute="trailing" id="PiL-pk-gzx"/>
+                            <constraint firstAttribute="centerX" secondItem="0mT-VU-fCV" secondAttribute="centerX" id="Prd-LR-fi9"/>
                             <constraint firstItem="eyk-QF-lz5" firstAttribute="leading" secondItem="fxe-ge-uUd" secondAttribute="leading" id="W8h-Nn-nWA"/>
+                            <constraint firstItem="0mT-VU-fCV" firstAttribute="leading" secondItem="eyk-QF-lz5" secondAttribute="leading" id="XJv-ZQ-MYA"/>
+                            <constraint firstAttribute="centerY" secondItem="0mT-VU-fCV" secondAttribute="centerY" id="nPz-sw-6pZ"/>
                         </constraints>
                     </view>
                     <connections>

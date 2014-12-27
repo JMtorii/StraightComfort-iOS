@@ -35,13 +35,19 @@
         
         self.desc.font = (IS_IPHONE) ? [UIFont fontWithName:kRobotoRegular size:18] : [UIFont fontWithName:kRobotoRegular size:25];
         
-        if (IS_IPHONE_5) {
+        if (IS_IPHONE_5 || IS_IPHONE_6 || IS_IPHONE_6P) {
             NSURL *url = [[NSBundle mainBundle] URLForResource:@"finger" withExtension:@"gif"];
             NSData *data1 = [NSData dataWithContentsOfURL:url];
             FLAnimatedImage *image = [[FLAnimatedImage alloc] initWithAnimatedGIFData:data1];
             FLAnimatedImageView *imageView = [[FLAnimatedImageView alloc] init];
             imageView.animatedImage = image;
-            imageView.frame = CGRectMake(20.0, 330.0, 280.0, 199.0);
+            if (IS_IPHONE_5) {
+                imageView.frame = CGRectMake(20.0, 330.0, 280.0, 199.0);
+            } else if (IS_IPHONE_6) {
+                imageView.frame = CGRectMake(40.0, 390.0, 280.0, 199.0);
+            } else {
+                // MODIFY
+            }
             [self.view addSubview:imageView];
         }
         

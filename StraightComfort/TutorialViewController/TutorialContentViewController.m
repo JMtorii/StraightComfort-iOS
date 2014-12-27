@@ -41,20 +41,30 @@
     self.titleLabel.font = (IS_IPHONE) ? [UIFont fontWithName:kRobotoMedium size:19] : [UIFont fontWithName:kRobotoMedium size:30];
     
     CGRect labelFrame;
-    if (IS_IPHONE_5) {
-        labelFrame = CGRectMake(20, 425, 290, 50);
-    } else if (!IS_IPHONE_5 && IS_IPHONE) {
-        labelFrame = CGRectMake(20, 335, 290, 50);
+    
+    if (IS_IPHONE_6) {
+        labelFrame = CGRectMake(20, 520, 335, 250);
+    } else if (IS_IPHONE_6P) {
+        // MODIFY
+        labelFrame = CGRectMake(20, 360, 280, 233);
+    } else if (IS_IPHONE_5) {
+        labelFrame = CGRectMake(20, 360, 280, 233);
+    } else if (!IS_IPHONE_5 && !IS_IPHONE_6 && !IS_IPHONE_6P && IS_IPHONE) {
+        labelFrame = CGRectMake(20, 280, 280, 233);
     } else {
-        labelFrame = CGRectMake(60, 760, 660, 233);
+        labelFrame = CGRectMake(60, 720, 660, 233);
     }
+    
     _curDescLabel = [[UILabel alloc] initWithFrame:labelFrame];
     [_curDescLabel setText:_curDescText];
     [_curDescLabel setTextColor:[UIColor whiteColor]];
-    if (IS_IPHONE) {
+    
+    if (IS_IPHONE_6 || IS_IPHONE_6P) {
+        [_curDescLabel setFont:[UIFont fontWithName:kRobotoRegular size:17]];
+    } else if (IS_IPHONE) {
         [_curDescLabel setFont:[UIFont fontWithName:kRobotoRegular size:16]];
     } else {
-        [_curDescLabel setFont:[UIFont fontWithName:kRobotoRegular size:26]];
+        [_curDescLabel setFont:[UIFont fontWithName:kRobotoRegular size:28]];
     }
     
     // Tell the label to use an unlimited number of lines
@@ -63,7 +73,9 @@
     
     [self.view addSubview:_curDescLabel];
     
-    if (IS_IPHONE) {
+    if (IS_IPHONE_6 || IS_IPHONE_6P) {
+        [self.startButton.titleLabel setFont:[UIFont fontWithName:kRobotoBold size:17]];
+    } else if (IS_IPHONE) {
         [self.startButton.titleLabel setFont:[UIFont fontWithName:kRobotoBold size:16]];
     } else {
         [self.startButton.titleLabel setFont:[UIFont fontWithName:kRobotoBold size:26]];
