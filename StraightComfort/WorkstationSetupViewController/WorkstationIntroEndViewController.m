@@ -46,7 +46,7 @@
             } else if (IS_IPHONE_6) {
                 imageView.frame = CGRectMake(40.0, 390.0, 280.0, 199.0);
             } else {
-                // MODIFY
+                imageView.frame = CGRectMake(50.0, 430.0, 280.0, 199.0);
             }
             [self.view addSubview:imageView];
         }

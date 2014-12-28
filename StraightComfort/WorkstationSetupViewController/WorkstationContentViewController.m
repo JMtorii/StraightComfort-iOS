@@ -34,8 +34,7 @@
     if (IS_IPHONE_6) {
         imageView.frame = CGRectMake(20.0, 99.0, 330.0, 270.0);
     } else if (IS_IPHONE_6P) {
-        // MODIFY
-        imageView.frame = CGRectMake(20.0, 89.0, 280.0, 220.0);
+        imageView.frame = CGRectMake(20.0, 99.0, 370.0, 310.0);
     } else if (IS_IPHONE_5) {
         imageView.frame = CGRectMake(20.0, 89.0, 280.0, 220.0);
     } else if (!IS_IPHONE_5 && !IS_IPHONE_6 && !IS_IPHONE_6P && IS_IPHONE) {
@@ -53,8 +52,7 @@
     if (IS_IPHONE_6) {
         labelFrame = CGRectMake(20, 465, 335, 250);
     } else if (IS_IPHONE_6P) {
-        // MODIFY
-        labelFrame = CGRectMake(20, 360, 280, 233);
+        labelFrame = CGRectMake(20, 540, 380, 270);
     } else if (IS_IPHONE_5) {
         labelFrame = CGRectMake(20, 360, 280, 233);
     } else if (!IS_IPHONE_5 && !IS_IPHONE_6 && !IS_IPHONE_6P && IS_IPHONE) {

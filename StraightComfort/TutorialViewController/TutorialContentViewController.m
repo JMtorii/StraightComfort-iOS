@@ -45,8 +45,7 @@
     if (IS_IPHONE_6) {
         labelFrame = CGRectMake(20, 520, 335, 250);
     } else if (IS_IPHONE_6P) {
-        // MODIFY
-        labelFrame = CGRectMake(20, 360, 280, 233);
+        labelFrame = CGRectMake(20, 590, 370, 270);
     } else if (IS_IPHONE_5) {
         labelFrame = CGRectMake(20, 360, 280, 233);
     } else if (!IS_IPHONE_5 && !IS_IPHONE_6 && !IS_IPHONE_6P && IS_IPHONE) {
